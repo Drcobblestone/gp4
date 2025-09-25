@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-1_0
+      name: bookshelve
       rect:
         serializedVersion: 2
         x: 622
@@ -144,8 +144,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-1_0: 1746294494
       Untitled_Artwork-1_1: -2020103418
+      bookshelve: 1746294494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
