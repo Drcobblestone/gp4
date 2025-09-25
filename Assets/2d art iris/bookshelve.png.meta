@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bookshelve
+      name: bookshelve_0
       rect:
         serializedVersion: 2
         x: 622
-        y: 450
+        y: 448
         width: 1513
-        height: 1291
+        height: 1293
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9da27cb41b4d72409d5687db949a4bf
-      internalID: 1746294494
+      spriteID: 83ed7b8ad40996f419785f7e79862b75
+      internalID: -1626041833
       vertices: []
       indices: 
       edges: []
@@ -144,8 +144,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-1_1: -2020103418
-      bookshelve: 1746294494
+      bookshelve_0: -1626041833
+      bookshelve_1: -1623869553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
