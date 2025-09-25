@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rBody;
     [SerializeField] GameObject player; //The player body
@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
                     break; //Stops jump force from being applied twice if both raycasts hit the ground
                 }
             }
-        }*/
+        }
 
         float appliedGravity = rBody.velocity.y;
 
