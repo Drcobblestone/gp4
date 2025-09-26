@@ -1,89 +1,67 @@
 using System.Collections;
-using Unity.VisualScripting;
+using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody2D rBody;
-    [SerializeField] GameObject player; //The player body
-    //[SerializeField] Transform[] feetPoints; //The points at the bottom of each side of the player
-    [SerializeField] float movementSpeed = 10f; //Movement speed
+    [Header("-Player Component References-")]
+    [SerializeField] Rigidbody2D rb; //We make the Rigidbody not a public class as we need to keep it private, but since we need to see it in the editor, we make it a serializedfield.
 
-    [SerializeField] Transform flipTransform; //Flips components of player body
+    [Header("-Player Settings-")]
+    [SerializeField] float speed;
 
-    float facing; //Used to determine direction the player is facing
-    bool movementLocked = false; //Prevents the player from moving if true
-    [SerializeField] Animator anime; //Gets the animator
-    bool pickUp = false;
+    private float horizontal;
+    private float vertical;
 
+    /*
+    #region CHANGING_RIGIDBODY
     private void Start()
     {
-        //rBody = player.GetComponent<Rigidbody2D>(); //Gets the player gameobjects rigidbody, meaning that the below code will affect it
-        //hit = 0;
+        rb = GetComponent<Rigidbody2D>();
     }
-    private void Update()
+    //Let the Rigidbody take control and detect collisions
+    void EnableRagdoll(Rigidbody2D rb)
     {
-        GroundCheck();
-
-        if (movementLocked)
-        {
-            return; //If movement locked is true stops any code below from running
-        }
-        if (anime.GetBool("Is Dead") == true) //If the player is dead, stops player from moving to the sides and imputs from working
-        {
-            rBody.velocity = new Vector2(0, rBody.velocity.y);
-            return;
-        }
-        if (pickUp == true)
-        {
-            rBody.velocity = new Vector2(0, 0);
-            return;
-        }
-        Vector2 moveDirection = Vector2.zero;
-        //float jumpForce = 0;
-        if (Input.GetKey(KeyCode.D))
-        {
-            moveDirection.x += 1.0f;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            moveDirection.x -= 1.0f;
-        }
-        //if (moveDirection.x != 0.0f && attacking == false) //Flips the player sprite if they are not in the attack animation
-        {
-            facing = moveDirection.x;
-            flipTransform.localScale = new Vector3(facing, 1.0f, 1.0f);
-
-        }
-
-
-        //rBody.velocity = newVelocity;
-        anime.SetBool("Walking", rBody.velocity.x != 0f);
+        rb.isKinematic = false;
+        rb.coll
     }
+
+    //Let animation take control and ignore collisions.
+    void DisableRagDoll() 
+    { 
+        rb.isKinematic = true; 
+
+    }
+
+    #endregion
+    */
+
+    //First we'll disable gravity of the rigidbody, since we don't need it.
+    /* void DisableGravity(Rigidbody2D rb)
+     {
+         rb.useGravity = false;
+     }*/
+
+
+    //A region is a "stylistic choice that allows you to lump together related code and give it a name."
+    #region PLAYER_CONTROLS 
+    public void Move(InputAction.CallbackContext context) //If the Input System gets input then we shall move.
+    {
+        horizontal = context.ReadValue<Vector2>().x; //We can move horizontally.
+        vertical = context.ReadValue<Vector2>().y; //We can move vertically.
+    }
+    #endregion
+
     private void FixedUpdate()
     {
-        //anime.SetBool("Walking", rBody.velocity.x != 0f);
-    }
-    private void GroundCheck()
-    {
-        anime.SetBool("Is Grounded", rBody.IsTouchingLayers(LayerMask.GetMask("Ground")));
+        /*rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        rb.velocity = new Vector2(vertical * speed, rb.velocity.x); */
+
+        //Version 2, which is slow in the X-direction for some reason...
+        rb.velocity = new Vector2(horizontal, vertical * speed); 
     }
 
-    public void PickUpStart()
-    {
-        pickUp = true;
-    }
-    public void PickUpEnd()
-    {
-        pickUp = false;
-    }
-    public void Pause()
-    {
-        movementLocked = true;
-    }
-    public void Resume()
-    {
-        movementLocked = false;
-    }
+
+
 }
