@@ -190,11 +190,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &333120654 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8261608255279956213, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
-  m_PrefabInstance: {fileID: 3131660762898584566}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &397192748
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee0e130201a4904dbe1888ad4ee89f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &3131660762898584566
+--- !u!1001 &1898412210
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -743,17 +738,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3139699109523332621, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 333120654}
     - target: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.27
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4
+      value: -2.98
       objectReference: {fileID: 0}
     - target: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -789,9 +780,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8261608255279956213, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_Name
-      value: Leopold_front
+      value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3139699109523332621, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -863,8 +855,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1663988253}
   - {fileID: 1658688404}
-  - {fileID: 3131660762898584566}
   - {fileID: 1328406727}
   - {fileID: 1043222113}
   - {fileID: 328928061}
   - {fileID: 4608876417988731919}
+  - {fileID: 1898412210}

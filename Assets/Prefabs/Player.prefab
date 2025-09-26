@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1564114410875355566}
   - component: {fileID: 3139699109523332621}
   m_Layer: 0
-  m_Name: Leopold_front
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
