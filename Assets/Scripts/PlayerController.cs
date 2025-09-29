@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         /*rb.velocity = new Vector2(horizontal * speed, rb.velocity.y); //We set the players rigidbody velocity on the x-axis as the speed.
         rb.velocity = new Vector2(vertical * speed, rb.velocity.x); */ //We set the players rigidbody velocity on the y-axis as the speed.
 
-        //Version 2, which is slow in the X-direction for some reason...
+        // We check that rigidbody's velocity is now controlled via a timer that checks if horizontal as well as vertical movement multiplies the speed of the rigidbody.
         rb.velocity = new Vector2(horizontal * speed * Time.deltaTime, vertical * speed * Time.deltaTime); //
     }
 }
