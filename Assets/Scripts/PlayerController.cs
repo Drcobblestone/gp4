@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     [Header("-Player Settings-")]
     [SerializeField] float speed;
 
-    private float horizontal;
-    private float vertical;
+    private float horizontal; //Horizontal control, for use later.
+    private float vertical; //Vertical control, for use later.
 
     /*
     #region CHANGING_RIGIDBODY
@@ -48,20 +48,17 @@ public class PlayerController : MonoBehaviour
     #region PLAYER_CONTROLS 
     public void Move(InputAction.CallbackContext context) //If the Input System gets input then we shall move.
     {
-        horizontal = context.ReadValue<Vector2>().x; //We can move horizontally.
-        vertical = context.ReadValue<Vector2>().y; //We can move vertically.
+        horizontal = context.ReadValue<Vector2>().x; //We assign to the horizontal variable whether (context) we are moving left or right.
+        vertical = context.ReadValue<Vector2>().y; //We assign to the vertical variable whether (context) we are moving up or down.
     }
     #endregion
 
     private void FixedUpdate()
     {
-        /*rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        rb.velocity = new Vector2(vertical * speed, rb.velocity.x); */
+        /*rb.velocity = new Vector2(horizontal * speed, rb.velocity.y); //We set the players rigidbody velocity on the x-axis as the speed.
+        rb.velocity = new Vector2(vertical * speed, rb.velocity.x); */ //We set the players rigidbody velocity on the y-axis as the speed.
 
         //Version 2, which is slow in the X-direction for some reason...
-        rb.velocity = new Vector2(horizontal, vertical * speed); 
+        rb.velocity = new Vector2(horizontal * speed * Time.deltaTime, vertical * speed * Time.deltaTime); //
     }
-
-
-
 }
