@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: leopold idle
+  m_Name: disco trio idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,15 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1393790868, guid: 43bb07f726498d24b8ad8ec90d0c657e, type: 3}
-    - time: 1
-      value: {fileID: -781526502, guid: c129677c140694946a0c7ae05b3bd3fa, type: 3}
+      value: {fileID: -1451454817, guid: 6792d8e8a56dd744683a5a4adf702ff2, type: 3}
+    - time: 0.25
+      value: {fileID: 126467365, guid: 6c785ce574b315842acbf79de903eafc, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 1
+  m_SampleRate: 4
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,14 +46,14 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1393790868, guid: 43bb07f726498d24b8ad8ec90d0c657e, type: 3}
-    - {fileID: -781526502, guid: c129677c140694946a0c7ae05b3bd3fa, type: 3}
+    - {fileID: -1451454817, guid: 6792d8e8a56dd744683a5a4adf702ff2, type: 3}
+    - {fileID: 126467365, guid: 6c785ce574b315842acbf79de903eafc, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
