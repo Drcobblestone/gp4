@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     private float horizontal; //Horizontal control, for use later.
     private float vertical; //Vertical control, for use later.
-
+    public Animator animator;
     /*
     #region CHANGING_RIGIDBODY
     private void Start()
@@ -55,6 +56,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontal)); //vilken behöver jag använda horizontal, vertical skulle behöva vara namnet för rörelsen 
+        animator.SetFloat("Speed", Mathf.Abs(vertical));
+
+
+
         /*rb.velocity = new Vector2(horizontal * speed, rb.velocity.y); //We set the players rigidbody velocity on the x-axis as the speed.
         rb.velocity = new Vector2(vertical * speed, rb.velocity.x); */ //We set the players rigidbody velocity on the y-axis as the speed.
 
