@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d860987885643146a0433214230cfca
+guid: a14300b5c5c79fc4b859a6e552d5a9c0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Biblan utsidan_0
+      name: Dwarf_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 1612
+        y: 1557
+        width: 239
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b363d68838db0468f72e28d0e3a501
-      internalID: 2103262074
+      spriteID: 7036e133b172b064dad6c414debf1bf9
+      internalID: 1920389348
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Biblan utsidan_0: 2103262074
+      Dwarf_0: 1920389348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

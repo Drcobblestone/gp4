@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d860987885643146a0433214230cfca
+guid: 63fa5a194f38f454ea740338756c267d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Biblan utsidan_0
+      name: flowers_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 41
+        y: 187
+        width: 1050
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b363d68838db0468f72e28d0e3a501
-      internalID: 2103262074
+      spriteID: 38bc7849c8d29df418bd990fe36b055c
+      internalID: 1010231016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flowers_1
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 204
+        width: 1328
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9fa2d6ceb82fc4c86a22e370fee0bd
+      internalID: -1159895950
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Biblan utsidan_0: 2103262074
+      flowers_0: 1010231016
+      flowers_1: -1159895950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

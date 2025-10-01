@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d860987885643146a0433214230cfca
+guid: 406e4b17749c1754388ef8dccc31f8eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Biblan utsidan_0
+      name: fens_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 6
+        y: 231
+        width: 1301
+        height: 412
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b363d68838db0468f72e28d0e3a501
-      internalID: 2103262074
+      spriteID: 6edc8af147c1c084eaf0ffa8a0191ddc
+      internalID: -1346956666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fens_1
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 347
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87054bc4566fbd14e99a5bb9d85f4504
+      internalID: 1894021014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fens_2
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 231
+        width: 2291
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3079073c3c047d4882ef34dd258d4bc
+      internalID: 2019576078
       vertices: []
       indices: 
       edges: []
@@ -128,7 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Biblan utsidan_0: 2103262074
+      fens_0: -1346956666
+      fens_1: 1894021014
+      fens_2: 2019576078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

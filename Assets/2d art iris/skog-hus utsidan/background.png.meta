@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d860987885643146a0433214230cfca
+guid: cb290f0b69b6f5d42990da8fc2783541
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Biblan utsidan_0
+      name: background_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b363d68838db0468f72e28d0e3a501
-      internalID: 2103262074
+      spriteID: 4bf68f5151442484cb4f595703320108
+      internalID: 1500137213
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Biblan utsidan_0: 2103262074
+      background_0: 1500137213
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

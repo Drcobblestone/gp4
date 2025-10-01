@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d860987885643146a0433214230cfca
+guid: 311836bd2ba0fa74f9f27d122a20878e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Biblan utsidan_0
+      name: Treetrunk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 778
+        y: 1153
+        width: 461
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b363d68838db0468f72e28d0e3a501
-      internalID: 2103262074
+      spriteID: c214055251e099d4992c75f66f38da3f
+      internalID: 791929194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treetrunk_1
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1236
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdb831bd7cd61042bf626c80dd09212
+      internalID: -7049875
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Biblan utsidan_0: 2103262074
+      Treetrunk_0: 791929194
+      Treetrunk_1: -7049875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
