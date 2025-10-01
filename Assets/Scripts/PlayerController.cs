@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     private float horizontal; //Horizontal control, for use later.
     private float vertical; //Vertical control, for use later.
+    
     public Animator animator;
     /*
     #region CHANGING_RIGIDBODY
@@ -56,9 +57,11 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Vector2 movement = new Vector2(horizontal, vertical);
+        movement = movement.normalized; 
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontal)); //vilken behöver jag använda horizontal, vertical skulle behöva vara namnet för rörelsen 
-        animator.SetFloat("Speed", Mathf.Abs(vertical));
+        animator.SetFloat("Speed", movement.magnitude); //vilken behöver jag använda horizontal, vertical skulle behöva vara namnet för rörelsen 
+       // animator.SetFloat("Speedver", Mathf.Abs(vertical));
 
 
 
@@ -66,6 +69,6 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(vertical * speed, rb.velocity.x); */ //We set the players rigidbody velocity on the y-axis as the speed.
 
         // We check that rigidbody's velocity is now controlled via a timer that checks if horizontal as well as vertical movement multiplies the speed of the rigidbody.
-        rb.velocity = new Vector2(horizontal * speed * Time.deltaTime, vertical * speed * Time.deltaTime); //
+        rb.velocity = movement * speed * Time.deltaTime; //
     }
 }
