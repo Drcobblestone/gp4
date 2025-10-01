@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3928783349941001327}
   - component: {fileID: 350474855840728822}
   - component: {fileID: 6752867297575956090}
-  - component: {fileID: 7467563208908471387}
+  - component: {fileID: 3582947094276818101}
   m_Layer: 0
-  m_Name: Door
+  m_Name: ChangeSceneZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.49803922}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7467563208908471387
+--- !u!114 &3582947094276818101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,8 +140,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 532802764539643397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6929828275938864a8eb329eabe8e593, type: 3}
+  m_Script: {fileID: 11500000, guid: 369b2965e42055d40ab3a85643ce0435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goNextLevel: 0
-  levelName: Lars_test-scene 2
+  data: {fileID: 0}
+  enterToIndex: -1
