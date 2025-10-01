@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 737806e516252cc42bd139ef20be0cfc
+guid: 39784d4b075c8fc40b4f99f6694f218b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,85 +97,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-3 9_0
+      name: "Dva\u0308rg_Na\u030Agot_Sto\u0308rre_Idle-2_0"
       rect:
         serializedVersion: 2
-        x: 6
-        y: 231
-        width: 1291
-        height: 391
+        x: 1612
+        y: 1708
+        width: 36
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5acd59b87df66248be4b86c1d479ad3
-      internalID: -910827872
+      spriteID: c8c2f4fb8b3f7404a982c6c3bff82efb
+      internalID: 295926925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork-3 9_1
+      name: "Dva\u0308rg_Na\u030Agot_Sto\u0308rre_Idle-2_1"
       rect:
         serializedVersion: 2
-        x: 1327
-        y: 347
-        width: 25
-        height: 47
+        x: 1642
+        y: 1557
+        width: 209
+        height: 343
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 370ca39e801489a498537b48131efade
-      internalID: -1162607581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork-3 9_2
-      rect:
-        serializedVersion: 2
-        x: 1549
-        y: 231
-        width: 2291
-        height: 390
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93c24c2b40480b84687a3ef604297e03
-      internalID: -1723782353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork-3 9_3
-      rect:
-        serializedVersion: 2
-        x: 1296
-        y: 332
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cb7746c57a57824b95393265405dabd
-      internalID: -600033827
+      spriteID: 095b8e49a0cb5984c845ad2021cb93a7
+      internalID: -2145937004
       vertices: []
       indices: 
       edges: []
@@ -191,10 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-3 9_0: -910827872
-      Untitled_Artwork-3 9_1: -1162607581
-      Untitled_Artwork-3 9_2: -1723782353
-      Untitled_Artwork-3 9_3: -600033827
+      "Dva\u0308rg_Na\u030Agot_Sto\u0308rre_Idle-2_0": 295926925
+      "Dva\u0308rg_Na\u030Agot_Sto\u0308rre_Idle-2_1": -2145937004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
