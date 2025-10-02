@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0e890c1a401eef4e933fb5a688d1682
+guid: 14f755231679f5347ab0062c626a8282
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,22 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-7 5_0
+      name: Factory_2nd_Floor-9_0
       rect:
         serializedVersion: 2
-        x: 303
-        y: 284
-        width: 511
-        height: 1018
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 1646
+        height: 1794
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf353c83cd914244f8f6d5cd71160ccd
-      internalID: -362489020
+      spriteID: 1ec8f0733a9aaec4b836b667e3dc3e6f
+      internalID: 1018295015
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-7 5_0: -362489020
+      Factory_2nd_Floor-9_0: 1018295015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
