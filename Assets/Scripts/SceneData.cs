@@ -8,4 +8,10 @@ public class SceneData : ScriptableObject
 {
     public string sceneName = ""; //We can use any name for the scene in the script.
     public int entryIndex = -1; //We set the entry-point index default value to -1, so it won't work in an Array, and we can put an error-message for when we haven't assigned any point to it.
+
+    public void Reset()
+    {
+        entryIndex = -1; //We reset the scene-data, so we don't end up in the wrong scene when we restart the game.
+    }
+    
 }
