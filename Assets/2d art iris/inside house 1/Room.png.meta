@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ca9573d56fb13114a8a62818969324a7
+guid: 8d9817be93b0cc8439565d0a7393ea63
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Inside_House_1_Stairs_To_Factory-4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 611
+        width: 3840
+        height: 1549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9882848e6d3084bb4214df94fcaefa
+      internalID: -2138660873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +127,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Inside_House_1_Stairs_To_Factory-4_0: -2138660873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

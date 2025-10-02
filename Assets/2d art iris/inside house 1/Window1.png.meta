@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 31889a3e12ba20b4d91fe3fe1ff14896
+guid: 14af1d9464667fd48a85ec9717bb9e9f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Window1
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 1860
+        width: 707
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bb9310c7a8b7940ae2ba9821d12c50
+      internalID: -358521754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +127,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Window1: -358521754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

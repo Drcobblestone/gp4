@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c0ca37d6bfbc7b74fac356f15dd4cb75
+guid: 4126288975ca1534e869ced2dc1a0d8c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Windowlight
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 3110
+        height: 2160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacfb9b8782d46a4f84f6e6bd55f4893
+      internalID: -1196602234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +127,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Windowlight: -1196602234
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
