@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 0}
-  playerTransform: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
+  playerTransform: {fileID: 0}
   entryPoints:
   - {fileID: 0}
   - {fileID: 0}
