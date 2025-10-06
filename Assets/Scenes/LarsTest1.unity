@@ -309,6 +309,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 543d1d9a7fe9d1b4394f3d152815fa0a, type: 2}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1132770550}
+    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
+      propertyPath: entryPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: entryPoints.Array.data[0]
       value: 
       objectReference: {fileID: 705233221}
@@ -573,6 +581,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
+--- !u!4 &1132770550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
+  m_PrefabInstance: {fileID: 1132770549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1464775422
 GameObject:
   m_ObjectHideFlags: 0

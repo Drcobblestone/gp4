@@ -25,9 +25,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Click",
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "5164aa4b-bd3e-45bc-884e-2dd43a2711df",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "InterAction",
                     "type": "Button",
-                    "id": "8f930a48-a80a-41ba-b798-c6a9a69ffc7a",
+                    "id": "880633d1-3c1a-4286-a487-c3b92d233e97",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -202,23 +211,23 @@
                 },
                 {
                     "name": "",
-                    "id": "f2e6ada7-ec69-49e3-8683-b70e8c45959e",
-                    "path": "<Mouse>/press",
-                    "interactions": "Press",
+                    "id": "c33efa75-db4f-4a46-abd7-f9e20fba59d6",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Click",
+                    "groups": "",
+                    "action": "MousePosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "610acc47-78b6-42f6-b90d-681e4d3e670d",
-                    "path": "<Gamepad>/buttonSouth",
+                    "id": "90944445-a85c-47f4-b886-53dc8ea0e7c1",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Click",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "InterAction",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
