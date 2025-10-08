@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c293b600100d53d4683e237a7e89d26d
+guid: 0af8a4686b2312e42801520c642156bd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,64 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cocain1_0
+      name: "font\xE4n6_0"
       rect:
         serializedVersion: 2
-        x: 3034
-        y: 1676
-        width: 358
-        height: 268
+        x: 681
+        y: 1451
+        width: 808
+        height: 981
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3ea7f9310c24a24796d5dc2e4379158
-      internalID: 118789810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cocain1_1
-      rect:
-        serializedVersion: 2
-        x: 3203
-        y: 1517
-        width: 271
-        height: 270
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd2f47158812134498943a734b047a3a
-      internalID: -243228146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cocain1_2
-      rect:
-        serializedVersion: 2
-        x: 3033
-        y: 1513
-        width: 633
-        height: 445
-      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbbbd13279280f2428cc5d2ddda5f3bf
-      internalID: -656294241
+      spriteID: 4a1b46f5783a5b54eb68620fce28c9b4
+      internalID: 798440345
       vertices: []
       indices: 
       edges: []
@@ -170,9 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cocain1_0: 118789810
-      Cocain1_1: -243228146
-      Cocain1_2: -656294241
+      "font\xE4n6_0": 798440345
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
