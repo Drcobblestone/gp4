@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private float vertical; //Vertical control, for use later.
     
     public Animator animator;
+    
     /*
     #region CHANGING_RIGIDBODY
     private void Start()

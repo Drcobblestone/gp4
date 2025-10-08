@@ -29,14 +29,4 @@ public class Level1Exit : MonoBehaviour
             return;
         }
     }
-    /*
-    void Update()
-    {
-        if (Move(InputAction.)
-        //if (Input.GetKeyDown(KeyCode.L) && canPress == true) //Change to if player moves while in collider
-        {
-            SceneManager.LoadScene("Level2"); //Which scene to load.
-        }
-        else if 
-    }*/
 }
