@@ -21,17 +21,13 @@ public class Inventory : MonoBehaviour
     //Probably gonna' turn dictionary off.
     [Header("State")]
     [SerializeField]
-    SerializedDictionary<string, Item> inventory = new();
+    SerializedDictionary<ItemID, Item> inventory = new();
 
     public void OnTriggerEnter2D(Collider2D other) //Every time the player enters a trigger we compare its tag.
     {
         if (other.CompareTag("DroppedItem")) //If the item we touched has the tag DroppedItem...
         {
-            var droppedItem = other.GetComponent<DroppedItem>(); //...We get the component "dropped item" from the collider we just bumped into.
-            //Cringe, rewrite. | Curious... droppeditem is not a Unity-component?
-
-            // DroppedItem droppedItem = other.GetComponent<DroppedItem>(); //This is the proper rewrite.. but droppeditem is not a unity component. 
-
+            DroppedItem droppedItem = other.GetComponent<DroppedItem>(); //...We get the component "dropped item" from the collider we just bumped into.
 
             if (droppedItem.pickedUp) //We check if we have already picked up the item.
             {
@@ -46,15 +42,29 @@ public class Inventory : MonoBehaviour
 
     void AddItem (Item item)  //When adding a new item to inventory we generate...
     {
-        var inventoryId = Guid.NewGuid().ToString(); //...a new itemId - this allows us to have more than one of the same itemtype in our inventory, without having conflicting ID's.
-        inventory.Add(inventoryId, item);
-        ui.AddUIItem(inventoryId, item); //
+        //var inventoryId = Guid.NewGuid().ToString(); //...a new itemId - this allows us to have more than one of the same itemtype in our inventory, without having conflicting ID's.
+        if (inventory.Count > 0) //If we have an item in inventory, we drop that first.
+        {
+            foreach (ItemID oldItemID in inventory.Keys)
+            {
+                DropItem(oldItemID);
+            }
+        }
+        inventory.Add(item.id, item);
+        ui.AddUIItem(item.id, item);
+        //
     }
-
-    public void DropItem(string inventoryId) //This creates a new dropped item Prefab, and initializes it with the dropped item data.
+    public void DropCurrentItem() //This just drops current item without needing any unique ID.
     {
-        var droppedItem = Instantiate(droppedItemPrefab, transform.position, Quaternion.identity).GetComponent<DroppedItem>(); //WAI it no like?? Btw, var's are cringe.
-        var item = inventory.GetValueOrDefault(inventoryId); //Still cringe, rewrite.
+        foreach (ItemID oldItemID in inventory.Keys)
+        {
+            DropItem(oldItemID);
+        }
+    }
+    public void DropItem(ItemID inventoryId) //This creates a new dropped item Prefab, and initializes it with the dropped item data.
+    {
+        DroppedItem droppedItem = Instantiate(droppedItemPrefab, transform.position, Quaternion.identity).GetComponent<DroppedItem>(); //WAI it no like?? Btw, var's are cringe.
+        Item item = inventory[inventoryId]; //Still cringe, rewrite.
         droppedItem.Initialize(item);
         inventory.Remove(inventoryId);
         ui.RemoveUIItem(inventoryId); //The dropped item disappears from the UI.

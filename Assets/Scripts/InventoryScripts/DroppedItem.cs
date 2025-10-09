@@ -25,9 +25,9 @@ public class DroppedItem : MonoBehaviour
     public void Initialize(Item item) //When we initialize the dropped item...
     {
         this.item = item;
-        var droppedItem = Instantiate(item.prefab, transform); //...we instantiate the dropped item and...
+        GameObject droppedItem = Instantiate(item.prefab, transform); //...we instantiate the dropped item and...
         droppedItem.transform.SetLocalPositionAndRotation(Vector2.zero, Quaternion.identity); //...set its position and rotation in the place.
 
-        StartCoroutine(EnablePickup(enabledPickupDelay)); //A small co-routine creates a delay before enabling the trigger.
+        //StartCoroutine(EnablePickup(enabledPickupDelay)); //A small co-routine creates a delay before enabling the trigger.
     }
 }

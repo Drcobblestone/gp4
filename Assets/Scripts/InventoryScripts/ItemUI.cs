@@ -9,7 +9,7 @@ public class ItemUI : MonoBehaviour
     [SerializeField] Image image;
     [SerializeField] Button button;
     
-    public void Initialize(string inventoryId, Item item, Action<string> removeItemAction) //When we start putting an item into the UI, we pass it the inventory-ID, and give the option to remove it.
+    public void Initialize(ItemID inventoryId, Item item, Action<ItemID> removeItemAction) //When we start putting an item into the UI, we pass it the inventory-ID, and give the option to remove it.
     {
         image.sprite = item.icon;
         transform.localScale = Vector2.one;
