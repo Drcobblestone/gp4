@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb328398005db5c44a2c62331b132102, type: 3}
+  m_Name: Cocaine
+  m_EditorClassIdentifier: 
+  id: 0
+  description: Bag of Cocaine with razor and straw
+  icon: {fileID: -656294241, guid: c293b600100d53d4683e237a7e89d26d, type: 3}
+  prefab: {fileID: 0}
