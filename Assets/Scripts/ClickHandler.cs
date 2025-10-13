@@ -15,15 +15,17 @@ public class ClickHandler : MonoBehaviour
     private void Awake()
     {
         _collider = GetComponent<BoxCollider2D>();
-        _mouse = FindObjectOfType<MouseInputProvider>();
+        _mouse = FindObjectOfType<MouseInputProvider>(); //Consider replacing with a static instance, so the CPU doesn't search the whole damn scene.
         _mouse.Clicked += MouseOnClicked;
     }
 
     private void MouseOnClicked()
     {
-        if (_collider.bounds.Contains((Vector3)_mouse.WorldPosition) && (_isInRange || !_hasToBeInRange)   ) //If the collider of the clickable object contains the mouse Worldposition and is in range,
-                                                                                                             //*or* if it's not required to be in range, then I...
+        if (_collider.bounds.Contains((Vector3)_mouse.WorldPosition) && (_isInRange || !_hasToBeInRange)) //If the collider of the clickable object contains the mouse Worldposition and is in range,                                                                                                  //*or* if it's not required to be in range, then I...
+        {
             _clicked.Invoke(); //... invoke the click.
+            print(gameObject.name + " Clicked");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //The player enters the clickable zone.

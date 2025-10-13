@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private float horizontal; //Horizontal control, for use later.
     private float vertical; //Vertical control, for use later.
     
-    public Animator animator;
+    public Animator animator; //We summon the animator.
     
     /*
     #region CHANGING_RIGIDBODY
@@ -53,6 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         horizontal = context.ReadValue<Vector2>().x; //We assign to the horizontal variable whether (context) we are moving left or right.
         vertical = context.ReadValue<Vector2>().y; //We assign to the vertical variable whether (context) we are moving up or down.
+
     }
     #endregion
 
@@ -61,15 +61,18 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = new Vector2(horizontal, vertical);
         movement = movement.normalized; 
 
-        animator.SetFloat("Speed", movement.magnitude); //vilken behöver jag använda horizontal, vertical skulle behöva vara namnet för rörelsen 
-       // animator.SetFloat("Speedver", Mathf.Abs(vertical));
+        animator.SetFloat("Speed", movement.magnitude); //We set the the speed of the player. 
 
 
 
-        /*rb.velocity = new Vector2(horizontal * speed, rb.velocity.y); //We set the players rigidbody velocity on the x-axis as the speed.
-        rb.velocity = new Vector2(vertical * speed, rb.velocity.x); */ //We set the players rigidbody velocity on the y-axis as the speed.
+        /*
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y); //We set the players rigidbody velocity on the x-axis as the speed.
+        rb.velocity = new Vector2(vertical * speed, rb.velocity.x);  //We set the players rigidbody velocity on the y-axis as the speed.
+        */
 
         // We check that rigidbody's velocity is now controlled via a timer that checks if horizontal as well as vertical movement multiplies the speed of the rigidbody.
         rb.velocity = movement * speed * Time.deltaTime; //
+
+        //Debug.Log("Movement enabled."); //We make the console tell us the script is running.
     }
 }

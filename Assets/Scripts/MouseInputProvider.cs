@@ -12,13 +12,18 @@ public class MouseInputProvider : MonoBehaviour
     }
     public event Action Clicked;
 
-    private void OnMousePosition(InputValue value) //When your mouse is over a clickable item
-    {
-        WorldPosition = (Vector2)Camera.main.ScreenToWorldPoint(position: (Vector3)value.Get<Vector2>()); //We send the value to world-position
+    public void OnMousePosition(InputAction.CallbackContext context) //When your mouse is over a clickable item
+    {   
+        //context.ReadValue<Vector2>()
+        WorldPosition = (Vector2)Camera.main.ScreenToWorldPoint(position: (Vector3) context.ReadValue<Vector2>()); //We send the value to world-position
     }
 
-    private void OnInterAction(InputValue _)
+    public void OnInterAction(InputAction.CallbackContext context)
     {
+        if (!context.performed)
+        {
+            return;
+        }
         Clicked?.Invoke(); //And register a click
     }
 
