@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -21,14 +23,23 @@ public class Inventory : MonoBehaviour
     //Probably gonna' turn dictionary off.
     [Header("State")]
     [SerializeField]
-    SerializedDictionary<ItemID, Item> inventory = new();
-
+    //SerializedDictionary<ItemID, Item> inventory = new();
+    private readonly Dictionary<ItemID, Item> inventory = new(); //New Theo test.
+    bool canPickUp = true;
+    float pickupDelay = 0.1f;
     public void OnTriggerEnter2D(Collider2D other) //Every time the player enters a trigger we compare its tag.
     {
         if (other.CompareTag("DroppedItem")) //If the item we touched has the tag DroppedItem...
         {
+            if (!canPickUp)
+            {
+                return;
+            }
             DroppedItem droppedItem = other.GetComponent<DroppedItem>(); //...We get the component "dropped item" from the collider we just bumped into.
-
+            if (!droppedItem.canBePickedUp) //We check if we have already picked up the item.
+            {
+                return; //If we cannot, we don't pick it up, but go back instead.
+            }
             if (droppedItem.pickedUp) //We check if we have already picked up the item.
             {
                 return; //If we have, we don't pick it up, but go back instead.
@@ -37,6 +48,7 @@ public class Inventory : MonoBehaviour
             AddItem(droppedItem.item); 
             Destroy(other.gameObject); //We destroy the object within the game-world, since we have now picked it up and put it in our inventory instead.
             audioSource.PlayOneShot(pickUpItemAudio); //We play a little jingle when we have picked up the item.
+            StartCoroutine(PickupDelay());
         }
     }
 
@@ -45,7 +57,8 @@ public class Inventory : MonoBehaviour
         //var inventoryId = Guid.NewGuid().ToString(); //...a new itemId - this allows us to have more than one of the same itemtype in our inventory, without having conflicting ID's.
         if (inventory.Count > 0) //If we have an item in inventory, we drop that first.
         {
-            foreach (ItemID oldItemID in inventory.Keys)
+            ItemID[] oldIds = inventory.Keys.ToArray<ItemID>();
+            foreach (ItemID oldItemID in oldIds)
             {
                 DropItem(oldItemID);
             }
@@ -69,6 +82,12 @@ public class Inventory : MonoBehaviour
         inventory.Remove(inventoryId);
         ui.RemoveUIItem(inventoryId); //The dropped item disappears from the UI.
         audioSource.PlayOneShot(dropItemAudio); //And a final little jingle so we can hear we dropped the item.
+    }
+    IEnumerator PickupDelay()
+    {
+        canPickUp = false;
+        yield return new WaitForSeconds(pickupDelay);
+        canPickUp = true;
     }
 
 }

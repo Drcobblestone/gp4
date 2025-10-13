@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1564114410875355566}
   - component: {fileID: 5456968403267370001}
   - component: {fileID: 3536244607599450918}
+  - component: {fileID: 5527798958717516241}
   - component: {fileID: 7118591871343708284}
   - component: {fileID: 8883754261314881802}
-  - component: {fileID: 5527798958717516241}
+  - component: {fileID: 9023525408268776616}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -151,6 +152,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.09}
   m_Size: {x: 1.38, y: 0.25}
   m_Direction: 1
+--- !u!95 &5527798958717516241
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8261608255279956213}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57d0b9a4920bf26449a6da2d9331d627, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &7118591871343708284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,10 +220,6 @@ MonoBehaviour:
     m_ActionName: Player/Look[/Mouse/delta]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 8f930a48-a80a-41ba-b798-c6a9a69ffc7a
-    m_ActionName: Player/Click[/Mouse/press]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: 8d36c12d-4aa1-48fd-9ffc-a00732e9324d
     m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
@@ -240,6 +258,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b6a60748-0905-467a-8094-b628450b9f91
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5164aa4b-bd3e-45bc-884e-2dd43a2711df
+    m_ActionName: Player/MousePosition[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 880633d1-3c1a-4286-a487-c3b92d233e97
+    m_ActionName: Player/InterAction[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -260,24 +286,23 @@ MonoBehaviour:
   rb: {fileID: 5456968403267370001}
   speed: 150
   animator: {fileID: 5527798958717516241}
---- !u!95 &5527798958717516241
-Animator:
-  serializedVersion: 5
+--- !u!114 &9023525408268776616
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8261608255279956213}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 57d0b9a4920bf26449a6da2d9331d627, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17b638edc9a3984882a93fdc6daa940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 0}
+  audioSource: {fileID: 0}
+  droppedItemPrefab: {fileID: 5506919280403729962, guid: c3c178ed899d89040bbd14044272e251, type: 3}
+  pickUpItemAudio: {fileID: 0}
+  dropItemAudio: {fileID: 0}
+  inventory:
+    m_Keys: 
+    m_Values: []

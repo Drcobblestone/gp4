@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -15,23 +16,26 @@ public class InventoryUI : MonoBehaviour
 
     [Header("State")]
     [Header("SerializeField")] SerializedDictionary<ItemID, ItemUI> inventoryUI = new();
-
+    [SerializeField] ItemUI itemUI;
 
     //When adding a new item to the UI-inventory...
     public void AddUIItem(ItemID inventoryId, Item item) 
     {
-        ItemUI itemUI = Instantiate(uiItemPrefab).GetComponent<ItemUI>(); //...we create a new instance from the prefab... ||fix the var, darnit!
-        itemUI.transform.SetParent(uiInventoryParent); //... and set the parent of the new item to be the scroll-view.
+        //ItemUI itemUI = Instantiate(uiItemPrefab).GetComponent<ItemUI>(); //...we create a new instance from the prefab... ||fix the var, darnit!
+        //itemUI.transform.SetParent(uiInventoryParent); //... and set the parent of the new item to be the scroll-view.
+        itemUI.gameObject.SetActive(true);
         inventoryUI.Add(inventoryId, itemUI);
         itemUI.Initialize(inventoryId, item, inventory.DropItem);
     }
 
     public void RemoveUIItem(ItemID inventoryId)
     {
-        ItemUI itemUI = inventoryUI[inventoryId]; //
+        //ItemUI itemUI = inventoryUI[inventoryId]; //
+        itemUI.gameObject.SetActive(false);
         inventoryUI.Remove(inventoryId);
-        Destroy(itemUI.gameObject);
-    }
 
+        //Destroy(itemUI.gameObject);
+    }
+    
 
 }

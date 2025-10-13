@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb328398005db5c44a2c62331b132102, type: 3}
-  m_Name: Cocaine
+  m_Name: Joint
   m_EditorClassIdentifier: 
-  id: 0
-  description: Bag of Cocaine with razor and straw
-  icon: {fileID: 385026608, guid: a42d191436143f8449cfbfd952847984, type: 3}
-  prefab: {fileID: 7650914566875111696, guid: 9ff9f58576ead2a4ba3d1fde04c3a46b, type: 3}
+  id: 1
+  description: A big sizzling roll of Marijuana.
+  icon: {fileID: 664105500, guid: ae11f9f1c110f6f458fd53d323c1210d, type: 3}
+  prefab: {fileID: 6508705300800519365, guid: 7b239dd39eab24a4d9efdff7aea672e5, type: 3}

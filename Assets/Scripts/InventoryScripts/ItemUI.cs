@@ -11,8 +11,9 @@ public class ItemUI : MonoBehaviour
     
     public void Initialize(ItemID inventoryId, Item item, Action<ItemID> removeItemAction) //When we start putting an item into the UI, we pass it the inventory-ID, and give the option to remove it.
     {
+        button.onClick.RemoveAllListeners();
         image.sprite = item.icon;
-        transform.localScale = Vector2.one;
+        //transform.localScale = Vector2.one;
         button.onClick.AddListener(() => removeItemAction.Invoke(inventoryId)); //When we click an item in inventory, we can tell the game to remove it.
     }
     
