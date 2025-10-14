@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Iris/House1Inside.unity
     guid: ac385123d659f4e46aa9bc62d8d198f5
   - enabled: 0
-    path: Assets/Scenes/Iris/House1inTop.unity
+    path: Assets/Scenes/Iris/Extra.unity
     guid: 30cd51546d778914ea0344f780d96f86
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: eeeb24d11125e3044ae12a8e00f60a28, type: 2}
