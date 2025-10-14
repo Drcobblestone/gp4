@@ -12,14 +12,14 @@ public class Inventory : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] InventoryUI ui; 
-    [SerializeField] AudioSource audioSource;
+    //[SerializeField] AudioSource audioSource;
 
     [Header("Prefabs")]
     [SerializeField] GameObject droppedItemPrefab; //The player will be able to drop a prefab, irregardless of which item it is.
 
     [Header("Audio Clips")] //This lets us put different sounds for when picking up an item, and for when dropping an item.
-    [SerializeField] AudioClip pickUpItemAudio;
-    [SerializeField] AudioClip dropItemAudio;
+    //[SerializeField] AudioClip pickUpItemAudio;
+    //[SerializeField] AudioClip dropItemAudio; //Make an Audio-handler of some sort instead, since Audio like this is bad.
 
 
     [Header("State")]
@@ -31,60 +31,60 @@ public class Inventory : MonoBehaviour
     {
         if (other.CompareTag("DroppedItem")) //If the item we touched has the tag DroppedItem...
         {
-            if (!canPickUp)
+            /*if (!canPickUp)
             {
                 return;
-            }
+            }*/
             DroppedItem droppedItem = other.GetComponent<DroppedItem>(); //...We get the component "dropped item" from the collider we just bumped into.
             if (!droppedItem.canBePickedUp) //We check if we have already picked up the item.
             {
                 return; //If we cannot, we don't pick it up, but go back instead.
             }
-            if (droppedItem.pickedUp) //We check if we have already picked up the item.
+            /*if (droppedItem.pickedUp) //We check if we have already picked up the item.
             {
                 return; //If we have, we don't pick it up, but go back instead.
-            }
-            droppedItem.pickedUp = true; //If the item is equal to dropped item, we get the component "droppedItem" from the collider.
+            }*/
+            //droppedItem.pickedUp = true; //If the item is equal to dropped item, we get the component "droppedItem" from the collider.
             AddItem(droppedItem.item); 
             Destroy(other.gameObject); //We destroy the object within the game-world, since we have now picked it up and put it in our inventory instead.
             //How do I make it remember this, in-between scenes?
 
-            audioSource.PlayOneShot(pickUpItemAudio); //We play a little jingle when we have picked up the item.
-            StartCoroutine(PickupDelay());
+            //audioSource.PlayOneShot(pickUpItemAudio); //We play a little jingle when we have picked up the item.
+            //StartCoroutine(PickupDelay());
         }
     }
 
     void AddItem (Item item)  //When picking up a new item in inventory...
     {
-        Item currentItem = inventoryData.GetCurrentItem();
+        StartCoroutine(AddAndDropCurrent(item));
+        /*Item currentItem = inventoryData.GetCurrentItem();
         if (currentItem != null) //...we check If the current item in inventory isn't null, and if it isn't...
         {
-            DropCurrentItem(); //...then we drop that item
+            DropItem(currentItem.id); //...then we drop that item
         }
         inventoryData.AddItem(item); //And add a new item.
-
-        ui.AddUIItem(item.id, item);
-    }
-    public void DropCurrentItem() //This just drops current item without needing any unique ID.
-    {
-        ItemID id = inventoryData.GetCurrentItem().id;
-        DropItem(id);
+        ui.AddUIItem(item.id, item);*/
     }
     public void DropItem(ItemID inventoryId) //This creates a new dropped item Prefab, and initializes it with the dropped item data.
     {
-        // Create the item and give it a position in space. (a transform)
-        DroppedItem droppedItem = Instantiate(droppedItemPrefab, transform.position, Quaternion.identity).GetComponent<DroppedItem>(); // 
         Item item = inventoryData.GetItem(inventoryId);
+        DroppedItem droppedItem = Instantiate(item.prefab, transform.position, Quaternion.identity).GetComponent<DroppedItem>(); // 
         droppedItem.Initialize(item);
         inventoryData.RemoveItem(inventoryId);
         ui.RemoveUIItem(inventoryId); //The dropped item disappears from the UI.
-        audioSource.PlayOneShot(dropItemAudio); //And a final little jingle so we can hear we dropped the item.
+        //audioSource.PlayOneShot(dropItemAudio); //And a final little jingle so we can hear we dropped the item.
+        //StartCoroutine(DropDelayed(inventoryId));
     }
-    IEnumerator PickupDelay()
+    IEnumerator AddAndDropCurrent(Item item)
     {
-        canPickUp = false;
-        yield return new WaitForSeconds(pickupDelay);
-        canPickUp = true;
+        Item currentItem = inventoryData.GetCurrentItem();
+        if (currentItem != null) //...we check If the current item in inventory isn't null, and if it isn't...
+        {
+            DropItem(currentItem.id); //...then we drop that item
+        }
+        yield return null;
+        inventoryData.AddItem(item); //And add a new item.
+        ui.AddUIItem(item.id, item);
     }
 
 }
