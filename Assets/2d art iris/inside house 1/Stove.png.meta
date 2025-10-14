@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ede6693497401494ea5f26017bd7c309
+guid: 1cc2513800789f44f9189d5a0a2c753e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,24 +93,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stove
+      name: Stove_0
       rect:
         serializedVersion: 2
         x: 291
@@ -118,20 +105,20 @@ TextureImporter:
         width: 425
         height: 1412
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da4f8d8a7e2733047851c9e2687c0136
-      internalID: -480853989
+      spriteID: ed68e94cee9e0e9458cc6022dccee095
+      internalID: 1170673636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_House_1_Stairs_To_Factory-15_1
+      name: Stove_1
       rect:
         serializedVersion: 2
         x: 731
@@ -139,14 +126,14 @@ TextureImporter:
         width: 6
         height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f5292088061a9a4a97a14e29079f1db
-      internalID: 801781067
+      spriteID: 91f9da55a906db84b9b230ffb47b0fdb
+      internalID: 787020387
       vertices: []
       indices: 
       edges: []
@@ -162,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Inside_House_1_Stairs_To_Factory-15_1: 801781067
-      Stove: -480853989
+      Stove_0: 1170673636
+      Stove_1: 787020387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

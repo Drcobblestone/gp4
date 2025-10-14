@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee1e9c0f27940e3419ad5d1937164bc0
+guid: 2e50a76b3bcb7d54c80c1969c3598a35
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Room_0
+      name: Shart_Point_For_Sprites_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 611
-        width: 3840
-        height: 1549
+        x: 857
+        y: 0
+        width: 22
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33aff1834c863fb42a683e29a70b3d02
-      internalID: 1776093547
+      spriteID: 56a774ad36bd8d449907f3f0f8f2a90a
+      internalID: -832667800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shart_Point_For_Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 0
+        width: 2477
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fff0b90a3c06a4ea49628a418b565f
+      internalID: -1680714019
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Room_0: 1776093547
+      Shart_Point_For_Sprites_0: -832667800
+      Shart_Point_For_Sprites_1: -1680714019
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

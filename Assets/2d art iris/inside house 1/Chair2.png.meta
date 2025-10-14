@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c4261de15315348479cbd739106c61ab
+guid: 2f3909e23fc9d8c42ad54cb647e39203
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,60 +93,68 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chair2
+      name: Chair2_0
       rect:
         serializedVersion: 2
-        x: 2205
-        y: 482
-        width: 622
-        height: 949
+        x: 1056
+        y: 1628
+        width: 5
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a63015e0c34eadf48a8f341e64974b45
-      internalID: 496189392
+      spriteID: f084c882de9babd4382d18ec86a4f80a
+      internalID: 2116924089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_House_1_Stairs_To_Factory-10_1
+      name: Chair2_1
       rect:
         serializedVersion: 2
-        x: 2824
-        y: 1414
-        width: 7
-        height: 18
+        x: 1058
+        y: 684
+        width: 616
+        height: 951
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c65852d9d6bf8ff4286000cd462a1b26
-      internalID: 912402103
+      spriteID: 45bdca80bf112b34daa855e7a8d83d66
+      internalID: 2088718988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair2_2
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1618
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c7f947d7297cb46b407499f1451ea0
+      internalID: 610393476
       vertices: []
       indices: 
       edges: []
@@ -162,8 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Chair2: 496189392
-      Inside_House_1_Stairs_To_Factory-10_1: 912402103
+      Chair2_0: 2116924089
+      Chair2_1: 2088718988
+      Chair2_2: 610393476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

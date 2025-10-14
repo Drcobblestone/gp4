@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4126288975ca1534e869ced2dc1a0d8c
+guid: e65521ee03e2d534785ec5aa7f03054e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,24 +93,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Windowlight
+      name: Light1_0
       rect:
         serializedVersion: 2
         x: 666
@@ -118,14 +105,14 @@ TextureImporter:
         width: 3110
         height: 2160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bacfb9b8782d46a4f84f6e6bd55f4893
-      internalID: -1196602234
+      spriteID: 58467b97f37dd1d43ad4939375f3b8a0
+      internalID: -1281152554
       vertices: []
       indices: 
       edges: []
@@ -141,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Windowlight: -1196602234
+      Light1_0: -1281152554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

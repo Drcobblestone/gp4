@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3b83dd4f620e5c4f942dc1e02c7ec5a
+guid: 21a47ca9005a0fa47ad8e07ce3a8f617
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,39 +93,68 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chair1
+      name: Chair1_0
       rect:
         serializedVersion: 2
-        x: 1221
-        y: 576
-        width: 603
-        height: 963
+        x: 2254
+        y: 448
+        width: 605
+        height: 951
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac495783b4699448a55315fa265e65b
-      internalID: 557464696
+      spriteID: 8d83a2d5489c41b48b606ca3d20efcc3
+      internalID: 74382153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair1_1
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 1382
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c43d2e64767d6f4f86f78672935a9d3
+      internalID: 425178356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair1_2
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 1215
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346873604a69b8242969386f7a0e333f
+      internalID: -1415057962
       vertices: []
       indices: 
       edges: []
@@ -141,7 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Chair1: 557464696
+      Chair1_0: 74382153
+      Chair1_1: 425178356
+      Chair1_2: -1415057962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

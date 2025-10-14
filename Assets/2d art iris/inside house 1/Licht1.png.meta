@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee1e9c0f27940e3419ad5d1937164bc0
+guid: 64cb8b2a90513954aa7d21afa9df98e0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Room_0
+      name: Licht1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 611
-        width: 3840
-        height: 1549
+        y: 0
+        width: 2488
+        height: 2147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33aff1834c863fb42a683e29a70b3d02
-      internalID: 1776093547
+      spriteID: a82dda92487105243b0b8b1ec352876f
+      internalID: -783505691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licht1_1
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 0
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3f4516d6457d54493de40500b4b5ba
+      internalID: 651815406
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Room_0: 1776093547
+      Licht1_0: -783505691
+      Licht1_1: 651815406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
