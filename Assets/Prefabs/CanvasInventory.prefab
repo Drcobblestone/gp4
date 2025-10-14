@@ -195,6 +195,7 @@ MonoBehaviour:
   inventory: {fileID: 9023525408268776616, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
   uiInventoryParent: {fileID: 7253271541578180114}
   itemUI: {fileID: 3303743708205117113}
+  inventoryData: {fileID: 11400000, guid: 047e3e5285d9db04182b51a64f615422, type: 2}
 --- !u!1 &4514602694199338670
 GameObject:
   m_ObjectHideFlags: 0

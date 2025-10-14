@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7118591871343708284}
   - component: {fileID: 8883754261314881802}
   - component: {fileID: 9023525408268776616}
+  - component: {fileID: 4285985742961830482}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -201,7 +202,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8883754261314881802}
-        m_TargetAssemblyTypeName: PlayerController_nis, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
         m_Arguments:
@@ -259,11 +260,35 @@ MonoBehaviour:
     m_ActionId: b6a60748-0905-467a-8094-b628450b9f91
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4285985742961830482}
+        m_TargetAssemblyTypeName: MouseInputProvider, Assembly-CSharp
+        m_MethodName: OnMousePosition
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5164aa4b-bd3e-45bc-884e-2dd43a2711df
     m_ActionName: Player/MousePosition[/Mouse/position]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4285985742961830482}
+        m_TargetAssemblyTypeName: MouseInputProvider, Assembly-CSharp
+        m_MethodName: OnInterAction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 880633d1-3c1a-4286-a487-c3b92d233e97
     m_ActionName: Player/InterAction[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
@@ -303,6 +328,16 @@ MonoBehaviour:
   droppedItemPrefab: {fileID: 5506919280403729962, guid: c3c178ed899d89040bbd14044272e251, type: 3}
   pickUpItemAudio: {fileID: 0}
   dropItemAudio: {fileID: 0}
-  inventory:
-    m_Keys: 
-    m_Values: []
+  inventoryData: {fileID: 11400000, guid: 047e3e5285d9db04182b51a64f615422, type: 2}
+--- !u!114 &4285985742961830482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8261608255279956213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f9cefaf35d72847be7ddc27ab080b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

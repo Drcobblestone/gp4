@@ -16,35 +16,6 @@ public class PlayerController : MonoBehaviour
     
     public Animator animator; //We summon the animator.
     
-    /*
-    #region CHANGING_RIGIDBODY
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-    //Let the Rigidbody take control and detect collisions
-    void EnableRagdoll(Rigidbody2D rb)
-    {
-        rb.isKinematic = false;
-        rb.coll
-    }
-
-    //Let animation take control and ignore collisions.
-    void DisableRagDoll() 
-    { 
-        rb.isKinematic = true; 
-
-    }
-
-    #endregion
-    */
-
-    //First we'll disable gravity of the rigidbody, since we don't need it.
-    /* void DisableGravity(Rigidbody2D rb)
-     {
-         rb.useGravity = false;
-     }*/
-
 
     //A region is a "stylistic choice that allows you to lump together related code and give it a name."
     #region PLAYER_CONTROLS 
@@ -63,16 +34,7 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("Speed", movement.magnitude); //We set the the speed of the player. 
 
-
-
-        /*
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y); //We set the players rigidbody velocity on the x-axis as the speed.
-        rb.velocity = new Vector2(vertical * speed, rb.velocity.x);  //We set the players rigidbody velocity on the y-axis as the speed.
-        */
-
         // We check that rigidbody's velocity is now controlled via a timer that checks if horizontal as well as vertical movement multiplies the speed of the rigidbody.
         rb.velocity = movement * speed * Time.deltaTime; //
-
-        //Debug.Log("Movement enabled."); //We make the console tell us the script is running.
     }
 }
