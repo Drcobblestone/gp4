@@ -44,13 +44,11 @@ public class PlayerController : MonoBehaviour
         if (horizontal < 0 && !facingLeft) //If we are moving in a negative direction on the X-axis and looking left, then...
         {
             Flip();
-            //gameObject.transform.localScale = new Vector3(1, 1, 1); //Then we make a new "scale" for our player-object. (we flip)
         }
 
         else if (horizontal > 0 && facingLeft) //But if we are *instead* moving in a positive direction on the X-axis, and not looking left, then...
         {
             Flip();
-            //gameObject.transform.localScale = new Vector3(-1, 1, 1); //Then we make a new "scale" for our player-object, and flip the other way.
         }
     }
 
