@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "InventoryData", menuName = "Inventory/InventoryData", order = 1)]
 public class InventoryData : ScriptableObject
 {
-    private Dictionary<ItemID, Item> inventory = new();
+    private Dictionary<ItemID, Item> inventory = new Dictionary<ItemID, Item>();
     public void AddItem(Item item)
     {
         inventory.Add(item.id, item);

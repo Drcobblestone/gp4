@@ -146,5 +146,4 @@ MonoBehaviour:
   autoStart: 0
   enabledPickupDelay: 3
   item: {fileID: 11400000, guid: b56e35a1e3ce1c84b8c0fb0263058168, type: 2}
-  pickedUp: 0
   canBePickedUp: 1
