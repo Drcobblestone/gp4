@@ -2,6 +2,7 @@ using UnityEngine;
 
 [CreateAssetMenu (fileName = "Item", menuName = "Inventory/Item", order  = 1)] //This creates a new type of Unity-item we can create from the contextmenu.
 
+
 public class Item : ScriptableObject //By inheriting from scriptableobjects we can create different items.
 {
     public ItemID id; //Let's us assign one of the itemid's we have in the GameEnums script.

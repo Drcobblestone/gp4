@@ -35,17 +35,20 @@ public class Inventory : MonoBehaviour
             {
                 return;
             }*/
-            DroppedItem droppedItem = other.GetComponent<DroppedItem>(); //...We get the component "dropped item" from the collider we just bumped into.
-            if (!droppedItem.canBePickedUp) //We check if we have already picked up the item.
+            DroppedItem pickedItem = other.GetComponent<DroppedItem>(); //...We get the component "dropped item" from the collider we just bumped into.
+   
+            if (!pickedItem.canBePickedUp) //We check if we have already picked up the item.
             {
                 return; //If we cannot, we don't pick it up, but go back instead.
             }
+
+
             /*if (droppedItem.pickedUp) //We check if we have already picked up the item.
             {
                 return; //If we have, we don't pick it up, but go back instead.
             }*/
             //droppedItem.pickedUp = true; //If the item is equal to dropped item, we get the component "droppedItem" from the collider.
-            AddItem(droppedItem.item); 
+            AddItem(pickedItem); 
             Destroy(other.gameObject); //We destroy the object within the game-world, since we have now picked it up and put it in our inventory instead.
             //How do I make it remember this, in-between scenes?
 
@@ -54,9 +57,9 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    void AddItem (Item item)  //When picking up a new item in inventory...
+    void AddItem (DroppedItem pickedItem)  //When picking up a new item in inventory...
     {
-        StartCoroutine(AddAndDropCurrent(item));
+        StartCoroutine(AddAndDropCurrent(pickedItem));
         /*Item currentItem = inventoryData.GetCurrentItem();
         if (currentItem != null) //...we check If the current item in inventory isn't null, and if it isn't...
         {
@@ -65,24 +68,31 @@ public class Inventory : MonoBehaviour
         inventoryData.AddItem(item); //And add a new item.
         ui.AddUIItem(item.id, item);*/
     }
-    public void DropItem(ItemID inventoryId) //This creates a new dropped item Prefab, and initializes it with the dropped item data.
+    public void DropItem(ItemID inventoryId) //This overload helps us drop items where the player is, without touching another item, and exchanging pos.
+    {
+        DropItem(inventoryId, transform.position);
+    }
+    public void DropItem(ItemID inventoryId, Vector2 dropPosition) //This creates a new dropped item Prefab, and initializes it with the dropped item data.
     {
         Item item = inventoryData.GetItem(inventoryId);
-        DroppedItem droppedItem = Instantiate(item.prefab, transform.position, Quaternion.identity).GetComponent<DroppedItem>(); // 
+        DroppedItem droppedItem = Instantiate(item.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
+
+
         droppedItem.Initialize(item);
         inventoryData.RemoveItem(inventoryId);
         ui.RemoveUIItem(inventoryId); //The dropped item disappears from the UI.
         //audioSource.PlayOneShot(dropItemAudio); //And a final little jingle so we can hear we dropped the item.
         //StartCoroutine(DropDelayed(inventoryId));
     }
-    IEnumerator AddAndDropCurrent(Item item)
+    IEnumerator AddAndDropCurrent(DroppedItem pickedItem)
     {
         Item currentItem = inventoryData.GetCurrentItem();
         if (currentItem != null) //...we check If the current item in inventory isn't null, and if it isn't...
         {
-            DropItem(currentItem.id); //...then we drop that item
+            DropItem(currentItem.id, pickedItem.transform.position); //...then we drop that item
         }
         yield return null;
+        Item item = pickedItem.item;
         inventoryData.AddItem(item); //And add a new item.
         ui.AddUIItem(item.id, item);
     }

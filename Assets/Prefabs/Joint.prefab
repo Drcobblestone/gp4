@@ -15,7 +15,7 @@ GameObject:
   m_Layer: 0
   m_Name: Joint
   m_TagString: DroppedItem
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -118,18 +118,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8900001, y: 0.67996025}
+  m_Offset: {x: 1.2845304, y: 0.6556814}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
-    oldSize: {x: 1.7800001, y: 2.6100001}
+    oldSize: {x: 2.6100001, y: 2.6100001}
     newSize: {x: 1.7800001, y: 2.6100001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7800002, y: 1.3599205}
+  m_Size: {x: 1.8083262, y: 1.3599205}
   m_EdgeRadius: 0
 --- !u!114 &5393285017671669090
 MonoBehaviour:
@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoStart: 0
-  enabledPickupDelay: 3
+  enabledPickupDelay: 1
   item: {fileID: 11400000, guid: b56e35a1e3ce1c84b8c0fb0263058168, type: 2}
   canBePickedUp: 1
+  _initialPos: {x: 0, y: 0, z: 0}
