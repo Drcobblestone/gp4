@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b9bc59b36d9f8046a30d38454b3f720
+guid: 1898c9738984f9145aa04055db3a50f2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,22 +97,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Statue_0
+      name: Stairs2whole_0
       rect:
         serializedVersion: 2
-        x: 3422
-        y: 1734
-        width: 262
-        height: 375
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 328
+        y: 79
+        width: 733
+        height: 656
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a6fd9d1bc3af7f4f852072868445bd4
-      internalID: 659383274
+      spriteID: 9151084c6f84e0941be57a98798081e5
+      internalID: 152626681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs2whole_1
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 67
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650ce5528438ca84a81f9a46c01f80a5
+      internalID: -1071463544
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Statue_0: 659383274
+      Stairs2whole_0: 152626681
+      Stairs2whole_1: -1071463544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
