@@ -22,7 +22,7 @@ public class NPC : MonoBehaviour
         //...but we want to only use the component designed to replace UI.Text & designed to work with the CanvasRenderer and Canvas system.
         //Not sure if this is the right thing we're summoning! xD
 
-        dialogueText = GetComponent<TMP_Text>();
+        //dialogueText = GetComponent<TMP_Text>();
     }
 
     private void Start()
@@ -43,10 +43,7 @@ public class NPC : MonoBehaviour
             StartCoroutine(Typing()); //... and start making words appear.
         }
 
-        if (dialogueText.text == dialogue[index]) //If our dialogue-text is the same as our dialogue-index, then...
-        {
-            contButton.SetActive(true); //...activate the Continue-Button and let us move to the next dialogue.
-        }
+       
     }
 
 
@@ -56,7 +53,13 @@ public class NPC : MonoBehaviour
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
+            
         }
+        contButton.SetActive(true);
+        //if (dialogueText.text == dialogue[index]) //If our dialogue-text is the same as our dialogue-index, then...
+        //{
+        //...activate the Continue-Button and let us move to the next dialogue.
+        //}
     }
 
     public void NextLine() //To load the next part of the conversation.
