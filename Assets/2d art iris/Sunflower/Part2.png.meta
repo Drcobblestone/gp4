@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: acf1dffc5742a814db05eb13f32f66c4
+guid: bc6e4f1a8a9620f418d6e0adfb2b0c3e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,22 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SunflowersGroup_0
+      name: Part2_0
       rect:
         serializedVersion: 2
-        x: 219
-        y: 0
-        width: 3621
-        height: 1764
-      alignment: 7
+        x: 651
+        y: 1444
+        width: 810
+        height: 570
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4455da1a5c7e2494d89dfbe68034a49c
-      internalID: -1514922696
+      spriteID: 56db2894c6e3d8a4d8722bd389e9b57a
+      internalID: -1163488116
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SunflowersGroup_0: -1514922696
+      Part2_0: -1163488116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
