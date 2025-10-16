@@ -9,16 +9,27 @@ public class ClickHandler : MonoBehaviour
     [SerializeField] private UnityEvent _clicked;
 
     private BoxCollider2D _collider; //We make sure that we separate the clicks to only this clickable item, using it's Box-collider.
+
+    //Put serializedField instead
+    //private MouseInputProvider _mouse;
+    [Header("-Player Component References-")]
+    [Header("-Put MouseInputProvider script here")]
     private MouseInputProvider _mouse;
-    private bool _isInRange; //If the player is in range, then stuff will happen.
+
+    public bool _isInRange; //If the player is in range, then stuff will happen.
 
     private void Awake()
     {
         _collider = GetComponent<BoxCollider2D>();
-        _mouse = FindObjectOfType<MouseInputProvider>(); //Consider replacing with a static instance, so the CPU doesn't search the whole damn scene.
+        //Replace findobjectoftype "Mouseinputprovider private" with a serialized field as well. 
+        //_mouse = FindObjectOfType<MouseInputProvider>(); //Consider replacing with a static instance, so the CPU doesn't search the whole damn scene.
+        //_mouse.Clicked += MouseOnClicked;
+    }
+    private void Start()
+    {
+        _mouse = MouseInputProvider.Instance;
         _mouse.Clicked += MouseOnClicked;
     }
-
     private void MouseOnClicked()
     {
         if (_collider.bounds.Contains((Vector3)_mouse.WorldPosition) && (_isInRange || !_hasToBeInRange)) //If the collider of the clickable object contains the mouse Worldposition and is in range,                                                                                                  //*or* if it's not required to be in range, then I...

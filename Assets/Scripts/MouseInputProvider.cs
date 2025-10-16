@@ -5,13 +5,18 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MouseInputProvider : MonoBehaviour
-{
+{   
+    public static MouseInputProvider Instance;
     public Vector2 WorldPosition
     {
         get; private set;
     }
     public event Action Clicked;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
     public void OnMousePosition(InputAction.CallbackContext context) //When your mouse is over a clickable item
     {
         if (!context.performed) //IO is faster than Start, so if the context for inputaction is started or cancelled, it is too fast for the compiler... hence this!
