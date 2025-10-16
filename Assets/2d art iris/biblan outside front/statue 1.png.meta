@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a493eef7c9442141ac931a9b3cb3904
+guid: b077ff8ce59cf9e4dae64b8d285c278a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,22 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HousesRight_0
+      name: statue_0
       rect:
         serializedVersion: 2
-        x: 2138
-        y: 574
-        width: 1702
-        height: 1586
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 2274
+        y: 407
+        width: 321
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 769360d10f112eb44bbd47cb1f95782b
-      internalID: 1076925134
+      spriteID: 2b26425a37e783b4e948694355fa4d52
+      internalID: 420696362
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HousesRight_0: 1076925134
+      statue_0: 420696362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
