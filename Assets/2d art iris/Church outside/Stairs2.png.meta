@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 417cdf3679aa7304998389bede70f5f3
+guid: 13e475cb7fd39fe409a9ecb698ad2c49
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,43 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StairsChurch_0
+      name: Stairs2_0
       rect:
         serializedVersion: 2
-        x: 335
-        y: 68
-        width: 733
-        height: 656
-      alignment: 9
-      pivot: {x: 0.5, y: 1}
+        x: 435
+        y: 486
+        width: 621
+        height: 249
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fdebcb28237d914b8775f3c280a5c29
-      internalID: 782333662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StairsChurch_1
-      rect:
-        serializedVersion: 2
-        x: 688
-        y: 67
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c84ec2c6ca5b26b4a882b342268c33e1
-      internalID: 211719504
+      spriteID: e41da0034c14d3b48a2206bb1e8096b6
+      internalID: 360596315
       vertices: []
       indices: 
       edges: []
@@ -149,8 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      StairsChurch_0: 782333662
-      StairsChurch_1: 211719504
+      Stairs2_0: 360596315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

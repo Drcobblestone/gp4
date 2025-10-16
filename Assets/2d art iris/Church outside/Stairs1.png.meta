@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 417cdf3679aa7304998389bede70f5f3
+guid: 1c98922aa593f62499a84e8173b7dde0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,28 +97,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StairsChurch_0
+      name: Stairs1_0
       rect:
         serializedVersion: 2
-        x: 335
-        y: 68
+        x: 328
+        y: 96
         width: 733
-        height: 656
+        height: 435
       alignment: 9
-      pivot: {x: 0.5, y: 1}
+      pivot: {x: 0.16, y: 0.94}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fdebcb28237d914b8775f3c280a5c29
-      internalID: 782333662
+      spriteID: dc6271ebfba46ea4cae792e2603ca42a
+      internalID: 1226199116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StairsChurch_1
+      name: Stairs1_1
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 79
+        width: 19
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d537a965201b24dbe489ef7bbf1586
+      internalID: 516579134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs1_2
       rect:
         serializedVersion: 2
         x: 688
@@ -132,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c84ec2c6ca5b26b4a882b342268c33e1
-      internalID: 211719504
+      spriteID: 1244d6498d6e56543a8bc373f51bef47
+      internalID: 314777205
       vertices: []
       indices: 
       edges: []
@@ -149,8 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      StairsChurch_0: 782333662
-      StairsChurch_1: 211719504
+      Stairs1_0: 1226199116
+      Stairs1_1: 516579134
+      Stairs1_2: 314777205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
