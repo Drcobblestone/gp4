@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 58033665}
   m_Layer: 0
-  m_Name: --NPC-Test--
+  m_Name: ----NPCs----
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1294,7 +1294,7 @@ SceneRoots:
   - {fileID: 548380711}
   - {fileID: 226873025}
   - {fileID: 58033665}
+  - {fileID: 1677720777}
   - {fileID: 1486732715}
   - {fileID: 6281948049079761065}
   - {fileID: 1775856938}
-  - {fileID: 1677720777}
