@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 369eb44e15f3459459bceb6fb9b1cfab
+guid: 5b6ae90809888f645a828b1d1f9fe44f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,22 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Redhood_Idle-2_0
+      name: HouseSide1_0
       rect:
         serializedVersion: 2
-        x: 920
-        y: 1518
-        width: 410
-        height: 318
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 2436
+        y: 746
+        width: 1404
+        height: 1414
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec40ffea12e15a24c8c40e818c9bbd2c
-      internalID: 448839539
+      spriteID: 3d0246c9eb4857f48a336b21b698e265
+      internalID: -95217710
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Redhood_Idle-2_0: 448839539
+      HouseSide1_0: -95217710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
