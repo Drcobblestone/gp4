@@ -1162,30 +1162,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1647699689632250282, guid: 83da17e35a3c48a429175d096d65a2f9, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1647699689632250282, guid: 83da17e35a3c48a429175d096d65a2f9, type: 3}
-      propertyPath: m_Color.b
-      value: 0.21960786
-      objectReference: {fileID: 0}
-    - target: {fileID: 1647699689632250282, guid: 83da17e35a3c48a429175d096d65a2f9, type: 3}
-      propertyPath: m_Color.g
-      value: 0.21960786
-      objectReference: {fileID: 0}
-    - target: {fileID: 1647699689632250282, guid: 83da17e35a3c48a429175d096d65a2f9, type: 3}
-      propertyPath: m_Color.r
-      value: 0.21960786
-      objectReference: {fileID: 0}
-    - target: {fileID: 1647699689632250282, guid: 83da17e35a3c48a429175d096d65a2f9, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1647699689632250282, guid: 83da17e35a3c48a429175d096d65a2f9, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2591337774274848257, guid: 83da17e35a3c48a429175d096d65a2f9, type: 3}
       propertyPath: m_Name
       value: CanvasConversations
