@@ -209,6 +209,8 @@ MonoBehaviour:
   - "Hej d\xE5, fuling!"
   contButton: {fileID: 0}
   wordSpeed: 0.06
+  npcBoxcollider: {fileID: 8714887777010114432}
+  cantClickNPC: 0
 --- !u!114 &2619263798567266095
 MonoBehaviour:
   m_ObjectHideFlags: 0
