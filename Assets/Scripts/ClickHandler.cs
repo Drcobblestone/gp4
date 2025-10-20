@@ -32,7 +32,7 @@ public class ClickHandler : MonoBehaviour
     }
     private void MouseOnClicked()
     {
-        if (_collider.bounds.Contains((Vector3)_mouse.WorldPosition) && (_isInRange || !_hasToBeInRange)) //If the collider of the clickable object contains the mouse Worldposition and is in range,                                                                                                  //*or* if it's not required to be in range, then I...
+        if (_collider.bounds.Contains((Vector3)_mouse.WorldPosition) && (_isInRange || _hasToBeInRange)) //If the collider of the clickable object contains the mouse Worldposition and is in range,                                                                                                  //*or* if it's not required to be in range, then I...
         {
             _clicked.Invoke(); //... invoke the click.
             print(gameObject.name + " Clicked");

@@ -11,9 +11,13 @@ public class NPC : MonoBehaviour
     public TMP_Text dialogueText;
     public string[] dialogue;
     private int index;
-
+    ClickHandler clickHandler;
     public GameObject contButton;
     public float wordSpeed; //This lets us set how fast the words appear.
+
+    [SerializeField] BoxCollider2D npcBoxcollider; //We make a field where we can get the NPC's box-collider.
+
+    public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
 
     private void Awake()
     {
@@ -28,6 +32,7 @@ public class NPC : MonoBehaviour
     private void Start()
     {
         dialogueText.text = ""; //This is needed because the length of dialogueText starts as 1.
+        //clickHandler = GetComponent<ClickHandler>();
     }
 
 
@@ -43,7 +48,6 @@ public class NPC : MonoBehaviour
             StartCoroutine(Typing()); //... and start making words appear.
         }
 
-       
     }
 
 
@@ -55,7 +59,19 @@ public class NPC : MonoBehaviour
             yield return new WaitForSeconds(wordSpeed);
             
         }
+        //
         contButton.SetActive(true);
+        //
+        //We disable clicking on the NPC while the text is loading, and the Continue-button is active.
+
+        if (dialoguePanel.activeInHierarchy)
+        {
+            cantClickNPC = true; //We make it so we can't click the NPC while the dialogue-panel is active.
+            npcBoxcollider.enabled = false; //We do this by turning off the collider who detects the player.
+        }
+
+
+
         //if (dialogueText.text == dialogue[index]) //If our dialogue-text is the same as our dialogue-index, then...
         //{
         //...activate the Continue-Button and let us move to the next dialogue.
