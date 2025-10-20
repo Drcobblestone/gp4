@@ -11,7 +11,7 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] GameObject uiItemPrefab;
 
     [Header("References")]
-    [SerializeField] Inventory inventory;
+
     [SerializeField] Transform uiInventoryParent;
 
     [Header("State")]
@@ -21,7 +21,8 @@ public class InventoryUI : MonoBehaviour
     //When adding a new item to the UI-inventory...
 
     private void Start()
-    {
+    {   
+
         Item currentItem = inventoryData.GetCurrentItem();
         if (currentItem == null) //If the current item doesn't exist...
         {
@@ -35,7 +36,7 @@ public class InventoryUI : MonoBehaviour
         //itemUI.transform.SetParent(uiInventoryParent); //... and set the parent of the new item to be the scroll-view.
         itemUI.gameObject.SetActive(true);
         inventoryUI.Add(inventoryId, itemUI);
-        itemUI.Initialize(inventoryId, item, inventory.DropItem);
+        itemUI.Initialize(inventoryId, item);
     }
 
     public void RemoveUIItem(ItemID inventoryId)

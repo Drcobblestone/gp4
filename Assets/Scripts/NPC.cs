@@ -24,7 +24,6 @@ public class NPC : MonoBehaviour
         //We'll get a reference to the text component.
         //Since we are using the base class type (TMP_Text), this component could be either the TextMeshPro or the TextMeshProUGUI component...
         //...but we want to only use the component designed to replace UI.Text & designed to work with the CanvasRenderer and Canvas system.
-        //Not sure if this is the right thing we're summoning! xD
 
         //dialogueText = GetComponent<TMP_Text>();
     }
@@ -32,7 +31,6 @@ public class NPC : MonoBehaviour
     private void Start()
     {
         dialogueText.text = ""; //This is needed because the length of dialogueText starts as 1.
-        //clickHandler = GetComponent<ClickHandler>();
     }
 
 
@@ -62,8 +60,8 @@ public class NPC : MonoBehaviour
         //
         contButton.SetActive(true);
         //
-        //We disable clicking on the NPC while the text is loading, and the Continue-button is active.
 
+        //We disable clicking on the NPC while the text is loading, and the Continue-button is active.
         if (dialoguePanel.activeInHierarchy)
         {
             cantClickNPC = true; //We make it so we can't click the NPC while the dialogue-panel is active.

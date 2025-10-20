@@ -9,9 +9,10 @@ using UnityEngine.Rendering;
 [RequireComponent(typeof(Collider2D))]
 
 public class Inventory : MonoBehaviour
-{
+{   
+    public static Inventory Instance;
     [Header("References")]
-    [SerializeField] InventoryUI ui; 
+    InventoryUI ui; 
     //[SerializeField] AudioSource audioSource;
 
     [Header("Prefabs")]
@@ -27,6 +28,14 @@ public class Inventory : MonoBehaviour
     bool canPickUp = true;
     float pickupDelay = 0.1f;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+    private void Start()
+    {   
+        ui = LLSingleton.Instance.inventoryUI; //Start every scene with getting the right reference into the singleton.
+    }
     public void OnTriggerEnter2D(Collider2D other) //Every time the player enters a trigger we compare its tag.
     {
         if (other.CompareTag("DroppedItem")) //If the item we touched has the tag DroppedItem...
