@@ -104,8 +104,8 @@ TextureImporter:
         y: 187
         width: 1050
         height: 199
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: flowers_1
       rect:
         serializedVersion: 2
-        x: 1663
+        x: 1678
         y: 204
         width: 1328
         height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

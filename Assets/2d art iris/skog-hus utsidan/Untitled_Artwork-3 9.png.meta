@@ -104,8 +104,8 @@ TextureImporter:
         y: 231
         width: 1291
         height: 391
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,9 +142,9 @@ TextureImporter:
       name: Untitled_Artwork-3 9_2
       rect:
         serializedVersion: 2
-        x: 1549
+        x: 1619
         y: 231
-        width: 2291
+        width: 2221
         height: 390
       alignment: 7
       pivot: {x: 0.5, y: 0}

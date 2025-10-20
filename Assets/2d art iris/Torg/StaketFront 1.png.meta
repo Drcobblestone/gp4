@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d6eda436cb1c71f4d84d35ea5cedee40
+guid: 70447b4f5505eb64e9f87607de5daccb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,22 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-6 8_0
+      name: StaketFront_0
       rect:
         serializedVersion: 2
-        x: 2254
-        y: 510
-        width: 247
-        height: 332
-      alignment: 9
-      pivot: {x: 0.65, y: 0.35}
+        x: 0
+        y: 0
+        width: 2716
+        height: 390
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d72dc036d6ac38d489eb7b063f76d775
-      internalID: 1781740159
+      spriteID: cc4f8c7d0c9596543b44d616c6b37b96
+      internalID: 1622181439
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-6 8_0: 1781740159
+      StaketFront_0: 1622181439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
