@@ -4,6 +4,7 @@ using UnityEngine;
 //using UnityEngine.UI;
 using TMPro; //We get the textmeshpro library.
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class NPC : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class NPC : MonoBehaviour
     public float wordSpeed; //This lets us set how fast the words appear.
 
     [SerializeField] BoxCollider2D npcBoxcollider; //We make a field where we can get the NPC's box-collider.
-
+    public bool resetDialougeAtEnd = false;
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
 
     private void Awake()
@@ -59,6 +60,10 @@ public class NPC : MonoBehaviour
         }
         //
         contButton.SetActive(true);
+        ButtonMiddleman button = contButton.GetComponent<ButtonMiddleman>();
+        button.onClicked.RemoveAllListeners();
+        button.onClicked.AddListener(NextLine);
+        //button.
         //
 
         //We disable clicking on the NPC while the text is loading, and the Continue-button is active.
@@ -99,6 +104,8 @@ public class NPC : MonoBehaviour
     {
         dialogueText.text = "";
         index = 0;
+        cantClickNPC = !resetDialougeAtEnd;
+        npcBoxcollider.enabled = !cantClickNPC;
         dialoguePanel.SetActive(false); //We turn off our dialogue-panel.
     }
 

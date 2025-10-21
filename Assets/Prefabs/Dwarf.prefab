@@ -143,6 +143,8 @@ MonoBehaviour:
   - Now git! Get me somma' dat!
   contButton: {fileID: 0}
   wordSpeed: 0.06
+  npcBoxcollider: {fileID: 4162337604166047761}
+  cantClickNPC: 0
 --- !u!114 &2541834230560508186
 MonoBehaviour:
   m_ObjectHideFlags: 0
