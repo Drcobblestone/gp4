@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 2337317322570318551}
   - component: {fileID: 5488979674094700090}
   - component: {fileID: 6628706202194651641}
+  - component: {fileID: 4726822012908992499}
   m_Layer: 5
   m_Name: ContinueButton(TMP)
   m_TagString: Untagged
@@ -357,9 +358,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
-        m_MethodName: NextLine
+      - m_Target: {fileID: 4726822012908992499}
+        m_TargetAssemblyTypeName: ButtonMiddleman, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -369,6 +370,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4726822012908992499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3422129702046158882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d931153bbd365404cae51e123750072b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onClicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5139747159007716624
 GameObject:
   m_ObjectHideFlags: 0
