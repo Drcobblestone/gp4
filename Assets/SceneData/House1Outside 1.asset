@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be7cb9fa4c7f1243bc5f386f6818e26, type: 3}
   m_Name: House1Outside 1
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: House1Outside 1
   entryIndex: -1
