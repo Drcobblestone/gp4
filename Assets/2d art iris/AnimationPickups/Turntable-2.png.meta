@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2a4ad31852375745b7aba9693dbaa6f
+guid: 4fb06ece318f1a54d8a3332498c3dac2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: statue_0
+      name: Turntable-2_0
       rect:
         serializedVersion: 2
-        x: 2274
-        y: 138
-        width: 321
-        height: 481
+        x: 1997
+        y: 2033
+        width: 356
+        height: 293
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b26425a37e783b4e948694355fa4d52
-      internalID: 420696362
+      spriteID: 6057f6449a1e9e44bb1ce8aa68a578d3
+      internalID: -345923578
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      statue_0: 420696362
+      Turntable-2_0: -345923578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

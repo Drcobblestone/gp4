@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2a4ad31852375745b7aba9693dbaa6f
+guid: b09474e901be74142a86e78fa57c41f3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: statue_0
+      name: Joint-1_0
       rect:
         serializedVersion: 2
-        x: 2274
-        y: 138
-        width: 321
-        height: 481
+        x: 1576
+        y: 1554
+        width: 242
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b26425a37e783b4e948694355fa4d52
-      internalID: 420696362
+      spriteID: ec3ad778fe1ac6b41a576c1635aeb711
+      internalID: -2121060153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joint-1_1
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 1730
+        width: 41
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf043b3540e3e244b61ee1c602c634e
+      internalID: -1474483345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joint-1_2
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 1728
+        width: 29
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a644c74c85d571440b53e3ceb6dd071a
+      internalID: -387296207
       vertices: []
       indices: 
       edges: []
@@ -128,7 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      statue_0: 420696362
+      Joint-1_0: -2121060153
+      Joint-1_1: -1474483345
+      Joint-1_2: -387296207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
