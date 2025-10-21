@@ -57,8 +57,9 @@ public class Inventory : MonoBehaviour
                 return; //If we have, we don't pick it up, but go back instead.
             }*/
             //droppedItem.pickedUp = true; //If the item is equal to dropped item, we get the component "droppedItem" from the collider.
-            AddItem(pickedItem); 
-            Destroy(other.gameObject); //We destroy the object within the game-world, since we have now picked it up and put it in our inventory instead.
+            AddItem(pickedItem);
+            pickedItem.PickUp();
+            //We destroy the object within the game-world, since we have now picked it up and put it in our inventory instead.
             //How do I make it remember this, in-between scenes?
 
             //audioSource.PlayOneShot(pickUpItemAudio); //We play a little jingle when we have picked up the item.

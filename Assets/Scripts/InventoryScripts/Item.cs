@@ -9,4 +9,5 @@ public class Item : ScriptableObject //By inheriting from scriptableobjects we c
     public string description; //Sadly we can't use name, as that is an inherited property too, but this is just a name.
     public Sprite icon; //This is an actual sprite/texture that's going to be visible in the UI.
     public GameObject prefab; //This prefab will be instantiated into the gameworld.
+    public bool pickedUp = false;
 }
