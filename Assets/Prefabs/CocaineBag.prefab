@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3941337472368340267}
   - component: {fileID: 31743546793373102}
   - component: {fileID: 3497385112294477467}
+  - component: {fileID: 2301884186598307362}
   m_Layer: 0
   m_Name: CocaineBag
   m_TagString: DroppedItem
@@ -143,8 +144,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b11ea482308ff124c99cd70d9074b0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickedUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2301884186598307362}
+        m_TargetAssemblyTypeName: SceneObject, Assembly-CSharp
+        m_MethodName: SetFlag
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   autoStart: 0
   enabledPickupDelay: 1
   item: {fileID: 11400000, guid: e37db5842c3d25942bc938099c584c31, type: 2}
   canBePickedUp: 1
   _initialPos: {x: 0, y: 0, z: 0}
+--- !u!114 &2301884186598307362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7650914566875111696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
