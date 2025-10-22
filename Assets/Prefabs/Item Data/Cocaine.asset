@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   description: Bag of Cocaine with razor and straw
-  icon: {fileID: 385026608, guid: a42d191436143f8449cfbfd952847984, type: 3}
+  icon: {fileID: 1171281035, guid: 7cacc96868dfc6e47abe74294bab55ce, type: 3}
   prefab: {fileID: 7650914566875111696, guid: 9ff9f58576ead2a4ba3d1fde04c3a46b, type: 3}
+  pickedUp: 0

@@ -20,15 +20,6 @@ public class NPC : MonoBehaviour
     public bool resetDialougeAtEnd = false;
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
 
-    private void Awake()
-    {
-        //We'll get a reference to the text component.
-        //Since we are using the base class type (TMP_Text), this component could be either the TextMeshPro or the TextMeshProUGUI component...
-        //...but we want to only use the component designed to replace UI.Text & designed to work with the CanvasRenderer and Canvas system.
-
-        //dialogueText = GetComponent<TMP_Text>();
-    }
-
     private void Start()
     {
         dialogueText.text = ""; //This is needed because the length of dialogueText starts as 1.
@@ -63,8 +54,6 @@ public class NPC : MonoBehaviour
         ButtonMiddleman button = contButton.GetComponent<ButtonMiddleman>();
         button.onClicked.RemoveAllListeners();
         button.onClicked.AddListener(NextLine);
-        //button.
-        //
 
         //We disable clicking on the NPC while the text is loading, and the Continue-button is active.
         if (dialoguePanel.activeInHierarchy)
@@ -72,13 +61,6 @@ public class NPC : MonoBehaviour
             cantClickNPC = true; //We make it so we can't click the NPC while the dialogue-panel is active.
             npcBoxcollider.enabled = false; //We do this by turning off the collider who detects the player.
         }
-
-
-
-        //if (dialogueText.text == dialogue[index]) //If our dialogue-text is the same as our dialogue-index, then...
-        //{
-        //...activate the Continue-Button and let us move to the next dialogue.
-        //}
     }
 
     public void NextLine() //To load the next part of the conversation.

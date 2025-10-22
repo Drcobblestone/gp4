@@ -12,7 +12,6 @@ public class SceneData : ScriptableObject
     [Header("The items the scene has when loaded.")] //Tellls us where to drop items that are meant to be in the scene.
     public bool[] sceneFlags = new bool[8]; // [X][ ][X][ ][ ][ ][ ][ ][ ][ ]
     public List<ItemToSpawn> itemsToSpawn = new List<ItemToSpawn>();   
-    //public ItemID[] itemsInSceneID = new ItemID[8];
     public void Reset()
     {
         entryIndex = -1; //We reset the scene-data, so we don't end up in the wrong scene when we restart the game.

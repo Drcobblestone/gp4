@@ -13,7 +13,6 @@ public class ItemUI : MonoBehaviour
     {
         button.onClick.RemoveAllListeners();
         image.sprite = item.icon;
-        //transform.localScale = Vector2.one;
         button.onClick.AddListener(() => Inventory.Instance.DropItem(inventoryId)); //When we click an item in inventory, we can tell the game to remove it.
     }
     

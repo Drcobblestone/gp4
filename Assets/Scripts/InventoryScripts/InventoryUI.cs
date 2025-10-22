@@ -18,7 +18,6 @@ public class InventoryUI : MonoBehaviour
     [Header("SerializeField")] SerializedDictionary<ItemID, ItemUI> inventoryUI = new();
     [SerializeField] ItemUI itemUI;
     [SerializeField] InventoryData inventoryData;
-    //When adding a new item to the UI-inventory...
 
     private void Start()
     {   
@@ -32,8 +31,6 @@ public class InventoryUI : MonoBehaviour
     }
     public void AddUIItem(ItemID inventoryId, Item item) 
     {
-        //ItemUI itemUI = Instantiate(uiItemPrefab).GetComponent<ItemUI>(); //...we create a new instance from the prefab...
-        //itemUI.transform.SetParent(uiInventoryParent); //... and set the parent of the new item to be the scroll-view.
         itemUI.gameObject.SetActive(true);
         inventoryUI.Add(inventoryId, itemUI);
         itemUI.Initialize(inventoryId, item);

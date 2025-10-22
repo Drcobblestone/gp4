@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     [Header("-Player Component References-")]
     [SerializeField] Rigidbody2D rb; //We make the Rigidbody not a public class as we need to keep it private, but since we need to see it in the editor, we make it a serializedfield.
-    //[SerializeField] private SpriteRenderer spriteRenderer; //We make the sprite renderer private.
 
     [SerializeField] Transform spriteTransformSize; //We establish a way to do sprite-scaling.
 
@@ -58,19 +57,6 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
-        //------------
-        /*
-        if (vertical < 0 && !standingLower) //If we go up we become small.
-        {
-            Size();
-        }
-
-        else if (vertical > 0 && standingLower) //But if we go down we become big.
-        {
-            Size();
-        }
-        */
-
     }
 
     void Flip() //This function controls the flipping of the character, making sure we don't do it unnecessarily, thereby saving some performance.
@@ -81,17 +67,4 @@ public class PlayerController : MonoBehaviour
 
         facingLeft = !facingLeft;
     }
-    /*
-    //This function lets us resize the player when he moves up and down. Should perhaps be replaced by something that changes size depending on zone...
-    private void Size()
-    {
-        //adjusting scale of the sprite based on vertical movement
-        float scaleMultiplier = 1f - Mathf.Abs(vertical) * 0.1f;
-        spriteTransformSize.localScale = new Vector3(scaleMultiplier, scaleMultiplier, 1f);
-
-        standingLower = !standingLower; //Standing around on the top part of the scene is the opposite of standing around on the bottom part.
-    }
-    */
-
-
 }

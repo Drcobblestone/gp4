@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   description: A turntable for DJ-ing.
-  icon: {fileID: 414092167, guid: bc82eadeb2ec6cf45a13a02b8c3ad111, type: 3}
+  icon: {fileID: 1266378644, guid: 3bd337b0df4ac0242b2c7f15b740509e, type: 3}
   prefab: {fileID: 1351936159952576313, guid: 0174d65ee239e6745b0f119a188809f7, type: 3}
+  pickedUp: 0

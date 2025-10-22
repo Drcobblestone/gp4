@@ -10,20 +10,17 @@ public class ClickHandler : MonoBehaviour
 
     private BoxCollider2D _collider; //We make sure that we separate the clicks to only this clickable item, using it's Box-collider.
 
-    //Put serializedField instead
-    //private MouseInputProvider _mouse;
     [Header("-Player Component References-")]
     [Header("-Put MouseInputProvider script here")]
-    private MouseInputProvider _mouse;
+    //Remember to drag the player in the editor to get this in here...
+    [SerializeField] private MouseInputProvider _mouse;
 
     public bool _isInRange; //If the player is in range, then stuff will happen.
 
     private void Awake()
     {
         _collider = GetComponent<BoxCollider2D>();
-        //Replace findobjectoftype "Mouseinputprovider private" with a serialized field as well. 
-        //_mouse = FindObjectOfType<MouseInputProvider>(); //Consider replacing with a static instance, so the CPU doesn't search the whole damn scene.
-        //_mouse.Clicked += MouseOnClicked;
+
     }
     private void Start()
     {

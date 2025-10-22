@@ -24,11 +24,6 @@ public class DroppedItem : MonoBehaviour
     private void Awake()
     {
         Drop();
-        /*if (autoStart && item != null)
-        {
-            Initialize(item);
-        }*/
-
     }
 
     private void Start()
