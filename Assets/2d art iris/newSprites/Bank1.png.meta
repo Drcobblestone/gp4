@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 778d7dac871f0d2439dd85af5b1b6c88
+guid: cd7b4248d343d214f864c79d36154bee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-4 4_0
+      name: Bank1_0
       rect:
         serializedVersion: 2
-        x: 3553
-        y: 1012
-        width: 287
-        height: 773
+        x: 0
+        y: 0
+        width: 3141
+        height: 289
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89ff48592a2c2534faeb62a7b3870b4c
-      internalID: -1978969502
+      spriteID: 38085df9665750a4592e8ea08545f84a
+      internalID: -1231977440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bank1_1
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 272
+        width: 238
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef5009557397a042a76348b95fcc679
+      internalID: -1217032392
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-4 4_0: -1978969502
+      Bank1_0: -1231977440
+      Bank1_1: -1217032392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

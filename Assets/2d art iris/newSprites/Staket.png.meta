@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 778d7dac871f0d2439dd85af5b1b6c88
+guid: 13931bbe6e723f044a81fedb9001cf90
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-4 4_0
+      name: Staket_0
       rect:
         serializedVersion: 2
-        x: 3553
-        y: 1012
-        width: 287
-        height: 773
+        x: 6
+        y: 229
+        width: 1275
+        height: 394
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89ff48592a2c2534faeb62a7b3870b4c
-      internalID: -1978969502
+      spriteID: 1dfff6a3dd1acfe438a5787603dc8530
+      internalID: 1094626775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Staket_1
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 347
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc6b7e031efa0f419df302a19509ecd
+      internalID: -1580335030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Staket_2
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 231
+        width: 2291
+        height: 390
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934253cb2f86aa9419a36ba3ad84a66c
+      internalID: -516064088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Staket_3
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 332
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e339f143fc9c68440be40cf4da967003
+      internalID: -871564916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Staket_4
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 231
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3756f0b4d285a4a46a98de7f2899c512
+      internalID: -1754431738
       vertices: []
       indices: 
       edges: []
@@ -128,7 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-4 4_0: -1978969502
+      Staket_0: 1094626775
+      Staket_1: -1580335030
+      Staket_2: -516064088
+      Staket_3: -871564916
+      Staket_4: -1754431738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

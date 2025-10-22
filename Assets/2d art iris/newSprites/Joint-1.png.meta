@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 778d7dac871f0d2439dd85af5b1b6c88
+guid: ec5477182a212c24aae2e81cca2d7e6e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,97 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-4 4_0
+      name: Joint-1_0
       rect:
         serializedVersion: 2
-        x: 3553
-        y: 1012
-        width: 287
-        height: 773
+        x: 1915
+        y: 2446
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f671d28a5f4745429c6f64701ec7727
+      internalID: 72391177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joint-1_1
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 1614
+        width: 158
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c0bb43291d6f7499b485e7c81f36f6
+      internalID: 766886955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joint-1_2
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 1632
+        width: 186
+        height: 812
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15a81fa28add9243959cb3d6cbdea24
+      internalID: -841884831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joint-1_3
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1619
+        width: 125
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437b695d7c7d4c549b7e57cc81af7b33
+      internalID: 1060155454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joint-1_4
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 814
+        width: 1068
+        height: 1638
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89ff48592a2c2534faeb62a7b3870b4c
-      internalID: -1978969502
+      spriteID: 01df851d1f591ba458deab9a71fdb89a
+      internalID: 1709046175
       vertices: []
       indices: 
       edges: []
@@ -128,7 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-4 4_0: -1978969502
+      Joint-1_0: 72391177
+      Joint-1_1: 766886955
+      Joint-1_2: -841884831
+      Joint-1_3: 1060155454
+      Joint-1_4: 1709046175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

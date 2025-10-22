@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 778d7dac871f0d2439dd85af5b1b6c88
+guid: 861f1f67dbbc22c46b1df949138d2ada
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,22 +97,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-4 4_0
+      name: Bushes_0
       rect:
         serializedVersion: 2
-        x: 3553
-        y: 1012
-        width: 287
-        height: 773
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 448
+        width: 1609
+        height: 1646
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89ff48592a2c2534faeb62a7b3870b4c
-      internalID: -1978969502
+      spriteID: 475bf8e391702af42b7be3e2225b7721
+      internalID: -374967987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bushes_1
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 193
+        width: 1271
+        height: 1943
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f847d6c6da7a112489ec082402936d69
+      internalID: -1864234346
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-4 4_0: -1978969502
+      Bushes_0: -374967987
+      Bushes_1: -1864234346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
