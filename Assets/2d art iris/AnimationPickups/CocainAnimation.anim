@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: JointAnimation
+  m_Name: CocainAnimation
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2121060153, guid: b09474e901be74142a86e78fa57c41f3, type: 3}
+      value: {fileID: 1324340366, guid: e3afb8a7128e13d49bfd5d6453fce2cb, type: 3}
     - time: 0.25
-      value: {fileID: -296042503, guid: 9b31ef2fe1325ab4abdc80970a9776bf, type: 3}
+      value: {fileID: 1171281035, guid: 7cacc96868dfc6e47abe74294bab55ce, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2121060153, guid: b09474e901be74142a86e78fa57c41f3, type: 3}
-    - {fileID: -296042503, guid: 9b31ef2fe1325ab4abdc80970a9776bf, type: 3}
+    - {fileID: 1324340366, guid: e3afb8a7128e13d49bfd5d6453fce2cb, type: 3}
+    - {fileID: 1171281035, guid: 7cacc96868dfc6e47abe74294bab55ce, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

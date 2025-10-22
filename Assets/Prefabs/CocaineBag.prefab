@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 31743546793373102}
   - component: {fileID: 3497385112294477467}
   - component: {fileID: 2301884186598307362}
+  - component: {fileID: 216603961025557785}
   m_Layer: 0
   m_Name: CocaineBag
   m_TagString: DroppedItem
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -672575029
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 385026608, guid: a42d191436143f8449cfbfd952847984, type: 3}
+  m_Sprite: {fileID: 1171281035, guid: 7cacc96868dfc6e47abe74294bab55ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,8 +123,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.12}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 3.185, y: 3.185}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.8385302, y: 1.3183333}
     newSize: {x: 3.185, y: 2.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -176,3 +177,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flagUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!95 &216603961025557785
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7650914566875111696}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c964b9b39491da94d842f4a904d81d38, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
