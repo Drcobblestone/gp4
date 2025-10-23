@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32087c1618d121448b5c7e7c67eaf576
+guid: ce7322faf47e88748b8febc341fc6aeb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sunflower3_0
+      name: Bush2_0
       rect:
         serializedVersion: 2
-        x: 2490
-        y: 0
-        width: 499
-        height: 724
+        x: 1731
+        y: 729
+        width: 738
+        height: 533
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dd7ed2670d9a0d4b8cdb15913ec0c14
-      internalID: -1655331705
+      spriteID: 67e03c3ad658d3c49a5dbb177e4d3791
+      internalID: -356594143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush2_1
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 654
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8a3d9b6113b7947bba6a42808a9b79
+      internalID: -946849634
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sunflower3_0: -1655331705
+      Bush2_0: -356594143
+      Bush2_1: -946849634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
