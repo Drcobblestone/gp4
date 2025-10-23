@@ -356,7 +356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17b638edc9a3984882a93fdc6daa940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 0}
   droppedItemPrefab: {fileID: 5506919280403729962, guid: c3c178ed899d89040bbd14044272e251, type: 3}
   inventoryData: {fileID: 11400000, guid: 047e3e5285d9db04182b51a64f615422, type: 2}
 --- !u!114 &4285985742961830482
