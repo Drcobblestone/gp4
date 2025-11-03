@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 { 
 
-    public void PlayGame()
+    public void PlayGame() //To start the game from the main menu.
     {
-        SceneManager.LoadSceneAsync("LibraryInside");
+        SceneManager.LoadSceneAsync("LibraryInside"); //Pressing play loads the Library Inside scene.
     }
 
-    public void QuitGame()
+    public void QuitGame() //To quit the game from the main menu.
     {
-        Application.Quit();
+        Application.Quit(); //Pressing quit summons the quit-function.
     }
 }
 
