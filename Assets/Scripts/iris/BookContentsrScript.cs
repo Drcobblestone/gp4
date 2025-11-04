@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using JetBrains.Annotations;
+using UnityEngine.Events;
 
 public class BookContentsrScript : MonoBehaviour
 {
@@ -14,14 +15,16 @@ public class BookContentsrScript : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI leftPagination;
     [SerializeField] private TextMeshProUGUI rightPagination;
+    public UnityEvent reachedEnd;
+    int pageCount;
 
     private void OnValidate()
     {
         UpdatePagination();
 
-        if (leftSide.text == content)
+        /*if (leftSide.text == content)
             return;
-
+        */
         SetupContent();
     }
 
@@ -35,6 +38,7 @@ public class BookContentsrScript : MonoBehaviour
     {
         leftSide.text = content;
         rightSide.text = content;
+        
     }
 
     private void UpdatePagination()
@@ -43,6 +47,7 @@ public class BookContentsrScript : MonoBehaviour
 
         leftPagination.text = leftSide.pageToDisplay.ToString();    
         rightPagination.text = rightSide.pageToDisplay.ToString();
+        pageCount = leftSide.textInfo.pageCount;
     }
 
     public void PreviousPage()
@@ -94,6 +99,11 @@ public class BookContentsrScript : MonoBehaviour
         }*/
         rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
         UpdatePagination();
+        print(pageCount);
+        if (leftSide.pageToDisplay >= pageCount + 1)
+        {
+            reachedEnd.Invoke();
+        }
 
     }
 
