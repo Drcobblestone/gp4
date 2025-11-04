@@ -25,6 +25,9 @@ public class SceneData : ScriptableObject
         itemToSpawn.itemData = droppedItem.item;
         itemToSpawn.position = droppedItem.transform.position;
         itemsToSpawn.Add(itemToSpawn);
+        droppedItem.pickedUp.AddListener(delegate {
+            itemsToSpawn.Remove(itemToSpawn);
+        });
     }
     
 }
