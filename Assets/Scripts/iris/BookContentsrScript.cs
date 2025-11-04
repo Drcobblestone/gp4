@@ -48,18 +48,20 @@ public class BookContentsrScript : MonoBehaviour
     public void PreviousPage()
     {
         print("PreviousPage");
-        if (leftSide.pageToDisplay < 1)
+        leftSide.pageToDisplay -= 2;
+        leftSide.pageToDisplay = Mathf.Max(1, leftSide.pageToDisplay);
+        /*if (leftSide.pageToDisplay < 1)
 
         {
             leftSide.pageToDisplay = 1;
             return;
         }
 
-        if (leftSide.pageToDisplay - 2 > 1)
+        if (leftSide.pageToDisplay -2 > 1)
             leftSide.pageToDisplay += 2;
         else
             leftSide.pageToDisplay = 1;
-
+        */
         rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
 
         UpdatePagination();
@@ -70,12 +72,15 @@ public class BookContentsrScript : MonoBehaviour
     public void NextPage()
     {
         print("NextPage");
-        if (rightSide.pageToDisplay <= rightSide.textInfo.pageCount)
+        leftSide.pageToDisplay += 2;
+        /*if (rightSide.pageToDisplay <= rightSide.textInfo.pageCount)
+
         {
             return;
+
         }
 
-        if (leftSide.pageToDisplay >= leftSide.textInfo.pageCount -1)
+        if (leftSide.pageToDisplay >= leftSide.textInfo.pageCount - 1)
 
         {
             leftSide.pageToDisplay = leftSide.textInfo.pageCount - 1;
@@ -86,8 +91,8 @@ public class BookContentsrScript : MonoBehaviour
 
             leftSide.pageToDisplay += 2;
             rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
-        }
-
+        }*/
+        rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
         UpdatePagination();
 
     }
