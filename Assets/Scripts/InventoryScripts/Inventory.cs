@@ -59,13 +59,18 @@ public class Inventory : MonoBehaviour
     }
     public void DropItem(ItemID inventoryId, Vector2 dropPosition) //This creates a new dropped item Prefab, and initializes it with the dropped item data.
     {
-        Item item = inventoryData.GetItem(inventoryId);
-        DroppedItem droppedItem = Instantiate(item.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
-
-
-        droppedItem.Initialize(item);
+        DroppedItem droppedItem = SpawnItem(inventoryId, dropPosition);
+        SceneEntry.current.DropItem(droppedItem);
+        
         inventoryData.RemoveItem(inventoryId);
         ui.RemoveUIItem(inventoryId); //The dropped item disappears from the UI.
+    }
+    public DroppedItem SpawnItem(ItemID inventoryId, Vector2 dropPosition) //This spawns and returns the spawned item so we can use it in another function / script
+    {
+        Item item = inventoryData.GetItem(inventoryId);
+        DroppedItem droppedItem = Instantiate(item.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
+        droppedItem.Initialize(item);
+        return droppedItem;
     }
     IEnumerator AddAndDropCurrent(DroppedItem pickedItem)
     {

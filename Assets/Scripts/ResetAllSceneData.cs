@@ -5,9 +5,15 @@ using UnityEngine;
 
 public class ResetAllSceneData : MonoBehaviour
 {
+    [SerializeField] bool reset = true;
     [SerializeField] SceneData[] datas;
+    
     void Awake()
-    {
+    {   
+        if (!reset)
+        {
+            return;
+        }
         foreach (SceneData data in datas) //For each scene we have, then...
         {
             data.Reset(); //...reset it, in-between runs.

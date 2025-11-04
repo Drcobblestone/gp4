@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2475287671071239474}
   - component: {fileID: 625636654183153576}
   - component: {fileID: 1067501657272326284}
+  - component: {fileID: 5370614139506795255}
   - component: {fileID: 802190603559680873}
   - component: {fileID: 411531627374836247}
   m_Layer: 0
@@ -137,6 +138,65 @@ MonoBehaviour:
           m_StringArgument: Success
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5370614139506795255}
+        m_TargetAssemblyTypeName: SceneObject, Assembly-CSharp
+        m_MethodName: SetFlag
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Success
+          m_BoolArgument: 1
+        m_CallState: 2
+  _mouse: {fileID: 0}
+  _isInRange: 0
+--- !u!114 &5370614139506795255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789961449197533750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startFlagOff:
+    m_PersistentCalls:
+      m_Calls: []
+  startFlagOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 625636654183153576}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Chest_open
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 625636654183153576}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: set_playbackTime
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: Chest_open
+          m_BoolArgument: 0
+        m_CallState: 2
+  flagUpdated:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &802190603559680873
 BoxCollider2D:
   m_ObjectHideFlags: 0

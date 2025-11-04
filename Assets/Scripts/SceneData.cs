@@ -16,6 +16,15 @@ public class SceneData : ScriptableObject
     {
         entryIndex = -1; //We reset the scene-data, so we don't end up in the wrong scene when we restart the game.
         sceneFlags = new bool[8];
+        itemsToSpawn = new List<ItemToSpawn>();
+
+    }
+    public void DropItem(DroppedItem droppedItem)
+    {   
+        ItemToSpawn itemToSpawn = new ItemToSpawn();
+        itemToSpawn.itemData = droppedItem.item;
+        itemToSpawn.position = droppedItem.transform.position;
+        itemsToSpawn.Add(itemToSpawn);
     }
     
 }

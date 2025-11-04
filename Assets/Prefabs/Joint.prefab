@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8761387592002431876}
   - component: {fileID: 5393285017671669090}
   - component: {fileID: 3697942038906164203}
+  - component: {fileID: 4556119557258401969}
   m_Layer: 0
   m_Name: Joint
   m_TagString: DroppedItem
@@ -119,11 +120,11 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.005055189, y: 0.6556814}
+  m_Offset: {x: 0, y: 0.67}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.7801906, y: 2.73}
+    oldSize: {x: 1.8385302, y: 2.73}
     newSize: {x: 1.7800001, y: 2.6100001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -146,7 +147,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickedUp:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4556119557258401969}
+        m_TargetAssemblyTypeName: SceneObject, Assembly-CSharp
+        m_MethodName: SetFlag
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   autoStart: 0
   enabledPickupDelay: 1
   item: {fileID: 11400000, guid: b56e35a1e3ce1c84b8c0fb0263058168, type: 2}
@@ -173,3 +186,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4556119557258401969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6508705300800519365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startFlagOff:
+    m_PersistentCalls:
+      m_Calls: []
+  startFlagOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6508705300800519365}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  flagUpdated:
+    m_PersistentCalls:
+      m_Calls: []

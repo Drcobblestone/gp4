@@ -123,8 +123,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.12}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8385302, y: 1.3183333}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.8385302, y: 2.73}
     newSize: {x: 3.185, y: 2.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -177,6 +177,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startFlagOff:
+    m_PersistentCalls:
+      m_Calls: []
+  startFlagOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7650914566875111696}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   flagUpdated:
     m_PersistentCalls:
       m_Calls: []

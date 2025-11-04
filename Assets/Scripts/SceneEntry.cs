@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class SceneEntry : MonoBehaviour
 {
+    [SerializeField] ItemDBData itemDB;
     [SerializeField] SceneData data;
     [SerializeField] Transform playerTransform;
     [SerializeField] Transform[] entryPoints; //We create an array of entry-points within a scene.
     [SerializeField] SceneObject[] sceneObjects = new SceneObject[8];
     [SerializeField] DroppedItem[] itemsInScene = new DroppedItem[8];
+    public static SceneEntry current;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        current = this;
+    }
     void Start()
     {
         for (int i = 0; i < sceneObjects.Length; i++)
@@ -21,6 +27,8 @@ public class SceneEntry : MonoBehaviour
                 continue;
             }
             obj.flagUpdated.AddListener((bool flag) => SetFlag(index, flag));
+            bool startingFlag = data.sceneFlags[index];
+            obj.StartWithFlag(startingFlag);
 
         }
         if (data.entryIndex == -1) //If we start the game, we will get this error, which will tell us that we have reset the entryindex.
@@ -28,11 +36,29 @@ public class SceneEntry : MonoBehaviour
             Debug.LogError("Custom Error SceneEntry: Entry Index was not valid.");
             return;
         }
+        //SPAWN IN ALL DROPPED ITEMS
+        foreach (ItemToSpawn itemS in data.itemsToSpawn)
+        {
+            ItemToSpawn temp = itemS; //Neccesary, itemS is acting like a reference somehow... Unity-devs are mooks!
+            DroppedItem droppedItem = SpawnItem(itemS.itemData.id, itemS.position);
+            droppedItem.pickedUp.AddListener(() => data.itemsToSpawn.Remove(temp)); //REMOVE FROM SCENE DATA IF ITEM GETS PICKED UP
+        }
 
         playerTransform.position = entryPoints[data.entryIndex].position; //This will tell us which entrypoint the player is using, and where it is.
     }
     public void SetFlag(int index, bool flag){
         print(index);
         data.sceneFlags[index] = flag;
+    }
+    public void DropItem(DroppedItem droppedItem)
+    {
+        data.DropItem(droppedItem);
+    }
+    public DroppedItem SpawnItem(ItemID inventoryId, Vector2 dropPosition) //This spawns and returns the spawned item so we can use it in another function / script
+    {
+        Item item = itemDB.GetItem(inventoryId);
+        DroppedItem droppedItem = Instantiate(item.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
+        droppedItem.Initialize(item);
+        return droppedItem;
     }
 }
