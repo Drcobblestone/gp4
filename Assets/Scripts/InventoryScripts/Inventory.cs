@@ -60,8 +60,8 @@ public class Inventory : MonoBehaviour
     public void DropItem(ItemID inventoryId, Vector2 dropPosition) //This creates a new dropped item Prefab, and initializes it with the dropped item data.
     {
         DroppedItem droppedItem = SpawnItem(inventoryId, dropPosition);
-        SceneEntry.current.DropItem(droppedItem);
-        
+        GameManager.current.DropItem(droppedItem);
+        //REMOVE FROM SCENE DATA IF ITEM GETS PICKED UP
         inventoryData.RemoveItem(inventoryId);
         ui.RemoveUIItem(inventoryId); //The dropped item disappears from the UI.
     }
