@@ -26,7 +26,7 @@ public class NPC : MonoBehaviour
     }
 
 
-    public void OnClicked() //Clicking the character starts the dialogue-panels. | Small issue... this is UPDATE function in the tutorial... not sure if work.
+    public void OnClicked() //Clicking the character starts the dialogue-panels. 
     {
         if (dialoguePanel.activeInHierarchy)
         {
@@ -86,7 +86,7 @@ public class NPC : MonoBehaviour
     {
         dialogueText.text = "";
         index = 0;
-        cantClickNPC = !resetDialougeAtEnd;
+        cantClickNPC = !resetDialougeAtEnd; //Could THIS be the issue?? We don't see the next step of convo' either.
         npcBoxcollider.enabled = !cantClickNPC;
         dialoguePanel.SetActive(false); //We turn off our dialogue-panel.
     }
