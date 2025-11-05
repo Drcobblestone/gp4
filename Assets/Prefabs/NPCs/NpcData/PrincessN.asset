@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f574a59e6d9fac41a62063af6c2abdb, type: 3}
-  m_Name: FrogPrince
+  m_Name: PrincessN
   m_EditorClassIdentifier: 
-  npcName: 
-  nId: 0
-  description: 
+  npcName: PrincessNPC
+  nId: 3
+  description: A princess to kiss the Frog
   icon: {fileID: 0}
   talkedTo: 0
   convoFlags: 0000000000000000

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f574a59e6d9fac41a62063af6c2abdb, type: 3}
   m_Name: RedHood
   m_EditorClassIdentifier: 
-  npcName: 
-  nId: 0
-  description: 
+  npcName: RedHood
+  nId: 3
+  description: Little Red Riding Hood
   icon: {fileID: 0}
   talkedTo: 0
   convoFlags: 0000000000000000
