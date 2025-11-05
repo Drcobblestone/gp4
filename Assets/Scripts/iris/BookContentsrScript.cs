@@ -47,7 +47,7 @@ public class BookContentsrScript : MonoBehaviour
 
         leftPagination.text = leftSide.pageToDisplay.ToString();    
         rightPagination.text = rightSide.pageToDisplay.ToString();
-        pageCount = leftSide.textInfo.pageCount;
+        pageCount = leftSide.textInfo.pageCount; //Causes null-reference-exception.
     }
 
     public void PreviousPage()

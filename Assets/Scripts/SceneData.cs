@@ -9,7 +9,7 @@ public class SceneData : ScriptableObject
     public string sceneName = ""; //We can use any name for the scene in the script.
     public int entryIndex = -1; //We set the entry-point index default value to -1, so it won't work in an Array, and we can put an error-message for when we haven't assigned any point to it.
 
-    [Header("The items the scene has when loaded.")] //Tellls us where to drop items that are meant to be in the scene.
+    [Header("The items the scene has when loaded.")] //Tells us where to drop items that are meant to be in the scene.
     public bool[] sceneFlags = new bool[8]; // [X][ ][X][ ][ ][ ][ ][ ][ ][ ]
     public List<ItemToSpawn> itemsToSpawn = new List<ItemToSpawn>();   
     public void Reset()
