@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f574a59e6d9fac41a62063af6c2abdb, type: 3}
-  m_Name: RedHood
+  m_Name: Bremen
   m_EditorClassIdentifier: 
-  npcName: RedHood
-  nId: 4
-  description: Little Red Riding Hood
-  icon: {fileID: 2107824817, guid: 34a1445045393ac4db14816c31788199, type: 3}
+  npcName: Bremen Town Musicians
+  nId: 1
+  description: Fancy hip-hop quartet.
+  icon: {fileID: 1162091192, guid: 0eef7bcdf3846f344a88f83713b1b32c, type: 3}
   talkedTo: 0
   convoFlags: 0000000000000000

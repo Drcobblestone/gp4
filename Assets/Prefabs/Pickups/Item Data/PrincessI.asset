@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f574a59e6d9fac41a62063af6c2abdb, type: 3}
-  m_Name: RedHood
+  m_Script: {fileID: 11500000, guid: bb328398005db5c44a2c62331b132102, type: 3}
+  m_Name: PrincessI
   m_EditorClassIdentifier: 
-  npcName: RedHood
-  nId: 4
-  description: Little Red Riding Hood
-  icon: {fileID: 2107824817, guid: 34a1445045393ac4db14816c31788199, type: 3}
-  talkedTo: 0
-  convoFlags: 0000000000000000
+  id: 2
+  description: 'A beautiful kissable princess. ;) '
+  icon: {fileID: -1893751228, guid: d2938510c46bc9b4a928c894b5c845b5, type: 3}
+  prefab: {fileID: 0}
+  pickedUp: 0
