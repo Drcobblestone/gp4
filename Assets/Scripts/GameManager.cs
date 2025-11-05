@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] ItemDBData itemDB;
+    [Header("(Which scene we are in)")]
     [SerializeField] SceneData data;
     [SerializeField] Transform playerTransform;
     [SerializeField] Transform[] entryPoints; //We create an array of entry-points within a scene.
