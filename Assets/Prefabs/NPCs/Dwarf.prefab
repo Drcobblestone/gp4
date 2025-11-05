@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5770279104268525727}
   - component: {fileID: 2541834230560508186}
   - component: {fileID: 4162337604166047761}
+  - component: {fileID: 2409184352587516655}
   m_Layer: 0
   m_Name: Dwarf
   m_TagString: NPC
@@ -144,6 +145,7 @@ MonoBehaviour:
   contButton: {fileID: 0}
   wordSpeed: 0.06
   npcBoxcollider: {fileID: 4162337604166047761}
+  resetDialougeAtEnd: 0
   cantClickNPC: 0
 --- !u!114 &2541834230560508186
 MonoBehaviour:
@@ -173,6 +175,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _mouse: {fileID: 0}
   _isInRange: 0
 --- !u!61 &4162337604166047761
 BoxCollider2D:
@@ -219,3 +222,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.078916, y: 3.1439419}
   m_EdgeRadius: 0
+--- !u!95 &2409184352587516655
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2540103093519088742}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f078287c15e14474b9f3d4c3c69bd725, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
