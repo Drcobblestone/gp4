@@ -3651,13 +3651,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frogprince1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 3535837753551171210, guid: 14603d80df87db3489fe1bfe1efd5b2a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8b76bae73400632498247bdf92931666, type: 2}
     - target: {fileID: 6325873498267752211, guid: 14603d80df87db3489fe1bfe1efd5b2a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.67
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 6325873498267752211, guid: 14603d80df87db3489fe1bfe1efd5b2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.43
+      value: -4.45
       objectReference: {fileID: 0}
     - target: {fileID: 6325873498267752211, guid: 14603d80df87db3489fe1bfe1efd5b2a, type: 3}
       propertyPath: m_LocalPosition.z

@@ -1,0 +1,1236 @@
+fileFormatVersion: 2
+guid: 8951288d79f885a4d9f82d89d38f2c93
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bookclub-2 3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decfe133770962443a17df6b1a340a60
+      internalID: -2055511136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1026
+        width: 180
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dc3b7723b04274d88305508f9bc01d
+      internalID: -534498897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 999
+        width: 171
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b429d2ae0daf1d4f90278c16b9eb02d
+      internalID: -268651472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_3
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1136
+        width: 146
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42252c28677fe5844b48f742292bb316
+      internalID: 1696032676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_4
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 909
+        width: 169
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d23ea0fa67b05e4c828781075b8275d
+      internalID: 1694885556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_5
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 887
+        width: 205
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a26024d948d8545844287e037a5ff1
+      internalID: -2145616329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_6
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 892
+        width: 18
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99609d92e6f7c844baead6f46415f22
+      internalID: 32184464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_7
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 990
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49998c54daf572a4bb33739a4bfe915e
+      internalID: -418020894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_8
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 793
+        width: 165
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb34e7349e796d642be461ff7815f342
+      internalID: 50476154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_9
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 943
+        width: 60
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35be5ff917a74864ea5baf2dd136c802
+      internalID: -466758083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_10
+      rect:
+        serializedVersion: 2
+        x: 2764
+        y: 917
+        width: 227
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2745ed24f3c2b13439f726931024009f
+      internalID: -1774947845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_11
+      rect:
+        serializedVersion: 2
+        x: 2661
+        y: 836
+        width: 58
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938e885254426554380fe5c6a799fccc
+      internalID: -1381573059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_12
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 763
+        width: 79
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313090c6e6869624c9b291b19cd32767
+      internalID: -76741940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 656
+        width: 68
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d49d79f73b1fe4f9a6a109e800706d
+      internalID: -1924644626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_14
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 654
+        width: 45
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e54443845710c45a63b39791cb9ad1
+      internalID: 1772425942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_15
+      rect:
+        serializedVersion: 2
+        x: 2411
+        y: 645
+        width: 77
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa66b5abd920dcd4a85fb4421e060ab4
+      internalID: 1432698244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_16
+      rect:
+        serializedVersion: 2
+        x: 2677
+        y: 692
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa528de7b4746f409024ac04e5d2b8d
+      internalID: -1791320278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_17
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 712
+        width: 45
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3e56219a3149b4f826cfbcc1d1028b
+      internalID: 1949766223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_18
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 669
+        width: 94
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251257b532159b844ae277dd2472e6f5
+      internalID: 1199571679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_19
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 534
+        width: 146
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e608ace5cdd711a4dbf56b4e7358c460
+      internalID: -1296802876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_20
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 557
+        width: 67
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a89e258c1eaf464383cbe002784b0b3
+      internalID: -1871241507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_21
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 666
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b51bd23de004bc4a925e2d604c881a1
+      internalID: -270504951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_22
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 594
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e061500cf6911aa47910b1e3f76ab8b6
+      internalID: -1534667627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_23
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 364
+        width: 171
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e96b432079aa47439394624efd63b5c
+      internalID: -188184157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_24
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 377
+        width: 129
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf07587e52eb40b4d93b97234c73aad9
+      internalID: 1015449580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_25
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 433
+        width: 103
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d7d2ff84fa0fb4b9f100e2528f3bc1
+      internalID: -164072044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_26
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 414
+        width: 79
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aadb1285b00257428d400df9ece53cc
+      internalID: 2135973668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_27
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 277
+        width: 115
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a38622bfc8f9544694b651019591cae
+      internalID: 1594624375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_28
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 465
+        width: 67
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a01e9d42a16af741952a4841ea7c586
+      internalID: 1706651793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_29
+      rect:
+        serializedVersion: 2
+        x: 2677
+        y: 339
+        width: 85
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae459ae760a1b964b8105caf57715ce9
+      internalID: -398724250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_30
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 516
+        width: 43
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bb209b05cf98e4980125b1b17b2b37
+      internalID: -256472092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_31
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 285
+        width: 85
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675345e8707a6fe47aa6447acdc6ca08
+      internalID: -1515635386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_32
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 277
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047d608aef5eb5944bfee8c822dd6cfa
+      internalID: 1942343880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_33
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 261
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a5f4b3169d18a44af1a3b098a5c696
+      internalID: 1858628194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_34
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 306
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b867508e3d798a44889f02864fe9a9f1
+      internalID: 1046612512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_35
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 315
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff26f6434dc5504fbac055389a272ff
+      internalID: -1314285990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_36
+      rect:
+        serializedVersion: 2
+        x: 2743
+        y: 266
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882093237a49b8b4fb5928d5c19c68d7
+      internalID: 309653776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_37
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 195
+        width: 135
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909d1f906edea2744833603860a6fd73
+      internalID: -1206200879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_38
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 292
+        width: 77
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754f50e4783992746b51cca829112145
+      internalID: -553701424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_39
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 82
+        width: 129
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa0aabf14c99b145b2520f11628e3a5
+      internalID: 1186511836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_40
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 174
+        width: 17
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a941f7703e5f547b80632289573efa
+      internalID: 1910112601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_41
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 191
+        width: 85
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ac483043835f74d990560606a8c782
+      internalID: -831595496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_42
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 199
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d828651ae5c135144b4ecda35f036ee0
+      internalID: -1296670778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_43
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 0
+        width: 139
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb918e3d6d01b0f4ea44fd79c639f0bd
+      internalID: 821498643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_44
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 120
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6a35d9faa291641852d4f96b4b3063
+      internalID: 1053471453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_45
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 71
+        width: 77
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33c59eb2774c6e4fb265060be90c4af
+      internalID: 463092341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_46
+      rect:
+        serializedVersion: 2
+        x: 3304
+        y: 36
+        width: 58
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f6dc1dc0c208446a3d1d6482035ecd
+      internalID: 606676181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_47
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 51
+        width: 50
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc59860a8685004ab0330b29c8818bb
+      internalID: -1033691332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_48
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 0
+        width: 42
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add9aaef43e089f40814a0cedffa2e92
+      internalID: 2112877419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_49
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4f37252d72abc4bbf5f535a05f38e0
+      internalID: -1360302842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookclub-2 3_50
+      rect:
+        serializedVersion: 2
+        x: 3756
+        y: 0
+        width: 69
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90346c7a87e71244fb471d9d777ab2bd
+      internalID: -1661465239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bookclub-2 3_0: -2055511136
+      Bookclub-2 3_1: -534498897
+      Bookclub-2 3_10: -1774947845
+      Bookclub-2 3_11: -1381573059
+      Bookclub-2 3_12: -76741940
+      Bookclub-2 3_13: -1924644626
+      Bookclub-2 3_14: 1772425942
+      Bookclub-2 3_15: 1432698244
+      Bookclub-2 3_16: -1791320278
+      Bookclub-2 3_17: 1949766223
+      Bookclub-2 3_18: 1199571679
+      Bookclub-2 3_19: -1296802876
+      Bookclub-2 3_2: -268651472
+      Bookclub-2 3_20: -1871241507
+      Bookclub-2 3_21: -270504951
+      Bookclub-2 3_22: -1534667627
+      Bookclub-2 3_23: -188184157
+      Bookclub-2 3_24: 1015449580
+      Bookclub-2 3_25: -164072044
+      Bookclub-2 3_26: 2135973668
+      Bookclub-2 3_27: 1594624375
+      Bookclub-2 3_28: 1706651793
+      Bookclub-2 3_29: -398724250
+      Bookclub-2 3_3: 1696032676
+      Bookclub-2 3_30: -256472092
+      Bookclub-2 3_31: -1515635386
+      Bookclub-2 3_32: 1942343880
+      Bookclub-2 3_33: 1858628194
+      Bookclub-2 3_34: 1046612512
+      Bookclub-2 3_35: -1314285990
+      Bookclub-2 3_36: 309653776
+      Bookclub-2 3_37: -1206200879
+      Bookclub-2 3_38: -553701424
+      Bookclub-2 3_39: 1186511836
+      Bookclub-2 3_4: 1694885556
+      Bookclub-2 3_40: 1910112601
+      Bookclub-2 3_41: -831595496
+      Bookclub-2 3_42: -1296670778
+      Bookclub-2 3_43: 821498643
+      Bookclub-2 3_44: 1053471453
+      Bookclub-2 3_45: 463092341
+      Bookclub-2 3_46: 606676181
+      Bookclub-2 3_47: -1033691332
+      Bookclub-2 3_48: 2112877419
+      Bookclub-2 3_49: -1360302842
+      Bookclub-2 3_5: -2145616329
+      Bookclub-2 3_50: -1661465239
+      Bookclub-2 3_6: 32184464
+      Bookclub-2 3_7: -418020894
+      Bookclub-2 3_8: 50476154
+      Bookclub-2 3_9: -466758083
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
