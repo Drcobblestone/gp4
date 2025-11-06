@@ -17,4 +17,10 @@ MonoBehaviour:
   description: Fancy hip-hop quartet.
   icon: {fileID: 1162091192, guid: 0eef7bcdf3846f344a88f83713b1b32c, type: 3}
   talkedTo: 0
-  convoFlags: 0000000000000000
+  conversations:
+  - dialogue: 
+    waitForQuest: 0
+    givenItem: {fileID: 0}
+  - dialogue: 
+    waitForQuest: 0
+    givenItem: {fileID: 0}
