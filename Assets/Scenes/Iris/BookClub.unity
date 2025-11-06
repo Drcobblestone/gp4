@@ -1334,6 +1334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bookclub
       objectReference: {fileID: 0}
+    - target: {fileID: 2367258862390315881, guid: 6b28aa3a867d88041bd2e7aa0372e5ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2872146439678142730, guid: 6b28aa3a867d88041bd2e7aa0372e5ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.49675572
@@ -2504,6 +2508,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6bdbb05b092a9a498577729ed9df86b, type: 3}
+--- !u!1001 &1333927637
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.24837084
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.14369902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386859195001442632, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996298728552973449, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_Name
+      value: GlitterDeluxe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996298728552973449, guid: 8771bb197abe8244f890722a565d7210, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8771bb197abe8244f890722a565d7210, type: 3}
 --- !u!4 &1352780167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953223210043150848, guid: a6bdbb05b092a9a498577729ed9df86b, type: 3}
@@ -3659,3 +3724,4 @@ SceneRoots:
   - {fileID: 170195622}
   - {fileID: 1765673277}
   - {fileID: 1420976203}
+  - {fileID: 1333927637}
