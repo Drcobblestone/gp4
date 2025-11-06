@@ -18,9 +18,14 @@ MonoBehaviour:
   icon: {fileID: -212959363, guid: a4be70e2f156ebe459f571b5ab743c02, type: 3}
   talkedTo: 0
   conversations:
-  - dialogue: 
+  - dialogue: C'mer... lil' fuzz... I've been under da' weather for ages... Got the
+      woozies. Only da WHITE SNOW perks me up, y'know? Now git! Get me somma' dat!
     waitForQuest: 0
     givenItem: {fileID: 0}
-  - dialogue: 
+  - dialogue: Did ya' get me dat' sweeet White Snow, lil' fuzz?
     waitForQuest: 0
+    givenItem: {fileID: 0}
+  - dialogue: Yeaaah! Dis' stuff is FIRE! Now I can get through the fricken' day,
+      even with that bitch Snow White bossin' me around!
+    waitForQuest: 1
     givenItem: {fileID: 0}
