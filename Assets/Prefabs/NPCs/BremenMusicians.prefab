@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 2620437435946898253}
   - component: {fileID: 7111403559936382360}
   - component: {fileID: 7943975900772569205}
+  - component: {fileID: 6145207460060224532}
+  - component: {fileID: 2858560752306748600}
+  - component: {fileID: 356578961693244311}
   m_Layer: 0
   m_Name: BremenMusicians
   m_TagString: Untagged
@@ -72,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -672575029
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -816344560, guid: eabd90238141f734bba82de4077af7f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -142,3 +145,98 @@ CapsuleCollider2D:
   m_Offset: {x: -0.12119889, y: 0.095897935}
   m_Size: {x: 3.2952905, y: 0.19182342}
   m_Direction: 1
+--- !u!61 &6145207460060224532
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6377569730910456554}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00843668, y: 1.6170174}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 3.6103864, y: 3.3549998}
+    newSize: {x: 3.6103864, y: 3.3549998}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.978963, y: 4.563506}
+  m_EdgeRadius: 0
+--- !u!114 &2858560752306748600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6377569730910456554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8cf438a51808a2479b48926073ce9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  npcData: {fileID: 11400000, guid: b11edaf22e50a7a48949f441ecdcff44, type: 2}
+  contButton: {fileID: 0}
+  wordSpeed: 0
+  npcBoxcollider: {fileID: 6145207460060224532}
+  resetDialougeAtEnd: 0
+  cantClickNPC: 0
+--- !u!114 &356578961693244311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6377569730910456554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c298fa579f1f4346a2151dec52b597f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hasToBeInRange: 1
+  _clicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2858560752306748600}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: OnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _mouse: {fileID: 0}
+  _isInRange: 0

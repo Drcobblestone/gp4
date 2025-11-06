@@ -159,10 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
-  dialogue:
-  - C'mer... lil' fuzz... I've been under the da' weather for ages... Got the woozies.
-    Only da WHITE STUFF perks me up, y'know?
-  - Now git! Get me somma' dat!
+  npcData: {fileID: 11400000, guid: 1fdcc58e1bfcadb48a7f62dab2d7e7d7, type: 2}
   contButton: {fileID: 0}
   wordSpeed: 0.06
   npcBoxcollider: {fileID: 4162337604166047761}

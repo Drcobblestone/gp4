@@ -10,7 +10,9 @@ public class NPC : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public TMP_Text dialogueText;
-    public string[] dialogue;
+    [SerializeField] NpcData npcData;
+    //public string[] dialogue; //This needs to be changed to a serialize-field with NPC-data, I think.
+    
     private int index;
     ClickHandler clickHandler;
     public GameObject contButton;
@@ -43,7 +45,8 @@ public class NPC : MonoBehaviour
 
     IEnumerator Typing() //This is our typing-effect, where the letters come out bit by bit.
     {
-        foreach (char letter  in dialogue[index].ToCharArray()) 
+        string dialogue = npcData.conversations[index].dialogue;
+        foreach (char letter  in dialogue.ToCharArray()) 
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
@@ -67,7 +70,7 @@ public class NPC : MonoBehaviour
     {
         contButton.SetActive(false); //We turn off the continue-button, since now we're going to load the next conversation.
         
-        if(index < dialogue.Length -1) //If our dialogue-index is shorter than our dialogue-length
+        if(index < npcData.conversations.Count -1) //If our dialogue-index is shorter than our dialogue-length
         {
             index++; //...the we start another conversation.
             dialogueText.text = ""; //We set the text to nothing, since we have a list of lines that's going to load instead.

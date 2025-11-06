@@ -174,7 +174,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.018367171, y: 0.7999245}
@@ -204,12 +204,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
-  dialogue:
-  - 
+  npcData: {fileID: 11400000, guid: 33af02ca8f298124091799cc1cf09889, type: 2}
   contButton: {fileID: 0}
   wordSpeed: 0.06
   npcBoxcollider: {fileID: 3285917257187175033}
-  resetDialougeAtEnd: 1
+  resetDialougeAtEnd: 0
   cantClickNPC: 0
 --- !u!114 &8875029560050409679
 MonoBehaviour:

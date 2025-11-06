@@ -205,9 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
-  dialogue:
-  - Hej! Test, test.
-  - "Hej d\xE5, fuling!"
+  npcData: {fileID: 11400000, guid: e1cd4b33f94fda1468b55ab4f43b8513, type: 2}
   contButton: {fileID: 0}
   wordSpeed: 0.06
   npcBoxcollider: {fileID: 8714887777010114432}

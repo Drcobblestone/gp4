@@ -19,7 +19,7 @@ public class NpcData : ScriptableObject
 
 [System.Serializable] //This lets us create a custom class, struct, or field that can be saved. (serialised)
                       //It also makes it visible in the Unity-editor. 
-public class Conversations
+public class Conversations //Here we define our various options for what happens during conversations.
 {
     [TextArea(3, 10)] //TextAreaAttribute(int minLines, int maxLines);
     public string dialogue;
