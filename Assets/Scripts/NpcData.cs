@@ -13,7 +13,7 @@ public class NpcData : ScriptableObject
     public Sprite icon; //This is an actual sprite/texture that's going to be visible in the UI.
     public bool talkedTo = false;
     [Header("The Conversations the NPC has when loaded.")] //Tells us what conversations the NPC is meant to have.
-    public List<Conversations> conversations = new List<Conversations>();
+    public List<Conversations> conversations = new List<Conversations>(); //This creates the list of conversations the NPC is supposed to have.
 
 }
 

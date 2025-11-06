@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c298fa579f1f4346a2151dec52b597f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hasToBeInRange: 0
+  _hasToBeInRange: 1
   _clicked:
     m_PersistentCalls:
       m_Calls:

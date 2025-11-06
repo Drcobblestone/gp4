@@ -17,4 +17,10 @@ MonoBehaviour:
   description: A princess to kiss the Frog
   icon: {fileID: 0}
   talkedTo: 0
-  convoFlags: 0000000000000000
+  conversations:
+  - dialogue: 
+    waitForQuest: 0
+    givenItem: {fileID: 0}
+  - dialogue: 
+    waitForQuest: 0
+    givenItem: {fileID: 0}
