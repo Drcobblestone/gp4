@@ -17,4 +17,10 @@ MonoBehaviour:
   description: Little Red Riding Hood
   icon: {fileID: 2107824817, guid: 34a1445045393ac4db14816c31788199, type: 3}
   talkedTo: 0
-  convoFlags: 0000000000000000
+  conversations:
+  - dialogue: 
+    waitForQuest: 0
+    givenItem: {fileID: 0}
+  - dialogue: 
+    waitForQuest: 0
+    givenItem: {fileID: 0}

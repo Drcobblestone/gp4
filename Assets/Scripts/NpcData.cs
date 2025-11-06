@@ -13,5 +13,16 @@ public class NpcData : ScriptableObject
     public Sprite icon; //This is an actual sprite/texture that's going to be visible in the UI.
     public bool talkedTo = false;
     [Header("The Conversations the NPC has when loaded.")] //Tells us what conversations the NPC is meant to have.
-    public bool[] convoFlags = new bool[8]; //This is an idea to keep track of what things the NPC has said, via flags.
+    public List<Conversations> conversations = new List<Conversations>();
+
+}
+
+[System.Serializable] //This lets us create a custom class, struct, or field that can be saved. (serialised)
+                      //It also makes it visible in the Unity-editor. 
+public class Conversations
+{
+    [TextArea(3, 10)] //TextAreaAttribute(int minLines, int maxLines);
+    public string dialogue;
+    public bool waitForQuest;
+    public Item givenItem;
 }

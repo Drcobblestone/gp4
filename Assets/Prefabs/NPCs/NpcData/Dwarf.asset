@@ -17,4 +17,10 @@ MonoBehaviour:
   description: A dwarf from Snow White
   icon: {fileID: -212959363, guid: a4be70e2f156ebe459f571b5ab743c02, type: 3}
   talkedTo: 0
-  convoFlags: 0000000000000000
+  conversations:
+  - dialogue: 
+    waitForQuest: 0
+    givenItem: {fileID: 0}
+  - dialogue: 
+    waitForQuest: 0
+    givenItem: {fileID: 0}
