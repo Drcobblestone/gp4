@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34a1445045393ac4db14816c31788199
+guid: 1a006c8ec134cb94daf72ee773562969
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,22 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork 2_0
+      name: FrogPrince2.0_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 7
-        width: 708
-        height: 707
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 951
+        y: 1132
+        width: 507
+        height: 333
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d829031238202e49a70c08fadd68d94
-      internalID: 2107824817
+      spriteID: e23adf37b587c3e4c9f6c98d0e4d2bbd
+      internalID: 1303455057
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork 2_0: 2107824817
+      FrogPrince2.0_0: 1303455057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
