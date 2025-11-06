@@ -5,7 +5,7 @@ public enum ItemID
 {
     COCAINE,
     JOINT,
-    PRINCESS,
+    PRINCESSI,
     TURNTABLE  
 }
 
@@ -15,5 +15,6 @@ public enum NpcID
     DWARF,
     BREMEN,
     FROGPRINCE,
+    PRINCESSN,
     REDHOOD
 }
