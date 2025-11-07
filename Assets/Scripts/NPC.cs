@@ -22,7 +22,7 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
-        dialogueText.text = ""; //This is needed because the length of dialogueText starts as 1.
+        dialogueText.text = ""; //This is needed because the length of dialogueText starts as 1. //If you run the game all the way from Main Menu, this causes Nullreferror.
     }
 
 

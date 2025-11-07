@@ -18,6 +18,7 @@ public class BookContentsrScript : MonoBehaviour
     public UnityEvent reachedEnd;
     int pageCount;
 
+/*
 #if (UNITY_EDITOR)
     private void OnValidate()
     {
@@ -25,11 +26,11 @@ public class BookContentsrScript : MonoBehaviour
 
         /*if (leftSide.text == content)
             return;
-        */
+        
         SetupContent();
     }
 #endif
-
+*/
 
     private void Awake()
     {
