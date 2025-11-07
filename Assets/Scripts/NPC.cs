@@ -11,8 +11,6 @@ public class NPC : MonoBehaviour
     public GameObject dialoguePanel;
     public TMP_Text dialogueText;
     [SerializeField] NpcData npcData;
-    //public string[] dialogue; //This needs to be changed to a serialize-field with NPC-data, I think.
-    
     private int index;
     ClickHandler clickHandler;
     public GameObject contButton;
