@@ -3651,6 +3651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frogprince1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2882269106348706417, guid: 14603d80df87db3489fe1bfe1efd5b2a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1303455057, guid: 1a006c8ec134cb94daf72ee773562969, type: 3}
     - target: {fileID: 3535837753551171210, guid: 14603d80df87db3489fe1bfe1efd5b2a, type: 3}
       propertyPath: m_Controller
       value: 
