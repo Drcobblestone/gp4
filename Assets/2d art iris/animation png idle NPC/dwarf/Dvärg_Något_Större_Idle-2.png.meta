@@ -121,11 +121,11 @@ TextureImporter:
       name: "Dva\u0308rg_Na\u030Agot_Sto\u0308rre_Idle-2_1"
       rect:
         serializedVersion: 2
-        x: 1642
+        x: 1612
         y: 1557
-        width: 209
+        width: 239
         height: 343
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
