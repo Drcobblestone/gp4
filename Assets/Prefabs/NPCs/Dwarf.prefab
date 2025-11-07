@@ -163,7 +163,7 @@ MonoBehaviour:
   contButton: {fileID: 0}
   wordSpeed: 0.06
   npcBoxcollider: {fileID: 4162337604166047761}
-  resetDialougeAtEnd: 0
+  resetDialougeAtEnd: 1
   cantClickNPC: 0
 --- !u!114 &2541834230560508186
 MonoBehaviour:
@@ -193,7 +193,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _mouse: {fileID: 0}
   _isInRange: 0
 --- !u!61 &4162337604166047761
 BoxCollider2D:

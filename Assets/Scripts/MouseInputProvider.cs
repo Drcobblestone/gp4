@@ -32,6 +32,7 @@ public class MouseInputProvider : MonoBehaviour
         {
             return; //... we go back and look again.
         }
+        Debug.Log("CLICKED");
         Clicked?.Invoke(); //If all conditions are met we register a click
     }
 

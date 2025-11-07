@@ -18,6 +18,7 @@ public class BookContentsrScript : MonoBehaviour
     public UnityEvent reachedEnd;
     int pageCount;
 
+#if (UNITY_EDITOR)
     private void OnValidate()
     {
         UpdatePagination();
@@ -27,6 +28,8 @@ public class BookContentsrScript : MonoBehaviour
         */
         SetupContent();
     }
+#endif
+
 
     private void Awake()
     {
@@ -44,7 +47,6 @@ public class BookContentsrScript : MonoBehaviour
     private void UpdatePagination()
 
     {
-
         leftPagination.text = leftSide.pageToDisplay.ToString();    
         rightPagination.text = rightSide.pageToDisplay.ToString();
         pageCount = leftSide.textInfo.pageCount; //Causes null-reference-exception.

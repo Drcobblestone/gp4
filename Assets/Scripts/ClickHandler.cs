@@ -13,7 +13,7 @@ public class ClickHandler : MonoBehaviour
     [Header("-Player Component References-")]
     [Header("-Put MouseInputProvider script here")]
     //Remember to drag the player in the editor to get this in here...
-    [SerializeField] private MouseInputProvider _mouse;
+    private MouseInputProvider _mouse;
 
     public bool _isInRange; //If the player is in range, then stuff will happen.
 
