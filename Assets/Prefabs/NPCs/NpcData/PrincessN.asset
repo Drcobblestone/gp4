@@ -15,12 +15,14 @@ MonoBehaviour:
   npcName: PrincessNPC
   nId: 3
   description: A princess to kiss the Frog
-  icon: {fileID: 0}
+  icon: {fileID: -1893751228, guid: d2938510c46bc9b4a928c894b5c845b5, type: 3}
   talkedTo: 0
   conversations:
-  - dialogue: 
+  - dialogue: Oh, so you've met a nice Frog? And he's a real gentleman, a true Royal
+      even? Oh my! Dear Sir please set us up a meeting.
     waitForQuest: 0
     givenItem: {fileID: 0}
-  - dialogue: 
+  - dialogue: YOU?! You're the Frog Royal this fool Sheep mentioned?! Begone, nasty
+      slime!
     waitForQuest: 0
     givenItem: {fileID: 0}

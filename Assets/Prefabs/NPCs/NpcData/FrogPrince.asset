@@ -15,12 +15,15 @@ MonoBehaviour:
   npcName: Frogprince
   nId: 2
   description: A cute frog
-  icon: {fileID: 0}
+  icon: {fileID: 117385682, guid: 3d66e7134db9a4c48814d3fb7350fcbb, type: 3}
   talkedTo: 0
   conversations:
-  - dialogue: 
+  - dialogue: Little man...psst! Come here. So, I've got my eyes on this Princess-Babe,
+      but she blew me off before - I could use your help to get into her orbit again.
+      Can you trick her ass to come over to my pond again?
     waitForQuest: 0
     givenItem: {fileID: 0}
-  - dialogue: 
+  - dialogue: My man! You smooth, man - reaaal smooth. Hubba-hubba! Now watch me
+      put my moves on again.
     waitForQuest: 0
     givenItem: {fileID: 0}
