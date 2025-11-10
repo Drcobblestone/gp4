@@ -591,8 +591,8 @@ MonoBehaviour:
     and would get the walloping of her LIFE when she got back home! So, she needed
     a new Joint to give to her Grand-Mama\u2026\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
+  m_sharedMaterial: {fileID: -3451267453510604213, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1066,6 +1066,9 @@ MonoBehaviour:
   rightSide: {fileID: 5994625942935548779}
   leftPagination: {fileID: 4693156486844263181}
   rightPagination: {fileID: 8810466992517407489}
+  reachedEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6365816603873704847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,8 +1479,8 @@ MonoBehaviour:
     and would get the walloping of her LIFE when she got back home! So, she needed
     a new Joint to give to her Grand-Mama\u2026\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
+  m_sharedMaterial: {fileID: -3451267453510604213, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
