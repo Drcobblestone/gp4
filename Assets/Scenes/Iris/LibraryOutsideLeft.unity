@@ -1912,11 +1912,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4087429064486254855, guid: 8aac61fd9442a344997c2a748e0635c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: -6.27
       objectReference: {fileID: 0}
     - target: {fileID: 4087429064486254855, guid: 8aac61fd9442a344997c2a748e0635c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.79
+      value: -3.69
       objectReference: {fileID: 0}
     - target: {fileID: 4087429064486254855, guid: 8aac61fd9442a344997c2a748e0635c9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1955,6 +1955,10 @@ PrefabInstance:
       value: RedHood
       objectReference: {fileID: 0}
     - target: {fileID: 5785251734980466944, guid: 8aac61fd9442a344997c2a748e0635c9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1544875940, guid: 23453eb1c9e949645a319e35067033f6, type: 3}
+    - target: {fileID: 5785251734980466944, guid: 8aac61fd9442a344997c2a748e0635c9, type: 3}
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1966,6 +1970,10 @@ PrefabInstance:
       propertyPath: m_SpriteSortPoint
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6110244551632240596, guid: 8aac61fd9442a344997c2a748e0635c9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ac286cdcdb381314ea0b45dfea3f4e33, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

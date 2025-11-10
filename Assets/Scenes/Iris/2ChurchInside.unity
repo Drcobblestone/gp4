@@ -1541,11 +1541,11 @@ PrefabInstance:
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: entryPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 613411375}
+      objectReference: {fileID: 1193538780}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: entryPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1193538780}
+      objectReference: {fileID: 613411375}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
