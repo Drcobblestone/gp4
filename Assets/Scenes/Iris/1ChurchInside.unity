@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 86db7779aa0f267498b3e3196124665c, type: 2}
     - target: {fileID: 3582947094276818101, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: enterToIndex
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalScale.x
