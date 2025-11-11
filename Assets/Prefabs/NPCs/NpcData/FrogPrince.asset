@@ -27,3 +27,7 @@ MonoBehaviour:
       put my moves on again.
     waitForQuest: 0
     givenItem: {fileID: 0}
+  - dialogue: My man! You smooth, man - reaaal smooth. Hubba-hubba! Now watch me
+      put my moves on again.
+    waitForQuest: 0
+    givenItem: {fileID: 0}

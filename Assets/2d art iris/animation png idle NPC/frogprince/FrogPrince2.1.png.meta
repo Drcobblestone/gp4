@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec5477182a212c24aae2e81cca2d7e6e
+guid: cf8c12e8065ae3646a1013bc9e9a8621
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 900
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,114 +93,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Joint-1_0
+      name: FrogPrince2.1_0
       rect:
         serializedVersion: 2
-        x: 1915
-        y: 2446
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f671d28a5f4745429c6f64701ec7727
-      internalID: 72391177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Joint-1_1
-      rect:
-        serializedVersion: 2
-        x: 1853
-        y: 1614
-        width: 158
-        height: 469
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05c0bb43291d6f7499b485e7c81f36f6
-      internalID: 766886955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Joint-1_2
-      rect:
-        serializedVersion: 2
-        x: 1893
-        y: 1632
-        width: 186
-        height: 812
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a15a81fa28add9243959cb3d6cbdea24
-      internalID: -841884831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Joint-1_3
-      rect:
-        serializedVersion: 2
-        x: 2040
-        y: 1619
-        width: 125
-        height: 654
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 437b695d7c7d4c549b7e57cc81af7b33
-      internalID: 1060155454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Joint-1_4
-      rect:
-        serializedVersion: 2
-        x: 1112
-        y: 814
-        width: 1103
-        height: 1638
+        x: 951
+        y: 1134
+        width: 1238
+        height: 798
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01df851d1f591ba458deab9a71fdb89a
-      internalID: 1709046175
+      spriteID: 4acda4fdf8d0d964d9e913461d2923bf
+      internalID: -691174965
       vertices: []
       indices: 
       edges: []
@@ -225,11 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Joint-1_0: 72391177
-      Joint-1_1: 766886955
-      Joint-1_2: -841884831
-      Joint-1_3: 1060155454
-      Joint-1_4: 1709046175
+      FrogPrince2.1_0: -691174965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
