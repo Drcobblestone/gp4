@@ -20,12 +20,21 @@ MonoBehaviour:
   conversations:
   - dialogue: C'mer... lil' fuzz... I've been under da' weather for ages... Got the
       woozies. Only da WHITE SNOW perks me up, y'know? Now git! Get me somma' dat!
-    waitForQuest: 0
-    givenItem: {fileID: 0}
+    waitForQuestGiven: 0
+    waitForQuestItem1: 0
+    waitForQuestItemFinal: 0
+    firstNpcGivenItem: {fileID: 0}
+    finalNpcGivenItem: {fileID: 0}
   - dialogue: Did ya' get me dat' sweeet White Snow, lil' fuzz?
-    waitForQuest: 0
-    givenItem: {fileID: 0}
+    waitForQuestGiven: 0
+    waitForQuestItem1: 0
+    waitForQuestItemFinal: 0
+    firstNpcGivenItem: {fileID: 0}
+    finalNpcGivenItem: {fileID: 0}
   - dialogue: Yeaaah! Dis' stuff is FIRE! Now I can get through the fricken' day,
       even with that bitch Snow White bossin' me around!
-    waitForQuest: 1
-    givenItem: {fileID: 0}
+    waitForQuestGiven: 0
+    waitForQuestItem1: 0
+    waitForQuestItemFinal: 0
+    firstNpcGivenItem: {fileID: 0}
+    finalNpcGivenItem: {fileID: 0}

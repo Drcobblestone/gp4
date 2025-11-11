@@ -17,12 +17,15 @@ public class NpcData : ScriptableObject
 
 }
 
-[System.Serializable] //This lets us create a custom class, struct, or field that can be saved. (serialised)
+[System.Serializable] //This lets us create a custom class, struct, or field that can be *saved*. (serialised)
                       //It also makes it visible in the Unity-editor. 
 public class Conversations //Here we define our various options for what happens during conversations.
 {
     [TextArea(3, 10)] //TextAreaAttribute(int minLines, int maxLines);
     public string dialogue;
-    public bool waitForQuest;
-    public Item givenItem;
+    public bool waitForQuestGiven; //Click this in editor, to make sure the particular line of text doesn't load before a Quest has been given.
+    public bool waitForQuestItem1; //Click this in editor, to make sure that text doesn't show up before a quest is complete. (we need to write an if-statement to make it false as well, in another script...)
+    public bool waitForQuestItemFinal;
+    public Item firstNpcGivenItem; //If an Npc gives you an item before the quest is over - an item needed to complete the quest.
+    public Item finalNpcGivenItem; //This is supposed to summon an item to give to the player, at the end of the quest. (a book)
 }

@@ -18,3 +18,12 @@ public enum NpcID
     PRINCESSN,
     REDHOOD
 }
+
+//This is the Quest-Enums. They define types of objectives.
+public enum ObjectiveType
+{
+    CollectItem,
+    TalkNPC,
+    GiveItem,
+    Custom
+}
