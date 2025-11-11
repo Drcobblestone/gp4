@@ -18,7 +18,7 @@ MonoBehaviour:
   icon: {fileID: 1162091192, guid: 0eef7bcdf3846f344a88f83713b1b32c, type: 3}
   talkedTo: 0
   conversations:
-  - dialogue: 
+  - dialogue: "blablab\xF6a\xF6jsdhfjhrgihrhewutwry"
     waitForQuest: 0
     givenItem: {fileID: 0}
   - dialogue: 
