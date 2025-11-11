@@ -11,7 +11,7 @@ public class NpcUI : MonoBehaviour
     [SerializeField] TMP_Text nameof; //Where we input the name of the NPC-character.
 
 
-    public void Initialize(NpcID nId, NpcData npcData) // When we start talking to an NPC, we pass it the NPC-ID, so we can populate the conversation-canvas with Name and Icon.
+    public void Initialize(NpcData npcData) // When we start talking to an NPC, we pass it the NPC-ID, so we can populate the conversation-canvas with Name and Icon.
     {
         portrait.sprite = npcData.icon; //We give the portrait from NpcData.
         nameof.text = npcData.npcName; //We define that the NpcName field from NpcData, is what the text for the name of the NPC should be.

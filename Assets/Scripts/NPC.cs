@@ -19,9 +19,10 @@ public class NPC : MonoBehaviour
     [SerializeField] BoxCollider2D npcBoxcollider; //We make a field where we can get the NPC's box-collider.
     public bool resetDialougeAtEnd = false;
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
-
     private void Start()
     {
+        NpcUI npcUI = dialoguePanel.GetComponent<NpcUI>();
+        npcUI.Initialize(npcData);
         dialogueText.text = ""; //This is needed because the length of dialogueText starts as 1. //If you run the game all the way from Main Menu, this causes Nullreferror.
     }
 
@@ -40,9 +41,14 @@ public class NPC : MonoBehaviour
 
     }
 
-
+    //Always remember: Co-routines don't stop running unless you tell them! They're on a different thread.
     IEnumerator Typing() //This is our typing-effect, where the letters come out bit by bit.
     {
+        if (dialoguePanel.activeInHierarchy)
+        {
+            cantClickNPC = true; //We make it so we can't click the NPC while the dialogue-panel is active.
+            npcBoxcollider.enabled = false; //We do this by turning off the collider who detects the player.
+        }
         string dialogue = npcData.conversations[index].dialogue;
         foreach (char letter  in dialogue.ToCharArray()) 
         {
@@ -57,11 +63,7 @@ public class NPC : MonoBehaviour
         button.onClicked.AddListener(NextLine);
 
         //We disable clicking on the NPC while the text is loading, and the Continue-button is active.
-        if (dialoguePanel.activeInHierarchy)
-        {
-            cantClickNPC = true; //We make it so we can't click the NPC while the dialogue-panel is active.
-            npcBoxcollider.enabled = false; //We do this by turning off the collider who detects the player.
-        }
+        
     }
 
     public void NextLine() //To load the next part of the conversation.
