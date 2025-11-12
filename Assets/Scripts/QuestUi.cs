@@ -21,10 +21,12 @@ public class QuestUi : MonoBehaviour
         {
             quests.Add(new QuestProgress(quest));
         }
+
+        UpdateQuestUi();
     }
 
     // Called whenever there should be an update to our quest-progress.
-    public void UpdateQuestUI()
+    public void UpdateQuestUi()
     {
         //Destroy existing quest entries
         foreach (Transform child in questListContent)
@@ -42,8 +44,10 @@ public class QuestUi : MonoBehaviour
 
             foreach (QuestObjective objective in quest.objectives)
             {
-                GameObject objectTextGO = Instantiate(objectiveTextPrefab, objectiveList);
-
+                GameObject objTextGO = Instantiate(objectiveTextPrefab, objectiveList);
+                TMP_Text objText = objTextGO.GetComponent<TMP_Text>();
+                //objText = $"{objective.objectiveDescription} ({objective.currentAmount}/{objective.requiredAmount})"; //I don't have the Ints with amount that the tutorial has... What do I put here instead??
+                objText.text = $"{objective.objectiveDescription}"; //This will make the text describing the objective, appear in the GUI.
             }
         }
     }

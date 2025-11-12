@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
 using TMPro; //We get the textmeshpro library.
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;

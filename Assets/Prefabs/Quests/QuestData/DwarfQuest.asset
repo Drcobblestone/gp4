@@ -16,9 +16,15 @@ MonoBehaviour:
   questName: Help Dwarf
   questDescription: The Dwarf needs some "white snow" to cheer up.
   objectives:
-  - objectiveID: 
-    objectiveDescription: 
+  - objectiveID: COCAINE
+    objectiveDescription: Find the cocaine-bag.
     typeOfObjective: 0
     gotItem: 0
-    gaveItemtoNpc: 0
+    gaveItemToNpc: 0
+    questCompleted: 0
+  - objectiveID: COCAINE
+    objectiveDescription: Give the crack to the Dwarf.
+    typeOfObjective: 2
+    gotItem: 0
+    gaveItemToNpc: 0
     questCompleted: 0

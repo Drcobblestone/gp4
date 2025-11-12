@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8425729331446683876}
   - component: {fileID: 8844338769779872893}
+  - component: {fileID: 6569952542117015823}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -61,6 +62,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   droppedItems: []
+--- !u!114 &6569952542117015823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578599458810578693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e444ffad341685041b60434a8e59bf1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8224464493710806168
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,3 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53befc3e56b14214bbc0f46449bd7274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questListContent: {fileID: 0}
+  questEntryPrefab: {fileID: 0}
+  objectiveTextPrefab: {fileID: 0}
+  quest: {fileID: 0}
+  questAmount: 0

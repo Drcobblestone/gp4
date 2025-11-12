@@ -13,7 +13,7 @@ public class QuestData : ScriptableObject
     public List <QuestObjective> objectives;
 
     //This is called whenever the Scriptable object (the quest) is edited.
-    private void OnValidate()
+    private void OnValidate() //Replace with something else, onValidate is in editor only
     {
         if (string.IsNullOrEmpty(questID))
         {
