@@ -15,6 +15,9 @@ public class NpcData : ScriptableObject
     [Header("The Conversations the NPC has when loaded.")] //Tells us what conversations the NPC is meant to have.
     public List<Conversations> conversations = new List<Conversations>(); //This creates the list of conversations the NPC is supposed to have.
 
+    public int questInProgressIndex = 0; //If we have currently accepted a quest, this decides what/when the NPC will say a certain line of dialogue.(or give an item)
+    //public int questCompletedIndex;
+    public QuestData quest; //The quest the NPC gives.
 }
 
 [System.Serializable] //This lets us create a custom class, struct, or field that can be *saved*. (serialised)
@@ -23,9 +26,17 @@ public class Conversations //Here we define our various options for what happens
 {
     [TextArea(3, 10)] //TextAreaAttribute(int minLines, int maxLines);
     public string dialogue;
+    /*
     public bool waitForQuestGiven; //Click this in editor, to make sure the particular line of text doesn't load before a Quest has been given.
     public bool waitForQuestItem1; //Click this in editor, to make sure that text doesn't show up before a quest is complete. (we need to write an if-statement to make it false as well, in another script...)
     public bool waitForQuestItemFinal;
+  
     public Item firstNpcGivenItem; //If an Npc gives you an item before the quest is over - an item needed to complete the quest.
     public Item finalNpcGivenItem; //This is supposed to summon an item to give to the player, at the end of the quest. (a book)
+    */
+
+    //public int dialogueIndex; //A way to keep abreast of our dialogue-lines/options.
+    //public int[] nextDialogueIndexes; //Which dialogue is supposed to show up, depending on conditions.
+    public bool[] givesQuest; //If the dialogue gives a quest.
+
 }
