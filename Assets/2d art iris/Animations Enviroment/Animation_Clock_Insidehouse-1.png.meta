@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 579d04e46877a5e4fa19729a8229d37d
+guid: 3b0c4383c4eef804ebc40d9e3bbc0375
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 900
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,123 +93,26 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Joint-2_0
+      name: Animation_Clock_Insidehouse-1_0
       rect:
         serializedVersion: 2
-        x: 1905
-        y: 2491
-        width: 25
-        height: 12
+        x: 1626
+        y: 902
+        width: 358
+        height: 705
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62245994141af98409e2b32c978ff4ef
-      internalID: 906229422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Joint-2_1
-      rect:
-        serializedVersion: 2
-        x: 1845
-        y: 1614
-        width: 171
-        height: 500
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc7e10c3343b61049a3d5ee939cae2a3
-      internalID: 81203234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Joint-2_2
-      rect:
-        serializedVersion: 2
-        x: 1886
-        y: 1632
-        width: 202
-        height: 805
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9c0c8fb417c40a4793cc4d159b8c903
-      internalID: 665172044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Joint-2_3
-      rect:
-        serializedVersion: 2
-        x: 2047
-        y: 1596
-        width: 109
-        height: 677
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af185183aa08c864088a890103c3a141
-      internalID: 1430088296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Joint-2_4
-      rect:
-        serializedVersion: 2
-        x: 1112
-        y: 814
-        width: 1103
-        height: 1638
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62b420d66d13feb4a9961664c48b235f
-      internalID: 613857558
+      spriteID: 0b4fedf720ca6ef4cad364674a1d33b6
+      internalID: 773480202
       vertices: []
       indices: 
       edges: []
@@ -225,11 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Joint-2_0: 906229422
-      Joint-2_1: 81203234
-      Joint-2_2: 665172044
-      Joint-2_3: 1430088296
-      Joint-2_4: 613857558
+      Animation_Clock_Insidehouse-1_0: 773480202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
