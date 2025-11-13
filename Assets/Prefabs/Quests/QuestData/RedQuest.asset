@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02d09797f70ed44db626194a155266d, type: 3}
+  m_Name: RedQuest
+  m_EditorClassIdentifier: 
+  questID: a7c7f739-0ab8-4a76-8d2a-1052f29b86e4
+  questName: Help Red Riding Hood
+  questDescription: The search for the blunt
+  objectives:
+  - objectiveID: JOINT
+    objectiveDescription: Go find the Joint for Red
+    typeOfObjective: 0
+    gotItem: 0
+    gaveItemToNpc: 0
+    questCompleted: 0
+  - objectiveID: JOINT
+    objectiveDescription: Give the fat blunt to Red
+    typeOfObjective: 2
+    gotItem: 1
+    gaveItemToNpc: 0
+    questCompleted: 0

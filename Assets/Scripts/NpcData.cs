@@ -16,7 +16,7 @@ public class NpcData : ScriptableObject
     public List<Conversations> conversations = new List<Conversations>(); //This creates the list of conversations the NPC is supposed to have.
 
     public int questInProgressIndex = 0; //If we have currently accepted a quest, this decides what/when the NPC will say a certain line of dialogue.(or give an item)
-    //public int questCompletedIndex;
+    public int questCompletedIndex; //If we have completed a quest, this will track that.
     public QuestData quest; //The quest the NPC gives.
 }
 
