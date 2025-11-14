@@ -75,6 +75,8 @@ public class QuestProgress
                 objectiveID = obj.objectiveID,
                 objectiveDescription = obj.objectiveDescription,
                 typeOfObjective = obj.typeOfObjective,
+                //Do I add an IsCompleted here? Or do I use questCompleted from the bool.
+
                 //We finish off by setting all of the bools for completed quests to false, since they can't be true in a new quest.
                 //Write some god-damn function to call, here... so we can set the bools we made in QuestObjective.
             });

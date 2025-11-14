@@ -21,13 +21,13 @@ MonoBehaviour:
   - dialogue: Little man...psst! Come here. So, I've got my eyes on this Princess-Babe,
       but she blew me off before - I could use your help to get into her orbit again.
       Can you trick her ass to come over to my pond again?
-    waitForQuest: 0
-    givenItem: {fileID: 0}
+    givesQuest: 
   - dialogue: My man! You smooth, man - reaaal smooth. Hubba-hubba! Now watch me
       put my moves on again.
-    waitForQuest: 0
-    givenItem: {fileID: 0}
+    givesQuest: 
   - dialogue: My man! You smooth, man - reaaal smooth. Hubba-hubba! Now watch me
       put my moves on again.
-    waitForQuest: 0
-    givenItem: {fileID: 0}
+    givesQuest: 
+  questInProgressIndex: 0
+  questCompletedIndex: 0
+  quest: {fileID: 11400000, guid: ca651de3b723753489261ab9fbe25243, type: 2}

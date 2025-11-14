@@ -23,9 +23,9 @@ public class Inventory : MonoBehaviour
 
     [Header("State")]
     [SerializeField] InventoryData inventoryData;
-
+    public Dictionary<ItemID, Item> inventoryDictionary
     //We'll create a new dictionary that's going to just be our old dictionary in InventoryData.
-    
+
 
     bool canPickUp = true;
     float pickupDelay = 0.1f;
@@ -39,7 +39,7 @@ public class Inventory : MonoBehaviour
         ui = LLSingleton.Instance.inventoryUI; //Start every scene with getting the right reference into the singleton.
 
         //Accessing the dictionary in InventoryData, we rename it to a Dictionary.
-        Dictionary<ItemID, Item> inventoryDictionary = inventoryData.inventoryItems;
+        inventoryDictionary = inventoryData.inventoryItems; //I will attempt to move this to a later function.
 
         if (inventoryData !=null)
         {
@@ -51,7 +51,6 @@ public class Inventory : MonoBehaviour
             Debug.LogWarning("Inventory-controller is not getting the dictionary from InventoryData!");
         }
     }
-
 
     public void OnTriggerEnter2D(Collider2D other) //Every time the player enters a trigger we compare its tag.
     {

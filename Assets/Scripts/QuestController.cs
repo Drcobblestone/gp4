@@ -7,7 +7,8 @@ public class QuestController : MonoBehaviour
     public static QuestController instance { get; private set; }
     public List<QuestProgress> activateQuests = new();
     [SerializeField] QuestUi questUi;
-    [SerializeField] Inventory inventoryController;
+
+    public List<string> handinQuestIDs = new(); //We make a list for keeping tabs of completed Quests.
 
     //We make sure we only ever have *one* QuestController in our game.
     private void Awake()
@@ -23,7 +24,9 @@ public class QuestController : MonoBehaviour
         if (IsQuestActive(quest.questID)) return; //If IsQuestActive is already running, then we just return.
 
         activateQuests.Add(new QuestProgress(quest)); //We create a new active Quest, based on our QuestData.
-        questUi.UpdateQuestUi();
+
+        CheckInventoryForQuests(); //We double-check inventory for Quest-items before we update.
+        questUi.UpdateQuestUi(); //Then we update the Ui and show our new quest.
     }
 
     //Now we make sure there's only ever one quest active at a time.
@@ -32,6 +35,64 @@ public class QuestController : MonoBehaviour
 
     public void CheckInventoryForQuests()
     {
+        Dictionary<ItemID, Item> checkForItem = Inventory.Instance.inventoryDictionary;
+        // Dictionary<ItemID, Item> inventoryDictionary = inventoryData.inventoryItems; //<- This is an example that fucking WORKS in the other script!!
+
+        foreach (QuestProgress quest in activateQuests)
+        { //Why am I nesting for-loops...?
+            foreach (QuestObjective questObjective in quest.objectives) 
+            {
+                if (questObjective.typeOfObjective != ObjectiveType.CollectItem) continue; //If the current objective in the quest is to collect items, then continue.
+                if (!int.TryParse(questObjective.objectiveID, out int itemID)) continue; //If the current objective isn't something item-related (an int), then we will skip
+                                                                                         //comparing that objective to the Item-dictionary.
+            }
+        }
+        questUi.UpdateQuestUi(); //Finally we update the questUi, so we can see that we have the thing that we should give to someone.
 
     }
+
+    public bool IsQuestCompleted(string questID)
+    {
+        QuestProgress quest = activateQuests.Find(q => q.QuestID == questID); //Grab the quest from our Active Quest 
+        return quest != null && quest.objectives.TrueForAll(o => o.IsCompleted); //And if the quest isn't null (we are working on a quest) and all of the objectives are completed, then...
+    }
+    
+    public void HandInQuest(string questID)
+    {
+        //Try to remove the required items (of the quest).
+
+
+
+        //Remove the finished Quest from the Quest-log.
+        foreach (QuestProgress objective in quest.objectives)
+
+    }
+
+    //When a quest finishes, we remove the items of the Quest, from the inventory.
+    public bool RemoveRequiredItemsFromInventory(string questID)
+    {
+        QuestProgress quest = activateQuests.Find(q => q.QuestID == questID);
+        if (quest == null) return false; //If we don't have a quest, we don't need to remove items from inventory.
+
+        Dictionary<int, int> requiredItems = new(); //We make a new dictionary to keep abreast of the required items.
+
+        //Item requirements from objectives
+        foreach(QuestObjective objective in quest.objectives)
+        {
+            if (objective.type == )
+        }
+
+    }
+
+
+
+    //This is mostly for a save-system, to recall what quests we have completed since the last session.
+    public void LoadQuestProgress(List<QuestProgress> savedQuests)
+    {
+        activateQuests = savedQuests ?? new();
+
+        CheckInventoryForQuests();
+        questUi.UpdateQuestUi();
+    }
+
 }
