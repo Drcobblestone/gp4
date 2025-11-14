@@ -12,6 +12,14 @@ public class QuestData : ScriptableObject
     public string questDescription; // A description, something like: "Give the Frog a babe."
     public List <QuestObjective> objectives;
 
+
+    public void ResetList()
+    {
+        //QuestIndex = -1; //We reset the quest-data, so we can test Quests.
+        objectives = new List<QuestObjective>();
+        //To reset we need: Int, bool, List.
+    }
+
     //This is called whenever the Scriptable object (the quest) is edited.
     private void OnValidate() //Replace with something else, onValidate is in editor only
     {
@@ -48,6 +56,12 @@ public class QuestProgress
 
     //Now we make a constructor for quest-progress: it's run when an instance of a class or struct is created. It helps us make sure the
     //instance created is valid, that it's the right type of that instance.
+    public void ResetBool()
+    {
+        return;
+        //questCompleted = !(questCompleted);
+    }
+
     public QuestProgress(QuestData quest)
     {
         this.quest = quest; //We are storing the quest we are accepting into our quest-slot.

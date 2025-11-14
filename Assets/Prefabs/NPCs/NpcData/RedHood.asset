@@ -20,8 +20,11 @@ MonoBehaviour:
   conversations:
   - dialogue: Ey, fuzz-ball! My gramps is feeling low, and a good joint always used
       ta' cheer her up - can you hook me up with some good stuff?
-    waitForQuest: 0
-    givenItem: {fileID: 0}
-  - dialogue: 
-    waitForQuest: 0
-    givenItem: {fileID: 0}
+    givesQuest: 00
+  - dialogue: Did ya' get it, fuss-ass?
+    givesQuest: 
+  - dialogue: Thanks, punk!
+    givesQuest: 
+  questInProgressIndex: 2
+  questCompletedIndex: 3
+  quest: {fileID: 11400000, guid: 8fdcd21617c446940bb0ec9b75af5936, type: 2}

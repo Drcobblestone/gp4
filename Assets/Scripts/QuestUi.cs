@@ -17,11 +17,13 @@ public class QuestUi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //The top-section was for testing, probably remove.
+        /*
         for (int i = 0; i < questAmount; i++)
         {
             quests.Add(new QuestProgress(quest));
         }
-
+        */
         UpdateQuestUi();
     }
 
@@ -34,13 +36,13 @@ public class QuestUi : MonoBehaviour
             Destroy(child.gameObject);
         }
         //Build quest entries.
-        foreach (QuestProgress quest in quests)
+        foreach (QuestProgress quest in QuestController.instance.activateQuests)
         {
             GameObject entry = Instantiate(questEntryPrefab, questListContent);
             TMP_Text questNameText = entry.transform.Find("QuestNameText").GetComponent<TMP_Text>(); //This gets the QuestNameText component in our InGameMenu canvas.
             Transform objectiveList = entry.transform.Find("ObjectiveList");
 
-            questNameText.text = quest.quest.questName; //Is "name" actually called Name here? Might be questName.
+            questNameText.text = quest.quest.name; //Is "name" actually called Name here? Might be questName.
 
             foreach (QuestObjective objective in quest.objectives)
             {

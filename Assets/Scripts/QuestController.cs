@@ -7,6 +7,7 @@ public class QuestController : MonoBehaviour
     public static QuestController instance { get; private set; }
     public List<QuestProgress> activateQuests = new();
     [SerializeField] QuestUi questUi;
+    [SerializeField] Inventory inventoryController;
 
     //We make sure we only ever have *one* QuestController in our game.
     private void Awake()
@@ -14,7 +15,7 @@ public class QuestController : MonoBehaviour
         if (instance == null) instance = this; //If the quest-controller instance is set to Null, then create this new instance.
         else Destroy(gameObject); //Otherwise destroy this instance, since then it's a double.
 
-        //questUi = FindObjectOfType<QuestUi>(); //Replace FindObjectOfType with something faster? SerializedField?
+        Inventory.Instance.OnInventoryChanged += CheckInventoryForQuests; //When the controller wakes up, it shall have a look at the inventory (if there are quest-items).
     }
 
     public void AcceptQuest (QuestData quest) //When we accept a quest from an NPC...
@@ -28,4 +29,9 @@ public class QuestController : MonoBehaviour
     //Now we make sure there's only ever one quest active at a time.
     public bool IsQuestActive(string questID) => activateQuests.Exists(q => q.QuestID == questID); //This checks if our QuestID already exists in our active Quest, 
                                                                                                    //and then pass along true or false.
+
+    public void CheckInventoryForQuests()
+    {
+
+    }
 }

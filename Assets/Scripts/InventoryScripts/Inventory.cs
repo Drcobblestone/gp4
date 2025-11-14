@@ -10,6 +10,8 @@ using UnityEngine.Rendering;
 public class Inventory : MonoBehaviour
 {   
     public static Inventory Instance;
+    public event Action OnInventoryChanged; //Event to notify the quest-system that we have something new in inventory.
+
     [Header("References")]
     InventoryUI ui; 
 
@@ -17,9 +19,14 @@ public class Inventory : MonoBehaviour
     [SerializeField] GameObject droppedItemPrefab; //The player will be able to drop a prefab, irregardless of which item it is.
 
     [Header("Audio Clips")] //This lets us put different sounds for when picking up an item, and for when dropping an item.
+    //It's bugged though, so we turned it off. Unity's Audio-system is mega-slow.
 
     [Header("State")]
     [SerializeField] InventoryData inventoryData;
+
+    //We'll create a new dictionary that's going to just be our old dictionary in InventoryData.
+    
+
     bool canPickUp = true;
     float pickupDelay = 0.1f;
 
@@ -30,7 +37,22 @@ public class Inventory : MonoBehaviour
     private void Start()
     {   
         ui = LLSingleton.Instance.inventoryUI; //Start every scene with getting the right reference into the singleton.
+
+        //Accessing the dictionary in InventoryData, we rename it to a Dictionary.
+        Dictionary<ItemID, Item> inventoryDictionary = inventoryData.inventoryItems;
+
+        if (inventoryData !=null)
+        {
+            Debug.Log("The current contents in the InventoryDictionary is: " + inventoryData.inventoryItems);
+            //How the frack do I get it to show me what's currently in the inventory??
+        }
+        else
+        {
+            Debug.LogWarning("Inventory-controller is not getting the dictionary from InventoryData!");
+        }
     }
+
+
     public void OnTriggerEnter2D(Collider2D other) //Every time the player enters a trigger we compare its tag.
     {
         if (other.CompareTag("DroppedItem")) //If the item we touched has the tag DroppedItem...
@@ -52,6 +74,9 @@ public class Inventory : MonoBehaviour
     {
         StartCoroutine(AddAndDropCurrent(pickedItem));
     }
+    //Let's add a way to compare the current item, so we can use it in 
+
+
     public void DropItem(ItemID inventoryId) //This overload helps us drop items where the player is, without touching another item, and exchanging pos.
     {
         DropItem(inventoryId, transform.position);
@@ -82,6 +107,12 @@ public class Inventory : MonoBehaviour
         Item item = pickedItem.item;
         inventoryData.AddItem(item); //And add a new item.
         ui.AddUIItem(item.id, item);
+    }
+
+    //Check if the inventory has changed, so we can tell the Quest-system.
+    public void CheckInventory()
+    {
+        OnInventoryChanged?.Invoke();
     }
 
 }
