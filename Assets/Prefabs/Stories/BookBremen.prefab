@@ -1035,23 +1035,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa77ff09eb037fe4b89b95598a21e07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  content: "A coot had a Donkey, slavin\u2019 away in his mill for a crap-ton of
-    years; but as the Donkey was becomin\u2019 a fossil, the coot was lookin\u2019
-    to have him turned into sausages \u2013 but the Donkey got a sniff of how foul-smelling
-    the wind was, so the Donkey took a hike and blew off on the road to Bremen. \r\n\u201CYo,
-    I can totally be a street-musician in a fly place like that.\u201D the Donkey
-    thought to himself.\r\nWhen the Donkey had been haulin\u2019 his ass for a while,
-    he found a big-ass Dog lying in the middle of the road like some foo\u2019. \r\n\u201CWhat
-    you be doin\u2019, lyin\u2019 about like this, big man?\u201D asked the Donkey.\r\n\u201COh
-    man\u2026\u201D said the Dog, \u201CI\u2019m gettin\u2019 old, I can\u2019t be
-    runnin\u2019 around in the bush for my boss anymore, so he was gonna\u2019 wack
-    me, man! And now I ain\u2019t got no clue how to make some bank.\u201D\r\n\u201CListen
-    bro\u2019,\u201D said the Donkey, \u201CI\u2019m goin\u2019 to Bremen, an\u2019
-    I\u2019m gonna\u2019 be makin\u2019 some real fly tunes there; haul your ass
-    off this pavement and join ma\u2019 crew. I\u2019m\u2019a\u2019 be turnin\u2019
-    the table and you can do beatboxing.\u201D\r\nThe Dog was pumped and joined up
-    in 3 seconds flat.\r\nPretty soon they saw a not-so-cool Cat sitting on the side
-    of the road, with a face so sad , it looked like he had melted!\r\n\u201CYo,
+  content: "The Bremen Town Musicians\r\n\r\nA coot had a Donkey, slavin\u2019 away
+    in his mill for a crap-ton of years; but as he was becomin\u2019 a fossil, the
+    coot was lookin\u2019 to have him turned into sausages \u2013 but the Donkey
+    got a sniff of how foul-smelling the wind was, so he took a hike and blew off
+    on the road to Bremen. \r\n\u201CMan, I can totally be a street-musician in a
+    fly place like that.\u201D the Donkey thought to himself.\r\nWhen the Donkey
+    had been haulin\u2019 his ass for a while, he found a big-ass Dog lying in the
+    middle of the road like some foo\u2019. \r\n\u201CWhat you be doin\u2019, lyin\u2019
+    about like this, big man?\u201D asked the Donkey.\r\n\u201COh man\u2026\u201D
+    said the Dog, \u201CI\u2019m gettin\u2019 old, I can\u2019t be runnin\u2019 around
+    in the bush for my boss anymore, so he was gonna\u2019 wack me, man! And now
+    I ain\u2019t got no clue how to make some bank.\u201D\r\n\u201CListen bro\u2019,\u201D
+    said the Donkey, \u201CI\u2019m goin\u2019 to Bremen, an\u2019 I\u2019m gonna\u2019
+    be makin\u2019 some real fly tunes there; haul your ass off this pavement and
+    join ma\u2019 crew. I\u2019m\u2019a\u2019 be turnin\u2019 the table and you can
+    do beatboxing.\u201D\r\nThe Dog was pumped and joined up in 3 seconds flat.\r\nPretty
+    soon they saw a not-so-cool Cat sitting on the side of the road, with a face
+    so sad, with its big catty eyes, it looked like he had melted! \r\n\u201CYo,
     Cool cat, why you be lookin\u2019 like somebody pissed in yo\u2019 cornflakes?\u201D
     asked the Donkey. \r\n\u201CHow can I be takin\u2019 it easy when my neck is
     on the line dude??\u201D mumbled the Cat.\r\n\u201CI\u2019m getting too old for
@@ -1065,26 +1066,28 @@ MonoBehaviour:
     went past a gritty backyard, where a real Cock was standing in front of the fence
     and crowing his ass off!\r\n\u201CYooo! Your hollerin\u2019 is splittin\u2019
     my fricken\u2019 head, brutha\u2019!\u201D said the Donkey. \u201CWhat\u2019s
-    the deal, yo\u2019?\u201D\r\n\r\n\u201CAh\u2019ve been layin\u2019 down some
-    slayin\u2019 vocals fo\u2019 da\u2019 Boss-Lady, but she ain\u2019t feelin\u2019
-    it no mo\u2019! An\u2019 she\u2019s got a shindig on Sunday, so she gonna\u2019
-    bag me an\u2019 put me inna\u2019 soup tomorro\u2019! Ah\u2019m hollerin\u2019
-    mah\u2019 last tune.\u201D Said the Cock.\r\n\u201CAh, but listen here my Cock-a-Doodle-Doo\u2019;
-    jus\u2019 stop worryin\u2019 \u2018bout the Soup an\u2019 join our crew instead,
-    cuz\u2019 you got a fire voice! We\u2019re goin\u2019 to Bremen to become big
-    stars, yo\u2019 \u2013 see the vision!\u201D\r\nThe Cock got all fired up from
-    that and joined their crew on the spot.\r\nOur fly gang of four couldn\u2019t
-    get to Bremen in just one day though, so when it was startin\u2019 to get all
-    dark-like, they started lookin\u2019 for somewhere to crash \u2013 they walked
-    into the worst part of the hood and lay down in a demolition shack. The Cock
-    flew up to the roof to take in the view, and his eyes spied a little somethin\u2019-somethin\u2019\u2026
-    One of the Demolition shacks was lit up like the 4th of July and had peeps walkin\u2019
-    around in it!\r\nThe Cock called out to his crew: \u201CPsst! Ah\u2019 declare,
-    there\u2019s somebody\u2019s livin\u2019 in that buildin\u2019 over there.\u201D\r\nThe
-    Donkey then said: \u201CYo, then we\u2019s best haul our asses over there, cuz\u2019
-    sleepin\u2019 in this \r\ncrap-house is wack, yo\u2019.\u201D \r\nSo our quartet
-    of cool snuck up to the lit-up building, and the Donkey, being the biggest bro\u2019,
-    got in real close and sneaked a peak through a window.\r\n\u201CPsst! Whadda\u2019ya\u2019
+    the deal, yo\u2019?\u201D\r\n\r\n//Try to make the Cock sound like he\u2019s
+    from the American South \u2013 find more examples.\r\n\u201CAh\u2019ve been layin\u2019
+    down some slayin\u2019 vocals fo\u2019 da\u2019 Boss-Lady, but she ain\u2019t
+    feelin\u2019 it no mo\u2019! An\u2019 she\u2019s got a shindig on Sunday, so
+    she gonna\u2019 bag me an\u2019 put me inna\u2019 soup tomorro\u2019! Ah\u2019m
+    hollerin\u2019 mah\u2019 last tune.\u201D Said the Cock.\r\n\u201CAh, but listen
+    here my man Cock-a-Doodle-Doo\u2019; jus\u2019 stop worryin\u2019 \u2018bout
+    the Soup an\u2019 join our crew instead, cuz\u2019 you got a fire voice! We\u2019re
+    goin\u2019 to Bremen to become big stars, yo\u2019 \u2013 see the vision!\u201D\r\nThe
+    Cock got all fired up from that and joined their crew on the spot.\r\nOur fly
+    gang of four couldn\u2019t get to Bremen in just one day though, so when it was
+    startin\u2019 to get all dark-like, they started lookin\u2019 for somewhere to
+    crash \u2013 they walked into the worst part of the hood and lay down in a demolition
+    shack. The Cock flew up to the roof to take in the view, and his eyes spied a
+    little somethin\u2019-somethin\u2019\u2026 One of the Demolition shacks was lit
+    up like the 4th of July and had peeps walkin\u2019 around in it!\r\nThe Cock
+    called out to his crew: \u201CPsst! Ah\u2019 declare, there\u2019s somebody\u2019s
+    livin\u2019 in that buildin\u2019 over there.\u201D\r\nThe Donkey then said:
+    \u201CYo, then we\u2019s best haul our asses over there, cuz\u2019 sleepin\u2019
+    in this \r\ncrap-house is wack, yo\u2019.\u201D \r\nSo our quartet of cool snuck
+    up to the lit-up building, and the Donkey, being the biggest bro\u2019, got in
+    real close and sneaked a peak through a window.\r\n\u201CPsst! Whadda\u2019ya\u2019
     see, Mah\u2019 Donkey-pal?\u201D whispered the Cock.\r\n\u201CHo-lee\u2026 mother
     o\u2019\u2026 BEJEBUS! It\u2019s a whole-ass crack-lab!\u201D whispered the Donkey
     back.\r\nThe animals scrummed their heads together in a ring and started whispering
@@ -1093,7 +1096,7 @@ MonoBehaviour:
     Cock: \u201CThey be scary folk, them crack-gangsters, but I want a crack on \u2018em.\u201D\r\nThe
     Donkey: \u201CYo, listen up crew; we gon\u2019 spook these cats with our music!
     Now, anybody got some instruments\u2026?\u201D \r\nHe said, and looked at the
-    other animals\u2026 They didn\u2019t have any. Where would they get some gear\u2026?\r\n"
+    other animals\u2026 They didn\u2019t have any. Where would they get some gear\u2026?\r\n\r\n"
   leftSide: {fileID: 8637756541422129943}
   rightSide: {fileID: 5994625942935548779}
   leftPagination: {fileID: 4693156486844263181}
@@ -1467,23 +1470,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A coot had a Donkey, slavin\u2019 away in his mill for a crap-ton of years;
-    but as the Donkey was becomin\u2019 a fossil, the coot was lookin\u2019 to have
-    him turned into sausages \u2013 but the Donkey got a sniff of how foul-smelling
-    the wind was, so the Donkey took a hike and blew off on the road to Bremen. \r\n\u201CYo,
-    I can totally be a street-musician in a fly place like that.\u201D the Donkey
-    thought to himself.\r\nWhen the Donkey had been haulin\u2019 his ass for a while,
-    he found a big-ass Dog lying in the middle of the road like some foo\u2019. \r\n\u201CWhat
-    you be doin\u2019, lyin\u2019 about like this, big man?\u201D asked the Donkey.\r\n\u201COh
-    man\u2026\u201D said the Dog, \u201CI\u2019m gettin\u2019 old, I can\u2019t be
-    runnin\u2019 around in the bush for my boss anymore, so he was gonna\u2019 wack
-    me, man! And now I ain\u2019t got no clue how to make some bank.\u201D\r\n\u201CListen
-    bro\u2019,\u201D said the Donkey, \u201CI\u2019m goin\u2019 to Bremen, an\u2019
-    I\u2019m gonna\u2019 be makin\u2019 some real fly tunes there; haul your ass
-    off this pavement and join ma\u2019 crew. I\u2019m\u2019a\u2019 be turnin\u2019
-    the table and you can do beatboxing.\u201D\r\nThe Dog was pumped and joined up
-    in 3 seconds flat.\r\nPretty soon they saw a not-so-cool Cat sitting on the side
-    of the road, with a face so sad , it looked like he had melted!\r\n\u201CYo,
+  m_text: "The Bremen Town Musicians\r\n\r\nA coot had a Donkey, slavin\u2019 away
+    in his mill for a crap-ton of years; but as he was becomin\u2019 a fossil, the
+    coot was lookin\u2019 to have him turned into sausages \u2013 but the Donkey
+    got a sniff of how foul-smelling the wind was, so he took a hike and blew off
+    on the road to Bremen. \r\n\u201CMan, I can totally be a street-musician in a
+    fly place like that.\u201D the Donkey thought to himself.\r\nWhen the Donkey
+    had been haulin\u2019 his ass for a while, he found a big-ass Dog lying in the
+    middle of the road like some foo\u2019. \r\n\u201CWhat you be doin\u2019, lyin\u2019
+    about like this, big man?\u201D asked the Donkey.\r\n\u201COh man\u2026\u201D
+    said the Dog, \u201CI\u2019m gettin\u2019 old, I can\u2019t be runnin\u2019 around
+    in the bush for my boss anymore, so he was gonna\u2019 wack me, man! And now
+    I ain\u2019t got no clue how to make some bank.\u201D\r\n\u201CListen bro\u2019,\u201D
+    said the Donkey, \u201CI\u2019m goin\u2019 to Bremen, an\u2019 I\u2019m gonna\u2019
+    be makin\u2019 some real fly tunes there; haul your ass off this pavement and
+    join ma\u2019 crew. I\u2019m\u2019a\u2019 be turnin\u2019 the table and you can
+    do beatboxing.\u201D\r\nThe Dog was pumped and joined up in 3 seconds flat.\r\nPretty
+    soon they saw a not-so-cool Cat sitting on the side of the road, with a face
+    so sad, with its big catty eyes, it looked like he had melted! \r\n\u201CYo,
     Cool cat, why you be lookin\u2019 like somebody pissed in yo\u2019 cornflakes?\u201D
     asked the Donkey. \r\n\u201CHow can I be takin\u2019 it easy when my neck is
     on the line dude??\u201D mumbled the Cat.\r\n\u201CI\u2019m getting too old for
@@ -1497,26 +1501,28 @@ MonoBehaviour:
     went past a gritty backyard, where a real Cock was standing in front of the fence
     and crowing his ass off!\r\n\u201CYooo! Your hollerin\u2019 is splittin\u2019
     my fricken\u2019 head, brutha\u2019!\u201D said the Donkey. \u201CWhat\u2019s
-    the deal, yo\u2019?\u201D\r\n\r\n\u201CAh\u2019ve been layin\u2019 down some
-    slayin\u2019 vocals fo\u2019 da\u2019 Boss-Lady, but she ain\u2019t feelin\u2019
-    it no mo\u2019! An\u2019 she\u2019s got a shindig on Sunday, so she gonna\u2019
-    bag me an\u2019 put me inna\u2019 soup tomorro\u2019! Ah\u2019m hollerin\u2019
-    mah\u2019 last tune.\u201D Said the Cock.\r\n\u201CAh, but listen here my Cock-a-Doodle-Doo\u2019;
-    jus\u2019 stop worryin\u2019 \u2018bout the Soup an\u2019 join our crew instead,
-    cuz\u2019 you got a fire voice! We\u2019re goin\u2019 to Bremen to become big
-    stars, yo\u2019 \u2013 see the vision!\u201D\r\nThe Cock got all fired up from
-    that and joined their crew on the spot.\r\nOur fly gang of four couldn\u2019t
-    get to Bremen in just one day though, so when it was startin\u2019 to get all
-    dark-like, they started lookin\u2019 for somewhere to crash \u2013 they walked
-    into the worst part of the hood and lay down in a demolition shack. The Cock
-    flew up to the roof to take in the view, and his eyes spied a little somethin\u2019-somethin\u2019\u2026
-    One of the Demolition shacks was lit up like the 4th of July and had peeps walkin\u2019
-    around in it!\r\nThe Cock called out to his crew: \u201CPsst! Ah\u2019 declare,
-    there\u2019s somebody\u2019s livin\u2019 in that buildin\u2019 over there.\u201D\r\nThe
-    Donkey then said: \u201CYo, then we\u2019s best haul our asses over there, cuz\u2019
-    sleepin\u2019 in this \r\ncrap-house is wack, yo\u2019.\u201D \r\nSo our quartet
-    of cool snuck up to the lit-up building, and the Donkey, being the biggest bro\u2019,
-    got in real close and sneaked a peak through a window.\r\n\u201CPsst! Whadda\u2019ya\u2019
+    the deal, yo\u2019?\u201D\r\n\r\n//Try to make the Cock sound like he\u2019s
+    from the American South \u2013 find more examples.\r\n\u201CAh\u2019ve been layin\u2019
+    down some slayin\u2019 vocals fo\u2019 da\u2019 Boss-Lady, but she ain\u2019t
+    feelin\u2019 it no mo\u2019! An\u2019 she\u2019s got a shindig on Sunday, so
+    she gonna\u2019 bag me an\u2019 put me inna\u2019 soup tomorro\u2019! Ah\u2019m
+    hollerin\u2019 mah\u2019 last tune.\u201D Said the Cock.\r\n\u201CAh, but listen
+    here my man Cock-a-Doodle-Doo\u2019; jus\u2019 stop worryin\u2019 \u2018bout
+    the Soup an\u2019 join our crew instead, cuz\u2019 you got a fire voice! We\u2019re
+    goin\u2019 to Bremen to become big stars, yo\u2019 \u2013 see the vision!\u201D\r\nThe
+    Cock got all fired up from that and joined their crew on the spot.\r\nOur fly
+    gang of four couldn\u2019t get to Bremen in just one day though, so when it was
+    startin\u2019 to get all dark-like, they started lookin\u2019 for somewhere to
+    crash \u2013 they walked into the worst part of the hood and lay down in a demolition
+    shack. The Cock flew up to the roof to take in the view, and his eyes spied a
+    little somethin\u2019-somethin\u2019\u2026 One of the Demolition shacks was lit
+    up like the 4th of July and had peeps walkin\u2019 around in it!\r\nThe Cock
+    called out to his crew: \u201CPsst! Ah\u2019 declare, there\u2019s somebody\u2019s
+    livin\u2019 in that buildin\u2019 over there.\u201D\r\nThe Donkey then said:
+    \u201CYo, then we\u2019s best haul our asses over there, cuz\u2019 sleepin\u2019
+    in this \r\ncrap-house is wack, yo\u2019.\u201D \r\nSo our quartet of cool snuck
+    up to the lit-up building, and the Donkey, being the biggest bro\u2019, got in
+    real close and sneaked a peak through a window.\r\n\u201CPsst! Whadda\u2019ya\u2019
     see, Mah\u2019 Donkey-pal?\u201D whispered the Cock.\r\n\u201CHo-lee\u2026 mother
     o\u2019\u2026 BEJEBUS! It\u2019s a whole-ass crack-lab!\u201D whispered the Donkey
     back.\r\nThe animals scrummed their heads together in a ring and started whispering
@@ -1525,7 +1531,7 @@ MonoBehaviour:
     Cock: \u201CThey be scary folk, them crack-gangsters, but I want a crack on \u2018em.\u201D\r\nThe
     Donkey: \u201CYo, listen up crew; we gon\u2019 spook these cats with our music!
     Now, anybody got some instruments\u2026?\u201D \r\nHe said, and looked at the
-    other animals\u2026 They didn\u2019t have any. Where would they get some gear\u2026?\r\n\n\n"
+    other animals\u2026 They didn\u2019t have any. Where would they get some gear\u2026?\r\n\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
   m_sharedMaterial: {fileID: -3451267453510604213, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
