@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6536356505061516238}
   - component: {fileID: 7401669355325700546}
   m_Layer: 0
-  m_Name: AppleTreeAnimation
+  m_Name: AppleTreeAnimationNoUse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
