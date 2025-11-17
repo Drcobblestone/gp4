@@ -54,7 +54,8 @@ public class QuestController : MonoBehaviour
     public bool IsQuestCompleted(string questID)
     {
         QuestProgress quest = activateQuests.Find(q => q.QuestID == questID); //Grab the quest from our Active Quest 
-        return quest != null && quest.objectives.TrueForAll(o => o.IsCompleted); //And if the quest isn't null (we are working on a quest) and all of the objectives are completed, then...
+        return quest != null && quest.objectives.TrueForAll(o => o.questCompleted); //And if the quest isn't null (we are working on a quest) and all of the objectives are completed, then...
+        //return quest != null && quest.objectives.TrueForAll(o => o.IsCompleted); //<- From tutorial, but gives error. Probably that I named it differently.
     }
     
     public void HandInQuest(string questID)
@@ -65,6 +66,9 @@ public class QuestController : MonoBehaviour
 
         //Remove the finished Quest from the Quest-log.
         foreach (QuestProgress objective in quest.objectives)
+        {
+
+        }
 
     }
 
@@ -79,9 +83,31 @@ public class QuestController : MonoBehaviour
         //Item requirements from objectives
         foreach(QuestObjective objective in quest.objectives)
         {
-            if (objective.type == )
+            if (objective.typeOfObjective == ObjectiveType.CollectItem && int.TryParse(objective.objectiveID, out int itemID))
+            {
+                //requiredItems; //This is written in the tutorial for if you need to collect several of the same type of item...
+            }
         }
 
+        //Verify we have items -- this might be only for if we have multi-collect of one type of item...
+        
+        Dictionary<ItemID, Item> requiredItem = Inventory.Instance.GetInstanceID();
+        foreach(Item itemRequirement in requiredItems)
+        {
+            if(inventoryId.GetValueOrDefault(Item.Key))
+            {
+                return false;
+            }
+        }
+
+        //Remove required items from inventory (when the quest is completed)
+        foreach (var itemRequirement in requiredItems) //Vars are cringe, but what do I name it?
+        {
+
+        }
+
+
+        return true;
     }
 
 

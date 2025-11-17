@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
 
     [Header("State")]
     [SerializeField] InventoryData inventoryData;
-    public Dictionary<ItemID, Item> inventoryDictionary
+    public Dictionary<ItemID, Item> inventoryDictionary;
     //We'll create a new dictionary that's going to just be our old dictionary in InventoryData.
 
 
@@ -112,6 +112,35 @@ public class Inventory : MonoBehaviour
     public void CheckInventory()
     {
         OnInventoryChanged?.Invoke();
+    }
+
+    //This is for destroying the inventory-items if we finish a quest, since we don't want them around after that.
+    public void RemoveItemFromInventory (int inventoryId, int itemToRemove)
+    {
+        //May not be needed, since the tutorial once more mentions amounts to remove - i.e if you have to give 5 bottles, but you have 10.
+        foreach(Transform activeItem in inventoryPanel.transform) //Which transform? The one that shows up in Inventory, right? Do I need a serializefield to get this reference from ItemUI? Or possibly from the UiItemPrefab -prefab?
+        {
+            if (itemToRemove <=0) break; //If there's nothing to remove from inventory, then break and don't run the rest of the code.
+
+            
+            //We don't have item-slots in the same way as the tutorial...
+            //Slot slot = slotTransform.GetComponent<Slot>();
+            if (activeItem?.currentItem?.GetComponent<Item>() is Item item && item.ID == itemID) //Do we have a current item in our inventory/Slot? If so, we will grab it out by checking if it's an actual item and if it matches the ItemID we said the item from the completed objective/quest has.
+            {
+                //This might be empty too, since it's a bunch of quantity and stacked.
+                //A function called "RemoveFromInventory" (aka RemoveFromStack) in Item.cs might be cool though. Consider going back to an older Tutorial, to add the functionality.
+                int removed = Mathf.Min(itemToRemove, inventoryId);
+                item.RemoveFromInventory(removed);
+                itemToRemove -= removed;
+
+                if(item.quantity == 0)
+                {
+                    Destroy(activeItem.)
+                }
+
+            }
+        }
+
     }
 
 }
