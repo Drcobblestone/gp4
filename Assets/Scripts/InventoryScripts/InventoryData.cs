@@ -5,10 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "InventoryData", menuName = "Inventory/InventoryData", order = 1)]
 public class InventoryData : ScriptableObject
 {
-    public Dictionary<ItemID, Item> inventoryItems = new Dictionary<ItemID, Item>();
-    public void AddItem(Item item)
+    public Dictionary<ItemID, ItemData> inventoryItems = new Dictionary<ItemID, ItemData>();
+    public void AddItem(ItemData itemData)
     {
-        inventoryItems.Add(item.id, item);
+        inventoryItems.Add(itemData.id, itemData);
     }
 
     public void RemoveItem(ItemID inventoryId) 
@@ -16,16 +16,16 @@ public class InventoryData : ScriptableObject
         inventoryItems.Remove(inventoryId);
     }
 
-    public Item GetItem(ItemID inventoryId, bool removeAlso = false) //removeAlso is an optional parameter that defaults to false
+    public ItemData GetItem(ItemID inventoryId, bool removeAlso = false) //removeAlso is an optional parameter that defaults to false
     {
-        Item item = inventoryItems[inventoryId];
+        ItemData itemData = inventoryItems[inventoryId];
         if (removeAlso)
         {
             RemoveItem(inventoryId);   
         }
-        return item;
+        return itemData;
     }
-    public Item GetCurrentItem(bool removeAlso = false) //This just drops current item without needing any unique ID.
+    public ItemData GetCurrentItem(bool removeAlso = false) //This just drops current item without needing any unique ID.
     {
         foreach (ItemID oldItemID in inventoryItems.Keys)
         {

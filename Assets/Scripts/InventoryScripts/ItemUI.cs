@@ -9,10 +9,10 @@ public class ItemUI : MonoBehaviour
     [SerializeField] Image image;
     [SerializeField] Button button;
     
-    public void Initialize(ItemID inventoryId, Item item) //When we start putting an item into the UI, we pass it the inventory-ID, and give the option to remove it.
+    public void Initialize(ItemID inventoryId, ItemData itemData) //When we start putting an item into the UI, we pass it the inventory-ID, and give the option to remove it.
     {
         button.onClick.RemoveAllListeners();
-        image.sprite = item.icon;
+        image.sprite = itemData.icon;
         button.onClick.AddListener(() => Inventory.Instance.DropItem(inventoryId)); //When we click an item in inventory, we can tell the game to remove it.
     }
     

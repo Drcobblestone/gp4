@@ -35,7 +35,7 @@ public class QuestController : MonoBehaviour
 
     public void CheckInventoryForQuests()
     {
-        Dictionary<ItemID, Item> checkForItem = Inventory.Instance.inventoryDictionary;
+        Dictionary<ItemID, ItemData> checkForItem = Inventory.Instance.inventoryDictionary;
         // Dictionary<ItemID, Item> inventoryDictionary = inventoryData.inventoryItems; //<- This is an example that fucking WORKS in the other script!!
 
         foreach (QuestProgress quest in activateQuests)
@@ -91,10 +91,10 @@ public class QuestController : MonoBehaviour
 
         //Verify we have items -- this might be only for if we have multi-collect of one type of item...
         
-        Dictionary<ItemID, Item> requiredItem = Inventory.Instance.GetInstanceID();
-        foreach(Item itemRequirement in requiredItems)
+        Dictionary<ItemID, ItemData> requiredItem = Inventory.Instance.GetInstanceID();
+        foreach(ItemData itemRequirement in requiredItems)
         {
-            if(inventoryId.GetValueOrDefault(Item.Key))
+            if(inventoryId.GetValueOrDefault(ItemData.Key))
             {
                 return false;
             }

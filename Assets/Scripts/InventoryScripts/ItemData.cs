@@ -1,9 +1,9 @@
 using UnityEngine;
 
-[CreateAssetMenu (fileName = "Item", menuName = "Inventory/Item", order  = 1)] //This creates a new type of Unity-item we can create from the contextmenu.
+[CreateAssetMenu (fileName = "ItemData", menuName = "Inventory/ItemData", order  = 1)] //This creates a new type of Unity-item we can create from the contextmenu.
 
 
-public class Item : ScriptableObject //By inheriting from scriptableobjects we can create different items.
+public class ItemData : ScriptableObject //By inheriting from scriptableobjects we can create different items.
 {
     public ItemID id; //Let's us assign one of the itemid's we have in the GameEnums script.
     public string description; //Sadly we can't use name, as that is an inherited property too, but this is just a name.
@@ -14,6 +14,7 @@ public class Item : ScriptableObject //By inheriting from scriptableobjects we c
      
 
     //This might be worthless, but could be used in removing items from inventory when handing in quest-items.
+    //If it wasn't for the fact that I missed that the tutorial uses a Monoscript for "item", while I, naturally, use a Scriptable object. My Item is now ItemData - so a brand new monoscript with "itemController" might be necessary to put this in instead.
     /*
     public void RemoveFromInventory()
     {

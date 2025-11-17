@@ -22,18 +22,18 @@ public class InventoryUI : MonoBehaviour
     private void Start()
     {   
 
-        Item currentItem = inventoryData.GetCurrentItem();
+        ItemData currentItem = inventoryData.GetCurrentItem();
         if (currentItem == null) //If the current item doesn't exist...
         {
             return; //..return and start over.
         }
         AddUIItem(currentItem.id, currentItem); //Otherwise put an item in the UI.
     }
-    public void AddUIItem(ItemID inventoryId, Item item) 
+    public void AddUIItem(ItemID inventoryId, ItemData itemData) 
     {
         itemUI.gameObject.SetActive(true);
         inventoryUI.Add(inventoryId, itemUI);
-        itemUI.Initialize(inventoryId, item);
+        itemUI.Initialize(inventoryId, itemData);
     }
 
     public void RemoveUIItem(ItemID inventoryId)
