@@ -10,4 +10,17 @@ public class Item : ScriptableObject //By inheriting from scriptableobjects we c
     public Sprite icon; //This is an actual sprite/texture that's going to be visible in the UI.
     public GameObject prefab; //This prefab will be instantiated into the gameworld.
     public bool pickedUp = false;
+
+     
+
+    //This might be worthless, but could be used in removing items from inventory when handing in quest-items.
+    /*
+    public void RemoveFromInventory()
+    {
+        if (pickedUp == true && IsQuestCompleted = true)
+        {
+
+        }
+    }
+    */
 }
