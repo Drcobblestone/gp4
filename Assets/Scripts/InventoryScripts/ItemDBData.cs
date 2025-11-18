@@ -6,9 +6,9 @@ using UnityEngine;
 public class ItemDBData : ScriptableObject
 {   
     [SerializeField] List<ItemInDB> itemsInDB = new List<ItemInDB>();
-    Dictionary<ItemID, Item> db = new Dictionary<ItemID, Item>();
+    Dictionary<ItemID, ItemData> db = new Dictionary<ItemID, ItemData>();
 
-    public Item GetItem(ItemID inventoryId, bool removeAlso = false) //removeAlso is an optional parameter that defaults to false
+    public ItemData GetItem(ItemID inventoryId, bool removeAlso = false) //removeAlso is an optional parameter that defaults to false
     {
         foreach (ItemInDB temp in itemsInDB)
         {
@@ -18,8 +18,8 @@ public class ItemDBData : ScriptableObject
             }
             db.Add(temp.id, temp.data);
         }
-        Item item = db[inventoryId];
-        return item;
+        ItemData itemData = db[inventoryId];
+        return itemData;
     }
 
 
@@ -28,5 +28,5 @@ public class ItemDBData : ScriptableObject
 public class ItemInDB
 {
     public ItemID id;
-    public Item data;
+    public ItemData data;
 }

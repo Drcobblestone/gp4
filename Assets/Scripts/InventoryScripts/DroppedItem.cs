@@ -15,7 +15,7 @@ public class DroppedItem : MonoBehaviour
     [SerializeField] float enabledPickupDelay = 1.0f; //How long it takes after initialization, before the Player can pick up the item.
 
     [Header("State")]
-    public Item item;
+    public ItemData itemData;
     //public bool pickedUp = false;
     public bool canBePickedUp = true;
     
@@ -31,11 +31,11 @@ public class DroppedItem : MonoBehaviour
         _initialPos = transform.position; //Save initial position of the item? I hope.
     }
 
-    public void Initialize(Item item) //When we initialize the dropped item...
+    public void Initialize(ItemData itemData) //When we initialize the dropped item...
     {
-        //this.item = item;
+        //this.itemData = itemData;
         //Drop();
-        //GameObject droppedItem = Instantiate(item.prefab, transform); //...we instantiate the dropped item and...
+        //GameObject droppedItem = Instantiate(itemData.prefab, transform); //...we instantiate the dropped item and...
         //droppedItem.transform.SetLocalPositionAndRotation(Vector2.zero, Quaternion.identity); //...set its position and rotation in the place.
 
     }

@@ -21,7 +21,7 @@ public class SceneData : ScriptableObject
     public void DropItem(DroppedItem droppedItem)
     {   
         ItemToSpawn itemToSpawn = new ItemToSpawn();
-        itemToSpawn.itemData = droppedItem.item;
+        itemToSpawn.itemData = droppedItem.itemData;
         itemToSpawn.position = droppedItem.transform.position;
         itemsToSpawn.Add(itemToSpawn);
         droppedItem.pickedUp.AddListener(delegate {
@@ -33,6 +33,6 @@ public class SceneData : ScriptableObject
 [System.Serializable]
 public class ItemToSpawn
 {
-    public Item itemData;
+    public ItemData itemData;
     public Vector2 position;
 }

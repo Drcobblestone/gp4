@@ -6,7 +6,8 @@ using UnityEngine;
 public class ResetAllSceneData : MonoBehaviour
 {
     [SerializeField] bool reset = true;
-    [SerializeField] SceneData[] datas;
+    [SerializeField] SceneData[] sceneDatas;
+    [SerializeField] NpcData[] npcDatas;
     
     void Awake()
     {   
@@ -14,7 +15,11 @@ public class ResetAllSceneData : MonoBehaviour
         {
             return;
         }
-        foreach (SceneData data in datas) //For each scene we have, then...
+        foreach (SceneData data in sceneDatas) //For each scene we have, then...
+        {
+            data.Reset(); //...reset it, in-between runs.
+        }
+        foreach (NpcData data in npcDatas) //For each scene we have, then...
         {
             data.Reset(); //...reset it, in-between runs.
         }

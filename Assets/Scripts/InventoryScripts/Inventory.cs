@@ -21,9 +21,9 @@ public class Inventory : MonoBehaviour
     [Header("Audio Clips")] //This lets us put different sounds for when picking up an item, and for when dropping an item.
     //It's bugged though, so we turned it off. Unity's Audio-system is mega-slow.
 
-    [Header("State")]
+    [Header("State - put InventoryData here")]
     [SerializeField] InventoryData inventoryData;
-    public Dictionary<ItemID, Item> inventoryDictionary;
+    public Dictionary<ItemID, ItemData> inventoryDictionary;
     //We'll create a new dictionary that's going to just be our old dictionary in InventoryData.
 
 
@@ -90,22 +90,22 @@ public class Inventory : MonoBehaviour
     }
     public DroppedItem SpawnItem(ItemID inventoryId, Vector2 dropPosition) //This spawns and returns the spawned item so we can use it in another function / script
     {
-        Item item = inventoryData.GetItem(inventoryId);
-        DroppedItem droppedItem = Instantiate(item.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
-        droppedItem.Initialize(item);
+        ItemData itemData = inventoryData.GetItem(inventoryId);
+        DroppedItem droppedItem = Instantiate(itemData.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
+        droppedItem.Initialize(itemData);
         return droppedItem;
     }
     IEnumerator AddAndDropCurrent(DroppedItem pickedItem)
     {
-        Item currentItem = inventoryData.GetCurrentItem();
+        ItemData currentItem = inventoryData.GetCurrentItem();
         if (currentItem != null) //...we check If the current item in inventory isn't null, and if it isn't...
         {
             DropItem(currentItem.id, pickedItem.transform.position); //...then we drop that item
         }
         yield return null;
-        Item item = pickedItem.item;
-        inventoryData.AddItem(item); //And add a new item.
-        ui.AddUIItem(item.id, item);
+        ItemData itemData = pickedItem.itemData;
+        inventoryData.AddItem(itemData); //And add a new item.
+        ui.AddUIItem(itemData.id, itemData);
     }
 
     //Check if the inventory has changed, so we can tell the Quest-system.
@@ -113,34 +113,59 @@ public class Inventory : MonoBehaviour
     {
         OnInventoryChanged?.Invoke();
     }
-
-    //This is for destroying the inventory-items if we finish a quest, since we don't want them around after that.
-    public void RemoveItemFromInventory (int inventoryId, int itemToRemove)
+    public ItemData TryPopItem(ItemID id) //Pop is getting and removing from the list at the same time
     {
+        return inventoryData.GetItem(id, true);
+    }
+
+    //--------------------
+    //This is for destroying the inventory-items if we finish a quest, since we don't want them around after that.
+    public void RemoveItem (ItemID inventoryId)
+    {
+        inventoryData.RemoveItem(inventoryId);
+        ui.RemoveUIItem(inventoryId);
         //May not be needed, since the tutorial once more mentions amounts to remove - i.e if you have to give 5 bottles, but you have 10.
-        foreach(Transform activeItem in inventoryPanel.transform) //Which transform? The one that shows up in Inventory, right? Do I need a serializefield to get this reference from ItemUI? Or possibly from the UiItemPrefab -prefab?
+        /*foreach (Transform activeItem in inventoryPanel.transform) //Which transform? The one that shows up in Inventory, right? Do I need a serializefield to get this reference from ItemUI? Or possibly from the UiItemPrefab -prefab?
         {
             if (itemToRemove <=0) break; //If there's nothing to remove from inventory, then break and don't run the rest of the code.
 
-            
-            //We don't have item-slots in the same way as the tutorial...
-            //Slot slot = slotTransform.GetComponent<Slot>();
-            if (activeItem?.currentItem?.GetComponent<Item>() is Item item && item.ID == itemID) //Do we have a current item in our inventory/Slot? If so, we will grab it out by checking if it's an actual item and if it matches the ItemID we said the item from the completed objective/quest has.
+            //This might be borked, since the Tutorial uses a MonoScript as "item" and I use a Scriptable Object as Item. On 2025-11-17 I renamed "Item" to "ItemData" to clarify what the script is.
+            /*
+            if (activeItem?.currentItem?.GetComponent<ItemController>() is ItemController itemController && itemController.ID == itemID) //Do we have a current item in our inventory/Slot? If so, we will grab it out by checking if it's an actual item and if it matches the ItemID we said the item from the completed objective/quest has.
             {
                 //This might be empty too, since it's a bunch of quantity and stacked.
-                //A function called "RemoveFromInventory" (aka RemoveFromStack) in Item.cs might be cool though. Consider going back to an older Tutorial, to add the functionality.
-                int removed = Mathf.Min(itemToRemove, inventoryId);
-                item.RemoveFromInventory(removed);
-                itemToRemove -= removed;
-
-                if(item.quantity == 0)
-                {
-                    Destroy(activeItem.)
-                }
+                //A function called "RemoveFromInventory" (aka RemoveFromStack) in Item.cs (which I sadly now know is ItemController.cs) might be cool though. Consider going back to an older Tutorial, to add the functionality.
+                
 
             }
-        }
-
+            */
     }
 
 }
+    //-------------------
+    //Original Tutorial-function, that won't work, because we don't use multiples of an item, and we don't stack them.
+    /*
+    public void RemoveItemsFromInventory(int itemID, int amountToRemove)
+    {
+        foreach (Transform slotTransform in inventoryPanel.transform)
+        {
+            if (amountToRemove  <=0) break;
+
+            Slot slot = slotTransform.GetComponent<Slot>(); //Slot does not exist as a script in our project.
+            if (slot?.currentItem?.GetComponent<ItemController>()) is ItemController itemController && itemController.ID == itemID)
+            {
+                int removed = Mathf.Min(amountToRemove, ItemController.quantity);
+                ItemController.RemoveFromStack(removed);
+                amountToRemove -= removed;
+
+                if(itemController.quantity == 0)
+                {
+                    Destroy(slot.currentItem);
+                    slot.currentItem = null;
+                }
+            }
+        }
+    }
+    */
+    
+

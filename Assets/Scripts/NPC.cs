@@ -27,7 +27,7 @@ public class NPC : MonoBehaviour
     {
         dialogueText.text = ""; //This is needed because the length of dialogueText starts as 1. //If you run the game all the way from Main Menu, this causes Nullreferror.
         
-        //This stuff should perhaps not be in start... we'll see.
+        /*//This stuff should perhaps not be in start... we'll see.
         SyncQuestState(); //This might be unneccessary?
 
         //Set dialogue line based on questState
@@ -41,8 +41,8 @@ public class NPC : MonoBehaviour
         }
         else if (questState == QuestState.Completed) //And finally if we have completed the quest...
         {
-            dialogueIndex = npcData.questCompletedIndex; //...our dialogue-index shall be at the final point.
-        }
+            //dialogueIndex = npcData.questCompletedIndex; //...our dialogue-index shall be at the final point.
+        }*/
     }
 
 
@@ -87,13 +87,20 @@ public class NPC : MonoBehaviour
 
     //Should this be in NextLine, then?
  
-    private void SyncQuestState()
+    /*private void SyncQuestState()
     {
         if (npcData.quest == null) return;
 
         string questID = npcData.quest.questID;
 
-        if (QuestController.instance.IsQuestActive(questID))
+        //Quest completing and handing in quest to NPC.
+        if (QuestController.instance.IsQuestCompleted(questID) || QuestController.instance.IsQuestHandedIn(questID)) //If the quest is either marked completed or handed in...
+        {
+            questState = QuestState.Completed; //...then the quest is completed.
+        }
+
+
+        else if (QuestController.instance.IsQuestActive(questID))
         {
             questState = QuestState.InProgress;
         }
@@ -102,12 +109,44 @@ public class NPC : MonoBehaviour
             questState = QuestState.NotStarted;
         }
 
-    }
+    }*/
     
 
     public void NextLine() //To load the next part of the conversation.
     {
         contButton.SetActive(false); //We turn off the continue-button, since now we're going to load the next conversation.
+
+        //Quest Hand In Here
+        Conversations currentConvo = npcData.conversations[dialogueIndex];
+        if (currentConvo.setQuestProgressTo > 0)
+        {
+            npcData.questInProgressIndex = currentConvo.setQuestProgressTo;
+        }
+        if (currentConvo.wantedItem != ItemID.NONE && !currentConvo.hasItem)
+        {
+            ItemData item = Inventory.Instance.TryPopItem(currentConvo.wantedItem);
+            if (item != null)
+            {
+                currentConvo.hasItem = true;
+                npcData.questInProgressIndex = dialogueIndex + 1; //Potential Out of Bounds here
+            }
+            else
+            {
+                zeroText();
+                return;
+            }
+        }
+        //Reward/Give Item Here
+        if (currentConvo.rewardItem != ItemID.NONE)
+        {
+            //Cinematic Effects and Animations Start Here
+            Inventory.Instance.SpawnItem(currentConvo.rewardItem, transform.position);
+        }
+        if (currentConvo.endConvoEarly)
+        {
+            zeroText();
+            return;
+        }
 
         //Check Quest stuff here, like if quest is complete.
         //dialogueIndex = 0;
@@ -140,6 +179,32 @@ public class NPC : MonoBehaviour
         }
 
     }
+
+    //Adding an end-dialogue - not sure if right for our project.
+    /*public void EndDialogue() 
+    {
+        if (questState == QuestState.Completed && !QuestController.instance.IsQuestHandedIn(npcData.quest.questID)) //We want to make sure our quest is completed, but not handed in.
+        {
+            //This will handle our quest-completion.
+            //HandleQuestCompletion(npcData.quest); //So we only complete and hand in our quest, when it's NOT ALREADY completed and handed in.
+        }
+
+        //The tutorial adds all this code...
+        /*
+        StopAllCoroutines();
+        isDialogueActive = false; //We don't have this bool.
+        dialogueUI.SetDialogueText(""); //We don't have anything called DialogueUI either...
+        dialogueUI.ShowDialogueUI(false);
+        PauseController.SetPause(false); //We don't have a pause-controller script either, but it'd be a nice feature for the future.
+        
+    }*/
+
+    /*void HandleQuestCompletion(QuestData quest)
+    {
+        QuestController.instance.HandInQuest(quest.questID);
+    }
+    */
+
 
 
     public void zeroText() //This is to reset our text-conversation.
