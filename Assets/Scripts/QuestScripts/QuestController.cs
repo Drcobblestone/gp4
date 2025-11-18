@@ -60,7 +60,8 @@ public class QuestController : MonoBehaviour
     public void HandInQuest(string questID)
     {
         //Try to remove the required items (of the quest).
-        /*if(!RemoveRequiredItemsFromInventory(questID))
+        /*
+        if(!RemoveRequiredItemsFromInventory(questID))
         { 
             //Quest couldn't be completed - missing items.
             return;  //If we can't remove the item from inventory, then we return.
@@ -86,7 +87,8 @@ public class QuestController : MonoBehaviour
 
 
     //When a quest finishes, we remove the items of the Quest, from the inventory.
-    /*public bool RemoveRequiredItemsFromInventory(string questID)
+    /*
+    public bool RemoveRequiredItemsFromInventory(string questID)
     {
         QuestProgress quest = activateQuests.Find(q => q.QuestID == questID);
         if (quest == null) return false; //If we don't have a quest, we don't need to remove items from inventory.

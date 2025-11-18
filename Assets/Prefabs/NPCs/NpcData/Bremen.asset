@@ -21,20 +21,20 @@ MonoBehaviour:
   - dialogue: I need turntable
     endConvoEarly: 1
     setQuestProgressTo: 1
-    wantedItem: 4
-    rewardItem: 4
+    wantedItem: 8
+    rewardItem: 8
     hasItem: 0
   - dialogue: Have you got the table?
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 3
-    rewardItem: 4
+    rewardItem: 8
     hasItem: 0
   - dialogue: Thanks for the table.
     endConvoEarly: 0
     setQuestProgressTo: 0
-    wantedItem: 4
+    wantedItem: 8
     rewardItem: 4
     hasItem: 0
-  questInProgressIndex: 0
+  questInProgressIndex: 2
   quest: {fileID: 11400000, guid: 6bbf52044262e5b439da72dcf31492e9, type: 2}

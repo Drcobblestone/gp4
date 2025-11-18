@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb328398005db5c44a2c62331b132102, type: 3}
+  m_Name: SnowBook
+  m_EditorClassIdentifier: 
+  id: 5
+  description: The Tale of Snow White & The 7 Dwarves
+  icon: {fileID: 1237109525, guid: 5a9e4de93ac38274fad2cda9a4ba52a4, type: 3}
+  prefab: {fileID: 0}
+  pickedUp: 0

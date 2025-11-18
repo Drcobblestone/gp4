@@ -22,22 +22,21 @@ MonoBehaviour:
       woozies. Only da WHITE SNOW perks me up, y'know? Now git! Get me somma' dat!
     endConvoEarly: 1
     setQuestProgressTo: 1
-    wantedItem: 4
-    rewardItem: 4
+    wantedItem: 8
+    rewardItem: 8
     hasItem: 0
   - dialogue: Did ya' get me dat' sweeet White Snow, lil' fuzz?
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 0
-    rewardItem: 4
+    rewardItem: 8
     hasItem: 0
   - dialogue: Yeaaah! Dis' stuff is FIRE! Now I can get through the fricken' day,
       even with that bitch Snow White bossin' me around!
     endConvoEarly: 0
     setQuestProgressTo: 0
-    wantedItem: 4
-    rewardItem: 3
+    wantedItem: 8
+    rewardItem: 5
     hasItem: 0
-  questInProgressIndex: 1
-  questCompletedIndex: 0
+  questInProgressIndex: 2
   quest: {fileID: 11400000, guid: 182ac4ce19154f34da7ffaa0675fbbe8, type: 2}
