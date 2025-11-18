@@ -1329,6 +1329,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+--- !u!224 &869237419 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3317573216345642786, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+  m_PrefabInstance: {fileID: 869237418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &878972083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1989,7 +1994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6508705300800519365, guid: 7b239dd39eab24a4d9efdff7aea672e5, type: 3}
       propertyPath: m_Name
-      value: Joint (2)
+      value: Joint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2144,6 +2149,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8582320300372898056, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 11400000, guid: 8fdcd21617c446940bb0ec9b75af5936, type: 2}
+    - target: {fileID: 8582320300372898056, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
+      propertyPath: questListContent
+      value: 
+      objectReference: {fileID: 869237419}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: data
       value: 
@@ -2513,7 +2526,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1568865395}
+  - {fileID: 869237418}
   - {fileID: 1963472571}
+  - {fileID: 1730455960}
   - {fileID: 878972083}
   - {fileID: 504352998}
   - {fileID: 414999790}
@@ -2523,8 +2538,6 @@ SceneRoots:
   - {fileID: 956685811}
   - {fileID: 1808783691}
   - {fileID: 2119824009}
-  - {fileID: 1583501041}
   - {fileID: 336118718}
-  - {fileID: 869237418}
-  - {fileID: 1730455960}
   - {fileID: 821381563}
+  - {fileID: 1583501041}

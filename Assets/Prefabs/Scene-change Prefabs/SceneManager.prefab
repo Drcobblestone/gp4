@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b396ca571a97f4897321012c8a030e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemDB: {fileID: 0}
+  itemDB: {fileID: 11400000, guid: 96e3f25f8586a974f8f49b3fccd951b3, type: 2}
   data: {fileID: 0}
   playerTransform: {fileID: 0}
   entryPoints:
@@ -74,6 +74,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e444ffad341685041b60434a8e59bf1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateQuests: []
+  questUi: {fileID: 8582320300372898056}
+  handinQuestIDs: []
 --- !u!1 &8224464493710806168
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questListContent: {fileID: 0}
-  questEntryPrefab: {fileID: 0}
-  objectiveTextPrefab: {fileID: 0}
+  questEntryPrefab: {fileID: 7903626421136199371, guid: 90093901ff62b9b4bad95bddd9674bf1, type: 3}
+  objectiveTextPrefab: {fileID: 1455057074803999382, guid: 5e42b7bfd8f5b9e46bcdb1947d54e4b4, type: 3}
   quest: {fileID: 0}
   questAmount: 0

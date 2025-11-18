@@ -115,7 +115,12 @@ public class Inventory : MonoBehaviour
     }
     public ItemData TryPopItem(ItemID id) //Pop is getting and removing from the list at the same time
     {
-        return inventoryData.GetItem(id, true);
+        ItemData item = inventoryData.GetItem(id, true);
+        if (item != null)
+        {
+            ui.RemoveUIItem(id);
+        }
+        return item;
     }
 
     //--------------------
