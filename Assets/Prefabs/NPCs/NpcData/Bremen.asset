@@ -19,11 +19,22 @@ MonoBehaviour:
   talkedTo: 0
   conversations:
   - dialogue: I need turntable
-    givesQuest: 00
+    endConvoEarly: 1
+    setQuestProgressTo: 1
+    wantedItem: 4
+    rewardItem: 4
+    hasItem: 0
   - dialogue: Have you got the table?
-    givesQuest: 
+    endConvoEarly: 0
+    setQuestProgressTo: 0
+    wantedItem: 3
+    rewardItem: 4
+    hasItem: 0
   - dialogue: Thanks for the table.
-    givesQuest: 
-  questInProgressIndex: 2
-  questCompletedIndex: 3
+    endConvoEarly: 0
+    setQuestProgressTo: 0
+    wantedItem: 4
+    rewardItem: 4
+    hasItem: 0
+  questInProgressIndex: 0
   quest: {fileID: 11400000, guid: 6bbf52044262e5b439da72dcf31492e9, type: 2}

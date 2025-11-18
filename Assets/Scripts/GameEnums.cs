@@ -28,3 +28,11 @@ public enum ObjectiveType
     GiveItem,
     Custom
 }
+
+public enum RewardID
+{
+    REDBOOK,
+    BREMENBOOK,
+    SNOWBOOK,
+    FROGBOOK
+}
