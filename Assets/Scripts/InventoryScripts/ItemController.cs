@@ -10,7 +10,7 @@ public class ItemController : MonoBehaviour
     private ItemData itemData; //We get the data-object, so we can manipulate it.
     private QuestObjective questObjective; //We get the quest-controller, since we need a bool from it.
 
-    public void RemoveFromInventory() //The original uses an int, a whole number, but we don't have any god-damn counts of items, so I'm attempting a Function instead of counting.
+    /*public void RemoveFromInventory() //The original uses an int, a whole number, but we don't have any god-damn counts of items, so I'm attempting a Function instead of counting.
     {
         if (itemData.pickedUp == true && questObjective.questCompleted == true) //If we have both picked the item up, and the Quest says its completed, then...
         {
@@ -18,5 +18,5 @@ public class ItemController : MonoBehaviour
             return removed; //Remove the item. (from existence?)
             //How the hell do I create a property/flag or thing that happens in this script, that I can then say makes an item be destroyed?
         }
-    }
+    }*/
 }

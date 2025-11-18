@@ -17,7 +17,11 @@ public class InventoryData : ScriptableObject
     }
 
     public ItemData GetItem(ItemID inventoryId, bool removeAlso = false) //removeAlso is an optional parameter that defaults to false
-    {
+    {   
+        if (!inventoryItems.ContainsKey(inventoryId))
+        {
+            return null;
+        }
         ItemData itemData = inventoryItems[inventoryId];
         if (removeAlso)
         {

@@ -16,9 +16,19 @@ public class NpcData : ScriptableObject
     public List<Conversations> conversations = new List<Conversations>(); //This creates the list of conversations the NPC is supposed to have.
 
     public int questInProgressIndex = 0; //If we have currently accepted a quest, this decides what/when the NPC will say a certain line of dialogue.(or give an item)
-    public int questCompletedIndex; //If we have completed a quest, this will track that.
+    //public int questCompletedIndex; //If we have completed a quest, this will track that.
     public QuestData quest; //The quest the NPC gives.
+    public void Reset()
+    {
+        questInProgressIndex = 0;
+        //talkedTo = false;
+        foreach(Conversations conversation in conversations)
+        {
+            conversation.hasItem = false;
+        }
+    }
 }
+
 
 [System.Serializable] //This lets us create a custom class, struct, or field that can be *saved*. (serialised)
                       //It also makes it visible in the Unity-editor. 
@@ -37,6 +47,11 @@ public class Conversations //Here we define our various options for what happens
 
     //public int dialogueIndex; //A way to keep abreast of our dialogue-lines/options.
     //public int[] nextDialogueIndexes; //Which dialogue is supposed to show up, depending on conditions.
-    public bool[] givesQuest; //If the dialogue gives a quest.
+    public bool endConvoEarly = false;
+    public int setQuestProgressTo = 0;
+    public ItemID wantedItem = ItemID.NONE; //Never change this bool!
+    public ItemID rewardItem = ItemID.NONE;
+    public bool hasItem;
+    //public bool[] givesQuest; //If the dialogue gives a quest.
 
 }

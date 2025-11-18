@@ -20,11 +20,24 @@ MonoBehaviour:
   conversations:
   - dialogue: C'mer... lil' fuzz... I've been under da' weather for ages... Got the
       woozies. Only da WHITE SNOW perks me up, y'know? Now git! Get me somma' dat!
-    givesQuest: 01
+    endConvoEarly: 1
+    setQuestProgressTo: 1
+    wantedItem: 4
+    rewardItem: 4
+    hasItem: 0
   - dialogue: Did ya' get me dat' sweeet White Snow, lil' fuzz?
-    givesQuest: 
+    endConvoEarly: 0
+    setQuestProgressTo: 0
+    wantedItem: 0
+    rewardItem: 4
+    hasItem: 0
   - dialogue: Yeaaah! Dis' stuff is FIRE! Now I can get through the fricken' day,
       even with that bitch Snow White bossin' me around!
-    givesQuest: 
-  questInProgressIndex: 2
+    endConvoEarly: 0
+    setQuestProgressTo: 0
+    wantedItem: 4
+    rewardItem: 3
+    hasItem: 0
+  questInProgressIndex: 1
+  questCompletedIndex: 0
   quest: {fileID: 11400000, guid: 182ac4ce19154f34da7ffaa0675fbbe8, type: 2}

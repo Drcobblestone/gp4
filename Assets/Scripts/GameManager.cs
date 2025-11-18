@@ -67,9 +67,9 @@ public class GameManager : MonoBehaviour
     }
     public DroppedItem SpawnItem(ItemID inventoryId, Vector2 dropPosition) //This spawns and returns the spawned item so we can use it in another function / script
     {
-        Item item = itemDB.GetItem(inventoryId);
-        DroppedItem droppedItem = Instantiate(item.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
-        droppedItem.Initialize(item);
+        ItemData itemData = itemDB.GetItem(inventoryId);
+        DroppedItem droppedItem = Instantiate(itemData.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
+        droppedItem.Initialize(itemData);
         return droppedItem;
     }
 }

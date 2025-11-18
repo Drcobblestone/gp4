@@ -162,7 +162,7 @@ MonoBehaviour:
         m_CallState: 2
   autoStart: 0
   enabledPickupDelay: 1
-  item: {fileID: 11400000, guid: e37db5842c3d25942bc938099c584c31, type: 2}
+  itemData: {fileID: 11400000, guid: e37db5842c3d25942bc938099c584c31, type: 2}
   canBePickedUp: 1
   _initialPos: {x: 0, y: 0, z: 0}
 --- !u!114 &2301884186598307362

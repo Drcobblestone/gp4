@@ -36,7 +36,6 @@ public class QuestController : MonoBehaviour
     public void CheckInventoryForQuests()
     {
         Dictionary<ItemID, ItemData> checkForItem = Inventory.Instance.inventoryDictionary;
-        // Dictionary<ItemID, Item> inventoryDictionary = inventoryData.inventoryItems; //<- This is an example that fucking WORKS in the other script!!
 
         foreach (QuestProgress quest in activateQuests)
         { //Why am I nesting for-loops...?
@@ -61,19 +60,33 @@ public class QuestController : MonoBehaviour
     public void HandInQuest(string questID)
     {
         //Try to remove the required items (of the quest).
-
+        /*if(!RemoveRequiredItemsFromInventory(questID))
+        { 
+            //Quest couldn't be completed - missing items.
+            return;  //If we can't remove the item from inventory, then we return.
+        }*/
 
 
         //Remove the finished Quest from the Quest-log.
-        foreach (QuestProgress objective in quest.objectives)
+        QuestProgress quest = activateQuests.Find(q => q.QuestID == questID);
+        if (quest != null) //If we don't have an active quest, then...
         {
-
+            handinQuestIDs.Add(questID); //We add the finished quest to handed in quests, aka finished ones.
+            activateQuests.Remove(quest); //...remove the inactive quest. (it should be completed then)
+            questUi.UpdateQuestUi();
         }
 
     }
 
+    public bool IsQuestHandedIn(string questID) //A double-check to make sure the quest is handed in. If our quest has been handed in...
+    {
+        return handinQuestIDs.Contains(questID); //...it will be within this list.
+    }
+
+
+
     //When a quest finishes, we remove the items of the Quest, from the inventory.
-    public bool RemoveRequiredItemsFromInventory(string questID)
+    /*public bool RemoveRequiredItemsFromInventory(string questID)
     {
         QuestProgress quest = activateQuests.Find(q => q.QuestID == questID);
         if (quest == null) return false; //If we don't have a quest, we don't need to remove items from inventory.
@@ -83,33 +96,44 @@ public class QuestController : MonoBehaviour
         //Item requirements from objectives
         foreach(QuestObjective objective in quest.objectives)
         {
-            if (objective.typeOfObjective == ObjectiveType.CollectItem && int.TryParse(objective.objectiveID, out int itemID))
+            if (objective.typeOfObjective == ObjectiveType.CollectItem && int.TryParse(objective.objectiveID, out int itemID)) //If this objective is to collect an Item and we 
+                                                                                                                               //can parse our objectiveID out to an Int, then...
             {
                 //requiredItems; //This is written in the tutorial for if you need to collect several of the same type of item...
+                //requiredItems[itemID] = objective.requiredAmount; <-- Change to requiredItem? How?
             }
         }
 
         //Verify we have items -- this might be only for if we have multi-collect of one type of item...
         
-        Dictionary<ItemID, ItemData> requiredItem = Inventory.Instance.GetInstanceID();
+        Dictionary<ItemID, ItemData> requiredItem = Inventory.Instance.GetInstanceID(); //Could I just use the requiredItems dictionary? (above)
+                                                                                        //The original uses GetItemCounts -- how do I pick the replacement?
         foreach(ItemData itemRequirement in requiredItems)
         {
-            if(inventoryId.GetValueOrDefault(ItemData.Key))
+            if(inventoryId.GetValueOrDefault(ItemData.Key)) //Should "Key" be in ItemController instead?
             {
                 return false;
             }
+
+            //The below code is from the tutorial - it has to be changed from amounts again...
+            /*
+            if(itemCounts.GetValueOrDefault(itemController.Key) < itemController.Value) //Note again that the tutorial calls an item-controller instead of an ItemData
+            {
+                //Not enough items to complete quest. (I need to change this to not the item to complete quest)
+                return false;
+            }
+            
         }
 
         //Remove required items from inventory (when the quest is completed)
         foreach (var itemRequirement in requiredItems) //Vars are cringe, but what do I name it?
         {
-
+            //We summon RemoveItemFromInventory from Inventory.cs.
+            Inventory.Instance.RemoveItemFromInventory(itemRequirement.Key, itemRequirement.Value);
         }
-
-
         return true;
     }
-
+*/
 
 
     //This is mostly for a save-system, to recall what quests we have completed since the last session.

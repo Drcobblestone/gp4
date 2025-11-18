@@ -113,14 +113,19 @@ public class Inventory : MonoBehaviour
     {
         OnInventoryChanged?.Invoke();
     }
-
+    public ItemData TryPopItem(ItemID id) //Pop is getting and removing from the list at the same time
+    {
+        return inventoryData.GetItem(id, true);
+    }
 
     //--------------------
     //This is for destroying the inventory-items if we finish a quest, since we don't want them around after that.
-    public void RemoveItemFromInventory (int inventoryId, int itemToRemove)
+    public void RemoveItem (ItemID inventoryId)
     {
+        inventoryData.RemoveItem(inventoryId);
+        ui.RemoveUIItem(inventoryId);
         //May not be needed, since the tutorial once more mentions amounts to remove - i.e if you have to give 5 bottles, but you have 10.
-        foreach(Transform activeItem in inventoryPanel.transform) //Which transform? The one that shows up in Inventory, right? Do I need a serializefield to get this reference from ItemUI? Or possibly from the UiItemPrefab -prefab?
+        /*foreach (Transform activeItem in inventoryPanel.transform) //Which transform? The one that shows up in Inventory, right? Do I need a serializefield to get this reference from ItemUI? Or possibly from the UiItemPrefab -prefab?
         {
             if (itemToRemove <=0) break; //If there's nothing to remove from inventory, then break and don't run the rest of the code.
 
@@ -134,9 +139,9 @@ public class Inventory : MonoBehaviour
 
             }
             */
-        }
-
     }
+
+}
     //-------------------
     //Original Tutorial-function, that won't work, because we don't use multiples of an item, and we don't stack them.
     /*
@@ -162,4 +167,5 @@ public class Inventory : MonoBehaviour
         }
     }
     */
-}
+    
+

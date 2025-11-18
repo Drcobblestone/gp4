@@ -6,7 +6,8 @@ public enum ItemID
     COCAINE,
     JOINT,
     PRINCESSI,
-    TURNTABLE  
+    TURNTABLE,
+    NONE, //No Item as an ID
 }
 
 //These enums are the NPCs we can talk to. We can make as many as we want, and then use them in every other script.
