@@ -7,7 +7,14 @@ public enum ItemID
     JOINT,
     PRINCESSI,
     TURNTABLE,
-    NONE, //No Item as an ID
+    //---------
+    //Below are the reward-items.
+    BREMENBOOK,
+    SNOWBOOK,
+    REDBOOK,
+    FROGBOOK,
+    //---------
+    NONE //No Item as an ID
 }
 
 //These enums are the NPCs we can talk to. We can make as many as we want, and then use them in every other script.
@@ -29,10 +36,8 @@ public enum ObjectiveType
     Custom
 }
 
-public enum RewardID
+public enum RewardType
 {
-    REDBOOK,
-    BREMENBOOK,
-    SNOWBOOK,
-    FROGBOOK
+    ItemID,
+    CustomReward //This could be something like Cut-scene ID et c.
 }

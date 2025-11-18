@@ -50,7 +50,7 @@ public class Conversations //Here we define our various options for what happens
     public bool endConvoEarly = false;
     public int setQuestProgressTo = 0;
     public ItemID wantedItem = ItemID.NONE; //Never change this bool!
-    public ItemID rewardItem = ItemID.NONE;
+    public ItemID rewardItem = ItemID.NONE; //Default reward, but this we can change.
     public bool hasItem;
     //public bool[] givesQuest; //If the dialogue gives a quest.
 

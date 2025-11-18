@@ -20,9 +20,17 @@ MonoBehaviour:
   conversations:
   - dialogue: Oh, so you've met a nice Frog? And he's a real gentleman, a true Royal
       even? Oh my! Dear Sir please set us up a meeting.
-    waitForQuest: 0
-    givenItem: {fileID: 0}
+    endConvoEarly: 1
+    setQuestProgressTo: 0
+    wantedItem: 8
+    rewardItem: 2
+    hasItem: 0
   - dialogue: YOU?! You're the Frog Royal this fool Sheep mentioned?! Begone, nasty
       slime!
-    waitForQuest: 0
-    givenItem: {fileID: 0}
+    endConvoEarly: 0
+    setQuestProgressTo: 0
+    wantedItem: 8
+    rewardItem: 8
+    hasItem: 0
+  questInProgressIndex: 0
+  quest: {fileID: 11400000, guid: ca651de3b723753489261ab9fbe25243, type: 2}

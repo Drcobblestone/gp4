@@ -11,7 +11,7 @@ public class QuestData : ScriptableObject
     public string questName; //Name for the quest: I.e: "the Lonely Frog"
     public string questDescription; // A description, something like: "Give the Frog a babe."
     public List <QuestObjective> objectives;
-
+    public List <QuestReward> questRewards;
 
     public void ResetList()
     {
@@ -86,5 +86,12 @@ public class QuestProgress
     public bool questCompleted => objectives.TrueForAll(o => o.questCompleted);
 
     public string QuestID => quest.questID;
+}
+
+[System.Serializable]
+public class QuestReward
+{
+    public RewardType type;
+    public int rewardID; //This can be ItemID et c.
 
 }
