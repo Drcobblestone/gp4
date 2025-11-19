@@ -28,3 +28,6 @@ MonoBehaviour:
     gotItem: 1
     gaveItemToNpc: 0
     questCompleted: 0
+  questRewards:
+  - type: 0
+    rewardID: 0

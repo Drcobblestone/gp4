@@ -23,10 +23,6 @@ public class PlayerController : MonoBehaviour
     
     public Animator animator; //We summon the animator.
 
-    
-    bool standingLower = true; //We establish that the players sprite is usually larger, because he's standing in the lower part of the scene.
-
-
     //A region is a "stylistic choice that allows you to lump together related code and give it a name."
     #region PLAYER_CONTROLS 
     public void Move(InputAction.CallbackContext context) //If the Input System gets input then we shall move.

@@ -27,15 +27,15 @@ MonoBehaviour:
     hasItem: 0
   - dialogue: Did ya' get it, fuss-ass?
     endConvoEarly: 0
-    setQuestProgressTo: 2
+    setQuestProgressTo: 0
     wantedItem: 1
     rewardItem: 8
     hasItem: 0
   - dialogue: Thanks, punk!
     endConvoEarly: 0
-    setQuestProgressTo: 3
+    setQuestProgressTo: 0
     wantedItem: 8
-    rewardItem: 4
+    rewardItem: 6
     hasItem: 0
   questInProgressIndex: 0
   quest: {fileID: 11400000, guid: 8fdcd21617c446940bb0ec9b75af5936, type: 2}

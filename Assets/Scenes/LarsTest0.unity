@@ -1312,6 +1312,10 @@ PrefabInstance:
       value: -95
       objectReference: {fileID: 0}
     - target: {fileID: 4393214277245043438, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+      propertyPath: reset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393214277245043438, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: datas.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 7ad26f0aa595a3941a661969ae0b3992, type: 2}
@@ -1780,6 +1784,10 @@ PrefabInstance:
       propertyPath: sceneObjects.Array.data[0]
       value: 
       objectReference: {fileID: 5412359061004990879}
+    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
+      propertyPath: sceneObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 882338470219413883, guid: 320eb45851af7084dbbe2df4f9b32f00, type: 3}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: sceneObjects.Array.data[7]
       value: 

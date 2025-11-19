@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 882338470219413883}
   m_Layer: 0
   m_Name: FrogBook
-  m_TagString: Untagged
+  m_TagString: DroppedItem
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -15,6 +15,8 @@ public class NPC : MonoBehaviour
     public GameObject contButton;
     public float wordSpeed; //This lets us set how fast the words appear.
 
+    [SerializeField] GameObject npcPrefab; //Insert NPC-character Prefab here, so we can despawn it.
+
     [SerializeField] BoxCollider2D npcBoxcollider; //We make a field where we can get the NPC's box-collider.
     public bool resetDialougeAtEnd = false;
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
@@ -140,15 +142,14 @@ public class NPC : MonoBehaviour
         if (currentConvo.rewardItem != ItemID.NONE) //If the reward for the current conversation is NOT set to nothing, then run below.
         {
             //Cinematic Effects and Animations Start Here
-            DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.rewardItem, transform.position); //This doesn't spawn anything...
+            DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.rewardItem, transform.position); //Then we spawn the Book/reward.
             
-
-            if (droppedItem != null)
+            if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {
-                Debug.Log("The book has spawned.");
-                //How the frack do I get it to show me what's currently in the inventory??
+                Debug.Log("The book has spawned."); //we print the debug-message.
+                Destroy(npcPrefab);//And destroy the NPC.
             }
-            else
+            else //But if the dropped item didn't happen, then we warn.
             {
                 Debug.LogWarning("The book DIDN'T spawn!");
             }
