@@ -592,12 +592,12 @@ GameObject:
   - component: {fileID: 1863901896}
   - component: {fileID: 1863901895}
   m_Layer: 0
-  m_Name: ObjectToScale
+  m_Name: ScalingObject
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1863901895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,9 +611,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToScale: {fileID: 1898412212}
-  center: {fileID: 1898412211}
-  ScaleMultiplierMin: -0.5
-  ScalemultiplierMax: 0.5
+  center: {fileID: 1863901897}
+  ScaleMultiplierMin: -0.8
+  ScalemultiplierMax: 0.8
 --- !u!212 &1863901896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -675,7 +675,7 @@ Transform:
   m_GameObject: {fileID: 1863901894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.64, y: 4.07, z: 0}
+  m_LocalPosition: {x: 4.8, y: 6.66, z: 0}
   m_LocalScale: {x: 4.2666, y: 2.356, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -14,8 +14,10 @@ public class ScalePlayer : MonoBehaviour
     public Transform center; //Reference to what we are scaling in comparison to.
     public float ScaleMultiplierMin = -0.5f, ScalemultiplierMax = 0.5f; //The limits to how much we can scale.
     private float ScaleMultiplier; //How much the Player / object shall be scaled.
-    
-    private Vector2 initialScale;
+
+    private Vector2 initialScale; //The initial size.
+    private Vector2 newScale; //The ever-changing new size of the player/object.
+
 
     // Awake is called before Start, which is called before the first frame update
     void Awake()
@@ -26,9 +28,14 @@ public class ScalePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector2.Distance(center.position, transform.position);
+        float distance = Vector2.Distance(center.position, transform.position); //We check the distance first.
         float HowMuchToScale = Mathf.Clamp(ScaleMultiplier, ScaleMultiplierMin, ScalemultiplierMax);
 
-        objectToScale.transform.localScale = initialScale * HowMuchToScale * distance;
+        //objectToScale.transform.localScale = initialScale * HowMuchToScale * distance; //We scale the player/objectToScale by using the initialScale and changing it
+                                                                                         //depending on the distance to the scale-changer-object.
+        newScale = initialScale * HowMuchToScale * distance;
+        initialScale = newScale; //We make the initial size the new size.
+
+        Debug.Log("The player was scaled");
     }
 }
