@@ -53,7 +53,4 @@ public class Conversations //Here we define our various options for what happens
     public ItemID rewardItem = ItemID.NONE; //Default reward, but this we can change.
     public bool hasItem;
     //public bool[] givesQuest; //If the dialogue gives a quest.
-
-
-
 }

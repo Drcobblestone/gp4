@@ -207,6 +207,7 @@ MonoBehaviour:
   npcData: {fileID: 11400000, guid: 33af02ca8f298124091799cc1cf09889, type: 2}
   contButton: {fileID: 0}
   wordSpeed: 0.06
+  npcPrefab: {fileID: 5340273539685546759}
   npcBoxcollider: {fileID: 3285917257187175033}
   resetDialougeAtEnd: 1
   cantClickNPC: 0

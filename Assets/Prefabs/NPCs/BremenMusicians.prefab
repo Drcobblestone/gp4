@@ -207,8 +207,9 @@ MonoBehaviour:
   npcData: {fileID: 11400000, guid: b11edaf22e50a7a48949f441ecdcff44, type: 2}
   contButton: {fileID: 0}
   wordSpeed: 0
+  npcPrefab: {fileID: 6377569730910456554}
   npcBoxcollider: {fileID: 6145207460060224532}
-  resetDialougeAtEnd: 0
+  resetDialougeAtEnd: 1
   cantClickNPC: 0
 --- !u!114 &356578961693244311
 MonoBehaviour:
@@ -238,5 +239,4 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _mouse: {fileID: 0}
   _isInRange: 0

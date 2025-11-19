@@ -732,17 +732,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
   m_PrefabInstance: {fileID: 1132770549}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1132770551 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4285985742961830482, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
-  m_PrefabInstance: {fileID: 1132770549}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87f9cefaf35d72847be7ddc27ab080b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1464775422
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,14 +828,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrincessNPC
       objectReference: {fileID: 0}
-    - target: {fileID: 2619263798567266095, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
-      propertyPath: _mouse
-      value: 
-      objectReference: {fileID: 1132770551}
-    - target: {fileID: 2619263798567266095, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
-      propertyPath: _hasToBeInRange
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3350418198897398712, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2788224
@@ -899,24 +880,11 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 1949599106}
-    - target: {fileID: 6071275670015157445, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
-      propertyPath: npcBoxcollider
-      value: 
-      objectReference: {fileID: 1486732721}
-    - target: {fileID: 6071275670015157445, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
-      propertyPath: resetDialougeAtEnd
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
---- !u!61 &1486732721 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 8714887777010114432, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
-  m_PrefabInstance: {fileID: 1486732715}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1677720777
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -208,8 +208,9 @@ MonoBehaviour:
   npcData: {fileID: 11400000, guid: e1cd4b33f94fda1468b55ab4f43b8513, type: 2}
   contButton: {fileID: 0}
   wordSpeed: 0.06
+  npcPrefab: {fileID: 1274159419671844158}
   npcBoxcollider: {fileID: 8714887777010114432}
-  resetDialougeAtEnd: 0
+  resetDialougeAtEnd: 1
   cantClickNPC: 0
 --- !u!114 &2619263798567266095
 MonoBehaviour:
@@ -239,7 +240,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _mouse: {fileID: 0}
   _isInRange: 0
 --- !u!114 &5202971299731872963
 MonoBehaviour:
@@ -258,6 +258,6 @@ MonoBehaviour:
       m_Calls: []
   autoStart: 0
   enabledPickupDelay: 1
-  item: {fileID: 0}
+  itemData: {fileID: 0}
   canBePickedUp: 1
   _initialPos: {x: 0, y: 0, z: 0}

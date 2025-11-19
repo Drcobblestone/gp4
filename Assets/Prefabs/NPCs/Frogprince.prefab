@@ -181,7 +181,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 4.1271086, y: 2.8033333}
+    oldSize: {x: 2.4762652, y: 1.682}
     newSize: {x: 2.5352714, y: 1.725}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -207,6 +207,7 @@ MonoBehaviour:
   npcData: {fileID: 11400000, guid: c996a924b5e5b3e4c8ed1746be4b826f, type: 2}
   contButton: {fileID: 0}
   wordSpeed: 0.06
+  npcPrefab: {fileID: 264691545598328794}
   npcBoxcollider: {fileID: 6614994840147313071}
   resetDialougeAtEnd: 1
   cantClickNPC: 0
