@@ -208,7 +208,7 @@ MonoBehaviour:
   contButton: {fileID: 0}
   wordSpeed: 0.06
   npcBoxcollider: {fileID: 3285917257187175033}
-  resetDialougeAtEnd: 0
+  resetDialougeAtEnd: 1
   cantClickNPC: 0
 --- !u!114 &8875029560050409679
 MonoBehaviour:
