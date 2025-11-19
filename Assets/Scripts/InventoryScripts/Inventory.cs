@@ -23,8 +23,8 @@ public class Inventory : MonoBehaviour
 
     [Header("State - put InventoryData here")]
     [SerializeField] InventoryData inventoryData;
-    public Dictionary<ItemID, ItemData> inventoryDictionary;
-    //We'll create a new dictionary that's going to just be our old dictionary in InventoryData.
+    public Dictionary<ItemID, ItemData> inventoryDictionary; //We'll create a new dictionary that's going to just be our old dictionary in InventoryData.
+
 
 
     bool canPickUp = true;
@@ -73,7 +73,6 @@ public class Inventory : MonoBehaviour
     {
         StartCoroutine(AddAndDropCurrent(pickedItem));
     }
-    //Let's add a way to compare the current item, so we can use it in 
 
 
     public void DropItem(ItemID inventoryId) //This overload helps us drop items where the player is, without touching another item, and exchanging pos.
@@ -82,13 +81,13 @@ public class Inventory : MonoBehaviour
     }
     public void DropItem(ItemID inventoryId, Vector2 dropPosition) //This creates a new dropped item Prefab, and initializes it with the dropped item data.
     {
-        DroppedItem droppedItem = SpawnItem(inventoryId, dropPosition);
-        GameManager.current.DropItem(droppedItem);
+        DroppedItem droppedItem = SpawnInventoryItem(inventoryId, dropPosition);
+        GameManager.Instance.DropItem(droppedItem);
         //REMOVE FROM SCENE DATA IF ITEM GETS PICKED UP
         inventoryData.RemoveItem(inventoryId);
         ui.RemoveUIItem(inventoryId); //The dropped item disappears from the UI.
     }
-    public DroppedItem SpawnItem(ItemID inventoryId, Vector2 dropPosition) //This spawns and returns the spawned item so we can use it in another function / script
+    public DroppedItem SpawnInventoryItem(ItemID inventoryId, Vector2 dropPosition) //This spawns and returns the spawned item so we can use it in another function / script
     {
         ItemData itemData = inventoryData.GetItem(inventoryId);
         DroppedItem droppedItem = Instantiate(itemData.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();

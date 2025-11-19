@@ -12,11 +12,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform[] entryPoints; //We create an array of entry-points within a scene.
     [SerializeField] SceneObject[] sceneObjects = new SceneObject[8];
     [SerializeField] List<DroppedItem> droppedItems = new List<DroppedItem>();
-    public static GameManager current;
+    public static GameManager Instance;
     // Start is called before the first frame update
     private void Awake()
     {
-        current = this;
+        Instance = this;
     }
     void Start()
     {

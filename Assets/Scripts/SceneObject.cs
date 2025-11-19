@@ -7,7 +7,6 @@ public class SceneObject : MonoBehaviour
 {
     public UnityEvent startFlagOff;
     public UnityEvent startFlagOn;
-    //public UnityEvent<bool> startFlagBool;
     
     [HideInInspector]
     public UnityEvent<bool> flagUpdated;

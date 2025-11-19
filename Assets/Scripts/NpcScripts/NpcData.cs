@@ -54,4 +54,6 @@ public class Conversations //Here we define our various options for what happens
     public bool hasItem;
     //public bool[] givesQuest; //If the dialogue gives a quest.
 
+
+
 }

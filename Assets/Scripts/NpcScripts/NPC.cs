@@ -125,10 +125,10 @@ public class NPC : MonoBehaviour
         if (currentConvo.wantedItem != ItemID.NONE && !currentConvo.hasItem)
         {
             ItemData item = Inventory.Instance.TryPopItem(currentConvo.wantedItem);
-            if (item != null)
+            if (item != null) //If you have an item
             {
-                currentConvo.hasItem = true;
-                npcData.questInProgressIndex = dialogueIndex + 1; //Potential Out of Bounds here
+                currentConvo.hasItem = true; //Then we set the hasItem bool to true.
+                npcData.questInProgressIndex = dialogueIndex + 1; //Potential Out of Bounds here //We move the conversation onwards.
             }
             else
             {
@@ -137,10 +137,23 @@ public class NPC : MonoBehaviour
             }
         }
         //Reward/Give Item Here
-        if (currentConvo.rewardItem != ItemID.NONE)
+        if (currentConvo.rewardItem != ItemID.NONE) //If the reward for the current conversation is NOT set to nothing, then run below.
         {
             //Cinematic Effects and Animations Start Here
-            Inventory.Instance.SpawnItem(currentConvo.rewardItem, transform.position);
+            DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.rewardItem, transform.position); //This doesn't spawn anything...
+            
+
+            if (droppedItem != null)
+            {
+                Debug.Log("The book has spawned.");
+                //How the frack do I get it to show me what's currently in the inventory??
+            }
+            else
+            {
+                Debug.LogWarning("The book DIDN'T spawn!");
+            }
+
+
         }
         if (currentConvo.endConvoEarly)
         {
