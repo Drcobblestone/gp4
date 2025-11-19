@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 4
   description: The Tale of The Bremen Town Musicians
   icon: {fileID: -308236307, guid: 6173e6769a0b1a44486b2551068d0535, type: 3}
-  prefab: {fileID: 0}
+  prefab: {fileID: 6687326480235455718, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
   pickedUp: 0
