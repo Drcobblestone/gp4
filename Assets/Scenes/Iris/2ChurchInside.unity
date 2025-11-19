@@ -648,17 +648,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6752867297575956090, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752867297575956090, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_Offset.x
       value: -0.032794267
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6752867297575956090, guid: bbf4a10244a045a47812f60f76821357, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 532802764539643397, guid: bbf4a10244a045a47812f60f76821357, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 504353000}
   m_SourcePrefab: {fileID: 100100000, guid: bbf4a10244a045a47812f60f76821357, type: 3}
+--- !u!1 &504352999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 532802764539643397, guid: bbf4a10244a045a47812f60f76821357, type: 3}
+  m_PrefabInstance: {fileID: 504352998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &504353000
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504352999}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.46600175, y: 0.16957209}
+      - {x: -0.8435263, y: -0.6875261}
+      - {x: 0.6704241, y: 0.4102261}
+      - {x: 0.6223932, y: 0.9150836}
+  m_UseDelaunayMesh: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
