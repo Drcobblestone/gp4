@@ -1032,6 +1032,38 @@ PolygonCollider2D:
       - {x: -8.00637, y: -0.15425646}
       - {x: -5.7618628, y: 2.499338}
   m_UseDelaunayMesh: 0
+--- !u!1 &879588432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879588433}
+  m_Layer: 0
+  m_Name: Animations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &879588433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879588432}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.038613, y: 4.281978, z: -0.21859246}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 578656724554332947}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &900545274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,19 +2578,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 879588433}
     m_Modifications:
     - target: {fileID: 3038174269012891162, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.3
+      value: -0.7386131
       objectReference: {fileID: 0}
     - target: {fileID: 3038174269012891162, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.79
+      value: -8.071978
       objectReference: {fileID: 0}
     - target: {fileID: 3038174269012891162, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.21859246
       objectReference: {fileID: 0}
     - target: {fileID: 3038174269012891162, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2597,6 +2629,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
+--- !u!4 &578656724554332947 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3038174269012891162, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
+  m_PrefabInstance: {fileID: 578656724554332946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1059892365749352683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2745,4 +2782,4 @@ SceneRoots:
   - {fileID: 648703914}
   - {fileID: 2076823420}
   - {fileID: 1525667119}
-  - {fileID: 578656724554332946}
+  - {fileID: 879588433}
