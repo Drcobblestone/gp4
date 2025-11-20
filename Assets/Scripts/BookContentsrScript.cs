@@ -20,22 +20,22 @@ public class BookContentsrScript : MonoBehaviour
 
 /*
 #if (UNITY_EDITOR)
-    private void OnValidate()
+    private void OnValidate() //To make sure our contents show up in the Inspector, we validate.
     {
-        UpdatePagination();
+        UpdatePagination(); //This is basically just a double-check to make sure the content has started loading.
 
         /*if (leftSide.text == content)
             return;
         
-        SetupContent();
+        SetupContent(); //Double-check to make sure it's all been set up correctly.
     }
 #endif
 */
 
     private void Awake()
     {
-        SetupContent();
-        UpdatePagination();
+        SetupContent(); //We run our co-routine for setting up how the page is supposed to look and what it should use from the UI-canvas.
+        UpdatePagination(); //We start updating our pages, so they will display text.
     }
     private void SetupContent()
 
@@ -50,7 +50,7 @@ public class BookContentsrScript : MonoBehaviour
     {
         leftPagination.text = leftSide.pageToDisplay.ToString();    
         rightPagination.text = rightSide.pageToDisplay.ToString();
-        pageCount = leftSide.textInfo.pageCount; //Causes null-reference-exception.
+        pageCount = leftSide.textInfo.pageCount; //
     }
 
     public void PreviousPage()
@@ -58,7 +58,8 @@ public class BookContentsrScript : MonoBehaviour
         print("PreviousPage");
         leftSide.pageToDisplay -= 2;
         leftSide.pageToDisplay = Mathf.Max(1, leftSide.pageToDisplay);
-        /*if (leftSide.pageToDisplay < 1)
+        /*
+        if (leftSide.pageToDisplay < 1)
 
         {
             leftSide.pageToDisplay = 1;
@@ -81,7 +82,8 @@ public class BookContentsrScript : MonoBehaviour
     {
         print("NextPage");
         leftSide.pageToDisplay += 2;
-        /*if (rightSide.pageToDisplay <= rightSide.textInfo.pageCount)
+        /*
+        if (rightSide.pageToDisplay <= rightSide.textInfo.pageCount)
 
         {
             return;
@@ -99,7 +101,8 @@ public class BookContentsrScript : MonoBehaviour
 
             leftSide.pageToDisplay += 2;
             rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
-        }*/
+        }
+        */
         rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
         UpdatePagination();
         print(pageCount);

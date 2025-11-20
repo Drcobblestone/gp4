@@ -21,7 +21,7 @@ public class NPC : MonoBehaviour
     public bool resetDialougeAtEnd = false;
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
 
-    //Is it really a good idea to have a private Enum??
+    //Is it really a good idea to have a private Enum?
     private enum QuestState { NotStarted, InProgress, Completed} //We define the different states a Quest can be in.
     private QuestState questState = QuestState.NotStarted; //The first quest-state is always "not being started".
 
