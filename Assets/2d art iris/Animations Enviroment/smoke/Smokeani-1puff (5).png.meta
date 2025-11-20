@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 31d160cbbb353044b9addadb06acaa24
+guid: 35d63127dd69f03428248083c479fd71
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,148 +97,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Smokeani-1_0
+      name: Smokeani-1puff (5)_0
       rect:
         serializedVersion: 2
-        x: 1747
-        y: 896
-        width: 70
-        height: 81
+        x: 2077
+        y: 1485
+        width: 27
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3994ba6ce7ecd489dda3927138d70e
-      internalID: 1202574976
+      spriteID: f5b5d9f373d07e74aaf9759dfee7be3e
+      internalID: -1036796599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smokeani-1_1
+      name: Smokeani-1puff (5)_1
       rect:
         serializedVersion: 2
-        x: 2014
-        y: 915
+        x: 2034
+        y: 1384
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714b1313c288a3844ae333a67320043e
+      internalID: -2071957692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smokeani-1puff (5)_2
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 1132
         width: 58
-        height: 69
+        height: 162
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0e02df28c761a24aad7a9d0c87a1422
-      internalID: -653934185
+      spriteID: 5e8959f5d6a6d714589c70b7c3867e96
+      internalID: 1748705593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smokeani-1_2
+      name: Smokeani-1puff (5)_3
       rect:
         serializedVersion: 2
-        x: 1633
-        y: 660
-        width: 71
-        height: 86
+        x: 2034
+        y: 1031
+        width: 42
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6c097bb1d4470148af8be75df9f5c2c
-      internalID: -1184189561
+      spriteID: 0668dd090d08f1741b2422c6730520ff
+      internalID: 1158982010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smokeani-1_3
+      name: Smokeani-1puff (5)_4
       rect:
         serializedVersion: 2
-        x: 1634
-        y: 396
-        width: 514
-        height: 586
+        x: 1938
+        y: 474
+        width: 172
+        height: 1056
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efa54d15438fbf349a8d4a51ff7b4429
-      internalID: -458997928
+      spriteID: 264bb32262d4e444a99adb5f68173bff
+      internalID: 20856248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smokeani-1_4
+      name: Smokeani-1puff (5)_5
       rect:
         serializedVersion: 2
-        x: 2064
-        y: 596
-        width: 85
-        height: 88
+        x: 2017
+        y: 651
+        width: 32
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c7e38274b3dd9b4d81b955c29444bcf
-      internalID: -794481409
+      spriteID: 4262182b3869f3b4182b02f2447c47ef
+      internalID: 409583654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smokeani-1_5
+      name: Smokeani-1puff (5)_6
       rect:
         serializedVersion: 2
-        x: 1682
-        y: 414
-        width: 77
-        height: 77
+        x: 1999
+        y: 577
+        width: 28
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39c1ef0b3c7fdbb429adf1394214797b
-      internalID: 1255365786
+      spriteID: 60202aa1c49029e449decac4c1ed10a4
+      internalID: -174138838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smokeani-1_6
+      name: Smokeani-1puff (5)_7
       rect:
         serializedVersion: 2
-        x: 1980
-        y: 397
-        width: 84
-        height: 79
+        x: 1950
+        y: 480
+        width: 24
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f17136f2e40468a4aac3404390a11eb2
-      internalID: -1582235394
+      spriteID: c36f394e80b961a4c8661a6d0c6c3fe0
+      internalID: 621640600
       vertices: []
       indices: 
       edges: []
@@ -254,13 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Smokeani-1_0: 1202574976
-      Smokeani-1_1: -653934185
-      Smokeani-1_2: -1184189561
-      Smokeani-1_3: -458997928
-      Smokeani-1_4: -794481409
-      Smokeani-1_5: 1255365786
-      Smokeani-1_6: -1582235394
+      Smokeani-1puff (5)_0: -1036796599
+      Smokeani-1puff (5)_1: -2071957692
+      Smokeani-1puff (5)_2: 1748705593
+      Smokeani-1puff (5)_3: 1158982010
+      Smokeani-1puff (5)_4: 20856248
+      Smokeani-1puff (5)_5: 409583654
+      Smokeani-1puff (5)_6: -174138838
+      Smokeani-1puff (5)_7: 621640600
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
