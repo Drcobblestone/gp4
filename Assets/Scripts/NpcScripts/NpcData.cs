@@ -12,8 +12,14 @@ public class NpcData : ScriptableObject
     public string description; //Sadly we can't use name, as that is an inherited property too, but this is just a name.
     public Sprite icon; //This is an actual sprite/texture that's going to be visible in the UI.
     public bool talkedTo = false;
+
+    [Header("Put smoke-puff animation here")]
+    public Animation endAnimation; //This is our ending-animation, aka smoke-puff, that's played when the NPC's quest is over.
+    
     [Header("The Conversations the NPC has when loaded.")] //Tells us what conversations the NPC is meant to have.
     public List<Conversations> conversations = new List<Conversations>(); //This creates the list of conversations the NPC is supposed to have.
+
+
 
     public int questInProgressIndex = 0; //If we have currently accepted a quest, this decides what/when the NPC will say a certain line of dialogue.(or give an item)
     //public int questCompletedIndex; //If we have completed a quest, this will track that.

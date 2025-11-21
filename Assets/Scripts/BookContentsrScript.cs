@@ -7,6 +7,8 @@ using UnityEngine.Events;
 
 public class BookContentsrScript : MonoBehaviour
 {
+    //public static BookContentsrScript Instance; //We make this script instantiatable, since we will be spawning this when clicking books.
+
     [TextArea(10, 20)]
     [SerializeField] private string content; 
 
