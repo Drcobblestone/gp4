@@ -322,6 +322,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 8454658968868908048, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 885662861, guid: 14b8597d195203c48bb43759d3095df6, type: 3}
     - target: {fileID: 8637756541422129943, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
       propertyPath: m_text
       value: "Leopold was busy at work in the library, just the way he liked it \n\n\n\u2014
