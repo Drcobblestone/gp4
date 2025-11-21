@@ -254,6 +254,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2855117767317130504, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 864.2186
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855117767317130504, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 162.74689
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158138092295280346, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 892.7286
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158138092295280346, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 173.32977
+      objectReference: {fileID: 0}
     - target: {fileID: 4122924721061611026, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
       propertyPath: content
       value: "Leopold was busy at work in the library, just the way he liked it \n\n\n\n\n\n\u2014
@@ -322,6 +338,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 8454658968868908048, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 885662861, guid: 14b8597d195203c48bb43759d3095df6, type: 3}
     - target: {fileID: 8637756541422129943, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
       propertyPath: m_text
       value: "Leopold was busy at work in the library, just the way he liked it \n\n\n\u2014
