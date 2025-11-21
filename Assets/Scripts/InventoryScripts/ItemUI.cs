@@ -77,7 +77,7 @@ public class ItemUI : MonoBehaviour
     }
 
     //We add a function to destroy the on-screen book - for use in BookContentsrScript, via the reachedEnd event.
-    protected void DestroyReadingBook()
+    public void DestroyReadingBook()
     {
         // Destroy the Open book (which is being read)
         var readingBook = GameObject.FindWithTag("ReadingBook"); //We create a local var based on any gameobject tagged to be a book. | Vars are cringe, but I don't know how to rename it.
