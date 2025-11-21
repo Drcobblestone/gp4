@@ -17,3 +17,4 @@ MonoBehaviour:
   icon: {fileID: 1620085133, guid: 5c100e2559ecb0642bf580e2e5faecd5, type: 3}
   prefab: {fileID: 6687326480235455718, guid: 320eb45851af7084dbbe2df4f9b32f00, type: 3}
   pickedUp: 0
+  UIBook: {fileID: 6687326480235455718, guid: 320eb45851af7084dbbe2df4f9b32f00, type: 3}
