@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = new Vector2(horizontal, vertical);
         movement = movement.normalized; 
 
-        animator.SetFloat("Speed", movement.magnitude); //We set the the speed of the player. 
+        animator.SetFloat("Speed", movement.magnitude); //We set the the speed of the player.
+        //animator.SetBool("Flipbackside");         //We set the animation-bool if we are moving upwards.                                       
+
 
         // We check that rigidbody's velocity is now controlled via a timer that checks if horizontal as well as vertical movement multiplies the speed of the rigidbody.
         rb.velocity = movement * speed * Time.deltaTime; //

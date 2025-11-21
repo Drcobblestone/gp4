@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DroppedItem
   - NPC
+  - ReadingBook
   layers:
   - Default
   - TransparentFX

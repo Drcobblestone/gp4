@@ -25,7 +25,13 @@ public class ItemUI : MonoBehaviour
     */
 
     //-----New experimental code for two different on-Click behaviours----
-    
+    /*
+    public void Start()
+    {
+        itemData.UIBook = uiBook;//We turn the field UIBook in ItemData into a local thing, so we can destroy it.
+    }
+    */
+
     //Consider making removing items a dragging+release, rather than a clicking.
 
     public void Initialize(ItemID inventoryId, ItemData itemData) //When we start putting an item into the UI, we pass it the inventory-ID, and give the option to remove it.
@@ -68,5 +74,13 @@ public class ItemUI : MonoBehaviour
     void OnDestroy()
     {
         button.onClick.RemoveAllListeners(); //This tells the inventory-class to remove the item.
+    }
+
+    //We add a function to destroy the on-screen book - for use in BookContentsrScript, via the reachedEnd event.
+    protected void DestroyReadingBook()
+    {
+        // Destroy the Open book (which is being read)
+        var readingBook = GameObject.FindWithTag("ReadingBook"); //We create a local var based on any gameobject tagged to be a book. | Vars are cringe, but I don't know how to rename it.
+        Destroy(readingBook);
     }
 }
