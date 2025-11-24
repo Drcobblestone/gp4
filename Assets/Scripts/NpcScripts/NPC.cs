@@ -15,7 +15,7 @@ public class NPC : MonoBehaviour
     public GameObject contButton;
     public float wordSpeed; //This lets us set how fast the words appear.
 
-    [SerializeField] GameObject npcPrefab; //Insert NPC-character Prefab here, so we can despawn it.
+    [SerializeField] GameObject npcObject; //Insert NPC-character Prefab here, so we can despawn it.
 
     [SerializeField] BoxCollider2D npcBoxcollider; //We make a field where we can get the NPC's box-collider.
     public bool resetDialougeAtEnd = false;
@@ -54,6 +54,7 @@ public class NPC : MonoBehaviour
         {
             zeroText();
         }
+
         else
         {
             NpcUI npcUI = dialoguePanel.GetComponent<NpcUI>();
@@ -62,6 +63,7 @@ public class NPC : MonoBehaviour
             dialoguePanel.SetActive(true); //...otherwise we activate the dialogue-panel in the hierarchy.
             StartCoroutine(Typing()); //... and start making words appear.
         }
+
     }
 
     //Always remember: Co-routines don't stop running unless you tell them! They're on a different thread.
@@ -70,10 +72,24 @@ public class NPC : MonoBehaviour
         if (dialoguePanel.activeInHierarchy)
         {
             cantClickNPC = true; //We make it so we can't click the NPC while the dialogue-panel is active.
+            if (npcObject == null)
+            {
+                yield break;
+            }
             npcBoxcollider.enabled = false; //We do this by turning off the collider who detects the player.
+            //Null the boxcollider here?
+            
         }
 
-        string dialogue = npcData.conversations[dialogueIndex].dialogue;
+        //If the npc has been despawned we break the co-routine though, no need to continue.
+        /*else if (npcObject == null)
+        {
+            yield break;
+        }*/
+        
+
+
+            string dialogue = npcData.conversations[dialogueIndex].dialogue;
         foreach (char letter  in dialogue.ToCharArray()) 
         {
             dialogueText.text += letter;
@@ -147,7 +163,8 @@ public class NPC : MonoBehaviour
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {
                 Debug.Log("The book has spawned."); //we print the debug-message.
-                Destroy(npcPrefab);//And destroy the NPC.
+                npcObject.SetActive(false);
+                //Destroy(npcObject);//And destroy the NPC.
             }
             else //But if the dropped item didn't happen, then we warn.
             {
@@ -226,7 +243,10 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         dialogueIndex = 0;
         cantClickNPC = !resetDialougeAtEnd; //
-        npcBoxcollider.enabled = !cantClickNPC;
+        if (npcObject != null)
+        {
+            npcBoxcollider.enabled = !cantClickNPC;
+        }
         dialoguePanel.SetActive(false); //We turn off our dialogue-panel.
     }
 

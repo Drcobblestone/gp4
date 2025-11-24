@@ -987,10 +987,10 @@ MonoBehaviour:
   reachedEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6641891916506779239, guid: 05aab8fe1edec714faabf7f522bd7e95, type: 3}
-        m_TargetAssemblyTypeName: ItemUI, Assembly-CSharp
-        m_MethodName: DestroyReadingBook
-        m_Mode: 1
+      - m_Target: {fileID: 4264754677179053973}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
