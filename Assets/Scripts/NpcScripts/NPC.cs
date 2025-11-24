@@ -21,9 +21,9 @@ public class NPC : MonoBehaviour
     public bool resetDialougeAtEnd = false;
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
 
-    //Is it really a good idea to have a private Enum?
-    private enum QuestState { NotStarted, InProgress, Completed} //We define the different states a Quest can be in.
-    private QuestState questState = QuestState.NotStarted; //The first quest-state is always "not being started".
+    //Old queststate code.
+    //private enum QuestState { NotStarted, InProgress, Completed} //We define the different states a Quest can be in.
+    //private QuestState questState = QuestState.NotStarted; //The first quest-state is always "not being started".
 
     private void Start()
     {
@@ -77,18 +77,7 @@ public class NPC : MonoBehaviour
                 yield break;
             }
             npcBoxcollider.enabled = false; //We do this by turning off the collider who detects the player.
-            //Null the boxcollider here?
-            
         }
-
-        //If the npc has been despawned we break the co-routine though, no need to continue.
-        /*else if (npcObject == null)
-        {
-            yield break;
-        }*/
-        
-
-
             string dialogue = npcData.conversations[dialogueIndex].dialogue;
         foreach (char letter  in dialogue.ToCharArray()) 
         {
@@ -103,7 +92,7 @@ public class NPC : MonoBehaviour
         button.onClicked.AddListener(NextLine);        
     }
 
-    //Should this be in NextLine, then?
+    //Old way of syncing with queststates.
  
     /*private void SyncQuestState()
     {
@@ -164,7 +153,6 @@ public class NPC : MonoBehaviour
             {
                 Debug.Log("The book has spawned."); //we print the debug-message.
                 npcObject.SetActive(false);
-                //Destroy(npcObject);//And destroy the NPC.
             }
             else //But if the dropped item didn't happen, then we warn.
             {
