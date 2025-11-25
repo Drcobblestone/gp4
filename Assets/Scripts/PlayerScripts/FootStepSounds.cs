@@ -45,7 +45,8 @@ public class FootStepSounds : MonoBehaviour
         }
         */
 
-        if (playerController.horizontal < 0 || playerController.horizontal > 0 || playerController.vertical < 0 || playerController.vertical > 0)
+        
+        if (playerController.horizontal != 0.0f || playerController.vertical != 0.0f)
         {
             footStepSound.Play();
         }
