@@ -18,8 +18,8 @@ public class PlayerController : MonoBehaviour
 
     bool facingLeft = true; //Condition that establishes which way the player-character starts facing.
 
-    private float horizontal; //Horizontal control, for use later.
-    private float vertical; //Vertical control, for use later.
+    public float horizontal; //Horizontal control, for use later.
+    public float vertical; //Vertical control, for use later.
     
     public Animator animator; //We summon the animator.
 
