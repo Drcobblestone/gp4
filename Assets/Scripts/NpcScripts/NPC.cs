@@ -148,7 +148,7 @@ public class NPC : MonoBehaviour
         if (currentConvo.rewardItem != ItemID.NONE) //If the reward for the current conversation is NOT set to nothing, then run below.
         {
             //Cinematic Effects and Animations Start Here
-            npcData.Animation(endAnimation);
+            //StartCoroutine(NpcEndAnimation());
 
             //and end before here
 
@@ -242,8 +242,17 @@ public class NPC : MonoBehaviour
         }
         dialoguePanel.SetActive(false); //We turn off our dialogue-panel.
     }
-
+    /*
     //We make a co-routine to get the animation from the NpcData scriptable object.
-    IEnumerator End()
+    private Animation NpcEndAnimation()
+    {
 
+        
+        npcData.endAnimation;
+            gameObject.GetComponent<Animation>();
+        Debug.Log("We're running the npc-book-animation.");
+        //yield break;
+
+    }
+    */
 }
