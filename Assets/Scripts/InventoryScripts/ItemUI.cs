@@ -12,6 +12,11 @@ public class ItemUI : MonoBehaviour
     //Experimental Field to get access to Book-functions, if the item happens to be a book.
     //----
     [SerializeField] ItemData itemData; //We grab the books Scriptable objects, so we can use that to spawn the book associated with it.
+    [SerializeField] GameObject bremenBook;
+    [SerializeField] GameObject redBook;
+    [SerializeField] GameObject snowBook;
+    [SerializeField] GameObject frogBook;
+
     //----
 
     /*
@@ -39,31 +44,37 @@ public class ItemUI : MonoBehaviour
         //We need to separate this somehow, depending on what ItemID's we have. That, or create a choice-toggle, that determines if you drop or read.
         button.onClick.RemoveAllListeners();
         image.sprite = itemData.icon;
-            switch (inventoryId)
-            {
-            case ItemID.BREMENBOOK:
-                button.onClick.AddListener(() => Instantiate(itemData.UIBook)); //When we click the right kind of item (a book) in inventory, it spawns the book-story-prefab. (so you can read the story)
-                Debug.Log("Read Bremen.");
-                break;
-            case ItemID.REDBOOK:
-                button.onClick.AddListener(() => Instantiate(itemData.UIBook)); //
-                Debug.Log("Read Riding Hood.");
-                break;
-            case ItemID.SNOWBOOK:
-                button.onClick.AddListener(() => Instantiate(itemData.UIBook)); //
-                Debug.Log("Read Snow.");
-                break;
-            case ItemID.FROGBOOK:
-                button.onClick.AddListener(() => Instantiate(itemData.UIBook)); //
-                Debug.Log("Read Frog.");
-                break;
+        //button.onClick.AddListener(() => Inventory.Instance.DropItem(inventoryId));//Instantiate(itemData.UIBook));
+        //Inventory.Instance.DropItem(inventoryId);
+        switch (inventoryId)
+        {
+        case ItemID.BREMENBOOK: //When we click the right kind of item (a book) in inventory, it spawns the book-story-prefab. (so you can read the story)
+            //button.onClick.AddListener(() => Inventory.Instance.RemoveItem(inventoryId));
+            button.onClick.AddListener(() => bremenBook.SetActive(true));
+            Debug.Log("Read Bremen.");
+            break;
+        case ItemID.REDBOOK:
+            //button.onClick.AddListener(() => Inventory.Instance.RemoveItem(inventoryId));
+            button.onClick.AddListener(() => redBook.SetActive(true));//
+            Debug.Log("Read Riding Hood.");
+            break;
+        case ItemID.SNOWBOOK:
+            //button.onClick.AddListener(() => Inventory.Instance.RemoveItem(inventoryId));
+            button.onClick.AddListener(() => snowBook.SetActive(true));//
+            Debug.Log("Read Snow.");
+            break;
+        case ItemID.FROGBOOK:
+            //button.onClick.AddListener(() => Inventory.Instance.RemoveItem(inventoryId)); //
+            button.onClick.AddListener(() => frogBook.SetActive(true));//
+            Debug.Log("Read Frog.");
+            break;
 
 
-            default:
-                button.onClick.AddListener(() => Inventory.Instance.DropItem(inventoryId));
-                Debug.Log("Item dropped.");
-                break;
-            }
+        default:
+            button.onClick.AddListener(() => Inventory.Instance.DropItem(inventoryId));
+            Debug.Log("Item dropped.");
+            break;
+        }
     }
 
         //Spawn an object using a string in the Book-scriptableobject, or spawn a generic one, that gets populated by data in the Book/Item scriptable object?

@@ -11,9 +11,9 @@ public class ItemData : ScriptableObject //By inheriting from scriptableobjects 
     public GameObject prefab; //This prefab will be instantiated into the gameworld.
     public bool pickedUp = false;
 
-    [Header("Put the book to be spawned when clickin in Inventory, here.")]
+    /*[Header("Put the book to be spawned when clickin in Inventory, here.")]
     public GameObject UIBook; //This will be instantiated when we click a book.
-
+    */
     //This might be worthless, but could be used in removing items from inventory when handing in quest-items.
     //If it wasn't for the fact that I missed that the tutorial uses a Monoscript for "item", while I, naturally, use a Scriptable object. My Item is now ItemData - so a brand new monoscript with "itemController" might be necessary to put this in instead.
     /*

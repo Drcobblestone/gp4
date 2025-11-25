@@ -105,6 +105,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 9001061545901938483}
   button: {fileID: 302219969838007484}
+  itemData: {fileID: 0}
+  bremenBookPrefab: {fileID: 4264754677179053973, guid: 87e03d14881422649b93e301c65ab66d, type: 3}
+  redBookPrefab: {fileID: 4264754677179053973, guid: 2c7cb12cec7c6834c800786d54e34ad2, type: 3}
+  snowBookPrefab: {fileID: 4264754677179053973, guid: c66ccdd9d13fa8c4099b46fea79b80a0, type: 3}
+  frogBookPrefab: {fileID: 4264754677179053973, guid: 4a762a3a7c19f41459e627a0c010b6ea, type: 3}
 --- !u!1 &6160580974991733439
 GameObject:
   m_ObjectHideFlags: 0

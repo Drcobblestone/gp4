@@ -111,6 +111,9 @@ public class BookContentsrScript : MonoBehaviour
         if (leftSide.pageToDisplay >= pageCount + 1)
         {
             reachedEnd.Invoke();
+            leftSide.pageToDisplay = 1;
+            rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
+            UpdatePagination();
         }
 
     }
