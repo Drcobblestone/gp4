@@ -17,10 +17,21 @@ MonoBehaviour:
   description: A princess to kiss the Frog
   icon: {fileID: -1893751228, guid: d2938510c46bc9b4a928c894b5c845b5, type: 3}
   talkedTo: 0
+  endAnimation: {fileID: 0}
   conversations:
-  - dialogue: Oh, so you've met a nice Frog? And he's a real gentleman, a true Royal
-      even? Oh my! Dear Sir please set us up a meeting.
+  - dialogue: 'Oh, hello kind Sir Sheep. Could you perchance assist me with a most
+      precarious bother I doth have?
+
+      I wish to meet a true gentleman, a true
+      Royal is my preference. Where oh where can I meet such a bachelor?'
     endConvoEarly: 1
+    setQuestProgressTo: 1
+    wantedItem: 8
+    rewardItem: 8
+    hasItem: 0
+  - dialogue: Oh, so you've met a nice Frog? And he's a real gentleman, a true Royal
+      even? Oh my! Dear Sir, please bring me before him.
+    endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 8
     rewardItem: 2

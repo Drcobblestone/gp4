@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Xml.Linq;
 using TMPro; //We get the textmeshpro library.
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
@@ -147,6 +148,10 @@ public class NPC : MonoBehaviour
         if (currentConvo.rewardItem != ItemID.NONE) //If the reward for the current conversation is NOT set to nothing, then run below.
         {
             //Cinematic Effects and Animations Start Here
+            npcData.Animation(endAnimation);
+
+            //and end before here
+
             DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.rewardItem, transform.position); //Then we spawn the Book/reward.
             
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
@@ -238,5 +243,7 @@ public class NPC : MonoBehaviour
         dialoguePanel.SetActive(false); //We turn off our dialogue-panel.
     }
 
+    //We make a co-routine to get the animation from the NpcData scriptable object.
+    IEnumerator End()
 
 }
