@@ -8,6 +8,8 @@ public class FootStepSounds : MonoBehaviour
 {
 
     [SerializeField] PlayerController playerController;
+    [SerializeField] AudioClip footStep;
+    [SerializeField] Camera mainCamera;
 
     public AudioSource footStepSound;
 
@@ -45,7 +47,8 @@ public class FootStepSounds : MonoBehaviour
         }
         */
 
-        
+//The below works, but I'm temporarily disabling it, to sync with animations instead.       
+        /*
         if (playerController.horizontal != 0.0f || playerController.vertical != 0.0f)
         {
             footStepSound.Play();
@@ -55,19 +58,16 @@ public class FootStepSounds : MonoBehaviour
         {
             footStepSound.Stop();
         }
-
+        */
 
 
 
     }
-    //Below is just a reminder how I access the inputAction-system.
-    /*
-    public void Move(InputAction.CallbackContext context) //If the Input System gets input then we shall move.
+
+    public void playFootstep()
     {
-        horizontal = context.ReadValue<Vector2>().x; //We assign to the horizontal variable whether (context) we are moving left or right.
-        vertical = context.ReadValue<Vector2>().y; //We assign to the vertical variable whether (context) we are moving up or down.
-
+        AudioSource.PlayClipAtPoint(footStep, mainCamera.transform.position, 1.0f);
     }
-    */
+
 
 }

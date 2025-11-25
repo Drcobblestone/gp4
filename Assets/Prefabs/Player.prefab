@@ -402,4 +402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 8883754261314881802}
-  footStepSound: {fileID: 5472353495223560873, guid: f3bc21bb4d1942245934e9580ffeae21, type: 3}
+  footStep: {fileID: 8300000, guid: c15ca2b49ebc07c4287c443c23a351ff, type: 3}
+  mainCamera: {fileID: 0}
+  footStepSound: {fileID: 0}
