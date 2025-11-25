@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
-public class Audio : MonoBehaviour
+public class FootStepSounds : MonoBehaviour
 {
 
     [SerializeField] PlayerController playerController;
 
     public AudioSource footStepSound;
+
+    private bool playingFootSteps = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,16 +23,41 @@ public class Audio : MonoBehaviour
     
     void Update()
     {
+        /* //Doesn't work!! Fuck my life!
         if (playerController.rb.velocity != null) //We access the rigidbody in the playercontroller, and check if it's velocity is zero or not. (is it moving)
         {
-            footStepSound.enabled = true; //If the rigid-body is accelerating (we're moving), then we play footsteps.
+            if(playingFootSteps == true)
+            {
+                return;
+            }
+            
+            footStepSound.Play(); //If the rigid-body is accelerating (we're moving), then we play footsteps.
+            playingFootSteps = true;
+
             Debug.Log("Footsteps playing.");
+        }
+
+        else if (playerController.rb.velocity == null)
+        {
+            playingFootSteps = false;
+
+            footStepSound.Stop(); //Otherwise we don't play footsteps.
+        }
+        */
+
+        if (playerController.horizontal < 0 || playerController.horizontal > 0 || playerController.vertical < 0 || playerController.vertical > 0)
+        {
+            footStepSound.Play();
         }
 
         else
         {
-            footStepSound.enabled = false; //Otherwise we don't play footsteps.
+            footStepSound.Stop();
         }
+
+
+
+
     }
     //Below is just a reminder how I access the inputAction-system.
     /*

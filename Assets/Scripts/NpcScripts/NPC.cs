@@ -148,6 +148,7 @@ public class NPC : MonoBehaviour
         if (currentConvo.rewardItem != ItemID.NONE) //If the reward for the current conversation is NOT set to nothing, then run below.
         {
             //Cinematic Effects and Animations Start Here
+            
             //StartCoroutine(NpcEndAnimation());
 
             //and end before here
