@@ -12,9 +12,9 @@ public class FootStepSounds : MonoBehaviour
     [SerializeField] AudioClip footStep2;
     [SerializeField] Camera mainCamera;
 
-    public AudioSource footStepSound;
+    //[SerializeField] AudioSource footStepSound;
 
-    private bool playingFootSteps = false;
+    //private bool playingFootSteps = false;
 
     // Start is called before the first frame update
     void Start()
