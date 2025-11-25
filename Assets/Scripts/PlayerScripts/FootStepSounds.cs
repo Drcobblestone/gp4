@@ -8,7 +8,8 @@ public class FootStepSounds : MonoBehaviour
 {
 
     [SerializeField] PlayerController playerController;
-    [SerializeField] AudioClip footStep;
+    [SerializeField] AudioClip footStep1;
+    [SerializeField] AudioClip footStep2;
     [SerializeField] Camera mainCamera;
 
     public AudioSource footStepSound;
@@ -64,9 +65,14 @@ public class FootStepSounds : MonoBehaviour
 
     }
 
-    public void playFootstep()
+    public void playFootstep1()
     {
-        AudioSource.PlayClipAtPoint(footStep, mainCamera.transform.position, 1.0f);
+        AudioSource.PlayClipAtPoint(footStep1, mainCamera.transform.position, 0.75f);
+    }
+
+    public void playFootstep2()
+    {
+        AudioSource.PlayClipAtPoint(footStep2, mainCamera.transform.position, 0.75f);
     }
 
 
