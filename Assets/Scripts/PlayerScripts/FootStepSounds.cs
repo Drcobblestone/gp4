@@ -18,17 +18,18 @@ public class Audio : MonoBehaviour
     }
 
     // Update is called once per frame
-    /*
+    
     void Update()
     {
-        if (playerController.Move.) //Get the callbackcontext from playercontroller, and access the horizontal vertical, and then put it in this if.
+        if (playerController.rb.velocity != null) //We access the rigidbody in the playercontroller, and check if it's velocity is zero or not. (is it moving)
         {
-            footStepSound.enabled = true;
+            footStepSound.enabled = true; //If the rigid-body is accelerating (we're moving), then we play footsteps.
+            Debug.Log("Footsteps playing.");
         }
 
         else
         {
-            footStepSound.enabled = false;
+            footStepSound.enabled = false; //Otherwise we don't play footsteps.
         }
     }
     //Below is just a reminder how I access the inputAction-system.

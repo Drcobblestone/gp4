@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 8883754261314881802}
   - component: {fileID: 9023525408268776616}
   - component: {fileID: 4285985742961830482}
+  - component: {fileID: 6688310561376991879}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -359,6 +360,8 @@ MonoBehaviour:
   rb: {fileID: 5456968403267370001}
   spriteTransformSize: {fileID: 1879967661343220018}
   speed: 150
+  horizontal: 0
+  vertical: 0
   animator: {fileID: 395556294056997366}
 --- !u!114 &9023525408268776616
 MonoBehaviour:
@@ -386,3 +389,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f9cefaf35d72847be7ddc27ab080b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6688310561376991879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8261608255279956213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a45f7f9499ef418fdbda171432c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 8883754261314881802}
+  footStepSound: {fileID: 0}
