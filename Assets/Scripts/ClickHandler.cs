@@ -8,7 +8,7 @@ public class ClickHandler : MonoBehaviour
 
     [SerializeField] private UnityEvent _clicked;
 
-    private CapsuleCollider2D _collider; //We make sure that we separate the clicks to only this clickable item, using it's Box-collider.
+    private BoxCollider2D _collider; //We make sure that we separate the clicks to only this clickable item, using it's Box-collider.
 
     [Header("-Player Component References-")]
     [Header("-Put MouseInputProvider script here")]
@@ -19,7 +19,7 @@ public class ClickHandler : MonoBehaviour
 
     private void Awake()
     {
-        _collider = GetComponent<CapsuleCollider2D>();
+        _collider = GetComponent<BoxCollider2D>();
 
     }
     private void Start()
