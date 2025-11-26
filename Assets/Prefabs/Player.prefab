@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1879967661343220018}
   - component: {fileID: 7384086319902971410}
   - component: {fileID: 395556294056997366}
+  - component: {fileID: 8294035514192992445}
   m_Layer: 0
   m_Name: SpritePlayer
   m_TagString: Untagged
@@ -106,6 +107,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8294035514192992445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4670443048855868794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a45f7f9499ef418fdbda171432c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 8883754261314881802}
+  footStep1: {fileID: 8300000, guid: c15ca2b49ebc07c4287c443c23a351ff, type: 3}
+  footStep2: {fileID: 8300000, guid: 05b85651cace84742ae90925334079e9, type: 3}
+  mainCamera: {fileID: 4020654404810618638, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+  footStepSound: {fileID: 0}
 --- !u!1 &8261608255279956213
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +377,8 @@ MonoBehaviour:
   rb: {fileID: 5456968403267370001}
   spriteTransformSize: {fileID: 1879967661343220018}
   speed: 150
+  horizontal: 0
+  vertical: 0
   animator: {fileID: 395556294056997366}
 --- !u!114 &9023525408268776616
 MonoBehaviour:
