@@ -7,6 +7,7 @@ public enum ItemID
     JOINT,
     PRINCESSI,
     TURNTABLE,
+    FROGPRINCEI,
     //---------
     //Below are the reward-items.
     BREMENBOOK,
@@ -22,7 +23,7 @@ public enum NpcID
 {
     DWARF,
     BREMEN,
-    FROGPRINCE,
+    FROGPRINCEN,
     PRINCESSN,
     REDHOOD
 }

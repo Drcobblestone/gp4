@@ -13,9 +13,6 @@ public class NpcData : ScriptableObject
     public Sprite icon; //This is an actual sprite/texture that's going to be visible in the UI.
     public bool talkedTo = false;
 
-    [Header("Put smoke-puff animation here")]
-    public Animation endAnimation; //This is our ending-animation, aka smoke-puff, that's played when the NPC's quest is over.
-    
     [Header("The Conversations the NPC has when loaded.")] //Tells us what conversations the NPC is meant to have.
     public List<Conversations> conversations = new List<Conversations>(); //This creates the list of conversations the NPC is supposed to have.
 
@@ -42,6 +39,8 @@ public class Conversations //Here we define our various options for what happens
 {
     [TextArea(3, 10)] //TextAreaAttribute(int minLines, int maxLines);
     public string dialogue;
+    
+    //---Quest-related---
     /*
     public bool waitForQuestGiven; //Click this in editor, to make sure the particular line of text doesn't load before a Quest has been given.
     public bool waitForQuestItem1; //Click this in editor, to make sure that text doesn't show up before a quest is complete. (we need to write an if-statement to make it false as well, in another script...)
@@ -53,16 +52,19 @@ public class Conversations //Here we define our various options for what happens
 
     //public int dialogueIndex; //A way to keep abreast of our dialogue-lines/options.
     //public int[] nextDialogueIndexes; //Which dialogue is supposed to show up, depending on conditions.
+    //public bool[] givesQuest; //If the dialogue gives a quest.
+
+    //---End of Quest---
 
     public bool endConvoEarly = false;
     public int setQuestProgressTo = 0;
     public ItemID wantedItem = ItemID.NONE; //Never change this bool!
     public ItemID rewardItem = ItemID.NONE; //Default reward, but this we can change.
     
-    //public ItemID givenItem = ItemID.NONE; //This we can change, since it's an item to trigger another quest.
+    public ItemID givenItem = ItemID.NONE; //This we can change, since it's an item to trigger another quest.
 
     public bool hasItem; //I don't think we need this any more... disable?
+    //public bool gaveItem; //This is potentially for giving the item.
 
-
-    //public bool[] givesQuest; //If the dialogue gives a quest.
+    
 }

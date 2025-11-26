@@ -145,6 +145,19 @@ public class NPC : MonoBehaviour
                 return;
             }
         }
+
+        if (currentConvo.givenItem != ItemID.NONE) //If we have been given an intermediate quest-item, then...
+        {
+            //Cinematic Effects and Animations Start Here
+            if (transfEffectPrefab != null) //If we have set a transformation-effect prefab on the NPC, then...
+            {
+                Instantiate(transfEffectPrefab, transform.position, Quaternion.identity); // We instantiate this prefab in the same place as the NPC.
+                Debug.Log("POOF!");
+            }
+
+        }
+
+
         //Reward Item Here
         if (currentConvo.rewardItem != ItemID.NONE) //If the reward for the current conversation is NOT set to nothing, then run below.
         {

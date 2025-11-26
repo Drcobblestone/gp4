@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb328398005db5c44a2c62331b132102, type: 3}
+  m_Name: FrogprinceI
+  m_EditorClassIdentifier: 
+  id: 3
+  description: A turntable for DJ-ing.
+  icon: {fileID: 1266378644, guid: 3bd337b0df4ac0242b2c7f15b740509e, type: 3}
+  prefab: {fileID: 1351936159952576313, guid: 0174d65ee239e6745b0f119a188809f7, type: 3}
+  pickedUp: 0
