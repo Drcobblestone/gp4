@@ -146,6 +146,7 @@ public class NPC : MonoBehaviour
             }
         }
 
+        //Intermediate items
         if (currentConvo.givenItem != ItemID.NONE) //If we have been given an intermediate quest-item, then...
         {
             //Cinematic Effects and Animations Start Here
@@ -155,7 +156,20 @@ public class NPC : MonoBehaviour
                 Debug.Log("POOF!");
             }
 
+            DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position); //Then we spawn the quest-item/given item.
+
+            if (droppedItem != null) //If the dropped item isn't nothing, then... 
+            {
+                Debug.Log("The quest-item has spawned."); //we print the debug-message.
+                npcObject.SetActive(false); //And turn off the NPC.
+            }
+            else //But if the dropped item didn't happen, then we warn.
+            {
+                Debug.LogWarning("The book DIDN'T spawn!");
+            }
+
         }
+        //End of Intermediate.
 
 
         //Reward Item Here
