@@ -17,6 +17,7 @@ public class NPC : MonoBehaviour
     public float wordSpeed; //This lets us set how fast the words appear.
 
     [SerializeField] GameObject npcObject; //Insert NPC-character Prefab here, so we can despawn it.
+    [SerializeField] GameObject smokePrefab;
 
     [SerializeField] BoxCollider2D npcBoxcollider; //We make a field where we can get the NPC's box-collider.
     public bool resetDialougeAtEnd = false;
@@ -148,8 +149,12 @@ public class NPC : MonoBehaviour
         if (currentConvo.rewardItem != ItemID.NONE) //If the reward for the current conversation is NOT set to nothing, then run below.
         {
             //Cinematic Effects and Animations Start Here
-            
-            //StartCoroutine(NpcEndAnimation());
+            if (smokePrefab != null) //If we have set a smoke-puff effect prefab on the NPC, then...
+            {
+                Instantiate(smokePrefab, transform.position, Quaternion.identity); // We instantiate this prefab on the same place as the NPC.
+                Debug.Log("POOF!");
+            }
+
 
             //and end before here
 
@@ -158,7 +163,7 @@ public class NPC : MonoBehaviour
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {
                 Debug.Log("The book has spawned."); //we print the debug-message.
-                npcObject.SetActive(false);
+                npcObject.SetActive(false); //And turn off the NPC.
             }
             else //But if the dropped item didn't happen, then we warn.
             {
@@ -243,17 +248,5 @@ public class NPC : MonoBehaviour
         }
         dialoguePanel.SetActive(false); //We turn off our dialogue-panel.
     }
-    /*
-    //We make a co-routine to get the animation from the NpcData scriptable object.
-    private Animation NpcEndAnimation()
-    {
 
-        
-        npcData.endAnimation;
-            gameObject.GetComponent<Animation>();
-        Debug.Log("We're running the npc-book-animation.");
-        //yield break;
-
-    }
-    */
 }
