@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f574a59e6d9fac41a62063af6c2abdb, type: 3}
-  m_Name: FrogPrince
+  m_Name: FrogPrinceN
   m_EditorClassIdentifier: 
   npcName: Frogprince
   nId: 2
@@ -23,21 +23,24 @@ MonoBehaviour:
       Can you trick her ass to come over to my pond again?
     endConvoEarly: 1
     setQuestProgressTo: 1
-    wantedItem: 8
-    rewardItem: 8
+    wantedItem: 9
+    rewardItem: 9
+    givenItem: 4
     hasItem: 0
   - dialogue: Did you butter that babe up, yet?
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 2
-    rewardItem: 8
+    rewardItem: 9
+    givenItem: 9
     hasItem: 0
   - dialogue: My man! You smooth, man - reaaal smooth. Hubba-hubba! Now watch me
       put my moves on again.
     endConvoEarly: 0
     setQuestProgressTo: 0
-    wantedItem: 8
-    rewardItem: 7
+    wantedItem: 9
+    rewardItem: 8
+    givenItem: 9
     hasItem: 0
   questInProgressIndex: 2
   quest: {fileID: 11400000, guid: ca651de3b723753489261ab9fbe25243, type: 2}
