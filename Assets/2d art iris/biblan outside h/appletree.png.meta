@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-4 4_0
+      name: AppleTreeSprite
       rect:
         serializedVersion: 2
         x: 3553
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork-4 4_0: -1978969502
+      AppleTreeSprite: -1978969502
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
