@@ -357,6 +357,10 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 2039683144}
+    - target: {fileID: 4778482998802128393, guid: 8aac61fd9442a344997c2a748e0635c9, type: 3}
+      propertyPath: transfEffectPrefab
+      value: 
+      objectReference: {fileID: 1237891161181482301, guid: 0fe4c7af4e07b8d4195bc76a2f42ec6e, type: 3}
     - target: {fileID: 5340273539685546759, guid: 8aac61fd9442a344997c2a748e0635c9, type: 3}
       propertyPath: m_Name
       value: RedHood
@@ -1135,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4393214277245043438, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: reset
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5696531762460316178, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: reachedEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

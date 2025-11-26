@@ -53,10 +53,16 @@ public class Conversations //Here we define our various options for what happens
 
     //public int dialogueIndex; //A way to keep abreast of our dialogue-lines/options.
     //public int[] nextDialogueIndexes; //Which dialogue is supposed to show up, depending on conditions.
+
     public bool endConvoEarly = false;
     public int setQuestProgressTo = 0;
     public ItemID wantedItem = ItemID.NONE; //Never change this bool!
     public ItemID rewardItem = ItemID.NONE; //Default reward, but this we can change.
-    public bool hasItem;
+    
+    //public ItemID givenItem = ItemID.NONE; //This we can change, since it's an item to trigger another quest.
+
+    public bool hasItem; //I don't think we need this any more... disable?
+
+
     //public bool[] givesQuest; //If the dialogue gives a quest.
 }

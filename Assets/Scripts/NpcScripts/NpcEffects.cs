@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NpcEffects : MonoBehaviour
 {
+    [Header("Insert the animation/effect here")]
+    [SerializeField] GameObject _transfEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +18,12 @@ public class NpcEffects : MonoBehaviour
     {
         
     }
+
+
+    public void RemoveAnimation()
+    {
+        Destroy(_transfEffect);
+        Debug.Log("Removing Transformation-effect.");
+    }
+
 }

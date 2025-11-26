@@ -17,7 +17,7 @@ public class NPC : MonoBehaviour
     public float wordSpeed; //This lets us set how fast the words appear.
 
     [SerializeField] GameObject npcObject; //Insert NPC-character Prefab here, so we can despawn it.
-    [SerializeField] GameObject smokePrefab;
+    [SerializeField] GameObject transfEffectPrefab;
 
     [SerializeField] BoxCollider2D npcBoxcollider; //We make a field where we can get the NPC's box-collider.
     public bool resetDialougeAtEnd = false;
@@ -145,13 +145,13 @@ public class NPC : MonoBehaviour
                 return;
             }
         }
-        //Reward/Give Item Here
+        //Reward Item Here
         if (currentConvo.rewardItem != ItemID.NONE) //If the reward for the current conversation is NOT set to nothing, then run below.
         {
             //Cinematic Effects and Animations Start Here
-            if (smokePrefab != null) //If we have set a smoke-puff effect prefab on the NPC, then...
+            if (transfEffectPrefab != null) //If we have set a transformation-effect prefab on the NPC, then...
             {
-                Instantiate(smokePrefab, transform.position, Quaternion.identity); // We instantiate this prefab on the same place as the NPC.
+                Instantiate(transfEffectPrefab, transform.position, Quaternion.identity); // We instantiate this prefab in the same place as the NPC.
                 Debug.Log("POOF!");
             }
 
@@ -169,7 +169,7 @@ public class NPC : MonoBehaviour
             {
                 Debug.LogWarning("The book DIDN'T spawn!");
             }
-
+        //No more reward-stuff.
 
         }
         if (currentConvo.endConvoEarly)

@@ -208,7 +208,7 @@ MonoBehaviour:
   contButton: {fileID: 0}
   wordSpeed: 0.06
   npcObject: {fileID: 5340273539685546759}
-  smokePrefab: {fileID: 4509160145308219959, guid: 71526d07b18830d4bbdcc4cb1b77f4a6, type: 3}
+  transfEffectPrefab: {fileID: 1237891161181482301, guid: 0fe4c7af4e07b8d4195bc76a2f42ec6e, type: 3}
   npcBoxcollider: {fileID: 3285917257187175033}
   resetDialougeAtEnd: 1
   cantClickNPC: 0
