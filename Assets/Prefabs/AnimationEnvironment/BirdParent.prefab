@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 8883754261314881802, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
-  footStep1: {fileID: 8300000, guid: 9b313cb7cc845d24ab425d915660ccac, type: 3}
+  footStep1: {fileID: 8300000, guid: adba59cf03e3e064d9b390f2b4ab7809, type: 3}
   footStep2: {fileID: 0}
   mainCamera: {fileID: 4020654404810618638, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
 --- !u!4 &8444433326850356126 stripped
