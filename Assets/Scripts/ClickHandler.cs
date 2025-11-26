@@ -19,17 +19,19 @@ public class ClickHandler : MonoBehaviour
 
     private void Awake()
     {
-        _collider = GetComponent<BoxCollider2D>();
+        
 
     }
     private void Start()
     {
         _mouse = MouseInputProvider.Instance;
         _mouse.Clicked += MouseOnClicked;
+        _collider = GetComponent<BoxCollider2D>();
     }
     private void MouseOnClicked()
     {
         bool rangeCheck = (_isInRange || !_hasToBeInRange); //If it is in range or does not have to be
+        print(gameObject.name + "Mouse On Clicked");
         if (_collider.bounds.Contains((Vector3)_mouse.WorldPosition) && rangeCheck) //If the collider of the clickable object contains the mouse Worldposition and is in range, //*or* if it's not required to be in range, then I...
         {
             _clicked.Invoke(); //... invoke the click.
@@ -40,6 +42,7 @@ public class ClickHandler : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) //The player enters the clickable zone.
     {
         PlayerController player = collision.GetComponent<PlayerController>(); //Finds the PlayerController, aka the Player, and put the value in there.
+        print(gameObject.name + " found player");
         if (player != null) //Then we check if it really is the player...
         {
             _isInRange = true; //And say that the Player is in range.
