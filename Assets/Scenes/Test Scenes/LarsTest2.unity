@@ -795,17 +795,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kista
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 411531627374836247, guid: 5c1464857b049384ca280088db4e31fc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5789961449197533750, guid: 5c1464857b049384ca280088db4e31fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2083912942}
   m_SourcePrefab: {fileID: 100100000, guid: 5c1464857b049384ca280088db4e31fc, type: 3}
 --- !u!114 &1509282924 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5370614139506795255, guid: 5c1464857b049384ca280088db4e31fc, type: 3}
   m_PrefabInstance: {fileID: 1509282923}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2083912935}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
@@ -960,6 +964,46 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbf4a10244a045a47812f60f76821357, type: 3}
+--- !u!1 &2083912935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5789961449197533750, guid: 5c1464857b049384ca280088db4e31fc, type: 3}
+  m_PrefabInstance: {fileID: 1509282923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &2083912942
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083912935}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12, y: -0.35}
+  m_Size: {x: 4.375824, y: 4.375824}
+  m_Direction: 0
 --- !u!1001 &2097561685
 PrefabInstance:
   m_ObjectHideFlags: 0
