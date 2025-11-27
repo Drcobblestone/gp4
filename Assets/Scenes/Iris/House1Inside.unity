@@ -1962,6 +1962,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9134182436457874403, guid: 5c78834c66907da48a5e5042bb7bcd7e, type: 3}
+      propertyPath: clipVolume
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134182436457874403, guid: 5c78834c66907da48a5e5042bb7bcd7e, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 81709967}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

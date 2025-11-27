@@ -801,6 +801,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 05b85651cace84742ae90925334079e9, type: 3}
     - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 470645567}

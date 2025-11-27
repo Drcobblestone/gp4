@@ -3107,11 +3107,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3038174269012891162, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.76695
+      value: 10.58
       objectReference: {fileID: 0}
     - target: {fileID: 3038174269012891162, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.323071
+      value: -3.99
       objectReference: {fileID: 0}
     - target: {fileID: 3038174269012891162, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3145,6 +3145,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4271829397667659783, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
+      propertyPath: clipVolume
+      value: 0.529
+      objectReference: {fileID: 0}
+    - target: {fileID: 4271829397667659783, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 965582783}
     - target: {fileID: 5609870378809797572, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_Name
       value: Mouse
@@ -3197,6 +3205,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FLyParent
       objectReference: {fileID: 0}
+    - target: {fileID: 8016902056091168791, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
+      propertyPath: clipVolume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016902056091168791, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 965582783}
     - target: {fileID: 9034236264137888583, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.0600004
