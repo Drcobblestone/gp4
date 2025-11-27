@@ -7,8 +7,8 @@ public class FootStepSounds : MonoBehaviour
     [SerializeField] PlayerController playerController;
     [SerializeField] AudioClip footStep1;
     [SerializeField] AudioClip footStep2;
-    //[SerializeField] Camera mainCamera;
-    [SerializeField] GameObject LLSingleton;
+    [SerializeField] Camera mainCamera;
+    
 
 
     //[SerializeField] AudioSource footStepSound;
@@ -18,7 +18,7 @@ public class FootStepSounds : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetObject.
+        
     }
 
     // Update is called once per frame
