@@ -1379,6 +1379,10 @@ PrefabInstance:
       value: FLyParent (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8016902056091168791, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
+      propertyPath: clipVolume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016902056091168791, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1864755636}
@@ -2739,6 +2743,10 @@ PrefabInstance:
     - target: {fileID: 8261608255279956213, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
+      propertyPath: clipVolume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: mainCamera
@@ -4649,6 +4657,10 @@ PrefabInstance:
     - target: {fileID: 839040148836163450, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
       propertyPath: m_Name
       value: FLyParent (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016902056091168791, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
+      propertyPath: clipVolume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8016902056091168791, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
       propertyPath: mainCamera

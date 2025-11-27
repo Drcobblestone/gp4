@@ -8,7 +8,9 @@ public class FootStepSounds : MonoBehaviour
     [SerializeField] AudioClip footStep1;
     [SerializeField] AudioClip footStep2;
     [SerializeField] Camera mainCamera;
-    
+
+    [Range(0,1)]
+    public float clipVolume;
 
 
     //[SerializeField] AudioSource footStepSound;
@@ -18,7 +20,7 @@ public class FootStepSounds : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -66,12 +68,12 @@ public class FootStepSounds : MonoBehaviour
 
     public void playFootstep1()
     {
-        AudioSource.PlayClipAtPoint(footStep1, mainCamera.transform.position, 0.75f);
+        AudioSource.PlayClipAtPoint(footStep1, mainCamera.transform.position, clipVolume); //0.75f
     }
 
     public void playFootstep2()
     {
-        AudioSource.PlayClipAtPoint(footStep2, mainCamera.transform.position, 0.75f);
+        AudioSource.PlayClipAtPoint(footStep2, mainCamera.transform.position, clipVolume);
     }
 
 
