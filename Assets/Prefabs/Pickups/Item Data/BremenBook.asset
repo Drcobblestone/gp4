@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb328398005db5c44a2c62331b132102, type: 3}
   m_Name: BremenBook
   m_EditorClassIdentifier: 
-  id: 4
+  id: 5
   description: The Tale of The Bremen Town Musicians
   icon: {fileID: -308236307, guid: 6173e6769a0b1a44486b2551068d0535, type: 3}
   prefab: {fileID: 6687326480235455718, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
   pickedUp: 0
-  UIBook: {fileID: 4264754677179053973, guid: 87e03d14881422649b93e301c65ab66d, type: 3}

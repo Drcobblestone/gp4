@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb328398005db5c44a2c62331b132102, type: 3}
   m_Name: SnowBook
   m_EditorClassIdentifier: 
-  id: 5
+  id: 6
   description: The Tale of Snow White & The 7 Dwarves
   icon: {fileID: 1237109525, guid: 5a9e4de93ac38274fad2cda9a4ba52a4, type: 3}
   prefab: {fileID: 6687326480235455718, guid: e3b6c5bbc23d4274baf85acd16107d74, type: 3}
   pickedUp: 0
-  UIBook: {fileID: 4264754677179053973, guid: c66ccdd9d13fa8c4099b46fea79b80a0, type: 3}
