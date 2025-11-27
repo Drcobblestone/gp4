@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 117420469663753053}
   - component: {fileID: 7835305610252202463}
   - component: {fileID: 5751672181163176309}
+  - component: {fileID: 4236625548781854661}
   m_Layer: 0
   m_Name: GraveStone3_0
   m_TagString: Untagged
@@ -218,3 +219,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _isInRange: 0
+--- !u!114 &4236625548781854661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276168176774241458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a45f7f9499ef418fdbda171432c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  footStep1: {fileID: 8300000, guid: 7903fa1c5f3a76e4080edc8d5296b800, type: 3}
+  footStep2: {fileID: 0}
+  mainCamera: {fileID: 0}

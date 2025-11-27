@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8145710513437069846}
   - component: {fileID: 7234770885886644337}
   - component: {fileID: 2790426814815139012}
+  - component: {fileID: 4785351304584916805}
   m_Layer: 0
   m_Name: TorgWindowAni2-1_0
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3968229127200589497}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.011970382, w: 0.99992836}
+  m_LocalRotation: {x: 0, y: 0, z: -0.011972703, w: 0.9999284}
   m_LocalPosition: {x: 6.8363, y: -0.3139, z: 0}
   m_LocalScale: {x: 1.3746203, y: 1.4138741, z: 1.03}
   m_ConstrainProportionsScale: 1
@@ -106,3 +107,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4785351304584916805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968229127200589497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a45f7f9499ef418fdbda171432c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  footStep1: {fileID: 8300000, guid: 259c606d84796264ca703db47792fcaf, type: 3}
+  footStep2: {fileID: 0}
+  mainCamera: {fileID: 0}

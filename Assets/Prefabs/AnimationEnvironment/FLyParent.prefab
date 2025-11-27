@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 2819018615818120177}
   - component: {fileID: 7124122246659780334}
   - component: {fileID: 8543255211693376154}
+  - component: {fileID: 8016902056091168791}
   m_Layer: 0
   m_Name: Fly-1_0
   m_TagString: Untagged
@@ -170,3 +171,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8016902056091168791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032683203365310234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a45f7f9499ef418fdbda171432c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  footStep1: {fileID: 8300000, guid: 6355876015ccbf642b87273d80d4515c, type: 3}
+  footStep2: {fileID: 0}
+  mainCamera: {fileID: 0}
