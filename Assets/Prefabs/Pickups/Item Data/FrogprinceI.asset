@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb328398005db5c44a2c62331b132102, type: 3}
   m_Name: FrogprinceI
   m_EditorClassIdentifier: 
-  id: 3
-  description: A turntable for DJ-ing.
-  icon: {fileID: 1266378644, guid: 3bd337b0df4ac0242b2c7f15b740509e, type: 3}
-  prefab: {fileID: 1351936159952576313, guid: 0174d65ee239e6745b0f119a188809f7, type: 3}
+  id: 4
+  description: The "handsome" frog prince.
+  icon: {fileID: 117385682, guid: 3d66e7134db9a4c48814d3fb7350fcbb, type: 3}
+  prefab: {fileID: 264691545598328794, guid: 14603d80df87db3489fe1bfe1efd5b2a, type: 3}
   pickedUp: 0
