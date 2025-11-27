@@ -516,6 +516,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1112846983 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5334316582114373816, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+  m_PrefabInstance: {fileID: 1891235398152805587}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1803015008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -741,7 +746,7 @@ PrefabInstance:
     - target: {fileID: 6688310561376991879, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: mainCamera
       value: 
-      objectReference: {fileID: 1920057934}
+      objectReference: {fileID: 0}
     - target: {fileID: 6688310561376991879, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: footStepSound
       value: 
@@ -753,7 +758,7 @@ PrefabInstance:
     - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: mainCamera
       value: 
-      objectReference: {fileID: 1920057934}
+      objectReference: {fileID: 1112846983}
     - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: footStepSound
       value: 
@@ -796,11 +801,6 @@ MonoBehaviour:
   center: {fileID: 1863901897}
   ScaleMultiplierMin: -0.5
   ScalemultiplierMax: 0.5
---- !u!20 &1920057934 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 3526561182590729773, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
-  m_PrefabInstance: {fileID: 1891235398152805587}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1981403762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5554843299485967253, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
@@ -1139,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4393214277245043438, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: reset
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5696531762460316178, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: reachedEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1497,7 +1497,7 @@ PrefabInstance:
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: sceneObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 882338470219413883, guid: 320eb45851af7084dbbe2df4f9b32f00, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: sceneObjects.Array.data[7]
       value: 
