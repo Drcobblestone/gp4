@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8077900961402072755}
   - component: {fileID: 8987448888223640582}
   - component: {fileID: 5833288721526419508}
+  - component: {fileID: 6925820347587819290}
   m_Layer: 0
   m_Name: Tree_Animation
   m_TagString: Untagged
@@ -218,6 +219,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.42059603, y: 0.21194717}
   m_Size: {x: 0.8907651, y: 0.42389688}
   m_Direction: 1
+--- !u!114 &6925820347587819290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162355847395083191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a45f7f9499ef418fdbda171432c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 8883754261314881802, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
+  footStep1: {fileID: 8300000, guid: c2636c3e16f7641498f5f7208680cb03, type: 3}
+  footStep2: {fileID: 0}
+  mainCamera: {fileID: 4020654404810618638, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
 --- !u!1 &5955665836724921011
 GameObject:
   m_ObjectHideFlags: 0
