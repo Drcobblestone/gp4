@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: LarsTest2
   entryIndex: -1
+  sceneFlags: 0000000000000000
+  itemsToSpawn:
+  - itemData: {fileID: 0}
+    position: {x: 0, y: 0}
