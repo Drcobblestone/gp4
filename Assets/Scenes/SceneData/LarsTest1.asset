@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7be7cb9fa4c7f1243bc5f386f6818e26, type: 3}
-  m_Name: LarsTest0
+  m_Name: LarsTest1
   m_EditorClassIdentifier: 
-  sceneName: LarsTest0
+  sceneName: LarsTest1
   entryIndex: -1
+  sceneFlags: 0000000000000000
+  itemsToSpawn:
+  - itemData: {fileID: 11400000, guid: e37db5842c3d25942bc938099c584c31, type: 2}
+    position: {x: -4.850565, y: -4.309843}

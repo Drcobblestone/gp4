@@ -165,7 +165,7 @@ public class NPC : MonoBehaviour
             }
             else //But if the dropped item didn't happen, then we warn.
             {
-                Debug.LogWarning("The book DIDN'T spawn!");
+                Debug.LogWarning("The Quest-item DIDN'T spawn!");
             }
 
         }
