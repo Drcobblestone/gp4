@@ -741,6 +741,68 @@ PolygonCollider2D:
       - {x: 0.131518, y: -2.0637527}
       - {x: 3.7802444, y: 0.78380793}
   m_UseDelaunayMesh: 0
+--- !u!1001 &196750136
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1546190670858480213, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+--- !u!20 &196750137 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4020654404810618638, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+  m_PrefabInstance: {fileID: 196750136}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &199234108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2566,7 +2628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 650280374}
   m_Layer: 0
-  m_Name: Animations
+  m_Name: ---Animations---
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5463,6 +5525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 196750137}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8052,9 +8118,12 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 196750136}
   - {fileID: 1568865395}
   - {fileID: 236432021}
   - {fileID: 1133769473}
+  - {fileID: 2075626964}
+  - {fileID: 1566318076}
   - {fileID: 1963472571}
   - {fileID: 504352998}
   - {fileID: 1732448596}
@@ -8069,10 +8138,8 @@ SceneRoots:
   - {fileID: 64876403}
   - {fileID: 1715076536}
   - {fileID: 1808783691}
-  - {fileID: 1566318076}
   - {fileID: 823107846}
   - {fileID: 568421766}
   - {fileID: 650280374}
   - {fileID: 6277211625751480113}
   - {fileID: 7618066168268803899}
-  - {fileID: 2075626964}
