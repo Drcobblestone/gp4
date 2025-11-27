@@ -2565,6 +2565,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4271829397667659783, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
+      propertyPath: clipVolume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4271829397667659783, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 156710744}
     - target: {fileID: 5609870378809797572, guid: 29f94d099700b7d49aef40fabac2b30c, type: 3}
       propertyPath: m_Name
       value: Mouse

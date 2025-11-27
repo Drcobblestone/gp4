@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2839661523389702288}
   - component: {fileID: 8580721138156010236}
   - component: {fileID: 585419979187166568}
+  - component: {fileID: 9134182436457874403}
   m_Layer: 0
   m_Name: Animation_Clock_Insidehouse-1_0
   m_TagString: Untagged
@@ -218,3 +219,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.004983372, y: -1.4483649}
   m_Size: {x: 1.7042441, y: 0.52454954}
   m_Direction: 1
+--- !u!114 &9134182436457874403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903523104151238761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51a45f7f9499ef418fdbda171432c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footStep1: {fileID: 8300000, guid: 8cbb7f95c417b384daa5e4e93edd2135, type: 3}
+  footStep2: {fileID: 0}
+  mainCamera: {fileID: 0}
+  clipVolume: 0.5
