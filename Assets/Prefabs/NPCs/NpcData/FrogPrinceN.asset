@@ -21,6 +21,8 @@ MonoBehaviour:
   - dialogue: Little man...psst! Come here. So, I've got my eyes on this Princess-Babe,
       but she blew me off before - I could use your help to get into her orbit again.
       Can you trick her ass to come over to my pond again?
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 1
     setQuestProgressTo: 1
     wantedItem: 9
@@ -28,6 +30,8 @@ MonoBehaviour:
     givenItem: 4
     hasItem: 0
   - dialogue: Did you butter that babe up, yet?
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 2
@@ -36,6 +40,18 @@ MonoBehaviour:
     hasItem: 0
   - dialogue: My man! You smooth, man - reaaal smooth. Hubba-hubba! Now watch me
       put my moves on again.
+    icon: {fileID: 0}
+    npcName: 
+    endConvoEarly: 0
+    setQuestProgressTo: 0
+    wantedItem: 9
+    rewardItem: 9
+    givenItem: 9
+    hasItem: 0
+  - dialogue: YOU?! You're the Frog Royal this fool Sheep mentioned?! Begone, nasty
+      slime!
+    icon: {fileID: -1893751228, guid: d2938510c46bc9b4a928c894b5c845b5, type: 3}
+    npcName: PrincessNPC
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 9

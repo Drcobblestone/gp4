@@ -23,6 +23,8 @@ MonoBehaviour:
 
       I wish to meet a true gentleman, a true
       Royal is my preference. Where, oh where can I meet such a bachelor?'
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 1
     setQuestProgressTo: 1
     wantedItem: 9
@@ -30,6 +32,8 @@ MonoBehaviour:
     givenItem: 9
     hasItem: 0
   - dialogue: Have you by chance seen a nice bachelor now?
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 4
@@ -38,18 +42,12 @@ MonoBehaviour:
     hasItem: 0
   - dialogue: Oh, so you've met a nice Frog? And he's a real gentleman, a true Royal
       even? Oh my! Dear Sir, please bring me before him.
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 9
-    rewardItem: 9
-    givenItem: 2
-    hasItem: 0
-  - dialogue: YOU?! You're the Frog Royal this fool Sheep mentioned?! Begone, nasty
-      slime!
-    endConvoEarly: 0
-    setQuestProgressTo: 0
-    wantedItem: 9
-    rewardItem: 8
+    rewardItem: 2
     givenItem: 9
     hasItem: 0
   questInProgressIndex: 2

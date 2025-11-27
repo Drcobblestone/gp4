@@ -16,4 +16,9 @@ public class NpcUI : MonoBehaviour
         portrait.sprite = npcData.icon; //We give the portrait from NpcData.
         nameof.text = npcData.npcName; //We define that the NpcName field from NpcData, is what the text for the name of the NPC should be.
     }
+    public void Initialize(Sprite icon, string npcName) // When we start talking to an NPC, we pass it the NPC-ID, so we can populate the conversation-canvas with Name and Icon.
+    {
+        portrait.sprite = icon; //We give the portrait from NpcData.
+        nameof.text = npcName; //We define that the NpcName field from NpcData, is what the text for the name of the NPC should be.
+    }
 }

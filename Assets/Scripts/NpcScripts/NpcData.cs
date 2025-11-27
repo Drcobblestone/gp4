@@ -39,7 +39,7 @@ public class Conversations //Here we define our various options for what happens
 {
     [TextArea(3, 10)] //TextAreaAttribute(int minLines, int maxLines);
     public string dialogue;
-    
+
     //---Quest-related---
     /*
     public bool waitForQuestGiven; //Click this in editor, to make sure the particular line of text doesn't load before a Quest has been given.
@@ -56,6 +56,12 @@ public class Conversations //Here we define our various options for what happens
 
     //---End of Quest---
 
+
+    //
+    [Header ("Conversation overrides, for Frog-quest.")]
+    public Sprite icon = null;
+    public string npcName = "";
+    
     public bool endConvoEarly = false;
     public int setQuestProgressTo = 0;
     public ItemID wantedItem = ItemID.NONE; //Never change this bool!

@@ -22,7 +22,7 @@ public class NPC : MonoBehaviour
     [SerializeField] BoxCollider2D npcBoxcollider; //We make a field where we can get the NPC's box-collider.
     public bool resetDialougeAtEnd = false;
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
-
+    NpcUI npcUI;
     //Old queststate code.
     //private enum QuestState { NotStarted, InProgress, Completed} //We define the different states a Quest can be in.
     //private QuestState questState = QuestState.NotStarted; //The first quest-state is always "not being started".
@@ -30,7 +30,8 @@ public class NPC : MonoBehaviour
     private void Start()
     {
         dialogueText.text = ""; //This is needed because the length of dialogueText starts as 1. //If you run the game all the way from Main Menu, this causes Nullreferror.
-        
+        npcUI = dialoguePanel.GetComponent<NpcUI>();
+
         /*//This stuff should perhaps not be in start... we'll see.
         SyncQuestState(); //This might be unneccessary?
 
@@ -59,7 +60,7 @@ public class NPC : MonoBehaviour
 
         else
         {
-            NpcUI npcUI = dialoguePanel.GetComponent<NpcUI>();
+            //NpcUI npcUI = dialoguePanel.GetComponent<NpcUI>();
             npcUI.Initialize(npcData);
             dialogueIndex = npcData.questInProgressIndex; //the sync with Quest Data
             dialoguePanel.SetActive(true); //...otherwise we activate the dialogue-panel in the hierarchy.
@@ -80,7 +81,7 @@ public class NPC : MonoBehaviour
             }
             npcBoxcollider.enabled = false; //We do this by turning off the collider who detects the player.
         }
-            string dialogue = npcData.conversations[dialogueIndex].dialogue;
+        string dialogue = npcData.conversations[dialogueIndex].dialogue;
         foreach (char letter  in dialogue.ToCharArray()) 
         {
             dialogueText.text += letter;
@@ -123,10 +124,15 @@ public class NPC : MonoBehaviour
 
     public void NextLine() //To load the next part of the conversation.
     {
+        npcUI.Initialize(npcData);
         contButton.SetActive(false); //We turn off the continue-button, since now we're going to load the next conversation.
 
         //Quest Hand In Here
         Conversations currentConvo = npcData.conversations[dialogueIndex];
+        if (currentConvo.icon != null)
+        {
+            npcUI.Initialize(currentConvo.icon, currentConvo.npcName);
+        }
         if (currentConvo.setQuestProgressTo > 0)
         {
             npcData.questInProgressIndex = currentConvo.setQuestProgressTo;
