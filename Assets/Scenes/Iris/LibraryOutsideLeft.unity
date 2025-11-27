@@ -1378,6 +1378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FLyParent (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8016902056091168791, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1864755636}
     - target: {fileID: 9034236264137888583, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.48
@@ -4646,6 +4650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FLyParent (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8016902056091168791, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1864755636}
     - target: {fileID: 9034236264137888583, guid: a308e96ad3c34f646b77ff67c215ca61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.45

@@ -4,7 +4,7 @@ using UnityEngine;
 public class FootStepSounds : MonoBehaviour
 {
 
-    [SerializeField] PlayerController playerController;
+    //[SerializeField] PlayerController playerController;
     [SerializeField] AudioClip footStep1;
     [SerializeField] AudioClip footStep2;
     [SerializeField] Camera mainCamera;
