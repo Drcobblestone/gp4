@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - cancelAction: {fileID: 7727032971491509709, guid: fd64aa19291e6ea4095dab362cafe472, type: 3}
-  executionOrder: 0
+  executionOrder: 5
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
