@@ -20,6 +20,9 @@ public class BookContentsrScript : MonoBehaviour
     public UnityEvent reachedEnd;
     int pageCount;
 
+    [SerializeField] GameObject bookType; //Adding this field to sense what kind of book is being read, so we can have an if-statement or case, on how to do it.
+
+
 /*
 #if (UNITY_EDITOR)
     private void OnValidate() //To make sure our contents show up in the Inspector, we validate.
@@ -108,6 +111,9 @@ public class BookContentsrScript : MonoBehaviour
         rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
         UpdatePagination();
         print(pageCount);
+
+        //old way of doing the last part. Disabling temporarily.
+        /*
         if (leftSide.pageToDisplay >= pageCount + 1)
         {
             reachedEnd.Invoke();
@@ -115,6 +121,21 @@ public class BookContentsrScript : MonoBehaviour
             rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
             UpdatePagination();
         }
+        */
+
+        //--Experimental new way of telling if it's startbook or Readingbook
+        if (leftSide.pageToDisplay >= pageCount + 1 && tag == "ReadingBook")
+        {
+            reachedEnd.Invoke();
+            leftSide.pageToDisplay = 1;
+            rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
+            UpdatePagination();
+        }
+        else if(leftSide.pageToDisplay >= pageCount + 1 && tag != "ReadingBook")
+        {
+            reachedEnd.Invoke();
+        }
+
 
     }
 
