@@ -1226,11 +1226,11 @@ PrefabInstance:
       objectReference: {fileID: 2097561688}
     - target: {fileID: 8145710513437069846, guid: 2bbf99eb6db72b8458c79f635e83d79b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.97
+      value: -7.97
       objectReference: {fileID: 0}
     - target: {fileID: 8145710513437069846, guid: 2bbf99eb6db72b8458c79f635e83d79b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.54
+      value: -2.86
       objectReference: {fileID: 0}
     - target: {fileID: 8145710513437069846, guid: 2bbf99eb6db72b8458c79f635e83d79b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1334,6 +1334,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3325d0dfd3cb7e14d85e4a4b68888593, type: 3}
+--- !u!1 &1953857796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1953857797}
+  m_Layer: 0
+  m_Name: ---Stage---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1953857797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953857796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.36428013, y: -0.112412035, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1972595186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1722,9 +1753,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1149438417}
-  - {fileID: 1625774844}
-  - {fileID: 147381453}
-  - {fileID: 593429287}
   - {fileID: 2097561685}
   - {fileID: 1354494483}
   - {fileID: 1126068150}
@@ -1734,9 +1762,13 @@ SceneRoots:
   - {fileID: 1972595186}
   - {fileID: 557162787}
   - {fileID: 1491180227}
-  - {fileID: 1509282923}
-  - {fileID: 6800315418396785932}
   - {fileID: 389084765}
+  - {fileID: 1509282923}
+  - {fileID: 1953857797}
+  - {fileID: 1625774844}
+  - {fileID: 147381453}
+  - {fileID: 593429287}
+  - {fileID: 6800315418396785932}
   - {fileID: 2125026745}
   - {fileID: 1428714558}
   - {fileID: 1872622745}

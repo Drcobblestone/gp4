@@ -58,5 +58,5 @@ MonoBehaviour:
     rewardItem: 8
     givenItem: 9
     hasItem: 0
-  questInProgressIndex: 2
+  questInProgressIndex: 1
   quest: {fileID: 11400000, guid: ca651de3b723753489261ab9fbe25243, type: 2}

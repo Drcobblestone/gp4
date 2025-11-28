@@ -152,22 +152,26 @@ public class NPC : MonoBehaviour
             }
         }
 
-        //Intermediate items
+        //Quest items
         if (currentConvo.givenItem != ItemID.NONE) //If we have been given an intermediate quest-item, then...
         {
             //Cinematic Effects and Animations Start Here
+            /*
             if (transfEffectPrefab != null) //If we have set a transformation-effect prefab on the NPC, then...
             {
-                Instantiate(transfEffectPrefab, transform.position, Quaternion.identity); // We instantiate this prefab in the same place as the NPC.
+                Instantiate(transfEffectPrefab, transform.position, Quaternion.identity); // We instantiate this effect-prefab in the same place as the NPC.
                 Debug.Log("POOF!");
             }
+            */
 
             DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position); //Then we spawn the quest-item/given item.
+            //The above doesn't work for some reason, so we hard-code...
+            //DroppedItem droppedItem = FrogPU;
 
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {
                 Debug.Log("The quest-item has spawned."); //we print the debug-message.
-                npcObject.SetActive(false); //And turn off the NPC.
+                //npcObject.SetActive(false); //And turn off the NPC.
             }
             else //But if the dropped item didn't happen, then we warn.
             {
@@ -175,7 +179,7 @@ public class NPC : MonoBehaviour
             }
 
         }
-        //End of Intermediate.
+        //End of quest-items.
 
 
         //Reward Item Here
