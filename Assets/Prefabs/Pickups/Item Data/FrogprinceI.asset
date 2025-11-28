@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 4
   description: The "handsome" frog prince.
   icon: {fileID: 117385682, guid: 3d66e7134db9a4c48814d3fb7350fcbb, type: 3}
-  prefab: {fileID: 264691545598328794, guid: 14603d80df87db3489fe1bfe1efd5b2a, type: 3}
+  prefab: {fileID: 1351936159952576313, guid: 1b0ba152694e71042a636b0bb0f7b909, type: 3}
   pickedUp: 0
