@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ExitGameInput : MonoBehaviour
 {
-    [SerializeField] private InputActionReference cancelAction; //We get the cancel-action from the input action asset - we're going to use that to Quit.
+    [SerializeField] public InputActionReference cancelAction; //We get the cancel-action from the input action asset - we're going to use that to Quit.
 
     private void OnEnable()
     {
