@@ -28,4 +28,6 @@ MonoBehaviour:
   - id: 6
     data: {fileID: 11400000, guid: 21e62eb1905283141bbeefce821426b1, type: 2}
   - id: 7
+    data: {fileID: 11400000, guid: bd59249d1d2e08b41a0444c32675c182, type: 2}
+  - id: 8
     data: {fileID: 11400000, guid: 0afdf6531b331df419bbbb08a50086c4, type: 2}
