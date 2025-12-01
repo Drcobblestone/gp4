@@ -1,84 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &136916863792072986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3196887076910586737}
-  - component: {fileID: 9004781105619775657}
-  - component: {fileID: 612011425249336843}
-  m_Layer: 5
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3196887076910586737
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136916863792072986}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2203223384865959706}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9004781105619775657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136916863792072986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!114 &612011425249336843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136916863792072986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
-  m_ScrollDeltaPerTick: 6
 --- !u!1 &464987178996941336
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +180,7 @@ GameObject:
   - component: {fileID: 5646537174650522629}
   m_Layer: 5
   m_Name: StartBook
-  m_TagString: Untagged
+  m_TagString: StartBook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,7 +197,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3196887076910586737}
   - {fileID: 635685759922808835}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -547,48 +467,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Frog Prince \n\nWay back in the day, when beggin\u2019 for peanuts
-    still got you peanuts, there was a king who had \r\nbaby-girls that were all
-    smokin\u2019 hot, but the youngest was so smokin\u2019 hot that the SUN itself
-    got the sweats when it got to shine on her.\r\nNext to this here King\u2019s
-    castle there was a forest with a creakin\u2019 old lime-tree, that had a dingy
-    old basin next to it. The youngest Princess used to hang around there when it
-    got too hot even for her; and fondled her favourite balls. Up, and down, they
-    went. \r\nBut now it so happened, that one time, she fumbled catchin\u2019 the
-    balls on the way down, so she dropped them right down that basin, like a dumbass!\r\nThe
-    King\u2019s fittest baby-girl\u2019s smug face melted like an ice-cream cone
-    in the sun, when she saw those balls go down, but never come up\u2026 So, she
-    cried like a little sissy, on and on and on\u2026 And just as she was wailing
-    away like a kitty-cat not being fed for the 25th time, somebody said to her:
-    \r\n\u201CEy shorty, what you wailin\u2019 \u2018bout? You be makin\u2019 more
-    noise than a dawg who got its tail stuck.\u201D\r\nShe looked in the direction
-    of the voice and saw a huge-ass FROG poking its thick, ugly head up outta\u2019
-    the water. \r\n \u201CEewww! Frog, you ugly sumbitch\u2026 that you, sneakin\u2019
-    around?\u201D She said, \u201CI\u2019m cryin\u2019 because my favourite gold
-    balls just fell into this revoltin\u2019 ol\u2019 basin!\u201D\r\n\u201CShuuuush!\u201D
-    said the frog, \u201CI\u2019ll help ya\u2019 out\u2026 but ya\u2019 gotta\u2019
-    give me a little somethin\u2019-somethin\u2019 if ya\u2019 know what I mean\u2026?\u201D\r\nThe
-    youngest Princess balked at this suggestion, but played along: \u201CS-sure,
-    aanything for you, Frog\u2026\u201D\r\nThe frog got a smug grin on his face and
-    answered, \u201CI wanna\u2019 hang with ya\u2019, and sleep in yo\u2019 bed,
-    and have a nice little candle-light dinner and even a lil\u2019 Peck to top it
-    off \u2013 then I\u2019ll go down for ya\u2019.\u201D \r\n\u201COk...\u201D said
-    the Princess, \u201CI\u2019ll hang with you \u2013 just get me my fricken\u2019
-    GOLD balls, ok??\u201D While thinking to herself; \u201CAin\u2019t no way I\u2019m
-    goin\u2019 out with this ugly punk!\u201D\r\nThe frog got right to it though,
-    and popped his noggin\u2019 back into the water, to go a-searchin\u2019 \r\n\u2013
-    and wouldn\u2019t you know, soon he peaked back up again with the gold balls
-    in his mouth, and spit \u2018em out right in front of the Princess, spooking
-    her something fiercely.\r\n\u201CEeeewww\u2026! You\u2019re so fricken\u2019
-    dee-sgusting, man!\u201D said the Princess and grabbed her gold balls with some
-    tissues and ran straight off like a bat outta\u2019 hell, while sticking her
-    tongue out at the frog.\r\n\u201CHol\u2019 up! Where ya\u2019 runnin\u2019 off
-    ta\u2019?! Where\u2019s my lil\u2019 somethin\u2019-somethin\u2019? Hey! Hey
-    yo\u2019!\u201D\r\nBut there was no stopping that baby-girl, as she went straight
-    home, and pretty soon forgot all about the frog, who had to go back into his
-    slimy basin\u2026 As he climbed back in, he thought to himself, \u201CBrother\u2026
-    I\u2019ve got all this water, but I\u2019m still dyin\u2019 of thirst\u2019 for
-    a babe like that...\u201D\r\n"
+  m_text: "Leopold was busy at work in the library, just the way he liked it \n\n\n\u2014
+    neat and orderly.\n\n\n\n\n\n\nBut today, something was off. \n\n\n\n\n\n\n\nDuring
+    his morning round, he noticed that a few books were missing, \n\n\nnot just any
+    books, but his favorites.\n\n\n\n\n\n\n\n\"Where could those rascals have sorted
+    them this time?\" \n\n\nhe muttered, scanning the shelves again.\n\n\n\n\n\n\n\nHe
+    wandered up and down the aisles, checking every corner, \n\nbut there was no
+    sign of the missing titles. \n\n\n\n\n\n\n\nPuzzled and a little frustrated,\n\n\n\n\n\n\n\n\n\n
+    Leopold decided to take a short walk, fresh air usually helped clear his mind."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
   m_sharedMaterial: {fileID: -3451267453510604213, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
@@ -615,8 +501,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -692,8 +578,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 587.2173, y: 154.16351}
-  m_SizeDelta: {x: 729.9113, y: 881.3853}
+  m_AnchoredPosition: {x: 587.2173, y: 162.74689}
+  m_SizeDelta: {x: 729.9113, y: 864.2186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6835560097139485471
 CanvasRenderer:
@@ -940,7 +826,7 @@ GameObject:
   - component: {fileID: 4122924721061611026}
   m_Layer: 5
   m_Name: Book
-  m_TagString: Untagged
+  m_TagString: StartBook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1018,55 +904,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa77ff09eb037fe4b89b95598a21e07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  content: "The Frog Prince \n\nWay back in the day, when beggin\u2019 for peanuts
-    still got you peanuts, there was a king who had \r\nbaby-girls that were all
-    smokin\u2019 hot, but the youngest was so smokin\u2019 hot that the SUN itself
-    got the sweats when it got to shine on her.\r\nNext to this here King\u2019s
-    castle there was a forest with a creakin\u2019 old lime-tree, that had a dingy
-    old basin next to it. The youngest Princess used to hang around there when it
-    got too hot even for her; and fondled her favourite balls. Up, and down, they
-    went. \r\nBut now it so happened, that one time, she fumbled catchin\u2019 the
-    balls on the way down, so she dropped them right down that basin, like a dumbass!\r\nThe
-    King\u2019s fittest baby-girl\u2019s smug face melted like an ice-cream cone
-    in the sun, when she saw those balls go down, but never come up\u2026 So, she
-    cried like a little sissy, on and on and on\u2026 And just as she was wailing
-    away like a kitty-cat not being fed for the 25th time, somebody said to her:
-    \r\n\u201CEy shorty, what you wailin\u2019 \u2018bout? You be makin\u2019 more
-    noise than a dawg who got its tail stuck.\u201D\r\nShe looked in the direction
-    of the voice and saw a huge-ass FROG poking its thick, ugly head up outta\u2019
-    the water. \r\n \u201CEewww! Frog, you ugly sumbitch\u2026 that you, sneakin\u2019
-    around?\u201D She said, \u201CI\u2019m cryin\u2019 because my favourite gold
-    balls just fell into this revoltin\u2019 ol\u2019 basin!\u201D\r\n\u201CShuuuush!\u201D
-    said the frog, \u201CI\u2019ll help ya\u2019 out\u2026 but ya\u2019 gotta\u2019
-    give me a little somethin\u2019-somethin\u2019 if ya\u2019 know what I mean\u2026?\u201D\r\nThe
-    youngest Princess balked at this suggestion, but played along: \u201CS-sure,
-    aanything for you, Frog\u2026\u201D\r\nThe frog got a smug grin on his face and
-    answered, \u201CI wanna\u2019 hang with ya\u2019, and sleep in yo\u2019 bed,
-    and have a nice little candle-light dinner and even a lil\u2019 Peck to top it
-    off \u2013 then I\u2019ll go down for ya\u2019.\u201D \r\n\u201COk...\u201D said
-    the Princess, \u201CI\u2019ll hang with you \u2013 just get me my fricken\u2019
-    GOLD balls, ok??\u201D While thinking to herself; \u201CAin\u2019t no way I\u2019m
-    goin\u2019 out with this ugly punk!\u201D\r\nThe frog got right to it though,
-    and popped his noggin\u2019 back into the water, to go a-searchin\u2019 \r\n\u2013
-    and wouldn\u2019t you know, soon he peaked back up again with the gold balls
-    in his mouth, and spit \u2018em out right in front of the Princess, spooking
-    her something fiercely.\r\n\u201CEeeewww\u2026! You\u2019re so fricken\u2019
-    dee-sgusting, man!\u201D said the Princess and grabbed her gold balls with some
-    tissues and ran straight off like a bat outta\u2019 hell, while sticking her
-    tongue out at the frog.\r\n\u201CHol\u2019 up! Where ya\u2019 runnin\u2019 off
-    ta\u2019?! Where\u2019s my lil\u2019 somethin\u2019-somethin\u2019? Hey! Hey
-    yo\u2019!\u201D\r\nBut there was no stopping that baby-girl, as she went straight
-    home, and pretty soon forgot all about the frog, who had to go back into his
-    slimy basin\u2026 As he climbed back in, he thought to himself, \u201CBrother\u2026
-    I\u2019ve got all this water, but I\u2019m still dyin\u2019 of thirst\u2019 for
-    a babe like that...\u201D\r\n"
+  content: "Leopold was busy at work in the library, just the way he liked it \n\n\n\n\n\n\u2014
+    neat and orderly.\n\n\n\n\n\n\n\n\nBut today, something was off. \n\n\n\n\n\n\n\nDuring
+    his morning round, he noticed that a few books were missing, \n\n\n\n\n\n\n\nnot
+    just any books, but his favorites.\n\n\n\n\n\n\n\n\"Where could those rascals
+    have sorted them this time?\" \n\n\n\n\n\n\n\n\nhe muttered, scanning the shelves
+    again.\n\n\n\n\n\n\n\nHe wandered up and down the aisles, checking every corner,
+    \n\n\n\n\n\n\n\n\nbut there was no sign of the missing titles. \n\n\n\n\n\n\n\nPuzzled
+    and a little frustrated,\n\n\n\n\n\n\n\n\n\n Leopold decided to take a short
+    walk, fresh air usually helped clear his mind."
   leftSide: {fileID: 8637756541422129943}
   rightSide: {fileID: 5994625942935548779}
   leftPagination: {fileID: 4693156486844263181}
   rightPagination: {fileID: 8810466992517407489}
   reachedEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LibraryInside
+          m_BoolArgument: 0
+        m_CallState: 2
+  bookType: {fileID: 4264754677179053973}
 --- !u!1 &6365816603873704847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,8 +1001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308.26617, y: 170.47723}
-  m_SizeDelta: {x: 788.8781, y: 898.4337}
+  m_AnchoredPosition: {x: -308.26617, y: 173.32977}
+  m_SizeDelta: {x: 788.8781, y: 892.7286}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2736476000151410321
 CanvasRenderer:
@@ -1433,48 +1299,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Frog Prince \n\nWay back in the day, when beggin\u2019 for peanuts
-    still got you peanuts, there was a king who had \r\nbaby-girls that were all
-    smokin\u2019 hot, but the youngest was so smokin\u2019 hot that the SUN itself
-    got the sweats when it got to shine on her.\r\nNext to this here King\u2019s
-    castle there was a forest with a creakin\u2019 old lime-tree, that had a dingy
-    old basin next to it. The youngest Princess used to hang around there when it
-    got too hot even for her; and fondled her favourite balls. Up, and down, they
-    went. \r\nBut now it so happened, that one time, she fumbled catchin\u2019 the
-    balls on the way down, so she dropped them right down that basin, like a dumbass!\r\nThe
-    King\u2019s fittest baby-girl\u2019s smug face melted like an ice-cream cone
-    in the sun, when she saw those balls go down, but never come up\u2026 So, she
-    cried like a little sissy, on and on and on\u2026 And just as she was wailing
-    away like a kitty-cat not being fed for the 25th time, somebody said to her:
-    \r\n\u201CEy shorty, what you wailin\u2019 \u2018bout? You be makin\u2019 more
-    noise than a dawg who got its tail stuck.\u201D\r\nShe looked in the direction
-    of the voice and saw a huge-ass FROG poking its thick, ugly head up outta\u2019
-    the water. \r\n \u201CEewww! Frog, you ugly sumbitch\u2026 that you, sneakin\u2019
-    around?\u201D She said, \u201CI\u2019m cryin\u2019 because my favourite gold
-    balls just fell into this revoltin\u2019 ol\u2019 basin!\u201D\r\n\u201CShuuuush!\u201D
-    said the frog, \u201CI\u2019ll help ya\u2019 out\u2026 but ya\u2019 gotta\u2019
-    give me a little somethin\u2019-somethin\u2019 if ya\u2019 know what I mean\u2026?\u201D\r\nThe
-    youngest Princess balked at this suggestion, but played along: \u201CS-sure,
-    aanything for you, Frog\u2026\u201D\r\nThe frog got a smug grin on his face and
-    answered, \u201CI wanna\u2019 hang with ya\u2019, and sleep in yo\u2019 bed,
-    and have a nice little candle-light dinner and even a lil\u2019 Peck to top it
-    off \u2013 then I\u2019ll go down for ya\u2019.\u201D \r\n\u201COk...\u201D said
-    the Princess, \u201CI\u2019ll hang with you \u2013 just get me my fricken\u2019
-    GOLD balls, ok??\u201D While thinking to herself; \u201CAin\u2019t no way I\u2019m
-    goin\u2019 out with this ugly punk!\u201D\r\nThe frog got right to it though,
-    and popped his noggin\u2019 back into the water, to go a-searchin\u2019 \r\n\u2013
-    and wouldn\u2019t you know, soon he peaked back up again with the gold balls
-    in his mouth, and spit \u2018em out right in front of the Princess, spooking
-    her something fiercely.\r\n\u201CEeeewww\u2026! You\u2019re so fricken\u2019
-    dee-sgusting, man!\u201D said the Princess and grabbed her gold balls with some
-    tissues and ran straight off like a bat outta\u2019 hell, while sticking her
-    tongue out at the frog.\r\n\u201CHol\u2019 up! Where ya\u2019 runnin\u2019 off
-    ta\u2019?! Where\u2019s my lil\u2019 somethin\u2019-somethin\u2019? Hey! Hey
-    yo\u2019!\u201D\r\nBut there was no stopping that baby-girl, as she went straight
-    home, and pretty soon forgot all about the frog, who had to go back into his
-    slimy basin\u2026 As he climbed back in, he thought to himself, \u201CBrother\u2026
-    I\u2019ve got all this water, but I\u2019m still dyin\u2019 of thirst\u2019 for
-    a babe like that...\u201D\r\n"
+  m_text: "Leopold was busy at work in the library, just the way he liked it \n\n\n\u2014
+    neat and orderly.\n\n\n\n\n\n\nBut today, something was off. \n\n\n\n\n\n\n\nDuring
+    his morning round, he noticed that a few books were missing, \n\n\nnot just any
+    books, but his favorites.\n\n\n\n\n\n\n\n\"Where could those rascals have sorted
+    them this time?\" \n\n\nhe muttered, scanning the shelves again.\n\n\n\n\n\n\n\nHe
+    wandered up and down the aisles, checking every corner, \n\nbut there was no
+    sign of the missing titles. \n\n\n\n\n\n\n\nPuzzled and a little frustrated,\n\n\n\n\n\n\n\n\n\n
+    Leopold decided to take a short walk, fresh air usually helped clear his mind."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
   m_sharedMaterial: {fileID: -3451267453510604213, guid: 6bb8d2b64cd302a43a6017d5984a5eb4, type: 2}
@@ -1501,8 +1333,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

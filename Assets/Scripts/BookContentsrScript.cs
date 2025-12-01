@@ -63,19 +63,7 @@ public class BookContentsrScript : MonoBehaviour
         print("PreviousPage");
         leftSide.pageToDisplay -= 2;
         leftSide.pageToDisplay = Mathf.Max(1, leftSide.pageToDisplay);
-        /*
-        if (leftSide.pageToDisplay < 1)
 
-        {
-            leftSide.pageToDisplay = 1;
-            return;
-        }
-
-        if (leftSide.pageToDisplay -2 > 1)
-            leftSide.pageToDisplay += 2;
-        else
-            leftSide.pageToDisplay = 1;
-        */
         rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
 
         UpdatePagination();
@@ -87,58 +75,33 @@ public class BookContentsrScript : MonoBehaviour
     {
         print("NextPage");
         leftSide.pageToDisplay += 2;
-        /*
-        if (rightSide.pageToDisplay <= rightSide.textInfo.pageCount)
-
-        {
-            return;
-
-        }
-
-        if (leftSide.pageToDisplay >= leftSide.textInfo.pageCount - 1)
-
-        {
-            leftSide.pageToDisplay = leftSide.textInfo.pageCount - 1;
-            rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
-        }
-        else
-        {
-
-            leftSide.pageToDisplay += 2;
-            rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
-        }
-        */
+  
         rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
         UpdatePagination();
         print(pageCount);
 
-        //old way of doing the last part. Disabling temporarily.
-        /*
-        if (leftSide.pageToDisplay >= pageCount + 1)
-        {
-            reachedEnd.Invoke();
-            leftSide.pageToDisplay = 1;
-            rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
-            UpdatePagination();
-        }
-        */
 
-        //--Experimental new way of telling if it's startbook or Readingbook
+
+        //--How to tell if it's a startbook or Readingbook
+
+
+            
         if (leftSide.pageToDisplay >= pageCount + 1 && tag == "ReadingBook")
         {
-            reachedEnd.Invoke();
+            reachedEnd.Invoke(); //When we reach the end, we summon the event-system and the reachedEnd event, which can invoke various things. (such as transitioning to a scene or turning off the book)
             leftSide.pageToDisplay = 1;
             rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
             UpdatePagination();
+            Debug.Log("We reached the story-book end.");
         }
-        else if(leftSide.pageToDisplay >= pageCount + 1 && tag != "ReadingBook")
+
+        else if(leftSide.pageToDisplay >= pageCount + 1 && tag == "StartBook")
         {
             reachedEnd.Invoke();
+            Debug.Log("We reached the start-book end.");
         }
-
-
+           
     }
-
 }
         
 
