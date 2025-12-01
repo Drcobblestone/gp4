@@ -105,11 +105,6 @@ public class Inventory : MonoBehaviour
         ItemData itemData = pickedItem.itemData;
         inventoryData.AddItem(itemData); //And add a new item.
         ui.AddUIItem(itemData.id, itemData);
-
-        //Let's add a Debug-check here, perhaps? To see that adding and dropping is happening with the books.
-
-
-
     }
 
     //Check if the inventory has changed, so we can tell the Quest-system.
