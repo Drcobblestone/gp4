@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Iris/NewMainMenu UI.unity
-    guid: df3495ff273857a4db2404791b5eeb57
-  - enabled: 1
     path: Assets/Scenes/Iris/MainMenu.unity
     guid: 95033c8d1428f6c46a4eba208e640fae
   - enabled: 1
