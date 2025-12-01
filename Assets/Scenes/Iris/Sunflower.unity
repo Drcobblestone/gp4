@@ -5276,7 +5276,7 @@ GameObject:
   - component: {fileID: 1829023625}
   - component: {fileID: 1829023626}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5344,8 +5344,12 @@ PolygonCollider2D:
     - - {x: 0, y: 1}
       - {x: -1.6622562, y: -0.35476932}
       - {x: -1.5676597, y: -4.033122}
-      - {x: 1.9540492, y: 0.62682104}
-      - {x: 1.1407094, y: 1.7946341}
+      - {x: 1.0567584, y: -0.5978737}
+      - {x: 2.8119235, y: 0.8910173}
+      - {x: 4.0819645, y: 1.4399952}
+      - {x: 5.339385, y: 1.894868}
+      - {x: 5.504837, y: 2.1560714}
+      - {x: 1.0476413, y: 1.3525628}
   m_UseDelaunayMesh: 0
 --- !u!1001 &1841701577
 PrefabInstance:
