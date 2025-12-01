@@ -594,8 +594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51a45f7f9499ef418fdbda171432c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footStep1: {fileID: 8300000, guid: e28f7230380da7f4193b87bb3ca36b2f, type: 3}
-  footStep2: {fileID: 8300000, guid: e28f7230380da7f4193b87bb3ca36b2f, type: 3}
+  footStep1: {fileID: 8300000, guid: cebde79849ee7494ead0548061958aa5, type: 3}
+  footStep2: {fileID: 8300000, guid: dd81c83c14bb8a6448d8fbf1cbabb0ce, type: 3}
   mainCamera: {fileID: 1706150306}
   clipVolume: 0.15
 --- !u!1001 &687205377
