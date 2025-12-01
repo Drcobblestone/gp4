@@ -51,12 +51,12 @@ MonoBehaviour:
   - dialogue: YOU?! You're the Frog Royal this fool Sheep mentioned?! Begone, nasty
       slime!
     icon: {fileID: -1893751228, guid: d2938510c46bc9b4a928c894b5c845b5, type: 3}
-    npcName: PrincessNPC
+    npcName: Princess
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 9
     rewardItem: 8
     givenItem: 9
     hasItem: 0
-  questInProgressIndex: 1
+  questInProgressIndex: 0
   quest: {fileID: 11400000, guid: ca651de3b723753489261ab9fbe25243, type: 2}

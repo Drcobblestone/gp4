@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f574a59e6d9fac41a62063af6c2abdb, type: 3}
   m_Name: PrincessN
   m_EditorClassIdentifier: 
-  npcName: PrincessNPC
+  npcName: Princess
   nId: 3
   description: A princess to kiss the Frog
   icon: {fileID: 1235530666, guid: 2feaf83971ce3524597a20015b08d168, type: 3}
@@ -50,5 +50,5 @@ MonoBehaviour:
     rewardItem: 2
     givenItem: 9
     hasItem: 0
-  questInProgressIndex: 2
+  questInProgressIndex: 0
   quest: {fileID: 11400000, guid: ca651de3b723753489261ab9fbe25243, type: 2}
