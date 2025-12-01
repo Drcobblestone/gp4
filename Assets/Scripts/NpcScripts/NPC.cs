@@ -165,13 +165,10 @@ public class NPC : MonoBehaviour
             */
 
             DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position); //Then we spawn the quest-item/given item.
-            //The above doesn't work for some reason, so we hard-code...
-            //DroppedItem droppedItem = FrogPU;
 
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {
                 Debug.Log("The quest-item has spawned."); //we print the debug-message.
-                //npcObject.SetActive(false); //And turn off the NPC.
             }
             else //But if the dropped item didn't happen, then we warn.
             {
@@ -211,7 +208,7 @@ public class NPC : MonoBehaviour
         }
         if (currentConvo.endConvoEarly)
         {
-            zeroText();
+            zeroText(); //We run the zero-text routine, to stop typing text, and end the conversation.
             return;
         }
 
@@ -279,9 +276,9 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         dialogueIndex = 0;
         cantClickNPC = !resetDialougeAtEnd; //
-        if (npcObject != null)
+        if (npcObject != null) //If we do have an NPC active...
         {
-            npcBoxcollider.enabled = !cantClickNPC;
+            npcBoxcollider.enabled = !cantClickNPC; //...and therefore an active collider, then we can click the NPC.
         }
         dialoguePanel.SetActive(false); //We turn off our dialogue-panel.
     }
