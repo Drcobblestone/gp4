@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using TMPro; //We get the textmeshpro library.
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class NPC : MonoBehaviour
 {
+    public UnityEvent npcRemoved;
     public GameObject dialoguePanel;
     public TMP_Text dialogueText;
     [SerializeField] NpcData npcData;
@@ -75,9 +77,9 @@ public class NPC : MonoBehaviour
         if (dialoguePanel.activeInHierarchy)
         {
             cantClickNPC = true; //We make it so we can't click the NPC while the dialogue-panel is active.
-            if (npcObject == null)
+            if (npcObject == null) //If we don't haven an NPC-object in use (aka, not talking to an NPC), then...
             {
-                yield break;
+                yield break; //...Stop the co-routine.
             }
             npcBoxcollider.enabled = false; //We do this by turning off the collider who detects the player.
         }
@@ -86,6 +88,8 @@ public class NPC : MonoBehaviour
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
+
+            //Put in more in waitforseconds, than wordspeed? Aka NpcUI name and icon?
             
         }
 
@@ -129,10 +133,7 @@ public class NPC : MonoBehaviour
 
         //Quest Hand In Here
         Conversations currentConvo = npcData.conversations[dialogueIndex];
-        if (currentConvo.icon != null)
-        {
-            npcUI.Initialize(currentConvo.icon, currentConvo.npcName);
-        }
+        
         if (currentConvo.setQuestProgressTo > 0)
         {
             npcData.questInProgressIndex = currentConvo.setQuestProgressTo;
@@ -197,6 +198,7 @@ public class NPC : MonoBehaviour
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {
                 Debug.Log("The book has spawned."); //we print the debug-message.
+                npcRemoved.Invoke();
                 npcObject.SetActive(false); //And turn off the NPC.
             }
             else //But if the dropped item didn't happen, then we warn.
@@ -231,9 +233,15 @@ public class NPC : MonoBehaviour
         //--
 
         if (dialogueIndex < npcData.conversations.Count -1) //If our dialogue-index is shorter than our dialogue-length
-        {
+        {  
             dialogueIndex++; //...the we start another conversation.
+            Conversations nextConvo = npcData.conversations[dialogueIndex];
             dialogueText.text = ""; //We set the text to nothing, since we have a list of lines that's going to load instead.
+            if (nextConvo.icon != null) //If the current conversation's NPC actually has an icon, then...
+            {
+                npcUI.Initialize(nextConvo.icon, nextConvo.npcName); //We change/fill in the name and icon of the NPC we're currently talking to, in the convo-canvas.
+                Debug.Log("We changed the Icon and Name of the NPC.");
+            }
             StartCoroutine(Typing()); //...and we'll start making the words appear again as well.
         }
 
@@ -282,5 +290,4 @@ public class NPC : MonoBehaviour
         }
         dialoguePanel.SetActive(false); //We turn off our dialogue-panel.
     }
-
 }

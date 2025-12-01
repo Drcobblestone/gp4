@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6145207460060224532}
   - component: {fileID: 2858560752306748600}
   - component: {fileID: 356578961693244311}
+  - component: {fileID: 1591924404998377144}
   m_Layer: 0
   m_Name: BremenMusicians
   m_TagString: Untagged
@@ -202,13 +203,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8cf438a51808a2479b48926073ce9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcRemoved:
+    m_PersistentCalls:
+      m_Calls: []
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
   npcData: {fileID: 11400000, guid: b11edaf22e50a7a48949f441ecdcff44, type: 2}
   contButton: {fileID: 0}
-  wordSpeed: 0
+  wordSpeed: 0.06
   npcObject: {fileID: 6377569730910456554}
-  transfEffectPrefab: {fileID: 1237891161181482301, guid: 0fe4c7af4e07b8d4195bc76a2f42ec6e, type: 3}
+  transfEffectPrefab: {fileID: 4509160145308219959, guid: 71526d07b18830d4bbdcc4cb1b77f4a6, type: 3}
   npcBoxcollider: {fileID: 6145207460060224532}
   resetDialougeAtEnd: 1
   cantClickNPC: 0
@@ -241,3 +245,36 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _isInRange: 0
+--- !u!114 &1591924404998377144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6377569730910456554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startFlagOff:
+    m_PersistentCalls:
+      m_Calls: []
+  startFlagOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6377569730910456554}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  flagUpdated:
+    m_PersistentCalls:
+      m_Calls: []

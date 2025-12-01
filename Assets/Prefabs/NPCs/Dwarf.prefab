@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5973133625118800978}
   - component: {fileID: 5770279104268525727}
   - component: {fileID: 2541834230560508186}
+  - component: {fileID: 1310950368839149145}
   - component: {fileID: 4162337604166047761}
   m_Layer: 0
   m_Name: Dwarf
@@ -157,6 +158,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8cf438a51808a2479b48926073ce9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcRemoved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1310950368839149145}
+        m_TargetAssemblyTypeName: SceneObject, Assembly-CSharp
+        m_MethodName: SetFlag
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
   npcData: {fileID: 11400000, guid: 1fdcc58e1bfcadb48a7f62dab2d7e7d7, type: 2}
@@ -196,6 +212,39 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _isInRange: 0
+--- !u!114 &1310950368839149145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2540103093519088742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startFlagOff:
+    m_PersistentCalls:
+      m_Calls: []
+  startFlagOn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2540103093519088742}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  flagUpdated:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &4162337604166047761
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -61,7 +61,8 @@ public class Conversations //Here we define our various options for what happens
     [Header ("Conversation overrides, for Frog-quest.")]
     public Sprite icon = null;
     public string npcName = "";
-    
+    [Header("//End of convo overrides.")]
+
     public bool endConvoEarly = false;
     public int setQuestProgressTo = 0;
     public ItemID wantedItem = ItemID.NONE; //Never change this bool!
