@@ -1783,6 +1783,10 @@ PrefabInstance:
       propertyPath: entryPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1193538780}
+    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
+      propertyPath: sceneObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 548516112819478193}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2504,7 +2508,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1274159419671844158, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
       propertyPath: m_Name
-      value: 1Princess_0
+      value: Princess
       objectReference: {fileID: 0}
     - target: {fileID: 2759507680765421455, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
       propertyPath: m_SpriteSortPoint
@@ -2567,6 +2571,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
+--- !u!114 &548516112819478193 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3333740144851514730, guid: 796296c0d5854694c834394ddc784fcf, type: 3}
+  m_PrefabInstance: {fileID: 548516112819478192}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
