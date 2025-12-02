@@ -25,6 +25,9 @@ public class NPC : MonoBehaviour
     public bool resetDialougeAtEnd = false;
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
     NpcUI npcUI;
+
+    private Vector3 offset = new Vector3(-2, 0, 0); //This Vector is used to offset the Quest-item, so it doesn't spawn exactly where the 
+
     //Old queststate code.
     //private enum QuestState { NotStarted, InProgress, Completed} //We define the different states a Quest can be in.
     //private QuestState questState = QuestState.NotStarted; //The first quest-state is always "not being started".
@@ -165,7 +168,10 @@ public class NPC : MonoBehaviour
             }
             */
 
-            DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position); //Then we spawn the quest-item/given item.
+            //Old way below
+            //DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position); //Then we spawn the quest-item/given item.
+            DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position+offset);
+
 
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {

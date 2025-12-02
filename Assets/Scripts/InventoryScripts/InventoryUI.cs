@@ -22,7 +22,7 @@ public class InventoryUI : MonoBehaviour
     private void Start()
     {   
 
-        ItemData currentItem = inventoryData.GetCurrentItem();
+        ItemData currentItem = inventoryData.GetCurrentItem(); //We check what the current item in inventory is.
         if (currentItem == null) //If the current item doesn't exist...
         {
             return; //..return and start over.

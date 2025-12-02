@@ -12,8 +12,8 @@ public class ScalePlayer : MonoBehaviour
     //Change this to "vertice"? Aka point along the collider that you interpolate the distance to make the target-object smaller or bigger depending on where
     //the target-object is located in relation to the size-defining object.
     public Transform center; //Reference to what we are scaling in comparison to.
-    public float ScaleMultiplierMin = -0.5f, ScalemultiplierMax = 0.5f; //The limits to how much we can scale.
-    private float ScaleMultiplier; //How much the Player / object shall be scaled.
+    public float ScaleMultiplierMin, ScalemultiplierMax; //The limits to how much we can scale.
+    public float ScaleMultiplier; //How much the Player / object shall be scaled.
 
     private Vector2 initialScale; //The initial size.
     private Vector2 newScale; //The ever-changing new size of the player/object.
@@ -34,7 +34,7 @@ public class ScalePlayer : MonoBehaviour
         //objectToScale.transform.localScale = initialScale * HowMuchToScale * distance; //We scale the player/objectToScale by using the initialScale and changing it
                                                                                          //depending on the distance to the scale-changer-object.
         newScale = initialScale * HowMuchToScale * distance;
-        initialScale = newScale; //We make the initial size the new size.
+        //initialScale = newScale; //We make the initial size the new size.
 
         Debug.Log("The player was scaled");
     }

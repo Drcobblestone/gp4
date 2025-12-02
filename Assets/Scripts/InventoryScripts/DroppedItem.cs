@@ -41,8 +41,8 @@ public class DroppedItem : MonoBehaviour
     }
     public void PickUp()
     {
-        pickedUp.Invoke();
-        Destroy(gameObject);
+        pickedUp.Invoke(); //If we pick something up, we start the Unity-event.
+        Destroy(gameObject); //And destroy the in-world object, since it's now in inventory instead.
     }
     public void Drop()
     {
