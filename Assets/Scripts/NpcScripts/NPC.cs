@@ -160,26 +160,18 @@ public class NPC : MonoBehaviour
         if (currentConvo.givenItem != ItemID.NONE) //If we have been given an intermediate quest-item, then...
         {
             //Cinematic Effects and Animations Start Here
-            /*
-            if (transfEffectPrefab != null) //If we have set a transformation-effect prefab on the NPC, then...
-            {
-                Instantiate(transfEffectPrefab, transform.position, Quaternion.identity); // We instantiate this effect-prefab in the same place as the NPC.
-                Debug.Log("POOF!");
-            }
-            */
 
-            //Old way below
-            //DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position); //Then we spawn the quest-item/given item.
             DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position+offset);
 
 
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {
-                Debug.Log("The quest-item has spawned."); //we print the debug-message.
+                 
+                Logging.Log($"The quest-item has spawned.");  //we print the debug-message.
             }
             else //But if the dropped item didn't happen, then we warn.
             {
-                Debug.LogWarning("The Quest-item DIDN'T spawn!");
+                Logging.Log($"The Quest-item DIDN'T spawn!");
             }
 
         }
@@ -193,7 +185,7 @@ public class NPC : MonoBehaviour
             if (transfEffectPrefab != null) //If we have set a transformation-effect prefab on the NPC, then...
             {
                 Instantiate(transfEffectPrefab, transform.position, Quaternion.identity); // We instantiate this prefab in the same place as the NPC.
-                Debug.Log("POOF!");
+                Logging.Log($"POOF!");
             }
 
 
@@ -203,13 +195,13 @@ public class NPC : MonoBehaviour
             
             if (droppedItem != null) //If the dropped item isn't nothing, then... 
             {
-                Debug.Log("The book has spawned."); //we print the debug-message.
+                Logging.Log($"The book has spawned."); //we print the debug-message.
                 npcRemoved.Invoke();
                 npcObject.SetActive(false); //And turn off the NPC.
             }
             else //But if the dropped item didn't happen, then we warn.
             {
-                Debug.LogWarning("The book DIDN'T spawn!");
+                Logging.LogWarning($"The book DIDN'T spawn!");
             }
         //No more reward-stuff.
 
@@ -246,7 +238,7 @@ public class NPC : MonoBehaviour
             if (nextConvo.icon != null) //If the current conversation's NPC actually has an icon, then...
             {
                 npcUI.Initialize(nextConvo.icon, nextConvo.npcName); //We change/fill in the name and icon of the NPC we're currently talking to, in the convo-canvas.
-                Debug.Log("We changed the Icon and Name of the NPC.");
+                Logging.Log($"We changed the Icon and Name of the NPC.");
             }
             StartCoroutine(Typing()); //...and we'll start making the words appear again as well.
         }

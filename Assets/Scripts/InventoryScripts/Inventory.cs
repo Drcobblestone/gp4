@@ -43,12 +43,12 @@ public class Inventory : MonoBehaviour
 
         if (inventoryData !=null)
         {
-            Debug.Log("The current contents in the InventoryDictionary is: " + inventoryData.inventoryItems);
+            Logging.Log($"The current contents in the InventoryDictionary is: " + inventoryData.inventoryItems);
             //How the frack do I get it to show me what's currently in the inventory??
         }
         else
         {
-            Debug.LogWarning("Inventory-controller is not getting the dictionary from InventoryData!");
+            Logging.LogWarning($"Inventory-controller is not getting the dictionary from InventoryData!");
         }
     }
 

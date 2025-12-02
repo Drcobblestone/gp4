@@ -92,13 +92,13 @@ public class BookContentsrScript : MonoBehaviour
             leftSide.pageToDisplay = 1;
             rightSide.pageToDisplay = leftSide.pageToDisplay + 1;
             UpdatePagination();
-            Debug.Log("We reached the story-book end.");
+            Logging.Log($"We reached the story-book end.");
         }
 
         else if(leftSide.pageToDisplay >= pageCount + 1 && tag == "StartBook")
         {
             reachedEnd.Invoke();
-            Debug.Log("We reached the start-book end.");
+            Logging.Log($"We reached the start-book end.");
         }
            
     }

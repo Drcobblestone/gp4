@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         }
         if (data.entryIndex == -1) //If we start the game, we will get this error, which will tell us that we have reset the entryindex.
         {
-            Debug.LogError("Custom Error SceneEntry: Entry Index was not valid.");
+            Logging.LogError($"Custom Error SceneEntry: Entry Index was not valid.");
             return;
         }
         //SPAWN IN ALL DROPPED ITEMS

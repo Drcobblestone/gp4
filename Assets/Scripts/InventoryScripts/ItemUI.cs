@@ -51,28 +51,28 @@ public class ItemUI : MonoBehaviour
         case ItemID.BREMENBOOK: //When we click the right kind of item (a book) in inventory, it spawns the book-story-prefab. (so you can read the story)
             //button.onClick.AddListener(() => Inventory.Instance.RemoveItem(inventoryId));
             button.onClick.AddListener(() => bremenBook.SetActive(true));
-            Debug.Log("Read Bremen.");
+            Logging.Log($"Read Bremen.");
             break;
         case ItemID.REDBOOK:
             //button.onClick.AddListener(() => Inventory.Instance.RemoveItem(inventoryId));
             button.onClick.AddListener(() => redBook.SetActive(true));//
-            Debug.Log("Read Riding Hood.");
+            Logging.Log($"Read Riding Hood.");
             break;
         case ItemID.SNOWBOOK:
             //button.onClick.AddListener(() => Inventory.Instance.RemoveItem(inventoryId));
             button.onClick.AddListener(() => snowBook.SetActive(true));//
-            Debug.Log("Read Snow.");
+            Logging.Log($"Read Snow.");
             break;
         case ItemID.FROGBOOK:
             //button.onClick.AddListener(() => Inventory.Instance.RemoveItem(inventoryId)); //
             button.onClick.AddListener(() => frogBook.SetActive(true));//
-            Debug.Log("Read Frog.");
+            Logging.Log($"Read Frog.");
             break;
 
 
         default:
             button.onClick.AddListener(() => Inventory.Instance.DropItem(inventoryId));
-            Debug.Log("Item dropped.");
+            Logging.Log($"Item dropped.");
             break;
         }
     }

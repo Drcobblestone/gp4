@@ -26,7 +26,7 @@ public class DespawnAnimation : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Destroy(_smokePuff);
-        Debug.Log("Removing smoke-puff.");
+        Logging.Log($"Removing smoke-puff.");
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

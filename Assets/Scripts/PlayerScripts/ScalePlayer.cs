@@ -35,7 +35,7 @@ public class ScalePlayer : MonoBehaviour
                                                                                          //depending on the distance to the scale-changer-object.
         newScale = initialScale * HowMuchToScale * distance;
         //initialScale = newScale; //We make the initial size the new size.
-
-        Debug.Log("The player was scaled");
+ 
+        Logging.Log($"The player was scaled"); //We check that the scaling was done.
     }
 }
