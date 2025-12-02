@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d66e7134db9a4c48814d3fb7350fcbb
+guid: 4f578f474d0948c44a0b8759740b6e77
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,11 +43,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frogprince pasfoto_0
+      name: "Portr\xE4tt_bigger canvas1_0"
       rect:
         serializedVersion: 2
-        x: 6
-        y: 7
-        width: 708
-        height: 707
+        x: 107
+        y: 233
+        width: 851
+        height: 1213
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a486bedfffeed843b939a50a0103d4c
-      internalID: 117385682
+      spriteID: 2e63ec4efd46eba4c9a59d5d8d15b68e
+      internalID: 973241089
       vertices: []
       indices: 
       edges: []
@@ -121,14 +121,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      frogprince pasfoto_0: 117385682
+      "Portr\xE4tt_bigger canvas1_0": 973241089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

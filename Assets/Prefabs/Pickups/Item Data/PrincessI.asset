@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   description: 'A beautiful kissable princess. ;) '
-  icon: {fileID: -1893751228, guid: d2938510c46bc9b4a928c894b5c845b5, type: 3}
+  icon: {fileID: 21300000, guid: 7999fd982a85ab74e9140cd5d7509de2, type: 3}
   prefab: {fileID: 1351936159952576313, guid: ba8fd6cb9801dde4386b61c35a9550c0, type: 3}
   pickedUp: 0
