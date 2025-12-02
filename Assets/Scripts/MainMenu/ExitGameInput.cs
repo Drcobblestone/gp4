@@ -13,15 +13,15 @@ public class ExitGameInput : MonoBehaviour
     private void OnEnable()
     {
         cancelAction.action.Enable(); //When we enable the Cancel-action...
-        Debug.Log("We can Cancel");
+        Logging.Log($"We can Cancel");
         cancelAction.action.performed += ctx => Application.Quit(); //...Then we quit the game.
         //cancelAction.action.performed += ctx => EditorApplication.ExitPlaymode();
     }
 
     private void OnDisable()
     {
-        Debug.Log("We Stopped"); //This will only be visible in-editor.
+        Logging.Log($"We Stopped"); //This will only be visible in-editor.
         cancelAction.action.Disable(); //We turn off the ability to quit the game with the Cancel-action - when we don't need it.
-        Debug.Log("Turning off Cancel.");
+        Logging.Log($"Turning off Cancel.");
     }
 }

@@ -18,24 +18,22 @@ public class ScalePlayer : MonoBehaviour
     private Vector2 initialScale; //The initial size.
     private Vector2 newScale; //The ever-changing new size of the player/object.
 
-
     // Awake is called before Start, which is called before the first frame update
     void Awake()
     {
         initialScale = objectToScale.transform.localScale; //We determine the size of the thing to scale, before we scale it locally.
     }
 
-    // Update is called once per frame
-    void Update()
+    // FixedUpdate is executed based on the Fixed Timestep (by default 50 times per second)
+    //void FixedUpdate(Time.fixedDeltaTime = 1/24)
+    private void LateUpdate()
     {
         float distance = Vector2.Distance(center.position, transform.position); //We check the distance first.
         float HowMuchToScale = Mathf.Clamp(ScaleMultiplier, ScaleMultiplierMin, ScalemultiplierMax);
 
-        //objectToScale.transform.localScale = initialScale * HowMuchToScale * distance; //We scale the player/objectToScale by using the initialScale and changing it
+        objectToScale.transform.localScale = initialScale * distance * HowMuchToScale; //We scale the player/objectToScale by using the initialScale and changing it
                                                                                          //depending on the distance to the scale-changer-object.
-        newScale = initialScale * HowMuchToScale * distance;
-        //initialScale = newScale; //We make the initial size the new size.
- 
+
         Logging.Log($"The player was scaled"); //We check that the scaling was done.
     }
 }

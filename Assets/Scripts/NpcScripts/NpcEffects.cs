@@ -23,7 +23,7 @@ public class NpcEffects : MonoBehaviour
     public void RemoveAnimation()
     {
         Destroy(_transfEffect);
-        Debug.Log("Removing Transformation-effect.");
+        Logging.Log($"Removing Transformation-effect.");
     }
 
 }

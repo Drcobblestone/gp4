@@ -99,5 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToScale: {fileID: 0}
   center: {fileID: 3990163825287744258}
-  ScaleMultiplierMin: -0.8
-  ScalemultiplierMax: 0.8
+  ScaleMultiplierMin: 0
+  ScalemultiplierMax: 0
+  ScaleMultiplier: 0
