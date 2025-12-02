@@ -467,10 +467,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A coot had a Donkey, slavin\u2019 away in his mill for a crap-ton of years;
-    but as the Donkey was becomin\u2019 a fossil, the coot was lookin\u2019 to have
-    him turned into sausages \u2013 but the Donkey got a sniff of how foul-smelling
-    the wind was, so the Donkey took a hike and blew off on the road to Bremen. \r\n\u201CYo,
+  m_text: "\n<font-weight=700><size=2em><color=#000000>Bremen town musicians</color></size></font-weight><br>\n\nA
+    coot had a Donkey, slavin\u2019 away in his mill for a crap-ton of years; but
+    as the Donkey was becomin\u2019 a fossil, the coot was lookin\u2019 to have him
+    turned into sausages \u2013 but the Donkey got a sniff of how foul-smelling the
+    wind was, so the Donkey took a hike and blew off on the road to Bremen. \r\n\n\u201CYo,
     I can totally be a street-musician in a fly place like that.\u201D the Donkey
     thought to himself.\r\nWhen the Donkey had been haulin\u2019 his ass for a while,
     he found a big-ass Dog lying in the middle of the road like some foo\u2019. \r\n\u201CWhat

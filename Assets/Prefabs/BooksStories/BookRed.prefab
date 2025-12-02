@@ -467,20 +467,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Little Red Riding Hood\r\n\r\n\r\nOnce upon a time there was a cocky little
-    girl who was popular with everyone who looked at her, but most of all with her
-    soggy old Grandmother, and she let her get away with anything. \r\nOnce she let
-    her tear down her curtains and make a red Hood out of them, because \u201Cshe
-    was from the hood! And everybody needs to know it.\u201D From that day on, she
-    never wore anything else, so they called her \u201CLittle Red Riding Hood\u201D.\r\n\r\n\r\nOne
-    day her mama said to her: \u201CGet\u2019sho\u2019 ASS over here, Lil\u2019 Red
-    Ridin\u2019 Hood! Here\u2019s a big fat blunt for yo\u2019 Grand-mama. She\u2019s
-    needs some cheerin\u2019 up and this is the stuff ta\u2019 do it. Start walkin\u2019
-    now so you actually get there TODAY, you lazy bitch! And take it easy on yo\u2019
-    way there \u2013 no fightin\u2019, no trickin\u2019, and whatever you do\u2026
-    don\u2019t you DARE smoke Grand-mama\u2019s Joint! If I hear Grand-mama didn\u2019t
-    get no Blunt, then you\u2019ll be getting the back of my hand. And when you get
-    there, don\u2019t go runnin\u2019 off right off the bat, but say Hi\u2019.\u201D\r\n\r\n\u201CYeesh
+  m_text: "<font-weight=700><size=2em><color=#000000>Little Red Riding Hood\r</color></size></font-weight><br>\n\nOnce
+    upon a time there was a cocky little girl who was popular with everyone who looked
+    at her, but most of all with her soggy old Grandmother, and she let her get away
+    with anything. \r\nOnce she let her tear down her curtains and make a red Hood
+    out of them, because \u201Cshe was from the hood! And everybody needs to know
+    it.\u201D From that day on, she never wore anything else, so they called her
+    \u201CLittle Red Riding Hood\u201D.\r\n\r\n\r\nOne day her mama said to her:
+    \u201CGet\u2019sho\u2019 ASS over here, Lil\u2019 Red Ridin\u2019 Hood! Here\u2019s
+    a big fat blunt for yo\u2019 Grand-mama. She\u2019s needs some cheerin\u2019
+    up and this is the stuff ta\u2019 do it. Start walkin\u2019 now so you actually
+    get there TODAY, you lazy bitch! And take it easy on yo\u2019 way there \u2013
+    no fightin\u2019, no trickin\u2019, and whatever you do\u2026 don\u2019t you
+    DARE smoke Grand-mama\u2019s Joint! If I hear Grand-mama didn\u2019t get no Blunt,
+    then you\u2019ll be getting the back of my hand. And when you get there, don\u2019t
+    go runnin\u2019 off right off the bat, but say Hi\u2019.\u201D\r\n\r\n\u201CYeesh
     Mama! I\u2019ll fricken\u2019 do it, OK?! You know me, I\u2019m good for it!
     This\u2019ll be eaaasy! Now gimme\u2019 Hi-five, ok?\u201D \r\nThe Grand-mama
     lived out in the middle of nowhere \u2013 the city limits, aka all of 4 kilometres
