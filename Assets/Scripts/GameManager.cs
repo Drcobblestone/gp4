@@ -8,9 +8,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] ItemDBData itemDB;
     [Header("(Which scene we are in)")]
     [SerializeField] SceneData data;
+    [Header("(Put the player-object here)")]
     [SerializeField] Transform playerTransform;
+
     [SerializeField] Transform[] entryPoints; //We create an array of entry-points within a scene.
+
     [SerializeField] SceneObject[] sceneObjects = new SceneObject[8];
+
     [SerializeField] List<DroppedItem> droppedItems = new List<DroppedItem>();
     public static GameManager Instance;
     // Start is called before the first frame update

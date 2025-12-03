@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!82 &235810627 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7470131492112589094, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
-  m_PrefabInstance: {fileID: 1891235398152805587}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &275237112
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +778,7 @@ PrefabInstance:
     - target: {fileID: 6688310561376991879, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: footStepSound
       value: 
-      objectReference: {fileID: 235810627}
+      objectReference: {fileID: 0}
     - target: {fileID: 8261608255279956213, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -795,7 +790,7 @@ PrefabInstance:
     - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: footStepSound
       value: 
-      objectReference: {fileID: 235810627}
+      objectReference: {fileID: 0}
     - target: {fileID: 9023525408268776616, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: ui
       value: 

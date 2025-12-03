@@ -1956,6 +1956,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2366351016420281256, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+      propertyPath: sceneData
+      value: 
+      objectReference: {fileID: 11400000, guid: e0376f89c119b8b47af1a2e14fe1096e, type: 2}
     - target: {fileID: 4035200774326581190, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: inventoryUI
       value: 
@@ -3370,6 +3374,8 @@ SceneRoots:
   - {fileID: 1193538779}
   - {fileID: 555595594}
   - {fileID: 1808783691}
+  - {fileID: 1203992719}
+  - {fileID: 178825253}
   - {fileID: 2119824009}
   - {fileID: 536387082}
   - {fileID: 716754823}
@@ -3378,8 +3384,6 @@ SceneRoots:
   - {fileID: 214923999}
   - {fileID: 1990724082}
   - {fileID: 77208674}
-  - {fileID: 1203992719}
-  - {fileID: 178825253}
   - {fileID: 2021382387}
   - {fileID: 476463866}
   - {fileID: 619403237}
