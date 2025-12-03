@@ -1162,6 +1162,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2322569712294621825, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+      propertyPath: sceneData
+      value: 
+      objectReference: {fileID: 11400000, guid: 826929fb9db94094a8c3842cfef9b926, type: 2}
+    - target: {fileID: 2322569712294621825, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: mainMenuCanvas
       value: 
       objectReference: {fileID: 2022340469}
@@ -1171,7 +1175,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 826929fb9db94094a8c3842cfef9b926, type: 2}
     - target: {fileID: 5476602742295406755, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: m_Volume
-      value: 0.75
+      value: 0.238
       objectReference: {fileID: 0}
     - target: {fileID: 5476602742295406755, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: m_audioClip
