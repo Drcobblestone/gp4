@@ -13,25 +13,11 @@ public class HideUI : MonoBehaviour
     [SerializeField] SceneData sceneData;
 
     
-    public void ToggleVisibility() //This function controls if the inventory is visible.
-    {
-        //if (sceneData.sceneName != "MainMenu" || sceneData.sceneName != "BookClub" || sceneData.sceneName != "UIBook") //If the scene isn't called Mainmenu or BookClub, then we do this.
-        //{
-            canvasInventory.SetActive(!canvasInventory.activeInHierarchy); //Activate the Inventory-canvas if it's not active in the hierarchy.
-            Logging.Log($"Turned on the Inventory.");
-        //}
-        /*
-        else
-        {
-            return;
-        }
-        */
-    }
-    
-
     
     public void OnEnable()
     {
+        //Should I try a switch instead? Perhaps those can be reset in-between scenes, unlike this if-statement that can never RE-check itself, it seems.
+        
         if (sceneData.inventoryScene == "No")
         {
             visibleUi.action.Disable();
@@ -45,43 +31,16 @@ public class HideUI : MonoBehaviour
         {
             visibleUi.action.Enable(); //We enable the Visible-action...
             Logging.Log($"Enabled visibleUI action.");
-            visibleUi.action.performed += ctx => ToggleVisibility(); //...Then we make the canvas invisible.
-            Logging.Log($"We toggled inventory visibility.");
-        }
-    }
-    
+            canvasInventory.SetActive(true); //We make the inventory visible.
 
-    /*
-    public void Awake() //This function controls if the inventory is visible.
-    {
-        ToggleVisibility(); //We start the co-routine for controlling inventory visibility.
-        Logging.Log($"We started togglevisibility co-routine.");
+            visibleUi.action.performed += ctx => ToggleVisibility(); //...Then we allow for toggling visibility through the InputAction.
+            Logging.Log($"We can toggle inventory visibility");
+        }
     }
 
-    IEnumerator ToggleVisibility()
+    public void ToggleVisibility() //This function controls if the inventory is visible.
     {
-        Logging.Log($"Toggle-vis running.");
-        if (sceneData.inventoryScene == "No") //If it's a scene meant to have an inventory, then we do this.
-        {
-            canvasInventory.SetActive(false); //De-Activate the Inventory-canvas if it's not meant to be active.
-            Logging.Log($"Turned off the Inventory.");
-            yield break;
-        }
-        else if (sceneData.inventoryScene == "Yes") //Otherwise we do this.
-        {
-            canvasInventory.SetActive(true); //Re-Activate the Inventory-canvas if it's not active in the hierarchy.
-            Logging.Log($"We turned on the inventory.");
-            yield break;
-        }
+        canvasInventory.SetActive(!canvasInventory.activeInHierarchy); //Activate the Inventory-canvas if it's not active in the hierarchy.
+        Logging.Log($"Toggled the inventory's visibility.");
     }
- 
-    /*
-    public void VisibilityAction()
-    {
-        visibleUi.action.Enable();
-        Logging.Log($"We enabled the visibleui ACTION.");
-        visibleUi.action.performed += ctx => ToggleVisibility(); //...Then we make the canvas invisible.
-        Logging.Log($"We made the inventory invisible.");
-    }
-    */
 }
