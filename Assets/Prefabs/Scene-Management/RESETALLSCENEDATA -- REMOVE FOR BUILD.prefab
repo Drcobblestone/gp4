@@ -68,6 +68,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 08668a18c3edf784f8629cd52fa7d75f, type: 2}
   - {fileID: 11400000, guid: 826929fb9db94094a8c3842cfef9b926, type: 2}
   - {fileID: 11400000, guid: da5be7463e7d8dc4ea8c7d6bc18c2714, type: 2}
+  - {fileID: 11400000, guid: da5be7463e7d8dc4ea8c7d6bc18c2714, type: 2}
+  - {fileID: 11400000, guid: 40379059d05dfcd4ab84b7607867506d, type: 2}
   npcDatas:
   - {fileID: 11400000, guid: b11edaf22e50a7a48949f441ecdcff44, type: 2}
   - {fileID: 11400000, guid: 1fdcc58e1bfcadb48a7f62dab2d7e7d7, type: 2}
