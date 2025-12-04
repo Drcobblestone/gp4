@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: "Font\xE4n"
   entryIndex: -1
+  inventoryScene: Yes
+  sceneFlags: 0000000000000000
+  itemsToSpawn: []

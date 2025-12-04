@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: House1Outside
   entryIndex: -1
+  inventoryScene: Yes
+  sceneFlags: 0000000000000000
+  itemsToSpawn: []

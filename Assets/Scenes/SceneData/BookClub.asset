@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: BookClub
   entryIndex: -1
+  inventoryScene: No
   sceneFlags: 0000000000000000
   itemsToSpawn: []

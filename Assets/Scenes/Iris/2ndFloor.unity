@@ -1899,7 +1899,7 @@ PrefabInstance:
     - target: {fileID: 8294035514192992445, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: footStepSound
       value: 
-      objectReference: {fileID: 2141310164}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2435,6 +2435,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322569712294621825, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+      propertyPath: sceneData
+      value: 
+      objectReference: {fileID: 11400000, guid: 17c183b907e8a704eaf1e2a1eb8af017, type: 2}
+    - target: {fileID: 2366351016420281256, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+      propertyPath: sceneData
+      value: 
+      objectReference: {fileID: 11400000, guid: 17c183b907e8a704eaf1e2a1eb8af017, type: 2}
     - target: {fileID: 4035200774326581190, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: inventoryUI
       value: 
@@ -2512,11 +2520,6 @@ Transform:
   - {fileID: 937612834}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &2141310164 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7470131492112589094, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
-  m_PrefabInstance: {fileID: 2076823420}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &578656724554332946
 PrefabInstance:
   m_ObjectHideFlags: 0

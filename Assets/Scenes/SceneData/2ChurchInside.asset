@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: 2ChurchInside
   entryIndex: 0
+  inventoryScene: Yes
+  sceneFlags: 0000000000000000
+  itemsToSpawn: []
