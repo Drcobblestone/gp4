@@ -27,7 +27,6 @@ public class HideUI : MonoBehaviour
     }
     */
 
-    //Let's turn this off temporarily...
     /*
     public void OnEnable()
     {
@@ -46,23 +45,24 @@ public class HideUI : MonoBehaviour
     IEnumerator ToggleVisibility()
     {
         Logging.Log($"Toggle-vis running.");
-        if (sceneData.inventoryScene != "Yes") //If the scene isn't called Mainmenu or BookClub, or if there's no Scene-data, then we do this.
+        if (sceneData.inventoryScene == "Yes") //If it's a scene meant to have an inventory, then we do this.
         {
             canvasInventory.SetActive(!canvasInventory.activeInHierarchy); //Activate the Inventory-canvas if it's not active in the hierarchy.
             Logging.Log($"Turned on the Inventory.");
             yield break;
         }
-        else
+        else if (sceneData.inventoryScene == "No") //Otherwise we do this.
         {
-            Logging.Log($"We didn't turn on the inventory.");
+            canvasInventory.SetActive(canvasInventory.activeInHierarchy); //DE-Activate the Inventory-canvas if it's active in the hierarchy.
+            Logging.Log($"We turned off the inventory.");
             yield break;
         }
     }
 
-    public void NotVisible()
+    public void OnEnable()
     {
-        Logging.Log($"Running NotVisible");
         visibleUi.action.Enable();
+        Logging.Log($"We enabled the visibleui ACTION.");
         visibleUi.action.performed += ctx => ToggleVisibility(); //...Then we make the canvas invisible.
         Logging.Log($"We made the inventory invisible.");
 
