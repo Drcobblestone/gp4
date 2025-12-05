@@ -597,7 +597,7 @@ MonoBehaviour:
   footStep1: {fileID: 8300000, guid: cebde79849ee7494ead0548061958aa5, type: 3}
   footStep2: {fileID: 8300000, guid: dd81c83c14bb8a6448d8fbf1cbabb0ce, type: 3}
   mainCamera: {fileID: 1706150306}
-  clipVolume: 0.15
+  clipVolume: 0.1
 --- !u!1001 &687205377
 PrefabInstance:
   m_ObjectHideFlags: 0
