@@ -26,7 +26,7 @@ public class NPC : MonoBehaviour
     public bool cantClickNPC = false; //We define a condition wherein you can't click the NPC 
     NpcUI npcUI;
 
-    private Vector3 offset = new Vector3(-2, 0, 0); //This Vector is used to offset the Quest-item, so it doesn't spawn exactly where the 
+    private Vector3 offset = new Vector3(-2, 0, 0); //This Vector is used to offset the Quest-item, so it doesn't spawn exactly where the NPC stands. 
 
     //Old queststate code.
     //private enum QuestState { NotStarted, InProgress, Completed} //We define the different states a Quest can be in.
