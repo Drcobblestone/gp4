@@ -17,17 +17,19 @@ public class HideUI : MonoBehaviour
     public void OnEnable()
     {
         //Should I try a switch instead? Perhaps those can be reset in-between scenes, unlike this if-statement that can never RE-check itself, it seems.
-        
-        if (sceneData.inventoryScene == "No")
-        {
-            visibleUi.action.Disable();
-            Logging.Log($"We disabled the inputaction to toggle Inventory-visibility, because it's not supposed to be visible.");
 
-            canvasInventory.SetActive(false); //We make the inventory invisible.
-            Logging.Log($"We turned off the inventory.");
-        }
+            /*
+            if (sceneData.inventoryScene == "No")
+            {
+                visibleUi.action.Disable();
+                Logging.Log($"We disabled the inputaction to toggle Inventory-visibility, because it's not supposed to be visible.");
 
-        else if (sceneData.inventoryScene == "Yes")
+                canvasInventory.SetActive(false); //We make the inventory invisible.
+                Logging.Log($"We turned off the inventory.");
+            }
+            */
+        if (sceneData.inventoryScene == "Yes")
+        //else if (sceneData.inventoryScene == "Yes")
         {
             visibleUi.action.Enable(); //We enable the Visible-action...
             Logging.Log($"Enabled visibleUI action.");
