@@ -316,7 +316,7 @@ PrefabInstance:
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: sceneObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 7684217818638801728}
+      objectReference: {fileID: 0}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: sceneObjects.Array.data[1]
       value: 
@@ -1917,6 +1917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HandInShelf
       objectReference: {fileID: 0}
+    - target: {fileID: 6009255361191057521, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6084057013587241156, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.36
@@ -2118,17 +2122,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8957379999092327748, guid: 37e5a8f9098998e47b4f32eb6f3d53ef, type: 3}
   m_PrefabInstance: {fileID: 7684217818638801726}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7684217818638801728 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5516225638540445753, guid: 37e5a8f9098998e47b4f32eb6f3d53ef, type: 3}
-  m_PrefabInstance: {fileID: 7684217818638801726}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7684217818638801727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &9052579480527937667
 PrefabInstance:
   m_ObjectHideFlags: 0
