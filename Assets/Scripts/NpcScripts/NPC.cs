@@ -65,13 +65,11 @@ public class NPC : MonoBehaviour
 
         else
         {
-            //NpcUI npcUI = dialoguePanel.GetComponent<NpcUI>();
             npcUI.Initialize(npcData);
             dialogueIndex = npcData.questInProgressIndex; //the sync with Quest Data
             dialoguePanel.SetActive(true); //...otherwise we activate the dialogue-panel in the hierarchy.
             StartCoroutine(Typing()); //... and start making words appear.
         }
-
     }
 
     //Always remember: Co-routines don't stop running unless you tell them! They're on a different thread.
