@@ -151,4 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96065e62feb9f58489a4f2da623b0645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transfEffect: {fileID: 4509160145308219959}
+  _animatedObject: {fileID: 4509160145308219959}
