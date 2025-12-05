@@ -9,6 +9,8 @@ public class HandInShelf : MonoBehaviour
     [Header("Put Tom here")] 
     [SerializeField] GameObject parentTom; //We use Tom as a condition for when you shouldn't be able to use the shelf.
 
+    [Header("Put the shelf's collider here.")]
+    [SerializeField] BoxCollider2D shelfBoxcollider; //Where we put our 
 
     // Start is called before the first frame update
     void Start()

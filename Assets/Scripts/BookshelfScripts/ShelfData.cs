@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "ShelfData", menuName = "ScriptableObjects/ShelfData", order = 1)] //We create a scriptable Object, and where we want to store it.
+
+
 public class ShelfData : ScriptableObject
 {
-    public string description; //Sadly we can't use name, as that is an inherited property too, but this is just a name.
-    public Sprite icon; //This is an actual sprite/texture that's going to be visible in the UI.
+    public string description; //Describes what the book is about.
+    public Sprite cover; //This is an actual sprite/texture that's going to be visible in the UI.
+    public string bookName = ""; //This will have the names of the books we deposit.
 
     [Header("The books the shelf has when clicked.")] //Tells us what conversations the NPC is meant to have.
     public List<Readables> readables = new List<Readables>(); //This creates the list of conversations the NPC is supposed to have.
@@ -18,7 +22,7 @@ public class ShelfData : ScriptableObject
         questInProgressIndex = 0;
         foreach (Readables readable in readables)
         {
-            Readables.hasBook = false;
+            readable.hasBook = false;
         }
     }
 }

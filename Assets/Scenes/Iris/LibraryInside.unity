@@ -1934,7 +1934,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6009255361191057521, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
       propertyPath: m_Name
-      value: Bookshelve_lessbooks
+      value: HandInShelf
       objectReference: {fileID: 0}
     - target: {fileID: 6084057013587241156, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1976,11 +1976,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9151147647891894825, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
+      propertyPath: parentTom
+      value: 
+      objectReference: {fileID: 7684217818638801727}
+    - target: {fileID: 9151147647891894825, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
+      propertyPath: shelfBoxcollider
+      value: 
+      objectReference: {fileID: 2484510331433303650}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
+--- !u!61 &2484510331433303650 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8951515164966732150, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
+  m_PrefabInstance: {fileID: 2484510331433303649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5486490451139468386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2107,6 +2120,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 608960649}
   m_SourcePrefab: {fileID: 100100000, guid: 37e5a8f9098998e47b4f32eb6f3d53ef, type: 3}
+--- !u!1 &7684217818638801727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8957379999092327748, guid: 37e5a8f9098998e47b4f32eb6f3d53ef, type: 3}
+  m_PrefabInstance: {fileID: 7684217818638801726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9052579480527937667
 PrefabInstance:
   m_ObjectHideFlags: 0
