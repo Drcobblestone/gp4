@@ -18,21 +18,30 @@ MonoBehaviour:
   icon: {fileID: 1162091192, guid: 0eef7bcdf3846f344a88f83713b1b32c, type: 3}
   talkedTo: 0
   conversations:
-  - dialogue: I need turntable
+  - dialogue: '''Sup, lil'' Fuzz? We ''bout to go nuclear on some foo''s, but we
+      ain''t got none of our gear. Hook some brutha''s up with a turntable, and you''d
+      be doin'' us a solid, lil Fuzz.'
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 1
     setQuestProgressTo: 1
     wantedItem: 9
     rewardItem: 9
     givenItem: 9
     hasItem: 0
-  - dialogue: Have you got the table?
+  - dialogue: Ey yo', lil Fuzz - did yo' get dat' Turntable?
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 3
     rewardItem: 9
     givenItem: 9
     hasItem: 0
-  - dialogue: Thanks for the table.
+  - dialogue: Yo, now we're jivin' lil Fuzz! Time to put da' fear o' god in some
+      foo's!
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 9
