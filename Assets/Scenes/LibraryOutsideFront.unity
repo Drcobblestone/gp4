@@ -284,6 +284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Statue_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8216650293484620955, guid: 6500c6b9da3d9da458215d261a699971, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2535,6 +2539,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 4020654404810618638, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020654404810618638, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 7475729473273645649, guid: 5bc4cfd4997555542aa60aedb1c3fdb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3017,6 +3029,10 @@ PrefabInstance:
       objectReference: {fileID: 1068926893}
     - target: {fileID: 4393214277245043438, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: reset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726652776295190405, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7540017267183469138, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}

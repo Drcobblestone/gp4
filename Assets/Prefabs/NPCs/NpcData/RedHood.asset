@@ -19,21 +19,28 @@ MonoBehaviour:
   talkedTo: 0
   conversations:
   - dialogue: Ey, fuzz-ball! My gramps is feeling low, and a good joint always used
-      ta' cheer her up - can you hook me up with some good stuff?
+      ta' cheer her up - can ya' hook me up with some good stuff?
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 1
     setQuestProgressTo: 1
     wantedItem: 9
     rewardItem: 9
     givenItem: 9
     hasItem: 0
-  - dialogue: Did ya' get it, fuss-ass?
+  - dialogue: Did ya' get it, fuss-ball? Or am I gonna' have ta' stand around here
+      even longer?
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 1
     rewardItem: 9
     givenItem: 9
     hasItem: 0
-  - dialogue: Thanks, punk!
+  - dialogue: Thanks, fuzz-ball! I'll owe ya' one for this.
+    icon: {fileID: 0}
+    npcName: 
     endConvoEarly: 0
     setQuestProgressTo: 0
     wantedItem: 9
