@@ -50,12 +50,13 @@ public class HideUI : MonoBehaviour
 
     public void OnEnable()
     {
-            visibleUi.action.Enable(); //We enable the Visible-action...
-            Logging.Log($"Enabled visibleUI action.");
-            canvasInventory.SetActive(true); //We make the inventory visible.
+        visibleUi.action.Enable(); //We enable the Visible-action...
+        Logging.Log($"Enabled visibleUI action.");
+        canvasInventory.SetActive(true); //We make the inventory visible.
+        //ToggleVisibility(); //We run it once as well, so it becomes not visible.
 
-            visibleUi.action.performed += ctx => ToggleVisibility(); //...Then we allow for toggling visibility through the InputAction.
-            Logging.Log($"We can toggle inventory visibility");
+        visibleUi.action.performed += ctx => ToggleVisibility(); //...Then we allow for toggling visibility through the InputAction.
+        Logging.Log($"We can toggle inventory visibility");
     }
 
     public void ToggleVisibility() //This function controls if the inventory is visible.
