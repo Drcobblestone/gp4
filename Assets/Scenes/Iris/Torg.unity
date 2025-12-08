@@ -833,7 +833,7 @@ PolygonCollider2D:
     - - {x: -3.213284, y: 5.479124}
       - {x: -3.0607886, y: 0.34147438}
       - {x: -3.119464, y: -5.3855133}
-      - {x: 2.7299752, y: -0.6467297}
+      - {x: 3.1223485, y: -0.6920036}
       - {x: 3.0283318, y: 5.1776304}
   m_UseDelaunayMesh: 0
 --- !u!1001 &504352998
@@ -1092,7 +1092,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 08668a18c3edf784f8629cd52fa7d75f, type: 2}
     - target: {fileID: 4393214277245043438, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: reset
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7540017267183469138, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: m_Name
@@ -2464,6 +2464,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 2136398898}
+    - target: {fileID: 7234770885886644337, guid: 2bbf99eb6db72b8458c79f635e83d79b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8145710513437069846, guid: 2bbf99eb6db72b8458c79f635e83d79b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3746201
