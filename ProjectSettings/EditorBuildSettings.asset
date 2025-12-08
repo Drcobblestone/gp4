@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Iris/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 95033c8d1428f6c46a4eba208e640fae
   - enabled: 1
-    path: Assets/Scenes/Iris/LibraryInside.unity
+    path: Assets/Scenes/LibraryInside.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
     path: Assets/Scenes/Test Scenes/LarsTest0.unity
@@ -21,49 +21,49 @@ EditorBuildSettings:
     path: Assets/Scenes/Test Scenes/LarsTest2.unity
     guid: 0e50952e39f98f041bdc4c2f3b67c76f
   - enabled: 1
-    path: Assets/Scenes/Iris/LibraryOutsideFront.unity
+    path: Assets/Scenes/LibraryOutsideFront.unity
     guid: 0d3a15bc098d98846bb39fd5920aa08e
   - enabled: 1
-    path: Assets/Scenes/Iris/LibraryOutsideLeft.unity
+    path: Assets/Scenes/LibraryOutsideLeft.unity
     guid: 06f7c407d5535a444852eeea523776c9
   - enabled: 1
-    path: Assets/Scenes/Iris/LibraryOutsideRight.unity
+    path: Assets/Scenes/LibraryOutsideRight.unity
     guid: e5542b733bc35bd4b982ed02d7bdfbc2
   - enabled: 1
-    path: Assets/Scenes/Iris/House1Outside.unity
+    path: Assets/Scenes/House1Outside.unity
     guid: 169551932adb331488ecc70a9f3f5acd
   - enabled: 1
-    path: Assets/Scenes/Iris/House1Inside.unity
+    path: Assets/Scenes/House1Inside.unity
     guid: ac385123d659f4e46aa9bc62d8d198f5
   - enabled: 1
-    path: Assets/Scenes/Iris/1ChurchInside.unity
+    path: Assets/Scenes/1ChurchInside.unity
     guid: e5a154ac3f02a3a498d8b31677a07edd
   - enabled: 1
-    path: Assets/Scenes/Iris/2ChurchInside.unity
+    path: Assets/Scenes/2ChurchInside.unity
     guid: e86e634ba6ec6714fb07c16eda949795
   - enabled: 1
-    path: Assets/Scenes/Iris/2ndFloor.unity
+    path: Assets/Scenes/2ndFloor.unity
     guid: e7f73042f78fd52498df85fa3b5ee4b3
   - enabled: 1
-    path: Assets/Scenes/Iris/3ChurchInside.unity
+    path: Assets/Scenes/3ChurchInside.unity
     guid: c8164e8b6e7599e469bf4d92896c63e7
   - enabled: 1
-    path: Assets/Scenes/Iris/ChurchOutside.unity
+    path: Assets/Scenes/ChurchOutside.unity
     guid: d4e755eb42c7a6040abc14f8a6831add
   - enabled: 1
-    path: Assets/Scenes/Iris/City.unity
+    path: Assets/Scenes/City.unity
     guid: 9871fa5c4e5d6ac4aae0a9bdd49c8c9a
   - enabled: 1
-    path: "Assets/Scenes/Iris/Font\xE4n.unity"
+    path: "Assets/Scenes/Font\xE4n.unity"
     guid: 69e6c1a871d423744bb08cef829247b2
   - enabled: 1
-    path: Assets/Scenes/Iris/Sunflower.unity
+    path: Assets/Scenes/Sunflower.unity
     guid: ebcf03228ff218747922be83f0c1005d
   - enabled: 1
-    path: Assets/Scenes/Iris/UIBook.unity
+    path: Assets/Scenes/UIBook.unity
     guid: 93e69ccf065d492428d7fbb221d95d38
   - enabled: 1
-    path: Assets/Scenes/Iris/Torg.unity
+    path: Assets/Scenes/Torg.unity
     guid: 4e47de871e4627247bf158b122cb05ed
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: eeeb24d11125e3044ae12a8e00f60a28, type: 2}
