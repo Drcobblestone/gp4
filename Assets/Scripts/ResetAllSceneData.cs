@@ -8,7 +8,9 @@ public class ResetAllSceneData : MonoBehaviour
     [SerializeField] bool reset = true;
     [SerializeField] SceneData[] sceneDatas;
     [SerializeField] NpcData[] npcDatas;
-    
+    [SerializeField] ShelfData shelfData;
+
+
     void Awake()
     {   
         if (!reset)
@@ -23,6 +25,8 @@ public class ResetAllSceneData : MonoBehaviour
         {
             data.Reset(); //...reset it, in-between runs.
         }
+        shelfData.Reset();
+
         Destroy(gameObject); //And destroy this reset-object, after the deed is done.
     }
 }
