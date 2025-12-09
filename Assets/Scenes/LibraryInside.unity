@@ -475,7 +475,7 @@ PrefabInstance:
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: sceneObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2484510331433303651}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: sceneObjects.Array.data[1]
       value: 
@@ -1188,63 +1188,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2120933983860538203, guid: 98d598c625d0cbe4485d728c8d69d181, type: 3}
   m_PrefabInstance: {fileID: 983847819}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1101435028
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.719701
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.8514247
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523230437108304291, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6687326480235455718, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
-      propertyPath: m_Name
-      value: BremenBook
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9773ccc1c7b02ce4a948f7eac0036a21, type: 3}
 --- !u!1001 &1166042148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2270,6 +2213,17 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 8951515164966732150, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
   m_PrefabInstance: {fileID: 2484510331433303649}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2484510331433303651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1030683816915244767, guid: dcfc627d9fa44b84ebd27027846dde48, type: 3}
+  m_PrefabInstance: {fileID: 2484510331433303649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5486490451139468386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2484,5 +2438,4 @@ SceneRoots:
   - {fileID: 378150653}
   - {fileID: 386920213}
   - {fileID: 7684217818638801726}
-  - {fileID: 1101435028}
   - {fileID: 148838289}
