@@ -48,8 +48,11 @@ MonoBehaviour:
     rewardItem: 9
     givenItem: 9
     hasItem: 0
-  - dialogue: YOU?! You're the Frog Royal this fool Sheep mentioned?! Begone, nasty
+  - dialogue: 'YOU?! You''re the Frog Royal this fool Sheep mentioned?! Begone, nasty
       slime!
+
+
+      [PUT THE BOOK BACK IN THE EMPTY SHELF IN THE LIBRARY]'
     icon: {fileID: -1893751228, guid: d2938510c46bc9b4a928c894b5c845b5, type: 3}
     npcName: Princess
     endConvoEarly: 0

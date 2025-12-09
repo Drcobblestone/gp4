@@ -196,6 +196,8 @@ public class NPC : MonoBehaviour
                 Logging.Log($"The book has spawned."); //we print the debug-message.
                 npcRemoved.Invoke();
                 npcObject.SetActive(false); //And turn off the NPC.
+
+
             }
             else //But if the dropped item didn't happen, then we warn.
             {
