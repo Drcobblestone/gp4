@@ -65,6 +65,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Torg.unity
     guid: 4e47de871e4627247bf158b122cb05ed
+  - enabled: 1
+    path: Assets/Scenes/BookClub.unity
+    guid: 1fd7daf10b96e6945a3495a53436b50a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: eeeb24d11125e3044ae12a8e00f60a28, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fd64aa19291e6ea4095dab362cafe472, type: 3}

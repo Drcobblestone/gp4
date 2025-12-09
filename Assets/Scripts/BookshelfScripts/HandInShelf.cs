@@ -4,6 +4,7 @@ using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class HandInShelf : MonoBehaviour
 {
@@ -11,6 +12,14 @@ public class HandInShelf : MonoBehaviour
 
     [Header("Put Tom here")] 
     [SerializeField] GameObject parentTom; //We use Tom as a condition for when you shouldn't be able to use the shelf.
+    [Header("Put the dummy-books here.")]
+    [SerializeField] GameObject[] booksInShelf = new GameObject[4]; //An array where we put all of the books inside.
+
+    //[Header("Insert the entire parent-object here, so we can search its Hierarchy.")]
+    //[SerializeField] GameObject bremenDummyChild, snowDummyChild, redDummyChild, frogDummyChild; //We need this to search through the active sub-objects in the hierarchy.
+
+
+
 
     /*
     [Header("Put the shelf's collider here.")]
@@ -24,53 +33,18 @@ public class HandInShelf : MonoBehaviour
     */
 
 
-    [SerializeField] GameObject[] booksinShelf = new GameObject[4]; //
-
-
-
-
     // Start is called before the first frame update
     void Start()
     {
-        //shelfText.text = ""; //This is needed because the length of dialogueText starts as 1. //If you run the game all the way from Main Menu, this causes Nullreferror.
-
-        for (int i = 0; i < booksinShelf.Length; i++)
+        for (int i = 0; i < booksInShelf.Length; i++)
         {
             bool bookActive = shelfData.booksCollected[i];
-            booksinShelf[i].SetActive(bookActive); //change later
-        }
-
-
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision) //The player enters the clickable zone.
-    {
-        PlayerController player = collision.GetComponent<PlayerController>(); //Finds the PlayerController, aka the Player, and put the value in there.
-        print(gameObject.name + " found player");
-        if (player != null) //Then we check if it really is the player...
-        {
-            Logging.Log($"The shelf got the player!");
-            //Temporary array
-            ItemID[] bookIDs = { ItemID.BREMENBOOK, ItemID.SNOWBOOK, ItemID.REDBOOK, ItemID.FROGBOOK }; //Let's us go through the handed in books.
-            for (int i = 0; i < bookIDs.Length; i++) //lowercase i usually implies a temporary integer.
-            {
-                ItemData itemTemp = Inventory.Instance.TryPopItem(bookIDs[i]); //Will attempt to give us the book-item.
-                if (itemTemp != null)
-                {
-                    shelfData.booksCollected[i] = true; //we have collected that book.
-                    booksinShelf[i].SetActive(true);
-                    break;
-
-                }
-            }
-            //Check if all books are deposited, then we do some win-condition.
-            //"You have collected, wanna finnish??"
-
+            booksInShelf[i].SetActive(bookActive); //change later
         }
     }
 
-
-
+    //Below is the older, more complicated way I had planned for how the shelf should work.
+    /*
     public void OnShelfClicked()
     {
         if (parentTom.activeInHierarchy) //If Tom is active, then...
@@ -85,14 +59,62 @@ public class HandInShelf : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void stopShelf() //This determines what happens when we're not inside the shelf, looking at books.
     {
         Logging.Log($"We stopped peeking into the Shelves.");
+    }
+    */
+
+
+
+
+    private void OnTriggerEnter2D(Collider2D collision) //The player enters the clickable zone.
+    {
+        PlayerController player = collision.GetComponent<PlayerController>(); //Finds the PlayerController, aka the Player, and put the value in there.
+        Logging.Log(gameObject.name + " found player");
+        if (player != null) //Then we check if it really is the player...
+        {
+            //Temporary array
+            ItemID[] bookIDs = { ItemID.BREMENBOOK, ItemID.SNOWBOOK, ItemID.REDBOOK, ItemID.FROGBOOK }; //Let's us go through the handed in books.
+            for (int i = 0; i < bookIDs.Length; i++) //We make a temporary int that starts at zero, and should then be less than bookIDs, which we then can increase when the things below happen.
+            {
+                ItemData itemTemp = Inventory.Instance.TryPopItem(bookIDs[i]); //Will attempt to give us the book-item.
+                if (itemTemp != null) //If the bookID in the temporary check  we created is an actual book, then...
+                {
+                    shelfData.booksCollected[i] = true; //we have collected that book. (so we set the bool to true.)
+                    booksInShelf[i].SetActive(true); //And we activate the dummy-book-object, so we can click something in the shelf and read the book.
+                    
+                    break;
+
+                }
+
+                /*
+                if (shelfData.booksCollected[i] = true && itemTemp == null && bremenDummyChild.activeInHierarchy && snowDummyChild.activeInHierarchy && redDummyChild.activeInHierarchy && frogDummyChild.activeInHierarchy) //If we have collected the books, don't have any new temporary ones och the dummybooks are active, then...
+                {
+                    //WIN-condition, after all books are deposited, below.
+                    Logging.Log($"We've got all of the books back!");
+
+                    SceneManager.LoadScene("BookClub"); //Load the winning scene.
+                    break;
+                }
+                */
+
+            }
+
+            //Guard-clause, so we have to collect all books.
+            foreach (bool bookCollected in shelfData.booksCollected) //we make temp vari based on bools
+            {
+                if (bookCollected)
+                {
+                    continue;
+                }
+                return;
+            }
+            //WIN-condition, after all books are deposited, below.
+            Logging.Log($"We've got all of the books back!");
+
+            SceneManager.LoadScene("BookClub"); //Load the winning scene.
+
+        }
     }
 }
