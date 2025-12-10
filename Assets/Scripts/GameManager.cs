@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] SceneObject[] sceneObjects = new SceneObject[8];
 
     [SerializeField] List<DroppedItem> droppedItems = new List<DroppedItem>();
-    public static GameManager Instance;
+    public static GameManager Instance; //We turn the gamemanager into a Singleton.
     // Start is called before the first frame update
     private void Awake()
     {

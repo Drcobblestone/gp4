@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     
     public Animator animator; //We summon the animator.
 
+    bool movementLocked; //This decides if the player can move. We toggle it when we pause the game.
+
     //A region is a "stylistic choice that allows you to lump together related code and give it a name."
     #region PLAYER_CONTROLS 
     public void Move(InputAction.CallbackContext context) //If the Input System gets input then we shall move.
@@ -35,6 +37,14 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Guard Clause, to prevent any of the below code from running.
+        if (movementLocked)
+        {
+            return; //If movement locked is true stops any code below from running
+        }
+
+        //End guard clause.
+
         Vector2 movement = new Vector2(horizontal, vertical);
         movement = movement.normalized; 
 
@@ -65,4 +75,15 @@ public class PlayerController : MonoBehaviour
 
         facingLeft = !facingLeft;
     }
+
+    public void Pause()
+    {
+        movementLocked = true;
+    }
+    public void Resume()
+    {
+        movementLocked = false;
+    }
+
+
 }
