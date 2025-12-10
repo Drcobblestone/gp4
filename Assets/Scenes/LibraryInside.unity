@@ -1475,6 +1475,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6337739316798958727, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7540017267183469138, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
       propertyPath: m_Name
       value: LLSingleton

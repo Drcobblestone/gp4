@@ -6,11 +6,16 @@ using UnityEngine;
 public class SceneHideUI : MonoBehaviour
 {
 
-    [SerializeField] GameObject inGameMenu; //Field for where we insert the IngameMenu canvas.
+    //[SerializeField] GameObject inGameMenu; //Field for where we insert the IngameMenu canvas.
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
+        //GameObject inGameMenu = FindObjectOfType<HideUI>().gameObject;
+        GameObject inGameMenu = LLSingleton.Instance.hideUI;
+        inGameMenu.GetComponent<HideUI>().togglable = false;
+
+
         inGameMenu.SetActive(false); //Turn off ingame-menu.
         Logging.Log($"Sniped the Inventory.");
     }
