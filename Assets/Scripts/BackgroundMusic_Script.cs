@@ -23,6 +23,8 @@ public class BackgroundMusic_Script : MonoBehaviour
     public void Awake()
 
     {
+        
+        
         if (sceneData.sceneName != "BookClub" || sceneData == null) //If the scene isn't named BookClub (aka our win-scene), or we haven't popped in the scene-data, then...
         {
             musicSource.clip = standardMusic; //Assign the regular music.
@@ -30,8 +32,8 @@ public class BackgroundMusic_Script : MonoBehaviour
             Logging.Log($"We're playing music.");
         }
         
-        else //But if it's the BookClub scene, then...
-        {
+        if (sceneData.sceneName == "BookClub")  //But if it's the BookClub scene, then...
+            {
             musicSource.clip = winMusic; //Assign the winning-music to the audio-source and...
             Logging.Log($"Changed music to Party."); //...let us know that you changed music-clip.
             musicSource.Play(); //Play the new music.
