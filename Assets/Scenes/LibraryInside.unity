@@ -2212,6 +2212,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4515018983515770043, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
+      value: -3.658784
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515018983515770043, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: -0.7953824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515018983515770043, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
+      value: -0.1739676
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515018983515770043, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
+      value: -0.57187486
+      objectReference: {fileID: 0}
     - target: {fileID: 6290553609142793883, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
       propertyPath: parentTom
       value: 
