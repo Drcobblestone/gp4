@@ -1,19 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//This script is meant to be placed on a gameobject that's only present in the scenes where we turn the inventory off.
 
 public class SceneHideUI : MonoBehaviour
 {
 
-    //[SerializeField] SceneData sceneData;
+    [SerializeField] GameObject inGameMenu; //Field for where we insert the IngameMenu canvas.
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        FindObjectOfType<HideUI>().gameObject.SetActive(false);
-        
+        inGameMenu.SetActive(false); //Turn off ingame-menu.
+        Logging.Log($"Sniped the Inventory.");
     }
-
-
-
 }
