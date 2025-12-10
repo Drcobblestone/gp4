@@ -347,6 +347,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83da17e35a3c48a429175d096d65a2f9, type: 3}
+--- !u!1 &225958273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4931990265792605803, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+  m_PrefabInstance: {fileID: 2144573747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &244653019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8957379999092327748, guid: 37e5a8f9098998e47b4f32eb6f3d53ef, type: 3}
+  m_PrefabInstance: {fileID: 7684217818638801726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &261018969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2699144968172243740, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+  m_PrefabInstance: {fileID: 2144573747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &353578037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -961,6 +976,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6706773988762065375, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
   m_PrefabInstance: {fileID: 711231675}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &757724795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7107883417504380607, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+  m_PrefabInstance: {fileID: 2144573747}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &859515629
 GameObject:
@@ -2139,6 +2159,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3220202594982586487, guid: 2c6ea4951e4cf7a4dae03e4342fb23b2, type: 3}
   m_PrefabInstance: {fileID: 353578037}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1852540541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4462952101363752947, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+  m_PrefabInstance: {fileID: 2144573747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2144573747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2187,6 +2212,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6290553609142793883, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: parentTom
+      value: 
+      objectReference: {fileID: 244653019}
+    - target: {fileID: 6290553609142793883, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: booksInShelf.Array.data[0]
+      value: 
+      objectReference: {fileID: 225958273}
+    - target: {fileID: 6290553609142793883, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: booksInShelf.Array.data[1]
+      value: 
+      objectReference: {fileID: 261018969}
+    - target: {fileID: 6290553609142793883, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: booksInShelf.Array.data[2]
+      value: 
+      objectReference: {fileID: 1852540541}
+    - target: {fileID: 6290553609142793883, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
+      propertyPath: booksInShelf.Array.data[3]
+      value: 
+      objectReference: {fileID: 757724795}
     - target: {fileID: 7621240738751824308, guid: 0c8af8e468f8d754e8a4bcbadbd1f226, type: 3}
       propertyPath: m_Name
       value: CollectionShelf
