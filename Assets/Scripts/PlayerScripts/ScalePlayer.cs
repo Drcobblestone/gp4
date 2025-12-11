@@ -7,33 +7,41 @@ using UnityEngine;
 public class ScalePlayer : MonoBehaviour
 {
     [Header("-Object to scale Component References-")]
-    [SerializeField] GameObject objectToScale;
+    [SerializeField] Transform playerTransform;
 
-    //Change this to "vertice"? Aka point along the collider that you interpolate the distance to make the target-object smaller or bigger depending on where
-    //the target-object is located in relation to the size-defining object.
-    public Transform center; //Reference to what we are scaling in comparison to.
-    public float ScaleMultiplierMin, ScalemultiplierMax; //The limits to how much we can scale.
-    public float ScaleMultiplier; //How much the Player / object shall be scaled.
+    public Transform topScreen;
+    public Transform botScreen;
 
-    private Vector2 initialScale; //The initial size.
-    private Vector2 newScale; //The ever-changing new size of the player/object.
+    public Vector2 topScreenScale;
+    public Vector2 botScreenScale;
 
-    // Awake is called before Start, which is called before the first frame update
-    void Awake()
+    float maxDist; //Distance from topScreen to botScreen, max distance scaling can happen
+
+    private void Start()
     {
-        initialScale = objectToScale.transform.localScale; //We determine the size of the thing to scale, before we scale it locally.
-    }
+       Vector2 posA = topScreen.position;
+       posA.x = 0; //We remove scaling based on X-position, since that looks strange.
+       Vector2 posB = botScreen.position;
+       posB.x = 0;
+       maxDist = Vector2.Distance(posA, posB);
+   }
 
-    // FixedUpdate is executed based on the Fixed Timestep (by default 50 times per second)
-    //void FixedUpdate(Time.fixedDeltaTime = 1/24)
-    private void LateUpdate()
-    {
-        float distance = Vector2.Distance(center.position, transform.position); //We check the distance first.
-        float HowMuchToScale = Mathf.Clamp(ScaleMultiplier, ScaleMultiplierMin, ScalemultiplierMax);
+   private void LateUpdate()
+   {   
 
-        objectToScale.transform.localScale = initialScale * distance * HowMuchToScale; //We scale the player/objectToScale by using the initialScale and changing it
-                                                                                         //depending on the distance to the scale-changer-object.
+       Vector2 posA = topScreen.position;
+       posA.x = 0;
+       Vector2 posB = playerTransform.position;
+       posB.x = 0;
 
-        Logging.Log($"The player was scaled"); //We check that the scaling was done.
+       float distance = Vector2.Distance(posA, posB); //We check the distance first.
+       Vector2 newScale = Vector2.Lerp(topScreenScale, botScreenScale, distance / maxDist);
+       
+       Vector2 scaleSign = playerTransform.localScale;
+       scaleSign.x = Mathf.Sign(scaleSign.x);
+       scaleSign.y = Mathf.Sign(scaleSign.y);
+       playerTransform.localScale = (scaleSign * newScale); //We scale the player/object by using the sca                                                                         
+       Logging.Log($"The player was scaled"); //We check that the scaling was done.
+       
     }
 }
