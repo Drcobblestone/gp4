@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
-{
+{   
+    public static PlayerController Instance;
     [Header("-Player Component References-")]
     [SerializeField] public Rigidbody2D rb; //We make the Rigidbody not a public class as we need to keep it private, but since we need to see it in the editor, we make it a serializedfield.
 
@@ -35,6 +36,10 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void FixedUpdate()
     {
         //Guard Clause, to prevent any of the below code from running.

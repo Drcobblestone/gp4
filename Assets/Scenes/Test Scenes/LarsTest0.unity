@@ -1642,14 +1642,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 495965189}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 11400000, guid: e2d8c485cfc2ceb43a3bea1b749a865f, type: 2}
-    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: itemDB
-      value: 
-      objectReference: {fileID: 11400000, guid: 96e3f25f8586a974f8f49b3fccd951b3, type: 2}
-    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1898412211}
@@ -1661,18 +1653,6 @@ PrefabInstance:
       propertyPath: entryPoints.Array.data[1]
       value: 
       objectReference: {fileID: 409228413}
-    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: sceneObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: sceneObjects.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: sceneObjects.Array.data[7]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1693,7 +1673,6 @@ SceneRoots:
   - {fileID: 2039683141}
   - {fileID: 2045752409}
   - {fileID: 1803015008}
-  - {fileID: 8456227210627120872}
   - {fileID: 5206576434243265413}
   - {fileID: 409228412}
   - {fileID: 5138098771294247212}
@@ -1705,3 +1684,4 @@ SceneRoots:
   - {fileID: 607095549}
   - {fileID: 1327763235}
   - {fileID: 1523083987}
+  - {fileID: 8456227210627120872}

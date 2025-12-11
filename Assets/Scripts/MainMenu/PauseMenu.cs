@@ -12,32 +12,51 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] InputActionReference cancelAction; //We get the cancel-action from the input action asset - we're going to use that to Quit.
+    [Header("Put the item called PauseMenu here.")]
     [SerializeField] GameObject pauseMenu; //We put the pause-menu here.
     PlayerController player; //We get the player so we can pause him.
 
     protected bool menuUp = false;
 
-    /*
+    private void Awake()
+    {
+        player = PlayerController.Instance;
+
+        if (pauseMenu.activeInHierarchy)
+        {
+            pauseMenu.SetActive(false); //We turn off the pause-menu, because it's not ussually meant to be on.
+            Logging.Log($"Made Pause-menu not visible to start with.");
+        }
+    }
+
+
     private void OnEnable()
     {
         cancelAction.action.Enable(); //When we enable the Cancel-action...
         Logging.Log($"We can Cancel");
-        cancelAction.action.performed += ctx => menuUp = true; //...Then we quit the game.
-    }
-    */
-    /*
-    private void Start()
-    {
-        pauseMenu.SetActive(false); //We turn off the pause-menu, because it's not ussually meant to be on.
-    }
+        cancelAction.action.performed += ctx => menuUp = true; //...We bring up the Pause menu.
 
+        Logging.Log($"We perform the cancel-action.");
+        //player.Pause(); //We freeze the player.
+    }
+    
+    //----Canvas stuff
     public void ResumeGame() //When we resume the game, we will use this function in the Canvas.
     {
         Time.timeScale = 1;
         player.Resume();
         menuUp = false;
         pauseMenu.SetActive(false);
+        Logging.Log($"Turned off Pause-menu.");
     }
+
+    public void BacktoMain() //When we click "Go back to main menu" in the canvas, we will use this.
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
+
+    //----Canvas end.
+
 
     void FixedUpdate()
     {
@@ -45,38 +64,31 @@ public class PauseMenu : MonoBehaviour
         {
             return;
         }
-        if (menuUp == false)
+
+        else if (cancelAction.action.triggered) //But if we DID press cancel..!
         {
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
             player.Pause();
-            menuUp = true;
+            //menuUp = true;
         }
+        /*
         else //Otherwise we...
         {
             ResumeGame(); //...resume the game again.
         }
+        */
     }
-    */
-
-
 
     
-    private void OnEnable()
-    {
-        cancelAction.action.Enable(); //When we enable the Cancel-action...
-        Logging.Log($"We can Cancel");
-        string menuScene = "MainMenu"; //we create a string that refers to the scene with our main Menu.
-        cancelAction.action.performed += ctx => SceneManager.LoadSceneAsync(menuScene); //...Then we quit the game.
-
-        //cancelAction.action.performed += ctx => EditorApplication.ExitPlaymode();
-    }
-
     private void OnDisable()
     {
         Logging.Log($"We Stopped"); //This will only be visible in-editor.
         cancelAction.action.Disable(); //We turn off the ability to quit the game with the Cancel-action - when we don't need it.
         Logging.Log($"Turning off Cancel.");
+        player.Resume();
+        Logging.Log($"Unfreezing the player.");
+
     }
-    
+
 }
