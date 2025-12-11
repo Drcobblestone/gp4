@@ -389,7 +389,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5523064201004799040}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -713,7 +713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1314718188991534196
 RectTransform:
   m_ObjectHideFlags: 0
@@ -730,8 +730,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5563.32, y: -694.958}
-  m_SizeDelta: {x: 4702.65, y: 2289.915}
+  m_AnchoredPosition: {x: -5086.298, y: -694.958}
+  m_SizeDelta: {x: 3748.606, y: 2289.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8912133025506020012
 CanvasRenderer:
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -414148626, guid: 7b6bbcb7f5b77484ca12a90e0698f460, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0afdeb1228700a44f8434285ac64ee00, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5523064201004799040}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1307,7 +1307,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5523064201004799040}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 5
@@ -1538,7 +1538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6129963329205533853}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2117,7 +2117,7 @@ GameObject:
   - component: {fileID: 6615776688144152020}
   - component: {fileID: 13372099985318992}
   - component: {fileID: 91167164923951908}
-  - component: {fileID: 5523064201004799040}
+  - component: {fileID: 204768646906456573}
   m_Layer: 5
   m_Name: PauseMenuCanvas
   m_TagString: Untagged
@@ -2209,7 +2209,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5523064201004799040
+--- !u!114 &204768646906456573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2218,9 +2218,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7644747629056252236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 589edcef03ed9f04da45e00fe17c243d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2352b68dc85e07d42adedac579664939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cancelAction: {fileID: 7727032971491509709, guid: fd64aa19291e6ea4095dab362cafe472, type: 3}
+  pauseMenu: {fileID: 0}
 --- !u!1 &8128671947174081883
 GameObject:
   m_ObjectHideFlags: 0
