@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 7
   description: The Tale of Little Red Riding Hood
-  icon: {fileID: 21300000, guid: 5c100e2559ecb0642bf580e2e5faecd5, type: 3}
+  icon: {fileID: -547208895, guid: 59e3b03d9e1094a4097524efa901e1d5, type: 3}
   prefab: {fileID: 6687326480235455718, guid: 320eb45851af7084dbbe2df4f9b32f00, type: 3}
   pickedUp: 0

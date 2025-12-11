@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6
   description: The Tale of Snow White & The 7 Dwarves
-  icon: {fileID: 21300000, guid: 5a9e4de93ac38274fad2cda9a4ba52a4, type: 3}
+  icon: {fileID: 1508919832, guid: 59e3b03d9e1094a4097524efa901e1d5, type: 3}
   prefab: {fileID: 6687326480235455718, guid: e3b6c5bbc23d4274baf85acd16107d74, type: 3}
   pickedUp: 0
