@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,8 +9,8 @@ using UnityEngine.SceneManagement;
 public class BackgroundMusic_Script : MonoBehaviour
 {
     //We summon the game-manager /LevelManager, so we can know which scene we are in.
-    [Header("(Put the SceneData here.)")]
-    [SerializeField] SceneData sceneData;
+    //[Header("(Put the SceneData here.)")]
+    //[SerializeField] SceneData sceneData;
 
     //We make the below fields so we can load whichever music we deem fit, in a scene.
     [Header("(Put the Music-files here)")]
@@ -19,8 +20,9 @@ public class BackgroundMusic_Script : MonoBehaviour
     [Header("(Put the AudioSource here)")]
     [SerializeField]  AudioSource musicSource;
 
+    //public static BackgroundMusic_Script instance;
     //public void playMusic() //<- We need Awake, I think...
-    public void Awake()
+    /*public void Awake()
 
     {
         
@@ -39,6 +41,12 @@ public class BackgroundMusic_Script : MonoBehaviour
             musicSource.Play(); //Play the new music.
         }
 
+    }*/
+    public void ChangeMusic(bool standard)
+    {
+        musicSource.Stop();
+        musicSource.clip = standard ? standardMusic : winMusic; //Ternary Conditional: Bool ? trueValue : falseValue
+        musicSource.Play();
     }
 
 }

@@ -25,7 +25,7 @@ public class PauseMenu : MonoBehaviour
         cancelAction.action.performed += ctx => menuUp = true; //...Then we quit the game.
     }
     */
-
+    /*
     private void Start()
     {
         pauseMenu.SetActive(false); //We turn off the pause-menu, because it's not ussually meant to be on.
@@ -57,11 +57,11 @@ public class PauseMenu : MonoBehaviour
             ResumeGame(); //...resume the game again.
         }
     }
+    */
 
 
 
-
-    /*
+    
     private void OnEnable()
     {
         cancelAction.action.Enable(); //When we enable the Cancel-action...
@@ -78,5 +78,5 @@ public class PauseMenu : MonoBehaviour
         cancelAction.action.Disable(); //We turn off the ability to quit the game with the Cancel-action - when we don't need it.
         Logging.Log($"Turning off Cancel.");
     }
-    */
+    
 }

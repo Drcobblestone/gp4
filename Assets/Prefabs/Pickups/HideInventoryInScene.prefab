@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7565162745252740203}
   - component: {fileID: 6423956114145424377}
+  - component: {fileID: 7637667342432048279}
   m_Layer: 0
   m_Name: HideInventoryInScene
   m_TagString: Untagged
@@ -44,4 +45,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f937de62d755c409bf2c8e8943e52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameMenu: {fileID: 0}
+--- !u!114 &7637667342432048279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4961250803660523366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fcbd9330688a9b4eaa861c4cdb86af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
