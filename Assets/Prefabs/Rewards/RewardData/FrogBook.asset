@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 8
   description: The Tale of the Frog Prince
-  icon: {fileID: 21300000, guid: a7320b8ffa345404785b5c94562e9ac4, type: 3}
+  icon: {fileID: -702789932, guid: 59e3b03d9e1094a4097524efa901e1d5, type: 3}
   prefab: {fileID: 6687326480235455718, guid: 0125baadbf230174d814bff06ae01a2c, type: 3}
   pickedUp: 0
