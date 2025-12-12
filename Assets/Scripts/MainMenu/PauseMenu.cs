@@ -14,11 +14,11 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] InputActionReference cancelAction; //We get the cancel-action from the input action asset - we're going to use that to Quit.
     [Header("Put the item called PauseMenu here.")]
     [SerializeField] GameObject pauseMenu; //We put the pause-menu here.
-    PlayerController player; //We get the player so we can pause him.
+    private PlayerController player; //We get the player so we can pause him.
 
     protected bool menuUp = false;
 
-    private void Awake()
+    private void Start()
     {
         player = PlayerController.Instance;
 
@@ -27,19 +27,14 @@ public class PauseMenu : MonoBehaviour
             pauseMenu.SetActive(false); //We turn off the pause-menu, because it's not ussually meant to be on.
             Logging.Log($"Made Pause-menu not visible to start with.");
         }
+
+        
+
+
     }
 
 
-    private void OnEnable()
-    {
-        cancelAction.action.Enable(); //When we enable the Cancel-action...
-        Logging.Log($"We can Cancel");
-        cancelAction.action.performed += ctx => menuUp = true; //...We bring up the Pause menu.
 
-        Logging.Log($"We perform the cancel-action.");
-        //player.Pause(); //We freeze the player.
-    }
-    
     //----Canvas stuff
     public void ResumeGame() //When we resume the game, we will use this function in the Canvas.
     {
@@ -80,7 +75,19 @@ public class PauseMenu : MonoBehaviour
         */
     }
 
-    
+
+    /*
+    private void OnEnable()
+    {
+        cancelAction.action.Enable(); //When we enable the Cancel-action...
+        Logging.Log($"We can Cancel");
+        cancelAction.action.performed += ctx => menuUp = true; //...We bring up the Pause menu.
+
+        Logging.Log($"We perform the cancel-action.");
+        //player.Pause(); //We freeze the player.
+    }
+
+
     private void OnDisable()
     {
         Logging.Log($"We Stopped"); //This will only be visible in-editor.
@@ -90,5 +97,5 @@ public class PauseMenu : MonoBehaviour
         Logging.Log($"Unfreezing the player.");
 
     }
-
+    */
 }
