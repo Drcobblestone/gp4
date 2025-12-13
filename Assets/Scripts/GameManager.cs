@@ -24,10 +24,6 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-
-        //FindObjectOfType<HideUI>().gameObject.SetActive(data.inventoryScene); //Tells if you can use inventory.
-
-
         for (int i = 0; i < sceneObjects.Length; i++)
         {
             SceneObject obj = sceneObjects[i];

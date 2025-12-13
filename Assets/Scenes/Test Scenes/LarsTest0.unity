@@ -348,11 +348,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2120933983860538203, guid: 98d598c625d0cbe4485d728c8d69d181, type: 3}
   m_PrefabInstance: {fileID: 409228412}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &495965189 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3317573216345642786, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
-  m_PrefabInstance: {fileID: 1891235398152805587}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &564951082
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,17 +379,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &593649753 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2327575379930776432, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-  m_PrefabInstance: {fileID: 8456227210627120872}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e77b8352a4dd0047a8792aa069e3c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &607095549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1604,10 +1588,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4506910068222799262, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6578599458810578693, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: m_Name
       value: SceneManager
@@ -1652,10 +1632,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8582320300372898056, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: questListContent
-      value: 
-      objectReference: {fileID: 495965189}
+    - target: {fileID: 8472516287860898798, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
+      propertyPath: m_CursorLockBehavior
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8844338769779872893, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: playerTransform
       value: 
@@ -1669,16 +1649,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 409228413}
     - target: {fileID: 8868089947836585074, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 593649753}
-    - target: {fileID: 8868089947836585074, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BacktoMain
-      objectReference: {fileID: 0}
-    - target: {fileID: 8868089947836585074, guid: a5a01be1285a6e34bbc69ea06cc88910, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenuNew, Assembly-CSharp
+      value: ResumeGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

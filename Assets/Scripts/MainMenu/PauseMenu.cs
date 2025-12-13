@@ -16,9 +16,9 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] GameObject pauseMenu; //We put the pause-menu here.
     private PlayerController player; //We get the player so we can pause him.
 
-    protected bool menuUp = false;
+    protected bool isPaused = false;
 
-    private void Start()
+    private void Awake()
     {
         player = PlayerController.Instance;
 
@@ -27,10 +27,6 @@ public class PauseMenu : MonoBehaviour
             pauseMenu.SetActive(false); //We turn off the pause-menu, because it's not ussually meant to be on.
             Logging.Log($"Made Pause-menu not visible to start with.");
         }
-
-        
-
-
     }
 
 
@@ -39,8 +35,8 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame() //When we resume the game, we will use this function in the Canvas.
     {
         Time.timeScale = 1;
-        player.Resume();
-        menuUp = false;
+        //.Resume();
+        isPaused = false;
         pauseMenu.SetActive(false);
         Logging.Log($"Turned off Pause-menu.");
     }
@@ -64,8 +60,8 @@ public class PauseMenu : MonoBehaviour
         {
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
-            player.Pause();
-            //menuUp = true;
+            //player.Pause();
+            //isPaused = true;
         }
         /*
         else //Otherwise we...
@@ -81,7 +77,7 @@ public class PauseMenu : MonoBehaviour
     {
         cancelAction.action.Enable(); //When we enable the Cancel-action...
         Logging.Log($"We can Cancel");
-        cancelAction.action.performed += ctx => menuUp = true; //...We bring up the Pause menu.
+        cancelAction.action.performed += ctx => isPaused = true; //...We bring up the Pause menu.
 
         Logging.Log($"We perform the cancel-action.");
         //player.Pause(); //We freeze the player.

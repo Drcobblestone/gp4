@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     
     public Animator animator; //We summon the animator.
 
-    bool movementLocked; //This decides if the player can move. We toggle it when we pause the game.
+    public bool movementLocked; //This decides if the player can move. We toggle it when we pause the game.
 
     //A region is a "stylistic choice that allows you to lump together related code and give it a name."
     #region PLAYER_CONTROLS 
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         //Guard Clause, to prevent any of the below code from running.
-        if (movementLocked)
+        if (movementLocked == true)
         {
             return; //If movement locked is true stops any code below from running
         }
@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
         facingLeft = !facingLeft;
     }
 
+    /*
     public void Pause()
     {
         movementLocked = true;
@@ -89,6 +90,6 @@ public class PlayerController : MonoBehaviour
     {
         movementLocked = false;
     }
-
+    */
 
 }
