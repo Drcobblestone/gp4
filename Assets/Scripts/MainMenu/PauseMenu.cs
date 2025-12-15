@@ -18,21 +18,16 @@ public class PauseMenu : MonoBehaviour
 
 
     // Awake is run immediately after the object is instantiated, and before Start or OnEnable. It's where you set up essential data or assign references for other scripts.
-    void Awake()
-    {
-        player = PlayerController.Instance; //We make sure we're running the current instance of PlayerController.
 
-        //music = LLSingleton.Instance.music; //We summon the latest instance of the Backgroundmusic script in the singleton; so we can change it's volume later.
-
-        Logging.Log($"We ran awake in Pausemenu."); 
-
-    }
 
 
     private void Start()
     {
+        player = PlayerController.Instance; //We make sure we're running the current instance of PlayerController.
+        music = LLSingleton.Instance.music;
+        
         pause.action.Enable();
-        pause.action.performed += ctx => TogglePause(ctx);
+        pause.action.performed += ctx => TogglePause(ctx); //We give our pause-action-event the context of running the TogglePause function.
         print("started");
 
         if (pauseMenu.activeInHierarchy) //If the pause-menu is already active in the hierarchy when the scene loads, then...
@@ -62,7 +57,7 @@ public class PauseMenu : MonoBehaviour
 
         Time.timeScale = isPaused ? 0 : 1; //Time will go from, fully on (1), when isPaused is false (its standard state), to fully off (0), when isPaused is true.
 
-        //music.musicSource.volume = isPaused ? 0.75f : 0.2f; //The music will go from it's standard 75% output to 20% output depending on the state of isPaused.
+        music.musicSource.volume = isPaused ? 0.2f : 0.75f; //The music will go from it's standard 75% output to 20% output depending on the state of isPaused.
 
         //player.movementLocked = isPaused; //We make it so that the players movementlock bool is set to whatever the isPaused bool is set to.
 
@@ -77,13 +72,17 @@ public class PauseMenu : MonoBehaviour
 
         pauseMenu.SetActive(false); //Whether the pause-menu is active is now dependent on whether the isPaused-bool is true or false. (if it's true, the pause-menu should be active)
 
-        Time.timeScale = 1.0f;
+        Time.timeScale = 1.0f; //We make time start again.
 
+        music.musicSource.volume = 0.75f; //We set the volume of the music back to its standard-setting.
+        Logging.Log($"We set music back to normal.");
     }
 
     public void BacktoMain() //When we click "Go back to main menu" in the canvas, we will use this.
     {
         SceneManager.LoadSceneAsync("MainMenu");
+        music.musicSource.volume = 0.75f; //We set the volume of the music back to its standard-setting.
+        Logging.Log($"We set music back to normal from BackToMain.");
     }
 
     //----Canvas end.
