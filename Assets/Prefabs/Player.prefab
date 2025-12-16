@@ -339,6 +339,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 570178c9-f018-4d57-894d-5b5b2f369c69
     m_ActionName: UI/VisibleUi[/Keyboard/i,/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c1e5c896-6b06-472b-a4fc-f28865fd876e
+    m_ActionName: UI/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
