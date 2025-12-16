@@ -11,10 +11,8 @@ public class SceneHideUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //GameObject inGameMenu = FindObjectOfType<HideUI>().gameObject;
         GameObject inGameMenu = LLSingleton.Instance.hideUI;
         inGameMenu.GetComponent<HideUI>().togglable = false;
-
 
         inGameMenu.SetActive(false); //Turn off ingame-menu.
         Logging.Log($"Sniped the Inventory.");

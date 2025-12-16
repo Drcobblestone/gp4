@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame(string startScene = "LibraryInside") //To start the game from the main menu.
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadSceneAsync(startScene); //Pressing play loads the Library Inside scene.
     }
 
