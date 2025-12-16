@@ -11,20 +11,30 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Transform spriteTransformSize; //We establish a way to do sprite-scaling.
 
-
-
-
     [Header("-Player Settings-")]
     [SerializeField] float speed;
 
     bool facingLeft = true; //Condition that establishes which way the player-character starts facing.
+    //bool walkingUp = false; //Condition that establishes which way the player-character has his back turned. (when walking up, the back is towards the screen.)
 
     public float horizontal; //Horizontal control, for use later.
     public float vertical; //Vertical control, for use later.
     
     public Animator animator; //We summon the animator.
 
-    public bool movementLocked; //This decides if the player can move. We toggle it when we pause the game.
+    //public bool movementLocked; //This decides if the player can move. We toggle it when we pause the game.
+
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void Start()
+    {
+        animator.GetBool("Flipbackside"); //We get the bool from the animator that tells it to change to back-side.
+    }
+
 
     //A region is a "stylistic choice that allows you to lump together related code and give it a name."
     #region PLAYER_CONTROLS 
@@ -36,25 +46,22 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+
     private void FixedUpdate()
     {
         //Guard Clause, to prevent any of the below code from running.
+        /*
         if (movementLocked == true)
         {
             return; //If movement locked is true stops any code below from running
         }
-
+        */
         //End guard clause.
 
         Vector2 movement = new Vector2(horizontal, vertical);
         movement = movement.normalized; 
 
         animator.SetFloat("Speed", movement.magnitude); //We set the the speed of the player.
-        //animator.SetBool("Flipbackside");         //We set the animation-bool if we are moving upwards.                                       
 
 
         // We check that rigidbody's velocity is now controlled via a timer that checks if horizontal as well as vertical movement multiplies the speed of the rigidbody.
@@ -63,16 +70,31 @@ public class PlayerController : MonoBehaviour
         //Code to flip the character when walking
         if (horizontal < 0 && !facingLeft) //If we are moving in a negative direction on the X-axis and looking left, then...
         {
-            Flip();
+            FlipLeftRight();
         }
 
         else if (horizontal > 0 && facingLeft) //But if we are *instead* moving in a positive direction on the X-axis, and not looking left, then...
         {
-            Flip();
+            FlipLeftRight();
         }
+
+        //Code to change animation if we are going upwards or downwards.
+        
+        if (vertical > 0 )
+        {
+            //Time.timeScale = isPaused ? 0 : 1;
+            
+
+        }
+
+        else if (vertical < 0 )
+        {
+
+        }
+        //End UP-animation.
     }
 
-    void Flip() //This function controls the flipping of the character, making sure we don't do it unnecessarily, thereby saving some performance.
+    void FlipLeftRight() //This function controls the flipping of the character, making sure we don't do it unnecessarily, thereby saving some performance.
     {
         Vector3 currentScale = gameObject.transform.localScale;
         currentScale.x *= -1;
@@ -80,6 +102,8 @@ public class PlayerController : MonoBehaviour
 
         facingLeft = !facingLeft;
     }
+
+
 
     /*
     public void Pause()
