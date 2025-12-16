@@ -25,7 +25,9 @@ public enum NpcID
     BREMEN,
     FROGPRINCEN,
     PRINCESSN,
-    REDHOOD
+    REDHOOD,
+    LEO
+
 }
 
 //This is the Quest-Enums. They define types of objectives.
