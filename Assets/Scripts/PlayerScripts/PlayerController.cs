@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed;
 
     bool facingLeft = true; //Condition that establishes which way the player-character starts facing.
-    //bool walkingUp = false; //Condition that establishes which way the player-character has his back turned. (when walking up, the back is towards the screen.)
+    bool facingDown; //Condition that establishes which way the player-character looks up or down - it's down.
 
     public float horizontal; //Horizontal control, for use later.
     public float vertical; //Vertical control, for use later.
@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator.GetBool("Flipbackside"); //We get the bool from the animator that tells it to change to back-side.
+       
     }
 
 
@@ -80,19 +81,34 @@ public class PlayerController : MonoBehaviour
 
         //Code to change animation if we are going upwards or downwards.
         
-        if (vertical > 0 )
+        if (vertical < 0 && facingDown)
         {
             //Time.timeScale = isPaused ? 0 : 1;
             
-
+            FlipBackFront();
+            animator.SetBool("Flipbackside", false);
+            Logging.Log($"Changed to FRONT.");
         }
 
-        else if (vertical < 0 )
+        else if (vertical > 0 && !facingDown)
         {
-
+            FlipBackFront();
+            animator.SetBool("Flipbackside", true);
+            Logging.Log($"Changed to Back.");
         }
         //End UP-animation.
     }
+
+    void FlipBackFront()
+    {
+        Vector3 currentscale2 = gameObject.transform.localScale;
+        currentscale2.y *= -1;
+        gameObject.transform.localScale = currentscale2;
+
+        facingDown = !facingDown;
+
+    }
+
 
     void FlipLeftRight() //This function controls the flipping of the character, making sure we don't do it unnecessarily, thereby saving some performance.
     {
