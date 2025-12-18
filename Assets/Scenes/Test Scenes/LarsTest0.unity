@@ -936,11 +936,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1898412212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03b22b927773b564b981dad017de7dc9, type: 3}
+  m_Script: {fileID: 11500000, guid: 7566dbcc2f4dac3449a4fd8dbeb0f4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 8
+  showOutline: 0
+  outline_mat: {fileID: 2100000, guid: 35d90aa02763e0b4d83c2a1fb62eaa48, type: 2}
+  outlineSortingOrder: 0
+  spriteCount: 0
 --- !u!1 &1981403762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5554843299485967253, guid: 3b0232187e2bd874296ab2ed4a91cdcc, type: 3}
@@ -1463,6 +1465,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3029175362691328459, guid: 2c6ea4951e4cf7a4dae03e4342fb23b2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3220202594982586487, guid: 2c6ea4951e4cf7a4dae03e4342fb23b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.84
