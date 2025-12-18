@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
                 continue;
             }
             obj.flagUpdated.AddListener((bool flag) => SetFlag(index, flag));
+            obj.flagToggled.AddListener(() => ToggleFlag(index));
             bool startingFlag = data.sceneFlags[index];
             obj.StartWithFlag(startingFlag);
 
@@ -58,6 +59,10 @@ public class GameManager : MonoBehaviour
     public void SetFlag(int index, bool flag){
         print(index);
         data.sceneFlags[index] = flag;
+    }
+    public void ToggleFlag(int index)
+    {
+        data.sceneFlags[index] = !data.sceneFlags[index];
     }
     public void DropItem(DroppedItem droppedItem)
     {

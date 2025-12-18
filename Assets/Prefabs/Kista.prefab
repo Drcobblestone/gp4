@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 625636654183153576}
   - component: {fileID: 1067501657272326284}
   - component: {fileID: 5370614139506795255}
+  - component: {fileID: 6901749554811234672}
   - component: {fileID: 802190603559680873}
-  - component: {fileID: 411531627374836247}
+  - component: {fileID: 5678959066068150378}
   m_Layer: 0
   m_Name: Kista
   m_TagString: Untagged
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -672575029
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -4107719, guid: 143899988fc845943821516bfade4980, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122,35 +123,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c298fa579f1f4346a2151dec52b597f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hasToBeInRange: 1
+  _hasToBeInRange: 0
   _clicked:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 625636654183153576}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Success
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 5370614139506795255}
         m_TargetAssemblyTypeName: SceneObject, Assembly-CSharp
-        m_MethodName: SetFlag
-        m_Mode: 6
+        m_MethodName: ToggleFlag
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Success
-          m_BoolArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
-  _mouse: {fileID: 0}
+      - m_Target: {fileID: 6901749554811234672}
+        m_TargetAssemblyTypeName: Chest, Assembly-CSharp
+        m_MethodName: ToggleAnim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _isInRange: 0
 --- !u!114 &5370614139506795255
 MonoBehaviour:
@@ -197,6 +197,23 @@ MonoBehaviour:
   flagUpdated:
     m_PersistentCalls:
       m_Calls: []
+  flagToggled:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6901749554811234672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789961449197533750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec89dcc0606da5242a3bc4c73057f53c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_1: ChestClosed
+  anim_2: Chest_open
 --- !u!61 &802190603559680873
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -242,8 +259,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.105, y: 1.1390011}
   m_EdgeRadius: 0
---- !u!58 &411531627374836247
-CircleCollider2D:
+--- !u!70 &5678959066068150378
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -274,6 +291,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04278326, y: -0.051202297}
-  serializedVersion: 2
-  m_Radius: 2.1320949
+  m_Offset: {x: 0.12, y: -0.35}
+  m_Size: {x: 4.375824, y: 4.375824}
+  m_Direction: 0

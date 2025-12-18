@@ -10,9 +10,14 @@ public class SceneObject : MonoBehaviour
     
     [HideInInspector]
     public UnityEvent<bool> flagUpdated;
+    public UnityEvent flagToggled;
     public void SetFlag(bool flag)
     {
         flagUpdated.Invoke(flag);
+    }
+    public void ToggleFlag()
+    {
+        flagToggled.Invoke();
     }
     public void StartWithFlag(bool flag)
     {
