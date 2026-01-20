@@ -5063,7 +5063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117420469663753053, guid: cf2db61bf17539f4f934196df2c73f0b, type: 3}
       propertyPath: m_Size.y
-      value: 3.3743062
+      value: 3.9801168
       objectReference: {fileID: 0}
     - target: {fileID: 117420469663753053, guid: cf2db61bf17539f4f934196df2c73f0b, type: 3}
       propertyPath: m_Offset.x
@@ -5071,7 +5071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117420469663753053, guid: cf2db61bf17539f4f934196df2c73f0b, type: 3}
       propertyPath: m_Offset.y
-      value: 1.6040399
+      value: 1.3011346
       objectReference: {fileID: 0}
     - target: {fileID: 4236625548781854661, guid: cf2db61bf17539f4f934196df2c73f0b, type: 3}
       propertyPath: clipVolume
@@ -7179,7 +7179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117420469663753053, guid: cf2db61bf17539f4f934196df2c73f0b, type: 3}
       propertyPath: m_Size.y
-      value: 3.245481
+      value: 3.9168313
       objectReference: {fileID: 0}
     - target: {fileID: 117420469663753053, guid: cf2db61bf17539f4f934196df2c73f0b, type: 3}
       propertyPath: m_Offset.x
@@ -7187,7 +7187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117420469663753053, guid: cf2db61bf17539f4f934196df2c73f0b, type: 3}
       propertyPath: m_Offset.y
-      value: 1.6227405
+      value: 1.2870654
       objectReference: {fileID: 0}
     - target: {fileID: 117420469663753053, guid: cf2db61bf17539f4f934196df2c73f0b, type: 3}
       propertyPath: m_IsTrigger
