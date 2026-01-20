@@ -1266,11 +1266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.76136094
+      value: 0.16827466
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.2
+      value: -9.23
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1567,11 +1567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2932001
+      value: 0.120945044
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.8759
+      value: -9.2361
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2509,7 +2509,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2120933983860538203, guid: 98d598c625d0cbe4485d728c8d69d181, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.42
+      value: -8.56
       objectReference: {fileID: 0}
     - target: {fileID: 2120933983860538203, guid: 98d598c625d0cbe4485d728c8d69d181, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3104,6 +3104,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2378244078050864509, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 3307844450090688857, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
       propertyPath: m_Name
       value: SceneBlockers
@@ -3134,7 +3138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6646855938077524513, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.94
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 6646855938077524513, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3182,7 +3186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7160693549465109087, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.34
+      value: 18.96
       objectReference: {fileID: 0}
     - target: {fileID: 8886001684099863367, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
       propertyPath: m_Size.y
