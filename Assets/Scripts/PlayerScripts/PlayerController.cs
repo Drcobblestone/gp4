@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
-{   
+{
     public static PlayerController Instance;
     [Header("-Player Component References-")]
     [SerializeField] public Rigidbody2D rb; //We make the Rigidbody not a public class as we need to keep it private, but since we need to see it in the editor, we make it a serializedfield.
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     public float horizontal; //Horizontal control, for use later.
     public float vertical; //Vertical control, for use later.
-    
+
     public Animator animator; //We summon the animator.
 
     //public bool movementLocked; //This decides if the player can move. We toggle it when we pause the game.
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator.GetBool("flipBackside"); //We get the bool from the animator that tells it to change to back-side.
-       
+
     }
 
 
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
         //End guard clause.
 
         Vector2 movement = new Vector2(horizontal, vertical);
-        movement = movement.normalized; 
+        movement = movement.normalized;
 
         animator.SetFloat("Speed", movement.magnitude); //We set the the speed of the player.
 
@@ -79,6 +79,8 @@ public class PlayerController : MonoBehaviour
             FlipLeftRight();
         }
 
+        //Turning the below off, for now.
+        /*
         //Code to change animation if we are going upwards or downwards.
         
         if (vertical < 0 && facingDown)
@@ -104,28 +106,28 @@ public class PlayerController : MonoBehaviour
         facingDown = !facingDown;
 
     }
-
-
-    void FlipLeftRight() //This function controls the flipping of the character, making sure we don't do it unnecessarily, thereby saving some performance.
-    {
-        Vector3 currentScale = gameObject.transform.localScale;
-        currentScale.x *= -1;
-        gameObject.transform.localScale = currentScale;
-
-        facingLeft = !facingLeft;
-    }
-
-
-
-    /*
-    public void Pause()
-    {
-        movementLocked = true;
-    }
-    public void Resume()
-    {
-        movementLocked = false;
-    }
     */
 
+        void FlipLeftRight() //This function controls the flipping of the character, making sure we don't do it unnecessarily, thereby saving some performance.
+        {
+            Vector3 currentScale = gameObject.transform.localScale;
+            currentScale.x *= -1;
+            gameObject.transform.localScale = currentScale;
+
+            facingLeft = !facingLeft;
+        }
+
+
+
+        /*
+        public void Pause()
+        {
+            movementLocked = true;
+        }
+        public void Resume()
+        {
+            movementLocked = false;
+        }
+        */
+    }
 }
