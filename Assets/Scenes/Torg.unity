@@ -536,16 +536,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5165787
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.405303
+      value: 1.5569352
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.19
+      value: 9.07
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5402
+      value: -3.616
       objectReference: {fileID: 0}
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalPosition.z
@@ -578,6 +582,14 @@ PrefabInstance:
     - target: {fileID: 3928783349941001327, guid: bbf4a10244a045a47812f60f76821357, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752867297575956090, guid: bbf4a10244a045a47812f60f76821357, type: 3}
+      propertyPath: m_Size.x
+      value: 0.34352034
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752867297575956090, guid: bbf4a10244a045a47812f60f76821357, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.32823983
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1194,11 +1206,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2120933983860538203, guid: 98d598c625d0cbe4485d728c8d69d181, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.28
+      value: 8.05
       objectReference: {fileID: 0}
     - target: {fileID: 2120933983860538203, guid: 98d598c625d0cbe4485d728c8d69d181, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.88
+      value: -4.12
       objectReference: {fileID: 0}
     - target: {fileID: 2120933983860538203, guid: 98d598c625d0cbe4485d728c8d69d181, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1592,11 +1604,11 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -3.213284, y: 5.479124}
-      - {x: -3.0607886, y: 0.34147438}
+      - {x: -3.0927513, y: -0.042077124}
       - {x: -1.009732, y: -1.5230806}
       - {x: 3.0162492, y: -4.572617}
-      - {x: 3.713161, y: -4.5782537}
-      - {x: 3.7423954, y: 5.3723745}
+      - {x: 5.2473664, y: -4.514328}
+      - {x: 5.212677, y: 5.404337}
   m_UseDelaunayMesh: 0
 --- !u!1 &1359996300
 GameObject:
@@ -1692,11 +1704,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: 4.38
       objectReference: {fileID: 0}
     - target: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.23
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 3833364940129774249, guid: 8ef924472b68afc4699e2b745bda43a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2104,11 +2116,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6198668217714552437, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
       propertyPath: m_Size.y
-      value: 6.224678
+      value: 10.439289
       objectReference: {fileID: 0}
     - target: {fileID: 6198668217714552437, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
       propertyPath: m_Offset.y
-      value: 2.5876608
+      value: 0.48035526
       objectReference: {fileID: 0}
     - target: {fileID: 6330166050073790058, guid: f1bad9091a0b668458a2ef9c1cb618dd, type: 3}
       propertyPath: m_Size.x
