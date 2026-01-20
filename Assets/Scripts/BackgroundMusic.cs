@@ -25,8 +25,11 @@ public class BackgroundMusic : MonoBehaviour
     public void ChangeMusic(bool standard)
     {
         musicSource.Stop(); //We stop playing the music before we change the music-clip.
+        Logging.Log($"Stopped music.");
         musicSource.clip = standard ? standardMusic : winMusic; //Ternary Conditional: Bool ? trueValue : falseValue
+        Logging.Log($"Changed music.");
         musicSource.Play();
+        Logging.Log($"Started playing new music.");
     }
 
 }
