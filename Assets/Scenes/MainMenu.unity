@@ -2692,7 +2692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589edcef03ed9f04da45e00fe17c243d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetScenes: {fileID: 1030734859}
+  resetAllSceneData: {fileID: 1030734859}
 --- !u!1 &2074535516
 GameObject:
   m_ObjectHideFlags: 0

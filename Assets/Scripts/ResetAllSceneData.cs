@@ -63,6 +63,9 @@ public class ResetAllSceneData : MonoBehaviour
                 data.Reset(); //...reset it, in-between runs.
             }
             shelfData.Reset();
+            //Before we stop the co-routine, we set our bools back to default, i.e not true.
+            resetViaEd = false;
+            resetViaGame = false;
             yield break; //Stop the co-routine after doing the above.
         }
     }

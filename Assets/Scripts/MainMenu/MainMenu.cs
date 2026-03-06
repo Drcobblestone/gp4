@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
+    [Header("Reset for New Game, put ResetAllSceneData here")]
     [SerializeField] ResetAllSceneData resetAllSceneData;
 
-    public void PlayGame(string startScene = "UIBook") //To start the game from the main menu.
+    public void PlayGame(string startScene = "LibraryInside") //To start the game from the main menu.
     {
         Time.timeScale = 1.0f;
         resetAllSceneData.resetViaGame = true;

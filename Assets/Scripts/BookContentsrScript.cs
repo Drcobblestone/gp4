@@ -1,9 +1,10 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using JetBrains.Annotations;
+using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BookContentsrScript : MonoBehaviour
 {
@@ -17,25 +18,12 @@ public class BookContentsrScript : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI leftPagination;
     [SerializeField] private TextMeshProUGUI rightPagination;
+    [Header("Drag Book-script onto here, if startbook, so we get to Library.")]
     public UnityEvent reachedEnd;
     int pageCount;
 
     [SerializeField] GameObject bookType; //Adding this field to sense what kind of book is being read, so we can have an if-statement or case, on how to do it.
 
-
-/*
-#if (UNITY_EDITOR)
-    private void OnValidate() //To make sure our contents show up in the Inspector, we validate.
-    {
-        UpdatePagination(); //This is basically just a double-check to make sure the content has started loading.
-
-        /*if (leftSide.text == content)
-            return;
-        
-        SetupContent(); //Double-check to make sure it's all been set up correctly.
-    }
-#endif
-*/
 
     private void Awake()
     {
@@ -47,7 +35,6 @@ public class BookContentsrScript : MonoBehaviour
     {
         leftSide.text = content;
         rightSide.text = content;
-        
     }
 
     private void UpdatePagination()
@@ -97,11 +84,16 @@ public class BookContentsrScript : MonoBehaviour
 
         else if(leftSide.pageToDisplay >= pageCount + 1 && tag == "StartBook")
         {
-            reachedEnd.Invoke();
+            reachedEnd.Invoke(); //When we invoke at the end of the startbook, we should have set it via the Editor to load the next Library-Inside, first in-game scene.
             Logging.Log($"We reached the start-book end.");
-        }
-           
+        }      
     }
+
+    public void GoInGame(string startScene = "LibraryInside") //This brings us to the first game-play scene.
+    {
+        SceneManager.LoadSceneAsync(startScene); //Pressing play loads the Library Inside scene.
+    }
+
 }
         
 
