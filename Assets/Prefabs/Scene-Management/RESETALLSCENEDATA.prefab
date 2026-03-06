@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 746884876744546302}
   - component: {fileID: 3216226384121434452}
   m_Layer: 0
-  m_Name: RESETALLSCENEDATA -- REMOVE FOR BUILD
+  m_Name: RESETALLSCENEDATA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

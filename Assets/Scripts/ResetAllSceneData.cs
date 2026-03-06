@@ -1,21 +1,79 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+
+//Make a menu-item that you can press. Do it via a co-routine that starts in Awake.
+//At the start of co-routine, activate game-object, and set reset-bool to true. Wait for 1 frame, then set reset-bool to false and deactivate game-object.
 
 
 public class ResetAllSceneData : MonoBehaviour
 {
-    [SerializeField] bool reset = true;
+    //[SerializeField] bool reset = false;
+    private static bool resetViaEd = false;
+    public bool resetViaGame = false;
     [SerializeField] SceneData[] sceneDatas;
     [SerializeField] NpcData[] npcDatas;
     [SerializeField] ShelfData shelfData;
 
+#if UNITY_EDITOR //This will happen only inside of the Unity Editor.
+    [MenuItem("RESET ALL DATA/Reset")]
+    static void RunResetFunction()
+    {
+        UnityEditor.EditorApplication.ExitPlaymode();
+        UnityEditor.EditorApplication.EnterPlaymode(); //And then we run the editor, so the rest of the script runs.
+        resetViaEd = true; //We say that we're going to reset stuff.
+    }
+#endif
+
+    // Add a menu item named "RESET ALL DATA" to Reset in the menu bar.
 
     void Awake()
-    {   
-        if (!reset)
+    {
+        if (resetViaEd) //If the reset has been hit, then...
         {
-            return;
+            StartCoroutine(ResetData()); //...run the resetdata-co-routine.
+            Logging.Log($"Starting ResetData co-routine.");
+        }
+        else 
+        {
+            Logging.Log($"Not resetting when starting.");
+        }
+    }
+
+    public void NewGameReset()
+    {
+        if (resetViaGame) //If we said to reset via the game, then...
+        {
+            StartCoroutine(ResetData()); //...run the resetdata-co-routine.
+            Logging.Log($"Starting ResetData co-routine.");
+        }
+    }
+
+    IEnumerator ResetData()
+    {
+        if (resetViaEd | resetViaGame) //If we said to reset via the editor OR the game, then start the below.
+        {
+            foreach (SceneData data in sceneDatas) //For each scene we have, then...
+            {
+                data.Reset(); //...reset it, in-between runs.
+            }
+            foreach (NpcData data in npcDatas) //For each scene we have, then...
+            {
+                data.Reset(); //...reset it, in-between runs.
+            }
+            shelfData.Reset();
+            yield break; //Stop the co-routine after doing the above.
+        }
+    }
+    
+
+    /* //Old code below.
+    void Awake()
+    {   
+        if (!reset) //If we are not resetting things, then...
+        {
+            return; //...return, do nothing.
         }
         foreach (SceneData data in sceneDatas) //For each scene we have, then...
         {
@@ -29,4 +87,5 @@ public class ResetAllSceneData : MonoBehaviour
 
         Destroy(gameObject); //And destroy this reset-object, after the deed is done.
     }
+    */
 }

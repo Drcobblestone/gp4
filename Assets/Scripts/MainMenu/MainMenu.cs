@@ -5,17 +5,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
-{ 
+{
 
-    public void PlayGame(string startScene = "LibraryInside") //To start the game from the main menu.
+    [SerializeField] ResetAllSceneData resetAllSceneData;
+
+    public void PlayGame(string startScene = "UIBook") //To start the game from the main menu.
     {
         Time.timeScale = 1.0f;
+        resetAllSceneData.resetViaGame = true;
+        resetAllSceneData.NewGameReset();
         SceneManager.LoadSceneAsync(startScene); //Pressing play loads the Library Inside scene.
     }
 
     public void ReturnGame()
     {
-
+        //Add code to just go back to your last scene and place, here.
     }
 
 
