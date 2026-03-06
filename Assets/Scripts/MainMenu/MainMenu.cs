@@ -9,11 +9,11 @@ public class MainMenu : MonoBehaviour
     [Header("Reset for New Game, put ResetAllSceneData here")]
     [SerializeField] ResetAllSceneData resetAllSceneData;
 
-    public void PlayGame(string startScene = "LibraryInside") //To start the game from the main menu.
+    public void PlayGame(string startScene = "UIBook") //To start the game from the main menu.
     {
         Time.timeScale = 1.0f;
         resetAllSceneData.resetViaGame = true;
-        resetAllSceneData.NewGameReset();
+        resetAllSceneData.NewGameReset(); //Replace this with a Get/search object thingie instead?? Doesn't fuckin' work...
         SceneManager.LoadSceneAsync(startScene); //Pressing play loads the Library Inside scene.
     }
 

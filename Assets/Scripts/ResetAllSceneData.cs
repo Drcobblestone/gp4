@@ -16,6 +16,8 @@ public class ResetAllSceneData : MonoBehaviour
     [SerializeField] NpcData[] npcDatas;
     [SerializeField] ShelfData shelfData;
 
+    public static ResetAllSceneData Instance; //We turn the script into a static, since it doesn't work when you change back to the main-menu-scene!
+
 #if UNITY_EDITOR //This will happen only inside of the Unity Editor.
     [MenuItem("RESET ALL DATA/Reset")]
     static void RunResetFunction()
@@ -28,8 +30,10 @@ public class ResetAllSceneData : MonoBehaviour
 
     // Add a menu item named "RESET ALL DATA" to Reset in the menu bar.
 
-    void Awake()
+    public void Awake()
     {
+        Instance = this;
+
         if (resetViaEd) //If the reset has been hit, then...
         {
             StartCoroutine(ResetData()); //...run the resetdata-co-routine.

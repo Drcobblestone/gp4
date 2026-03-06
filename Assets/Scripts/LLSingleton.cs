@@ -10,6 +10,7 @@ public class LLSingleton : GenericSingletonClass<LLSingleton>
     public InventoryUI inventoryUI; //We make a field for the InventoryUI
     public BackgroundMusic music; //And a field for the music.
     public GameObject hideUI; //A field for the hiding of the Inventory. This is an experiment to see if it has the effect I want.
+    public ResetAllSceneData resetSdata;
 
     public override void Awake() //We override regular AWake...
     {
@@ -17,6 +18,7 @@ public class LLSingleton : GenericSingletonClass<LLSingleton>
         
         inventoryUI = GetComponentInChildren<InventoryUI>(); //When we awake, we get a sub-component from LLsingleton, and load them.
         music = GetComponentInChildren<BackgroundMusic>();
+        resetSdata = GetComponentInChildren<ResetAllSceneData>();
         //hideUI = GetComponentInChildren<HideUI>();
     }
 
