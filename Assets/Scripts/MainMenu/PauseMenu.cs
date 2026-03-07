@@ -16,11 +16,6 @@ public class PauseMenu : MonoBehaviour
     protected bool isPaused = false; //This helps us keep track of if the game is paused, and the pause-menu is up.
 
 
-
-    // Awake is run immediately after the object is instantiated, and before Start or OnEnable. It's where you set up essential data or assign references for other scripts.
-
-
-
     private void Start()
     {
         player = PlayerController.Instance; //We make sure we're running the current instance of PlayerController.

@@ -19,7 +19,8 @@ public class ResetAllSceneData : MonoBehaviour
     public static ResetAllSceneData Instance; //We turn the script into a static, since it doesn't work when you change back to the main-menu-scene!
 
 #if UNITY_EDITOR //This will happen only inside of the Unity Editor.
-    [MenuItem("RESET ALL DATA/Reset")]
+    [MenuItem("RESET ALL DATA/Reset")]  // Adds a menu item named "RESET ALL DATA" to Reset in the menu bar.
+
     static void RunResetFunction()
     {
         UnityEditor.EditorApplication.ExitPlaymode();
@@ -28,7 +29,6 @@ public class ResetAllSceneData : MonoBehaviour
     }
 #endif
 
-    // Add a menu item named "RESET ALL DATA" to Reset in the menu bar.
 
     public void Awake()
     {
@@ -41,7 +41,7 @@ public class ResetAllSceneData : MonoBehaviour
         }
         else 
         {
-            Logging.Log($"Not resetting when starting.");
+            Logging.Log($"Not resetting when awaking.");
         }
     }
 
@@ -70,6 +70,7 @@ public class ResetAllSceneData : MonoBehaviour
             //Before we stop the co-routine, we set our bools back to default, i.e not true.
             resetViaEd = false;
             resetViaGame = false;
+            Logging.Log($"Finished Resetting Data.");
             yield break; //Stop the co-routine after doing the above.
         }
     }

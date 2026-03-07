@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3216226384121434452}
   m_Layer: 0
   m_Name: RESETALLSCENEDATA
-  m_TagString: Untagged
+  m_TagString: ResetData
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa35a7c16baf5b4aaac9aaa7abfa583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reset: 0
+  resetViaGame: 0
   sceneDatas:
   - {fileID: 11400000, guid: 86db7779aa0f267498b3e3196124665c, type: 2}
   - {fileID: 11400000, guid: 17c183b907e8a704eaf1e2a1eb8af017, type: 2}
