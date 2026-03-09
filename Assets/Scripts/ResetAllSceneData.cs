@@ -74,26 +74,4 @@ public class ResetAllSceneData : MonoBehaviour
             yield break; //Stop the co-routine after doing the above.
         }
     }
-    
-
-    /* //Old code below.
-    void Awake()
-    {   
-        if (!reset) //If we are not resetting things, then...
-        {
-            return; //...return, do nothing.
-        }
-        foreach (SceneData data in sceneDatas) //For each scene we have, then...
-        {
-            data.Reset(); //...reset it, in-between runs.
-        }
-        foreach (NpcData data in npcDatas) //For each scene we have, then...
-        {
-            data.Reset(); //...reset it, in-between runs.
-        }
-        shelfData.Reset();
-
-        Destroy(gameObject); //And destroy this reset-object, after the deed is done.
-    }
-    */
 }

@@ -12,16 +12,8 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
-        if (resetAllSceneData != null)
-        {
-            Logging.Log($"ResetAllSceneData can be referenced by MainMenu.");
-            resetAllSceneData = ResetAllSceneData.Instance.GetComponent<ResetAllSceneData>(); //Make sure we are using the latest instance of ResetAllSceneData.  
-        }
-        else if (resetAllSceneData == null)
-        {
-            resetAllSceneData = GameObject.FindWithTag("ResetData").GetComponent<ResetAllSceneData>();
-            Logging.Log($"Had to remake the resetAllSceneData reference in MainMenu.");
-        } 
+        resetAllSceneData = LLSingleton.Instance.resetSdata;
+   
     }
 
     public void PlayGame(string startScene = "UIBook") //To start the game from the main menu.

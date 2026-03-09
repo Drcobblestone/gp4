@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < data.itemsToSpawn.Count; i++)
         {
             ItemToSpawn temp = data.itemsToSpawn[i]; //Neccesary, itemS is acting like a reference.
-            DroppedItem droppedItem = SpawnItem(temp.itemData.id, temp.position);
+            DroppedItem droppedItem = SpawnItemAtStart(temp.itemData.id, temp.position);
             droppedItem.pickedUp.AddListener(delegate {
                 this.data.itemsToSpawn.Remove(temp);
                 print("Temp is: " + temp);
@@ -78,7 +78,18 @@ public class GameManager : MonoBehaviour
     {
         ItemData itemData = itemDB.GetItem(inventoryId);
         DroppedItem droppedItem = Instantiate(itemData.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
-        droppedItem.Initialize(itemData);
+        //droppedItem.Initialize(itemData);
+        //droppedItems.Add(droppedItem);
+        data.DropItem(droppedItem);
+
+        return droppedItem;
+    }
+    private DroppedItem SpawnItemAtStart(ItemID inventoryId, Vector2 dropPosition) //This spawns and returns the spawned item so we can use it in another function / script
+    {
+        ItemData itemData = itemDB.GetItem(inventoryId);
+        DroppedItem droppedItem = Instantiate(itemData.prefab, dropPosition, Quaternion.identity).GetComponent<DroppedItem>();
+        //droppedItem.Initialize(itemData);
+        //droppedItems.Add(droppedItem);
         return droppedItem;
     }
 }

@@ -159,7 +159,7 @@ public class NPC : MonoBehaviour
         {
             //Cinematic Effects and Animations Start Here
 
-            DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position+offset);
+            DroppedItem droppedItem = GameManager.Instance.SpawnItem(currentConvo.givenItem, transform.position + offset);
 
 
             if (droppedItem != null) //If the dropped item isn't nothing, then... 

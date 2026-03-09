@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6357992233004090324}
   - component: {fileID: 3391116595835336621}
   - component: {fileID: 1505089330840829421}
-  - component: {fileID: 6680456063676391465}
   m_Layer: 0
   m_Name: FrogPU
   m_TagString: DroppedItem
@@ -147,19 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickedUp:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6680456063676391465}
-        m_TargetAssemblyTypeName: SceneObject, Assembly-CSharp
-        m_MethodName: SetFlag
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   autoStart: 0
   enabledPickupDelay: 1
   itemData: {fileID: 11400000, guid: feb009cd229378149ac7eb1d76d5a95b, type: 2}
@@ -186,36 +173,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6680456063676391465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351936159952576313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b9fa58acac5a0e41bc2947d1f9f54d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startFlagOff:
-    m_PersistentCalls:
-      m_Calls: []
-  startFlagOn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1351936159952576313}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  flagUpdated:
-    m_PersistentCalls:
-      m_Calls: []
